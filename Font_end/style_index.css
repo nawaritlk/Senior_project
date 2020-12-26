@@ -3,8 +3,18 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color:#F8E8DB;
+}
+/*---------------------------section setting------------------------*/
+
+#section2 {
+    height: 600px;
+    background-color: white;
 }
 
 .wrapper {
@@ -48,14 +58,6 @@ ul li a:hover {
     color:brown;
 }
 
-.font-logo{
-    position: relative;
-    width: 600px;
-    height: 300px;
-    margin: 20% 30%;
-    text-align: center;
-}
-
 .menu{
     float: right;
     list-style: none;
@@ -82,6 +84,15 @@ ul li a:hover {
     color:brown;
 }
 
+/*------------------------------font logo------------------------------*/
+.font-logo{
+    position: relative;
+    width: 1000px;
+    height: 300px;
+    margin: 5% auto;
+    text-align: center;
+}
+
 .font-logo h1{
     text-align: center;
     color: #000000;
@@ -98,7 +109,7 @@ ul li a:hover {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 50px;
     display: inline-block;
     color: white;
 }
@@ -106,4 +117,34 @@ ul li a:hover {
 .font-logo a:hover{
     background: white;
     color: teal;
+}
+
+/** -------------------------------------try it--------------------------- **/
+
+.try_box{
+    text-align: center;
+    padding-top: 80px;
+}
+
+.try_box h1{
+    position: relative;
+    width: 700px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+.try_it_step1 figure {
+    margin: 0px;
+    position:relative; 
+    left: 150px; 
+    top: 0;
+}
+
+.try_it_step1 img{
+    width: 50px;
+}
+
+.step1_text h2{
+    margin: 0px 225px;
 }
