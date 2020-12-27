@@ -7,17 +7,23 @@ body {
     background-color:#F8E8DB;
 }
 
+@media only screen and (min-width: 1121px){
+    .grid-container1 {
+        display: grid;
+        grid-template-columns: auto 550px 10px 10px 585px auto;
+        background-color: #FEFFFF;
+    }
+    .grid-container2{
+        display: grid;
+        grid-template-columns: 8% 585px 10px 10px 518px auto;
+       
+        background-color: #ECEDF1;
+    }
+}
+
 .wrapper {
     margin: 0 auto 0 60px;
     width: 1000px;
-}
-
-.font-logo{
-    position: absolute;
-    width: 600px;
-    height: 300px;
-    margin: 20% 30%;
-    text-align: center;
 }
 
 nav {
