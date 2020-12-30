@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'DM Serif Display', serif;
+}
+
+body{
+    background-color:#F8E8DB;
+}
+
+/************************menu bar *****************************/
+
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+}
+
+
+a{
+    margin-left: 10%;
+    text-decoration: none; 
+    line-height: 50px;
+    font-size: 20px;
+    font-family: arial;
+    color:#000000;
+    padding: 0 20px;
+}
+
+a:hover{
+    color:brown;
+}
+
+.logo{
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#login-btn {
+    text-align: right;
+    margin-right: 3%;
+    grid-column-end: -1;
+}
+
+/***********************media setting*************************/
+
+.grid-container1{
+    display: grid;
+    grid-template-columns: 10% 500px 100px 500px;
+    float: left;
+}
+
+.grid-container2{
+    display: grid;
+    grid-template-columns: 150% 60px 10px 700px 10px 300px;
+    float: left;
+}
+
+.grid-menu {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 400px 200px  180px auto ;
+}
+
+
+
+/***************grid setting******************/
+
+
+
+
+
+/*******************content***************/
+
+.submission {
+    margin-top: 3%;
+    margin-left: 3%;
+    font-size: 40px;
+
+}

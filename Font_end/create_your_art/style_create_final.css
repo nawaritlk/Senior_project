@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -20,46 +21,31 @@ body{
 
 nav {
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: #ffffff;
 }
 
-ul {
-    margin: 0;
-}
 
-ul li {
-    list-style: none; 
-    display: inline-block;
-    float: left;
-    line-height: 50px;
-}
-
-ul li a {
-    display: block;
+a{
+    margin-left: 10%;
     text-decoration: none; 
+    line-height: 50px;
     font-size: 20px;
     font-family: arial;
     color:#000000;
     padding: 0 20px;
 }
 
-ul li a:hover {
+a:hover{
     color:brown;
 }
 
-/***************grid setting******************/
+/***********************media setting*************************/
+
 .grid-container1{
     display: grid;
-    grid-template-columns: 10% 500px 200px 500px;
+    grid-template-columns: 10% 500px 100px 500px;
     float: left;
-}
-
-.grid1{
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 5%;
-    margin-top: 5%;
 }
 
 .grid-container2{
@@ -68,9 +54,40 @@ ul li a:hover {
     float: left;
 }
 
+.grid-menu {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 400px 200px  180px auto ;
+}
+
+
+
+/***************grid setting******************/
+
+
+.grid1{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+
 .grid2{
     width: 100%;
     
+}
+
+
+.logo{
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#login-btn {
+    text-align: right;
+    margin-right: 3%;
+    grid-column-end: -1;
 }
 
 
@@ -134,12 +151,20 @@ ul li a:hover {
     font-size: 14px;
     text-align: center;
 }
+/***************picture style************************/
+
+.populaStyle img {
+   width: 30%;
+   border-radius: 3px; 
+}
+
 
 /*****************font setting********************/
 
 p.text1{
     display: block;
     margin-top: 3%;
+    line-height: 40px;
     width: 150px;
     height: 40px;
     font-size: 20px;
@@ -158,11 +183,16 @@ p.text2{
     font-size: 20px;
     margin-top: 10%;
 }
+
+
+
+
 /************************lower content*****************************/
 
 #email {
     width: 700px;
     height: 40px;
+    border: solid;
     border-radius: 8px;
     border-color: #b8adad;
 }
@@ -170,7 +200,8 @@ p.text2{
 #submitEmail {
     width: 120px;
     height: 40px;
-    border: none solid;
+    border: solid;
+    border-color: #99653c;
     border-radius: 8px;
     color: white;
     text-transform: uppercase;
