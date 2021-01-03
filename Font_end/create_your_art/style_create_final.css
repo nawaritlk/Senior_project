@@ -44,13 +44,13 @@ a:hover{
 
 .grid-container1{
     display: grid;
-    grid-template-columns: 10% 500px 100px 500px;
+    grid-template-columns: 10% 500px 100px 500px auto;
     float: left;
 }
 
 .grid-container2{
     display: grid;
-    grid-template-columns: 150% 60px 10px 700px 10px 300px;
+    grid-template-columns: 150% 60px 10px 700px 10px 300px auto;
     float: left;
 }
 
@@ -179,7 +179,7 @@ p.text1{
     
 }
 
-p.text2{
+.lowerContent p.text2{
     font-size: 20px;
     margin-top: 10%;
 }
