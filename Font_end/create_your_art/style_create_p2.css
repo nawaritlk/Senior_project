@@ -97,23 +97,29 @@ a:hover{
     border-radius: 10px;
 }
 
-.block-imgInput .imgInput  img {
+.block-imgInput  img {
     display: flex;
     align-content: center;
-    width: 90%;
-    height: 90%;
+    width: 315px;
+    height: 225px;
     align-items: center;
     text-align: center;
+    margin-top: 12.5px;
+    margin-left: 17.5px;
+
 
 }
+
 
 .block-style .imgInput  img {
     display: flex;
     align-content: center;
-    width: 90%;
-    height: 90%;
+    width: 315px;
+    height: 225px;
     align-items: center;
     text-align: center;
+    margin-top: 12.5px;
+    margin-left: 17.5px;
 
 }
 
