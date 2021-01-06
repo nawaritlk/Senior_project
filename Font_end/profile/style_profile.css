@@ -167,8 +167,9 @@ a:hover{
 .linecross {
     margin-top: 50%;
     width: 10px;
-    height: 255px;
+    height: 250px;
     border-left: 8px dashed #707070;
+    
 }
 
 /*
@@ -209,6 +210,10 @@ a:hover{
 }
 */
 /***************right content************************/
+.right-content {
+    margin-top: 15%;
+}
+
 .gridstatus {
     display: flex;
 }
