@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     /*font-family: 'Montserrat', sans-serif;*/
     font-family: 'DM Serif Display', serif;
 }
@@ -54,11 +53,12 @@ a:hover{
     grid-gap: 20px;
     grid-template-columns: 400px 200px  180px auto ;
 }
-
-.grid-container1 {
-    display: grid;
-    grid-template-columns: 70px 350px 10px 350px 10px 20px 10px 400px 50px 400px auto;
-    float: left;
+@media only screen and (min-width: 1121px){
+    .grid-container1 {
+        display: grid;
+        grid-template-columns: 85px 350px 10px 350px 10px 20px 10px 400px 40px 200px ;
+        float: left;
+    }
 }
 
 /*************************upper content**************************/
@@ -171,19 +171,140 @@ a:hover{
     border-left: 8px dashed #707070;
 }
 
-#warningIcon {
-    font-size:24px;
-    color:red;
-    margin-top: 3%;
+/*
+
+
+.numberlove {
+    float: left;
+    display: flex;
 }
 
 #loveIcon {
-    margin-left: 10%;
-    font-size:24px;
-    margin-top: 3%;
-    float: left;
+    margin-left: 0%;
+    font-size: 24px;
+    margin-top: 18%;
+    
 }  
 
-#numberlove {
-    font-size: 24px;
+#numberloves {
+    position: relative;
+    left: 20%;
+    font-size: 30px;
+}
+
+.statusRate {
+    position: relative;
+    left: 13%;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #7D7D7B;
+}
+
+#textlike {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #7D7D7B;
+}
+*/
+/***************right content************************/
+.gridstatus {
+    display: flex;
+}
+
+.like {
+    padding-left: 30%;
+}
+
+.likecontent {
+    padding-left: 10%;
+    display: flex;
+}
+
+#emolove {
+    margin-top: 10%;
+    font-size: 16px;
+}   
+
+.like p {
+    padding-left: 25px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color: #7D7D7B;
+}
+
+#numberloves {
+    padding-left: 8px;
+    font-size: 23px;
+
+}
+.rating {
+    margin-left: 3%;
+}
+#warningIcon {
+    font-size: 23px;
+    color:red;
+    position: relative;
+    margin-top: 16%;
+    left: 30%;
+}
+
+.statusRate{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color: #7D7D7B;
+}
+
+/*********************button*************************/
+.btn {
+    margin-top: 3%;
+    
+}
+
+.download-btn {
+    margin-top: 5%;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    letter-spacing: 4px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    background-color: #99653C;
+    margin-bottom: 3%;
+
+}
+
+.makePrv-btn {
+    margin-top: 5%;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #7B4E2B;
+    text-transform: uppercase;
+    border: solid 1px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin-bottom: 3%;
+
+}
+
+.delete-btn {
+    margin-top: 5%;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    background-color: #D24444;
+    margin-bottom: 3%;
+
 }
