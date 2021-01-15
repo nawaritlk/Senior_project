@@ -41,24 +41,33 @@ a:hover{
 }
 
 /***********************media setting*************************/
-
-.grid-container1{
-    display: grid;
-    grid-template-columns: 8% 500px 100px 500px auto;
-    float: left;
+@media only screen and (min-width: 1254px){
+    .grid-container1{
+        display: grid;
+        grid-template-columns: 15% 500px 100px 500px ;
+        float: left;
+    }
+    
+    .grid-container2{
+        display: grid;
+        grid-template-columns: 8% 60px 10px 700px 10px 150px ;
+        float: left;
+    }
+    
+    .grid-menu {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 400px 200px  180px auto ;
+    }
+}
+/*
+@media only screen and (max-width: 1254px){
+    body{
+        background-color: red;
+    }
 }
 
-.grid-container2{
-    display: grid;
-    grid-template-columns: 150% 60px 10px 700px 10px 300px auto;
-    float: left;
-}
 
-.grid-menu {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 400px 200px  180px auto ;
-}
 
 
 
