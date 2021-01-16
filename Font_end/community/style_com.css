@@ -39,21 +39,7 @@ nav li a:hover{
     color:brown;
 }
 
-nav ul {
-    display: none;
-}
 
-nav li:hover > ul {
-    display: block;
-    float: right;
-}
-
-nav  ul li {
-    width: 150px;
-    display: list-item;
-    float: right;
-    margin-right: 3%;
-}
 
 .logo{
     font-size: 35px;
@@ -73,17 +59,112 @@ nav  ul li {
     grid-gap: 20px;
     grid-template-columns: 400px 200px  180px auto ;
 }
+
 @media only screen and (min-width: 1121px){
     .grid-container1 {
         display: grid;
-        grid-template-columns: auto 800px auto ;
+        grid-template-columns: auto 1000px auto ;
         
     }
 }
 
 /************************* content**************************/
-.content {
-    padding-left: 5%;   
-    padding-top: 10%;
-    background: #FCF7F7;
+.bg {
+    height: auto;
+}
+
+.container {
+    height: auto;
+    width: auto;
+    background-color: #FCF7F7;
+}
+
+.container .wrapper {
+    position: relative;
+    height: 480px;
+    width: 75%;
+    background-color: aqua;
+    margin-left: 13%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.wrapper .image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrapper .use-style {
+    position: absolute;
+    width: 100%;
+    background-color: bisque;
+    bottom: 0px;
+    font-size: 25px;
+    padding-left: 10%;
+    display: flex;
+}
+#like-btn {
+    padding-left: 65%;
+}
+
+/*************content2*************************/
+.content2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8%;
+}
+
+.block-imgInput {
+    margin-top: 3%;
+    width: 360px;
+    height: 250px;
+    border: solid 1px;
+    border-color:  #000000;
+    border-radius: 10px;
+    margin-right: 3%;
+}
+
+
+.block-imgInput  img {
+    display: flex;
+    align-content: center;
+    width: 315px;
+    height: 225px;
+    align-items: center;
+    text-align: center;
+    margin-top: 12.5px;
+    margin-left: 17.5px;
+}
+/********************************/
+.block-style {
+    margin-top: 3%;
+    width: 360px;
+    height: 250px;
+    border: solid 1px;
+    border-color:  #000000;
+    border-radius: 10px;
+}
+
+
+.block-style .imgInput  img {
+    display: flex;
+    align-content: center;
+    width: 315px;
+    height: 225px;
+    align-items: center;
+    text-align: center;
+    margin-top: 12.5px;
+    margin-left: 17.5px;
+
 }
