@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def community(request):
-    return HttpResponse("This is communnity page")
+    return render(request, 'community.html')
