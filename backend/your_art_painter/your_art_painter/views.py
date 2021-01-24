@@ -1,7 +1,9 @@
 from django.http import HttpResponse
+from django.shortcuts import render
 
-def home(request):
-    return HttpResponse("This is our Home page")
+
+# def home(request):
+#     return HttpResponse("This is our Home page")
 
 # def create(request):
 #     return HttpResponse("This is our Create your art page")

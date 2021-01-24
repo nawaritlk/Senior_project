@@ -3,7 +3,7 @@ from django.http import HttpResponse
 
 # Create your views here.
 def create(request):
-    return HttpResponse("This is create page")
+    return render(request, 'createYourArt.html')
 
 def submission(request):
-    return HttpResponse("This is submission page")
+    return render(request, 'submission.html')

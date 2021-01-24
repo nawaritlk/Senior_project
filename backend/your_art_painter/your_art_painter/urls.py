@@ -19,9 +19,10 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home),
+    path('', include('homepage.urls')),
     path('create/', include('createImage.urls')),
     path('submission/', include('createImage.urls')),
     path('profile/', include('userInfo.urls')),
     path('community/', include('community.urls')),
+    path('register/', include('register.urls')),
 ]
