@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'DM Serif Display', serif;
+        }
+
+        body {
+            background-color: #F8E8DB;
+        }
+
+        /************************menu bar *****************************/
+        nav {
+            width: 100%;
+            height: 50px;
+            background-color: #ffffff;
+        }
+
+        nav .logo {
+            float: left;
+            color: #000000;
+            font-weight: 600;
+            line-height: 50px;
+            padding-left: 60px;
+            font-size: 35px;
+            text-transform: capitalize;
+
+        }
+
+        nav .mainMenu ul {
+            float: left;
+            margin-right: 40px;
+            list-style: none;
+            position: relative;
+        }
+
+        /**********menu left*************/
+
+        nav .mainMenu ul li {
+            float: left;
+            display: inline-block;
+            margin: 0 25px;
+            /***********************  สีแทบ menu เผื่อแสดงว่าตอนนี้อยู่หน้าไหนแล้ว
+    border-bottom: 3px solid brown;
+    */
+        }
+
+        nav .mainMenu ul li a {
+            color: #000000;
+            line-height: 50px;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 20px;
+            padding: 8px 15px;
+        }
+
+        nav .mainMenu ul li a:hover {
+            border-radius: 5px;
+            background: #f1f1f0;
+        }
+
+        /************menu right************/
+
+        nav .userMenu ul {
+            float: right;
+            margin-right: 10px;
+            list-style: none;
+            position: relative;
+        }
+
+        nav .userMenu ul li {
+            float: left;
+            display: inline-block;
+            margin: 0 25px;
+            border-bottom: 3px solid brown;
+            /***********************  สีแทบ menu เผื่อแสดงว่าตอนนี้อยู่หน้าไหนแล้ว
+    border-bottom: 3px solid brown;
+    */
+        }
+
+        nav .userMenu ul li a {
+            color: #000000;
+            line-height: 50px;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 20px;
+            padding: 8px 15px;
+
+
+        }
+
+        nav .userMenu ul li a:hover {
+            border-radius: 5px;
+            background: #f1f1f0;
+
+        }
+
+        /*****************ver1******************
+.wrapper .createAccount {
+    position: absolute;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    padding: 30px 60px;
+}
+/***************v2
+.wrapper .createAccount {
+    margin: auto;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+/******************************************/
+        /************************************/
+
+        .wrapper .title {
+            margin: auto;
+            width: 50%;
+            margin-top: 20px;
+            font-size: 50px;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+
+        }
+
+        /******************************************/
+        .wrapper form {
+            margin: auto;
+            width: 40%;
+        }
+
+        .wrapper form .field {
+            height: 50px;
+            width: 100%;
+            margin-top: 40px;
+            position: relative;
+        }
+
+        .wrapper form .field input {
+            height: 100%;
+            width: 100%;
+            outline: none;
+            font-size: 17px;
+            padding-left: 20px;
+            border: 1px solid lightgrey;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .wrapper form .field input:focus,
+        form .field input:valid {
+            border-color: #4158d0;
+        }
+
+        .wrapper form .field label {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            color: #999999;
+            font-weight: 400;
+            font-size: 17px;
+            pointer-events: none;
+            transform: translateY(-50%);
+            transition: all 0.3s ease;
+        }
+
+        form .field input:focus~label,
+        form .field input:valid~label {
+            top: 0%;
+            font-size: 20px;
+            color: brown;
+            background: #F8E8DB;
+            transform: translateY(-100%);
+        }
+
+        form .content {
+            padding-left: 10px;
+            width: 100%;
+            height: 50px;
+            font-size: 21px;
+            margin-top: 10px;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        form .content .checkbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form .content input {
+            width: 15px;
+            height: 15px;
+            background: red;
+        }
+
+        form .content label {
+            color: #262626;
+            user-select: none;
+            padding-left: 5px;
+        }
+
+        form .content .pass-link {
+            color: "";
+        }
+
+        form .field input[type="submit"] {
+            color: #fff;
+            border: none;
+            padding-left: 0;
+            margin-top: -10px;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            background: rgb(167, 61, 61);
+            transition: all 0.3s ease;
+        }
+
+        form .field input[type="submit"]:active {
+            transform: scale(0.95);
+        }
+
+        form .signup-link {
+            font-size: 20px;
+            color: #262626;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        form .pass-link a,
+        form .signup-link a {
+            color: #4158d0;
+            text-decoration: none;
+        }
+
+        form .pass-link a:hover,
+        form .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <p>your art painter</p>
+        </div>
+        <div class="mainMenu">
+            <ul>
+                <li><a href="#">create your art</a></li>
+                <li><a href="#">community</a></li>
+
+            </ul>
+        </div>
+        <div class="userMenu">
+            <ul>
+                <li><a href="#">login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-----
+            <div class="email-box">
+                <p class="emailText">e-mail</p>
+            </div>-->
+    <div class="wrapper">
+        <div class="title">create account form</div>
+        <!--<p class="createAccount">create account</p>-->
+        <form action="#">
+            <div class="field">
+                <input type="text" required>
+                <label>Email Address</label>
+            </div>
+            <div class="field">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <div class="field">
+                <input type="password" required>
+                <label>Repeat password</label>
+            </div>
+            <div class="field">
+                <input type="submit" value="Register">
+            </div>
+            <div class="content">
+                <div class="pass-link">
+                    <a href="#">Forgot password?</a>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
