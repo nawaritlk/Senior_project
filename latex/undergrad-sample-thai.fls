@@ -1,0 +1,6 @@
+PWD e:/Senior_Project/Senior_project_font-end/latex
+INPUT c:/texlive/2020/texmf.cnf
+INPUT c:/texlive/2020/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex
+OUTPUT e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.log
