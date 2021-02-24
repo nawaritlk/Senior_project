@@ -8,40 +8,43 @@
 \contentsline {chapterx}{\mdseries สารบัญคำศัพท์ทางเทคนิคและคำย่อ}{ix}{}%
 \contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {1}\hskip -0.8em บทนำ}}}{1}{}%
 \contentsline {section}{\numberline {1.1}ที่มาและความสำคัญ}{1}{}%
-\contentsline {section}{\numberline {1.2}วัตถุประสงค์}{1}{}%
-\contentsline {section}{\numberline {1.3}ขอบเขตของโครงงาน}{1}{}%
-\contentsline {section}{\numberline {1.4}ประโยชน์ที่คาดว่าจะได้่รับ}{1}{}%
-\contentsline {section}{\numberline {1.5}ตารางการดำเนินงาน}{1}{}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {2}\hskip -0.8em ทฤษฎีความรู้และงานที่เกี่ยวข้อง}}}{2}{}%
-\contentsline {section}{\numberline {2.1}ระบบแนะนำสินค้า}{2}{}%
-\contentsline {section}{\numberline {2.2}อัลกอริทึมในการประมวลผลข้อความ}{2}{}%
-\contentsline {subsection}{\numberline {2.2.1}อัลกอริทึม I}{2}{}%
-\contentsline {subsection}{\numberline {2.2.2}อัลกอริทึม I}{2}{}%
-\contentsline {section}{\numberline {2.3}เครื่องมือที่ใช้ในการพัฒนา}{2}{}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {3}\hskip -0.8em วิธีการดำเนินงาน}}}{3}{}%
-\contentsline {section}{\numberline {3.1}ข้อกำหนดและความต้องการของระบบ}{3}{}%
-\contentsline {section}{\numberline {3.2}สถาปัตยกรรมระบบ}{3}{}%
-\contentsline {section}{\numberline {3.3}Hardware Module 1}{3}{}%
-\contentsline {subsection}{\numberline {3.3.1}Component 1}{3}{}%
-\contentsline {subsection}{\numberline {3.3.2}Logical Circuit Diagram}{3}{}%
-\contentsline {section}{\numberline {3.4}Hardware Module 2}{3}{}%
-\contentsline {subsection}{\numberline {3.4.1}Component 1}{3}{}%
-\contentsline {subsection}{\numberline {3.4.2}Component 2}{3}{}%
-\contentsline {section}{\numberline {3.5}Path Finding Algorithm}{3}{}%
-\contentsline {section}{\numberline {3.6}Database Design}{3}{}%
-\contentsline {section}{\numberline {3.7}UML Design}{3}{}%
-\contentsline {section}{\numberline {3.8}GUI Design}{3}{}%
-\contentsline {section}{\numberline {3.9}การออกแบบการทดลอง}{3}{}%
-\contentsline {subsection}{\numberline {3.9.1}ตัวชี้วัดและปัจจัยที่ศึกษา}{3}{}%
-\contentsline {subsection}{\numberline {3.9.2}รูปแบบการเก็บข้อมูล}{3}{}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {4}\hskip -0.8em ผลการดำเนินงาน}}}{4}{}%
-\contentsline {section}{\numberline {4.1}ประสิทฺธิภาพการทำงานของระบบ}{4}{}%
-\contentsline {section}{\numberline {4.2}ความพึงพอใจการใช้งาน}{4}{}%
-\contentsline {section}{\numberline {4.3}การวิเคราะห์ข้อมูลและผลการทดลอง}{4}{}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {5}\hskip -0.8em บทสรุป}}}{5}{}%
-\contentsline {section}{\numberline {5.1}สรุปผลโครงงาน}{5}{}%
-\contentsline {section}{\numberline {5.2}ปัญหาที่พบและการแก้ไข}{5}{}%
-\contentsline {section}{\numberline {5.3}ข้อจำกัดและข้อเสนอแนะ}{5}{}%
-\contentsline {chapter}{\mdseries \bf \MakeUppercase {Appendix}}{6}{}%
-\contentsline {apdx}{A\hskip 1em ชื่อภาคผนวกที่ 1}{7}{}%
-\contentsline {apdx}{B\hskip 1em ชื่อภาคผนวกที่ 2}{9}{}%
+\contentsline {section}{\numberline {1.2}ประเภทของโครงงาน}{1}{}%
+\contentsline {section}{\numberline {1.3}วิธีการนำเสนอ}{1}{}%
+\contentsline {subsection}{\numberline {1.3.1}เตรียมชุดข้อมูลเพื่อนำไปใช้ train โมเดล}{1}{}%
+\contentsline {section}{\numberline {1.4}วัตถุประสงค์}{1}{}%
+\contentsline {section}{\numberline {1.5}ขอบเขตของโครงงาน}{1}{}%
+\contentsline {section}{\numberline {1.6}ประโยชน์ที่คาดว่าจะได้่รับ}{2}{}%
+\contentsline {section}{\numberline {1.7}ตารางการดำเนินงาน}{2}{}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {2}\hskip -0.8em ทฤษฎีความรู้และงานที่เกี่ยวข้อง}}}{3}{}%
+\contentsline {section}{\numberline {2.1}ระบบแนะนำสินค้า}{3}{}%
+\contentsline {section}{\numberline {2.2}อัลกอริทึมในการประมวลผลข้อความ}{3}{}%
+\contentsline {subsection}{\numberline {2.2.1}อัลกอริทึม I}{3}{}%
+\contentsline {subsection}{\numberline {2.2.2}อัลกอริทึม I}{3}{}%
+\contentsline {section}{\numberline {2.3}เครื่องมือที่ใช้ในการพัฒนา}{3}{}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {3}\hskip -0.8em วิธีการดำเนินงาน}}}{4}{}%
+\contentsline {section}{\numberline {3.1}ข้อกำหนดและความต้องการของระบบ}{4}{}%
+\contentsline {section}{\numberline {3.2}สถาปัตยกรรมระบบ}{4}{}%
+\contentsline {section}{\numberline {3.3}Hardware Module 1}{4}{}%
+\contentsline {subsection}{\numberline {3.3.1}Component 1}{4}{}%
+\contentsline {subsection}{\numberline {3.3.2}Logical Circuit Diagram}{4}{}%
+\contentsline {section}{\numberline {3.4}Hardware Module 2}{4}{}%
+\contentsline {subsection}{\numberline {3.4.1}Component 1}{4}{}%
+\contentsline {subsection}{\numberline {3.4.2}Component 2}{4}{}%
+\contentsline {section}{\numberline {3.5}Path Finding Algorithm}{4}{}%
+\contentsline {section}{\numberline {3.6}Database Design}{4}{}%
+\contentsline {section}{\numberline {3.7}UML Design}{4}{}%
+\contentsline {section}{\numberline {3.8}GUI Design}{4}{}%
+\contentsline {section}{\numberline {3.9}การออกแบบการทดลอง}{4}{}%
+\contentsline {subsection}{\numberline {3.9.1}ตัวชี้วัดและปัจจัยที่ศึกษา}{4}{}%
+\contentsline {subsection}{\numberline {3.9.2}รูปแบบการเก็บข้อมูล}{4}{}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {4}\hskip -0.8em ผลการดำเนินงาน}}}{5}{}%
+\contentsline {section}{\numberline {4.1}ประสิทฺธิภาพการทำงานของระบบ}{5}{}%
+\contentsline {section}{\numberline {4.2}ความพึงพอใจการใช้งาน}{5}{}%
+\contentsline {section}{\numberline {4.3}การวิเคราะห์ข้อมูลและผลการทดลอง}{5}{}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {5}\hskip -0.8em บทสรุป}}}{6}{}%
+\contentsline {section}{\numberline {5.1}สรุปผลโครงงาน}{6}{}%
+\contentsline {section}{\numberline {5.2}ปัญหาที่พบและการแก้ไข}{6}{}%
+\contentsline {section}{\numberline {5.3}ข้อจำกัดและข้อเสนอแนะ}{6}{}%
+\contentsline {chapter}{\mdseries \bf \MakeUppercase {Appendix}}{7}{}%
+\contentsline {apdx}{A\hskip 1em ชื่อภาคผนวกที่ 1}{8}{}%
+\contentsline {apdx}{B\hskip 1em ชื่อภาคผนวกที่ 2}{10}{}%
