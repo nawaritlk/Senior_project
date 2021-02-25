@@ -1,5 +1,9 @@
 # Fdb version 3
+<<<<<<< Updated upstream
 ["pdflatex"] 1614182090 "e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex" "e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.pdf" "undergrad-sample-thai" 1614182090
+=======
+["pdflatex"] 1614233338 "e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex" "e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.pdf" "undergrad-sample-thai" 1614233338
+>>>>>>> Stashed changes
   "C:/Users/nawar/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1614179821 9407463 0474d37cdbc4586d88c53a6b708c6232 ""
   "C:/Users/nawar/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty" 1583523400 6501 4011d89d9621e0b0901138815ba5ff29 ""
   "C:/Users/nawar/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifvtex.sty" 1583523400 1057 525c2192b5febbd8c1f662c9468335bb ""
@@ -24,10 +28,17 @@
   "C:/Users/nawar/AppData/Local/Programs/MiKTeX/tex/latex/latex-tools/array.sty" 1602847617 13051 9a7bbb9e485cd81cdcc1d56212b088ff ""
   "C:/Users/nawar/AppData/Local/Programs/MiKTeX/tex/xelatex/mathspec/mathspec.sty" 1482401880 44589 699067f7edf2c8dbbd4a8fe1322b581d ""
   "cpe-thai-project.cls" 1614180527 28729 255735778d92cbb6bd7fa664261d6409 ""
+<<<<<<< Updated upstream
   "e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.aux" 1614182090 9 a94a2480d3289e625eea47cd1b285758 ""
   "e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex" 1614182088 28763 d4ba1efd3d72d3678c08c4e8bed8e73b ""
   "undergrad-sample-thai.tex" 1614182088 28763 d4ba1efd3d72d3678c08c4e8bed8e73b ""
+=======
+  "e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.aux" 1614233338 9 a94a2480d3289e625eea47cd1b285758 ""
+  "e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex" 1614182758 25015 b955a27b8c9bcb33c07f3eb30f790ae1 ""
+  "undergrad-sample-thai.tex" 1614182758 25015 b955a27b8c9bcb33c07f3eb30f790ae1 ""
+>>>>>>> Stashed changes
   (generated)
   "e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.log"
   "e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.pdf"
   "undergrad-sample-thai.log"
+  "e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.pdf"
