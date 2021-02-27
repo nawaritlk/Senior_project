@@ -3,6 +3,7 @@
 %%%%%% for a few times to generate the output pdf file
 \documentclass[12pt,oneside,openright,a4paper]{cpe-thai-project}
 
+\usepackage{caption}
 
 \defaultfontfeatures{Mapping=tex-text,Scale=1.23,LetterSpace=0.0}
 \setmainfont[Scale=1.23,LetterSpace=0,WordSpace=1.0,FakeStretch=1.0]{TH Sarabun New}
@@ -88,6 +89,7 @@
 
 \renewcommand{\topfraction}{0.85}
 \renewcommand{\textfraction}{0.1}
+\newcommand{\source}[1]{\caption*{Source: {#1}} }
 
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}{Lemma}
@@ -309,37 +311,81 @@ MANET & Mobile Ad Hoc Network
   \item นำเสนอรายงานประจำการศึกษา 
   \par\setlength{\parindent}{5ex}
   จากขั้นตอนการดำเนินงานข้างต้น สามารถแบ่งออกเป็น 2 ภาคการศึกษา โดยภาคการศึกษาที่ 1 นั้นมุ่งเน้นไปที่การศึกษาหาข้อมูลและทดลองพัฒนาซอฟต์แวร์ตัวต้นแบบ ซึ่งสามารถแสดงรายการและระยะเวลาออกมาได้เป็นแผนภูมิแกนต์ดังตามตารางที่ 1.1 และในส่วนภาคการศึกษาที่ 2 นั้นมุ่งเน้นไปที่การพัฒนาต่อยอดซอฟต์แวร์ตัวต้นแบบให้สามารถทำงานได้อย่างถูกต้อง ครบทุกฟังก์ชันและแก้ไขปัญหาเมื่อซอฟต์แวร์ได้ทำงานในสภาพแวดล้อมจริง ตลอดจนถึงขั้นตอนสุดท้ายสามารถเขียนเป็นแผนภูมิแกนต์
-  ดังตารางที่ 1.
+  ดังตารางที่ 1.2
 \end{enumerate}
 
-\section{ประโยชน์ที่คาดว่าจะได้รับ} 
+\newpage
 
-โครงงานนี้จะเป็นประโยชน์กับใคร ยังไง ทั้งในเชิงรูปธรรมและนามธรรม ในปัจจุบันหรือในอนาคตถ้านำไป
-ต่อยอด
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c}
+  \hfill
+  \includegraphics[width=15cm]{./image/plan_table1.jpg}
+  \hfill
+  \end{tabular}
+\caption{ตารางแผนการทำงานภาคการศึกษาที่ 1\centering}
+\label{tbl:symbols}
+\end{table}
 
-\section{ตารางการดำเนินงาน}
+\newpage
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c}
+  \hfill
+  \includegraphics[width=15cm]{./image/plan_table2.jpg}
+  \hfill
+  \end{tabular}
+\caption{ตารางแผนการทำงานภาคการศึกษาที่ 2\centering}
+\label{tbl:symbols}
+\end{table}
+
+
+\section{ผลการดำเนินการ}
+\subsection{ผลการดำเนินการในภาคการศึกษาที่1}
+\begin{enumerate}
+  \item ศึกษาและรวบรวมข้อมูลเกี่ยวกับวิธีการและเทคโนโลยีที่ใช้ในโครงการ
+  \item ประเมินความเป็นไปได้และกำหนดขอบเขตของโครงการ
+  \item จัดทำข้อเสนอโครงการและร่างแผนดำเนินการ
+  \item ออกแบบโครงสร้างและส่วนประกอบของโครงการ
+  \item รวบรวมข้อมูลเพื่อใช้เป็นในการ train โมเดล (style image และ content image)
+  \item จัดการรูปภาพให้อยู่ในรูปแบบที่ใช้ในโมเดล (Data preprocessing)
+  \item สร้างโมเดลโดยใช้ parameter พื้นฐาน
+  \item จัดทำรายงานแสดงความคืบหน้า
+\end{enumerate}
+
+\newpage
+\subsection{ผลการดำเนินการในภาคการศึกษาที่2}
+\begin{enumerate}
+  \item ทดลองสร้างโมเดลและปรับแต่งให้มีประสิทธิภาพดีที่สุด
+  \item ทำโมเดลให้สามารถใช้งานได้ทั่วไปมากขึ้น
+  \item ทดลองใช้งานโมเดล
+  \item จัดทำ Web application ตามที่ออกแบบไว้
+  \item นำเสนอโครงการ
+  \item จัดทำรายงานแสดงความคืบหน้า
+  \item นำเสนอรายงานประจำการศึกษา
+\end{enumerate}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%  Literature Review %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{ทฤษฎีความรู้และงานที่เกี่ยวข้อง}
+\chapter{ทฤษฎีความรู้และงานที่เกี่ยวข้องงง}
+\section{บทนำ}
+\par\setlength{\parindent}{5ex}ในบทนี้ อธิบายเกี่ยวกับแนวคิดที่นำมาประยุกต์ใช้ในโครงงาน อัลกอริทึมที่ใช้ในการทำโครงงานคือ VGGNet และมีการพัฒนาโดยใช้ภาษา python นอกจากนี้มีการทบทวนวรรณกรรม ที่จะกล่าวถึงโครงงานที่มีลักษณะเนื้อหาที่เกี่ยวข้องกับการทำโครงการนี้
 
-อธิบายทฤษฎี องค์ความรู้หลักที่ใช้ในงาน งานวิจัยที่นำมาใช้ในโครงงาน หรือเปรียบเทียบผลิตภัณฑ์ที่มีอยู่ในท้องตลาด
-Explain theory, algorithms, protocols, or existing research works and tools related to your work. 
+\section{แนวความคิดทางทฤษฎี}
+\subsection{Neural style transfer}
+\par\setlength{\parindent}{5ex}Neural Style Transfer [14] เป็นกระบวนการที่ใช้ CNNs ในการประมวลผลรูปภาพให้ได้รูปภาพที่เหมือนกับรูปภาพที่ใช้เป็น content image แต่มีรูปแบบหรือลักษณะที่ต่างกันไปตามรูปภาพที่ใช้เป็น style image ดังรูปที่ 2.1
 
-\section{ระบบแนะนำสินค้า}
 
-\begin{table}[!h]
-\caption{test table method1}\label{tbl:method1}
-\begin{tabular}{c|c|l|rr} \hline\hline
-Center & Center & left aligned & Right & Right aligned \\ \hline\hline
-Center & Center & left aligned & Right & Right aligned \\ \hline
-Center & Center & left aligned & Right & Right aligned \\ 
-Center & Center & left aligned & Right & Right aligned \\ \hline
-Center & Center & left aligned & Right & Right aligned \\ \hline\hline
-\end{tabular}
-\end{table}
-
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=15cm]{./image/unit1.png}
+  \caption{แสดงหลักการทำงานของ Neural Style Transfer ที่ใช้ Convolutional Neural Network (CNN) }
+  \label{fig:my_label}
+  \source{Source of the image.}
+\end{figure}
 
 \section{อัลกอริทึมในการประมวลผลข้อความ}
 \subsection{อัลกอริทึม I}
