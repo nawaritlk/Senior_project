@@ -3,7 +3,8 @@
 %%%%%% for a few times to generate the output pdf file
 \documentclass[12pt,oneside,openright,a4paper]{cpe-thai-project}
 
-\usepackage{caption}
+
+
 
 \defaultfontfeatures{Mapping=tex-text,Scale=1.23,LetterSpace=0.0}
 \setmainfont[Scale=1.23,LetterSpace=0,WordSpace=1.0,FakeStretch=1.0]{TH Sarabun New}
@@ -324,7 +325,7 @@ MANET & Mobile Ad Hoc Network
   \hfill
   \end{tabular}
 \caption{ตารางแผนการทำงานภาคการศึกษาที่ 1\centering}
-\label{tbl:symbols}
+\label{tbl:symbols1}
 \end{table}
 
 \newpage
@@ -337,7 +338,7 @@ MANET & Mobile Ad Hoc Network
   \hfill
   \end{tabular}
 \caption{ตารางแผนการทำงานภาคการศึกษาที่ 2\centering}
-\label{tbl:symbols}
+\label{tbl:symbols2}
 \end{table}
 
 
@@ -370,22 +371,56 @@ MANET & Mobile Ad Hoc Network
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%  Literature Review %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{ทฤษฎีความรู้และงานที่เกี่ยวข้องงง}
+\chapter{ทฤษฎีความรู้และงานที่เกี่ยวข้อง}
 \section{บทนำ}
 \par\setlength{\parindent}{5ex}ในบทนี้ อธิบายเกี่ยวกับแนวคิดที่นำมาประยุกต์ใช้ในโครงงาน อัลกอริทึมที่ใช้ในการทำโครงงานคือ VGGNet และมีการพัฒนาโดยใช้ภาษา python นอกจากนี้มีการทบทวนวรรณกรรม ที่จะกล่าวถึงโครงงานที่มีลักษณะเนื้อหาที่เกี่ยวข้องกับการทำโครงการนี้
 
 \section{แนวความคิดทางทฤษฎี}
 \subsection{Neural style transfer}
-\par\setlength{\parindent}{5ex}Neural Style Transfer [14] เป็นกระบวนการที่ใช้ CNNs ในการประมวลผลรูปภาพให้ได้รูปภาพที่เหมือนกับรูปภาพที่ใช้เป็น content image แต่มีรูปแบบหรือลักษณะที่ต่างกันไปตามรูปภาพที่ใช้เป็น style image ดังรูปที่ 2.1
+\par\setlength{\parindent}{5ex}Neural Style Transfer \cite{saha2018comprehensive} เป็นกระบวนการที่ใช้ CNNs ในการประมวลผลรูปภาพให้ได้รูปภาพที่เหมือนกับรูปภาพที่ใช้เป็น content image แต่มีรูปแบบหรือลักษณะที่ต่างกันไปตามรูปภาพที่ใช้เป็น style image ดังรูปที่ 2.1
 
 
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=15cm]{./image/unit1.png}
-  \caption{แสดงหลักการทำงานของ Neural Style Transfer ที่ใช้ Convolutional Neural Network (CNN) }
-  \label{fig:my_label}
-  \source{Source of the image.}
+  \includegraphics[width=10cm]{./image/unit1.png}
+  \caption{แสดงหลักการทำงานของ Neural Style Transfer ที่ใช้ Convolutional Neural Network (CNN) \cite{gatys2015neural} }
+  \label{fig:modelcnn}
 \end{figure}
+
+\par\setlength{\parindent}{5ex}
+ดังรูปที่~\ref{fig:modelcnn} จะเห็นได้ว่า มีการป้อนข้อมูลเป็น content image และ style image 
+จากนั้นจะการประมวลผลรูปที่ป้อนเข้ามา โดยจะมี filters ที่ reconstruct 
+รูปภาพทั้ง content และ style โดยแสดงให้เห็นกระบวนการต่าง ๆ ใน CNN layer ต่าง ๆ 
+ได้แก่ conv1-1(a), conv2-1(b), conv3-1(c), conv4-1(d) และ conv5-1(e) 
+ซึ่งจะเห็นว่า ใน layer หลัง ๆ รูปภาพที่ได้รูปภาพที่ได้มีการลดทอนของรูปภาพที่เป็น content 
+และมีการเพิ่มส่วนของรูปภาพที่เป็น style เข้าด้วยกัน จนได้ได้รูปภาพที่เหมือนกับรูปภาพที่ใช้เป็น content image 
+แต่มีรูปแบบหรือลักษณะที่ต่างกันไปตามรูปภาพที่ใช้เป็น style image
+
+\subsection{Overview of machine learning}
+\par\setlength{\parindent}{5ex}Machine learning (ML) เป็นการทำให้คอมพิวเตอร์สามารถเรียนรู้ได้ด้วยตนเอง โดยเริ่มต้นจะต้องสอนให้คอมพิวเตอร์เข้าใจก่อน โดยมีรูปแบบการเรียนรู้ 3 แบบ คือ  Supervised Learning เป็นการเรียนรู้ที่สอนให้คอมพิวเตอร์รู้จักทั้งข้อมูลที่เป็น input และ output ตัวอย่างเช่น การทำนายรูปภาพว่าเป็นหมาหรือแมว ซึ่งต้องสอนให้คอมพิวเตอร์รู้ว่ารูปภาพนี้เป็นหมาหรือแมวก่อนถึงจะเอาไปใช้ได้ เป็นต้น, Unsupervised Learning เป็นการเรียนรู้ที่สอนคอมพิวเตอร์เฉพาะข้อมูลที่เป็น input ไม่มี output ให้โดยจะให้คอมพิวเตอร์เรียนรู้ input ไปเรื่อย ๆ ตัวอย่างเช่น การจัดกลุ่มข้อมูล โดยจะป้อนเฉพาะข้อมูลเข้าไปแล้วคอมพิวเตอร์จะเรียนรู้เองว่า ข้อมูลแบบนี้ควรอยู่กับข้อมูลแบบไหน เป็นต้นและ Reinforcement learning ที่เป็นการเรียนรู้โดยการปฏิสัมพันธ์กับสิ่งแวดล้อมรอบ ๆ โดยถ้าทำถูกต้องจะได้คะแนนเพิ่ม ถ้าทำผิดคะแนนจะลดลง ตัวอย่างเช่น การเดินไปข้างหน้าของหุ่นยนต์ที่จะต้องรู้ก่อนว่า อยู่ตำแหน่งไหน แล้วในตำแหน่งควรเดินไปตำแหน่งไหนต่อไปถึงจะดี เป็นต้น
+\par\setlength{\parindent}{5ex}ในขั้นตอนการสร้างโมเดล machine learning จะมีข้อมูล input ที่เกี่ยวข้อง 2 ส่วนคือ training set เป็นชุดข้อมูลที่ใช้สำหรับการสอนโมเดลโดยจะฝึกฝนโมเดลให้ได้ผลลัพธ์ตามชุดข้อมูลที่ป้อนเข้ามา อีกส่วนคือ testing set เป็นชุดข้อมูลที่ใช้ทดสอบการทำงานของโมเดล โดยโมเดลที่ดีจะต้องไม่ทำให้เกิดการ overfitting หรือสามารถทำนายผลลัพธ์ใน training set ได้แม่นยำ แต่ทำนายผลลัพธ์ใน testing set ได้แย่ 
+\par\setlength{\parindent}{5ex}เมื่อสอนคอมพิวเตอร์เรียบร้อยแล้ว เมื่อมีข้อมูลใหม่ ๆ เข้า คอมพิวเตอร์ก็สามารถจัดการหรือทำนายข้อมูลนั้นได้เลย ไม่จำเป็นต้องเขียนโปรแกรมใหม่ทุกครั้งที่มีข้อมูลเข้ามา
+
+\subsection{Classical artificial neural networks}
+\par\setlength{\parindent}{5ex}
+Artificial neural networks(ANN) คือโมเดลทางคณิตศาสตร์หรือโมเดลทางคอมพิวเตอร์ที่จำลองการทำงานของเซลล์ประสาทในสมองมนุษย์ที่มีเซลล์ประสาท(neurons) และจุดประสาทประสาท  ดึงเกิดเป็น ANN ซึ่งมีส่นประกอบในการทำงาน 3 ส่วนหลัก ๆ ดังรูปที่ 2.1 คือ input layer, hidden layer และ output layer ซึ่งการทำงานของ artificial neural networks จะมี 2 ส่วนคือ กระบวนการทำงานไปข้างหน้าหรือ feed forward คือป้อน input เข้าไป แล้วเข้า hidden layer ทำการประมวลผลแล้วได้ค่าออกมาส่งไปที่ output layer และ back propagation หรือกระบวนการทำย้อนกลับโดยจะเป็นการทำย้อนกลับจาก output layer ไป input layer
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=8cm]{./image/unit2.jpg}
+  \caption{แสดงส่วนประกอบหลักของ Artificial neural networks}
+  \label{fig:modelcnn}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
 
 \section{อัลกอริทึมในการประมวลผลข้อความ}
 \subsection{อัลกอริทึม I}
@@ -400,6 +435,8 @@ The figure and table numbering will be run and updated automatically when you ad
 \fbox{\includegraphics[width=5cm]{./model2.pdf}}
 \caption{The network model}\label{fig:model2}
 \end{figure}
+
+
 
  
 \subsection{อัลกอริทึม I}
@@ -516,7 +553,7 @@ traffic. Here, $\lambda$ and $C$ are respectively the traffic arrival
 rate and the service rate per dimensionless time step. Their unit are
 converted to a physical time unit by multiplying the step size
 $\Delta$. For a fBm self-similar traffic source,
-Norros~\cite{norros95} provides its EB as
+%Norros~\cite{norros95} provides its EB as
 \begin{equation}\label{eq:norros}
   C = \lambda + (\kappa(H)\sqrt{-2\ln\epsilon})^{1/H}a^{1/(2H)}x^{-(1-H)/H}\lambda^{1/(2H)}
 \end{equation}

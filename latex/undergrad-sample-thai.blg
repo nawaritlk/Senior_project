@@ -1,0 +1,53 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: undergrad-sample-thai.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: kmutt.bst
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Database file #1: string.bib
+Database file #2: cpe.bib
+Warning--I didn't find a database entry for "kim01"
+Warning--I didn't find a database entry for "eun01"
+You've used 2 entries,
+            2177 wiz_defined-function locations,
+            783 strings with 7734 characters,
+and the built_in function-call counts, 524 in all, are:
+= -- 48
+> -- 25
+< -- 0
++ -- 12
+- -- 8
+* -- 39
+:= -- 104
+add.period$ -- 2
+call.type$ -- 2
+change.case$ -- 8
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 20
+empty$ -- 39
+format.name$ -- 8
+if$ -- 102
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 13
+num.names$ -- 4
+pop$ -- 7
+preamble$ -- 1
+purify$ -- 8
+quote$ -- 0
+skip$ -- 14
+stack$ -- 0
+substring$ -- 12
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 8
+warning$ -- 0
+while$ -- 4
+width$ -- 3
+write$ -- 25
+(There were 2 warnings)

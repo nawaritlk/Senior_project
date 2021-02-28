@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.2) (preloaded format=xelatex 2021.2.24)  27 FEB 2021 22:19
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.2) (preloaded format=xelatex 2021.2.24)  28 FEB 2021 23:05
 entering extended mode
 **e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex
 (e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex
@@ -226,28 +226,6 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
 \c@definition=\count289
-) (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
-Package: caption 2020/10/26 v3.5g Customizing captions (AR)
- (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
-Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen165
-\captionmargin@=\dimen166
-\captionwidth=\dimen167
-\caption@tempdima=\dimen168
-\caption@indent=\dimen169
-\caption@parindent=\dimen170
-\caption@hangindent=\dimen171
-Package caption Info: Unknown document class (or package),
-(caption)             standard defaults will be used.
-Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionskip \sbox \@tempboxa {{\bf #1} #2}\ifdim \wd \@tempboxa >\hsize {\bf #1} #2\par \else \global \@minipagefalse \hb@xt@ \hsize {\hfil \box \@tempboxa \hfil }\fi \vskip \belowcaptionskip  on input line 1139.
-)
-
-Package caption Warning: Unknown document class (or package),
-(caption)                standard defaults will be used.
-See the caption package documentation for explanation.
-
-\c@caption@flags=\count290
-\c@continuedfloat=\count291
 )
 
 Package fontspec Info: Font family 'THSarabunNew(0)' created for font 'TH
@@ -290,46 +268,43 @@ Package fontspec Info: Font family 'THSarabunNew(0)' created for font 'TH
 (fontspec)             =1.0\fontdimen 4\font 
 
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
-(Font)              scaled to size 12.29996pt on input line 11.
-\c@theorem=\count292
-\c@lemma=\count293
-\c@corollary=\count294
+(Font)              scaled to size 12.29996pt on input line 12.
+\c@theorem=\count290
+\c@lemma=\count291
+\c@corollary=\count292
  (undergrad-sample-thai.aux
 
-LaTeX Warning: Label `tbl:symbols' multiply defined.
-
-
-LaTeX Warning: Label `tbl:symbols' multiply defined.
+LaTeX Warning: Label `fig:modelcnn' multiply defined.
 
 )
 \openout1 = `undergrad-sample-thai.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 108.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 108.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 109.
  (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
-LaTeX Font Info:    ... okay on input line 108.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 108.
-LaTeX Font Info:    Trying to load font information for T3+cmr on input line 108.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 109.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 109.
  (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/tipa\t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 108.
+LaTeX Font Info:    ... okay on input line 109.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -364,22 +339,20 @@ LaTeX Font Info:    ... okay on input line 108.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: End \AtBeginDocument code.
 Missing character: There is no ​ in font TH Sarabun New/OT:script=latn;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;!
-LaTeX Font Info:    Trying to load font information for U+msa on input line 110.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 111.
 (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 110.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 111.
  (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 110.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 111.
  (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Underfull \hbox (badness 10000) in alignment at lines 110--110
+Underfull \hbox (badness 10000) in alignment at lines 111--111
 [] [] 
  []
 
@@ -389,9 +362,9 @@ Underfull \hbox (badness 10000) in alignment at lines 110--110
 ]
 Missing character: There is no ​ in font TH Sarabun New/OT:script=latn;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;!
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
-(Font)              scaled to size 12.29996pt on input line 115.
+(Font)              scaled to size 12.29996pt on input line 116.
 
-Underfull \hbox (badness 10000) in alignment at lines 132--134
+Underfull \hbox (badness 10000) in alignment at lines 133--135
 [][] 
  []
 
@@ -420,7 +393,7 @@ Package fontspec Info: Font family 'THSarabunNew:script=thai(0)' created for
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/THSarabunNew:script=thai(0)/m/n' will be
-(Font)              scaled to size 13.00003pt on input line 143.
+(Font)              scaled to size 13.00003pt on input line 144.
 
 
 Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
@@ -451,7 +424,7 @@ Package fontspec Info: Font family 'THSarabunNew:script=thai(1)' created for
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/THSarabunNew:script=thai(1)/m/n' will be
-(Font)              scaled to size 12.29996pt on input line 144.
+(Font)              scaled to size 12.29996pt on input line 145.
 
 Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
 (fontspec)                New:script=thai' with script 'CustomDefault'.
@@ -497,27 +470,27 @@ Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
 (fontspec)                New:script=thai' with script 'CustomDefault'.
 
 
-Overfull \hbox (11.69609pt too wide) in paragraph at lines 146--147
+Overfull \hbox (11.69609pt too wide) in paragraph at lines 147--148
 \TU/THSarabunNew:script=thai(0)/m/n/10 ระดับความพึงพอใจต่อการให้บริการงาน ทั่วไปของสานักวิชาพื้นฐานและภาษา ของนักศึกษาที่มาใช้บริการสานักวิชาพื้นฐานและภาษา
  []
 
 
-Overfull \hbox (4.8971pt too wide) in paragraph at lines 146--147
+Overfull \hbox (4.8971pt too wide) in paragraph at lines 147--148
 \TU/THSarabunNew:script=thai(0)/m/n/10 สถาบัน เทคโนโลยีไทย-ญี่ปุ่น จาแนกตามเพศ คณะ และชั้นปีที่ศึกษา เพื่อศึกษาปัญหาและข้อเสนอแนะของ นักศึกษามาเป็นแนวทาง
  []
 
 LaTeX Font Info:    Font shape `TU/THSarabunNew:script=thai(0)/b/n' will be
-(Font)              scaled to size 13.00003pt on input line 152.
+(Font)              scaled to size 13.00003pt on input line 153.
 
-Underfull \hbox (badness 10000) in alignment at lines 149--153
+Underfull \hbox (badness 10000) in alignment at lines 150--154
 [][] 
  []
 
 [3]
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
-(Font)              scaled to size 14.75995pt on input line 161.
+(Font)              scaled to size 14.75995pt on input line 162.
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
-(Font)              scaled to size 14.75995pt on input line 161.
+(Font)              scaled to size 14.75995pt on input line 162.
  [4
 
 ] (undergrad-sample-thai.toc [5
@@ -539,17 +512,17 @@ LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
  [8
 
 ]
-Overfull \hbox (1.72173pt too wide) in paragraph at lines 180--180
+Overfull \hbox (1.72173pt too wide) in paragraph at lines 181--181
 []|\TU/THSarabunNew(0)/b/n/10 SYMBOL| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
 []|\TU/THSarabunNew(0)/m/n/10 jobs/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 []|\TU/THSarabunNew(0)/m/n/10 jobs/
  []
 
@@ -560,21 +533,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--184
 ]
 บทที่ 1.
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
-(Font)              scaled to size 17.71193pt on input line 205.
+(Font)              scaled to size 17.71193pt on input line 206.
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
-(Font)              scaled to size 17.71193pt on input line 205.
+(Font)              scaled to size 17.71193pt on input line 206.
 
-Overfull \hbox (5.99281pt too wide) in paragraph at lines 215--216
+Overfull \hbox (5.99281pt too wide) in paragraph at lines 216--217
 \TU/THSarabunNew(0)/m/n/10 ศิลปินที่เสียชีวิตไปแล้วกลับมาวาดรูปขึ้นใหม่ จากความสำเร็จครั้งนั้น ส่งผลให้มีคนจำนวนมากสนใจในการทำ Neural Style Transfer (NST)
  []
 
 
-Overfull \hbox (3.213pt too wide) in paragraph at lines 219--220
+Overfull \hbox (3.213pt too wide) in paragraph at lines 220--221
 []\TU/THSarabunNew(0)/m/n/10 นําเสนอความต้องการของผู้มีส่วนได้ส่วนเสียเฉพาะกลุ่ม ผลิตภัณฑ์ทางการค้าที่มีศักยภาพ และ เว็บแอปพลิเคชันสำหรับคอมพิวเตอร์ 
  []
 
 
-Overfull \hbox (2.99811pt too wide) in paragraph at lines 224--225
+Overfull \hbox (2.99811pt too wide) in paragraph at lines 225--226
 []\TU/THSarabunNew(0)/m/n/10 รวบรวมรูปภาพที่สร้างจากศิลปินที่มีชื่อเสียงและลักษณะภาพสามารถบอกได้ถึงเอกลักษณ์ของศิลปินท่านนั้นได้ โดยทางผู้จัด
  []
 
@@ -584,7 +557,7 @@ Overfull \hbox (2.99811pt too wide) in paragraph at lines 224--225
 File: ./image/plan_table1.jpg Graphic file (type bmp)
 <./image/plan_table1.jpg>
 
-Overfull \hbox (7.82814pt too wide) in paragraph at lines 321--326
+Overfull \hbox (7.82814pt too wide) in paragraph at lines 322--327
  [][] 
  []
 
@@ -592,79 +565,82 @@ Overfull \hbox (7.82814pt too wide) in paragraph at lines 321--326
 File: ./image/plan_table2.jpg Graphic file (type bmp)
 <./image/plan_table2.jpg>
 
-Overfull \hbox (7.82814pt too wide) in paragraph at lines 334--339
+Overfull \hbox (7.82814pt too wide) in paragraph at lines 335--340
  [][] 
  []
 
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
-(Font)              scaled to size 13.52995pt on input line 345.
+(Font)              scaled to size 13.52995pt on input line 346.
 [5] [6]
 บทที่ 2.
 File: ./image/unit1.png Graphic file (type bmp)
 <./image/unit1.png>
-File: ./model2.pdf Graphic file (type pdf)
-<use ./model2.pdf>
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (2.75792pt too wide) in paragraph at lines 400--401
+\TU/THSarabunNew(0)/m/n/10 ตัวอย่างเช่น การทำนายรูปภาพว่าเป็นหมาหรือแมว ซึ่งต้องสอนให้คอมพิวเตอร์รู้ว่ารูปภาพนี้เป็นหมาหรือแมวก่อนถึงจะเอาไปใช้ได้ เป็นต้น,
+ []
 
 [7
 
-] [8]
+]
+File: ./image/unit2.jpg Graphic file (type bmp)
+<./image/unit2.jpg>
+File: ./model2.pdf Graphic file (type pdf)
+<use ./model2.pdf>
+ [8] [9]
 บทที่ 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 428--429
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
 []|\TU/THSarabunNew(0)/m/n/10 jobs/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 429--429
+Underfull \hbox (badness 10000) in paragraph at lines 466--466
 []|\TU/THSarabunNew(0)/m/n/10 jobs/
  []
 
-[9
-
-]
-บทที่ 4.
 [10
 
 ]
-บทที่ 5.
-No file undergrad-sample-thai.bbl.
+บทที่ 4.
 [11
 
 ]
+บทที่ 5.
+(undergrad-sample-thai.bbl [12
+
+]) [13
+
+]
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
-(Font)              scaled to size 21.25432pt on input line 507.
+(Font)              scaled to size 21.25432pt on input line 544.
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
-(Font)              scaled to size 21.25432pt on input line 507.
- [12]
-Underfull \hbox (badness 10000) in paragraph at lines 508--509
+(Font)              scaled to size 21.25432pt on input line 544.
+ [14]
+Underfull \hbox (badness 10000) in paragraph at lines 545--546
 
  []
 
 
-LaTeX Warning: Citation `norros95' on page 13 undefined on input line 519.
+LaTeX Warning: Citation `kim01' on page 15 undefined on input line 563.
 
 
-LaTeX Warning: Citation `kim01' on page 13 undefined on input line 526.
+LaTeX Warning: Citation `eun01' on page 15 undefined on input line 602.
 
-
-LaTeX Warning: Citation `eun01' on page 13 undefined on input line 565.
-
-[13] [14]
-Underfull \hbox (badness 10000) in paragraph at lines 578--579
+[15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 615--616
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 590--591
+Underfull \hbox (badness 10000) in paragraph at lines 627--628
 
  []
 
 
-LaTeX Warning: Citation `eun01' on page 15 undefined on input line 596.
+LaTeX Warning: Citation `eun01' on page 17 undefined on input line 633.
 
-[15] (undergrad-sample-thai.aux)
+[17] (undergrad-sample-thai.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -673,12 +649,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 10220 strings out of 411732
- 204563 string characters out of 2836994
- 560556 words of memory out of 3000000
- 30060 multiletter control sequences out of 15000+200000
+ 8975 strings out of 411732
+ 180692 string characters out of 2836994
+ 536020 words of memory out of 3000000
+ 28817 multiletter control sequences out of 15000+200000
  405759 words of font info for 77 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 110i,10n,117p,953b,488s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 110i,10n,117p,1015b,488s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on undergrad-sample-thai.xdv (25 pages, 204440 bytes).
+Output written on undergrad-sample-thai.xdv (27 pages, 238644 bytes).

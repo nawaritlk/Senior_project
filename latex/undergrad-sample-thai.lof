@@ -1,7 +1,8 @@
 \addvspace {0em}
 \addvspace {0em}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces แสดงหลักการทำงานของ Neural Style Transfer ที่ใช้ Convolutional Neural Network (CNN) \relax }}{7}{}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces The network model\relax }}{8}{}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces แสดงหลักการทำงานของ Neural Style Transfer ที่ใช้ Convolutional Neural Network (CNN) \cite {gatys2015neural} }}{7}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces แสดงส่วนประกอบหลักของ Artificial neural networks}}{8}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces The network model}}{8}{}%
 \addvspace {0em}
 \addvspace {0em}
 \addvspace {0em}
