@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.2) (preloaded format=xelatex 2021.2.24)  28 FEB 2021 23:05
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.2) (preloaded format=xelatex 2021.2.24)  1 MAR 2021 23:45
 entering extended mode
 **e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex
 (e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex
@@ -272,11 +272,7 @@ LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
 \c@theorem=\count290
 \c@lemma=\count291
 \c@corollary=\count292
- (undergrad-sample-thai.aux
-
-LaTeX Warning: Label `fig:modelcnn' multiply defined.
-
-)
+ (undergrad-sample-thai.aux)
 \openout1 = `undergrad-sample-thai.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
@@ -493,23 +489,26 @@ LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
 (Font)              scaled to size 14.75995pt on input line 162.
  [4
 
-] (undergrad-sample-thai.toc [5
-
-])
+]
+No file undergrad-sample-thai.toc.
 \tf@toc=\write3
 \openout3 = `undergrad-sample-thai.toc'.
 
- [6] (undergrad-sample-thai.lot)
+[5
+
+]
+No file undergrad-sample-thai.lot.
 \tf@lot=\write4
 \openout4 = `undergrad-sample-thai.lot'.
 
- [7
+[6
 
-] (undergrad-sample-thai.lof)
+]
+No file undergrad-sample-thai.lof.
 \tf@lof=\write5
 \openout5 = `undergrad-sample-thai.lof'.
 
- [8
+[7
 
 ]
 Overfull \hbox (1.72173pt too wide) in paragraph at lines 181--181
@@ -526,9 +525,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--185
 []|\TU/THSarabunNew(0)/m/n/10 jobs/
  []
 
-[9
+[8
 
-] [10
+] [9
 
 ]
 บทที่ 1.
@@ -573,8 +572,17 @@ LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
 (Font)              scaled to size 13.52995pt on input line 346.
 [5] [6]
 บทที่ 2.
+
+LaTeX Warning: Citation `saha2018comprehensive' on page 7 undefined on input line 380.
+
 File: ./image/unit1.png Graphic file (type bmp)
 <./image/unit1.png>
+
+LaTeX Warning: Citation `gatys2015neural' on page 7 undefined on input line 386.
+
+
+LaTeX Warning: Reference `fig:modelcnn' on page 7 undefined on input line 391.
+
 
 Overfull \hbox (2.75792pt too wide) in paragraph at lines 400--401
 \TU/THSarabunNew(0)/m/n/10 ตัวอย่างเช่น การทำนายรูปภาพว่าเป็นหมาหรือแมว ซึ่งต้องสอนให้คอมพิวเตอร์รู้ว่ารูปภาพนี้เป็นหมาหรือแมวก่อนถึงจะเอาไปใช้ได้ เป็นต้น,
@@ -585,76 +593,365 @@ Overfull \hbox (2.75792pt too wide) in paragraph at lines 400--401
 ]
 File: ./image/unit2.jpg Graphic file (type bmp)
 <./image/unit2.jpg>
-File: ./model2.pdf Graphic file (type pdf)
-<use ./model2.pdf>
- [8] [9]
+File: ./image/neuron_unit.png Graphic file (type bmp)
+<./image/neuron_unit.png>
+
+
+LaTeX Warning: Citation `geron2018neura' on page 8 undefined on input line 428.
+
+
+LaTeX Warning: Reference `fig:feed-back' on page 8 undefined on input line 435.
+
+File: ./image/feed_back.png Graphic file (type bmp)
+<./image/feed_back.png>
+[8]
+
+LaTeX Warning: Reference `fig:pic-cnn' on page 9 undefined on input line 455.
+
+File: ./image/cnn.jpg Graphic file (type bmp)
+<./image/cnn.jpg>
+
+LaTeX Warning: Reference `fig:rgb-layer' on page 9 undefined on input line 468.
+
+File: ./image/unit3.png Graphic file (type bmp)
+<./image/unit3.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9]
+
+LaTeX Warning: Reference `fig:ml-tl' on page 10 undefined on input line 492.
+
+
+Overfull \hbox (4.43068pt too wide) in paragraph at lines 491--493
+\TU/THSarabunNew(0)/m/n/10 กับงานหนึ่ง ๆ มาประยุกต์ใช้กับงานอื่นโดยไม่จำเป็นต้องสอนโมเดลใหม่ทั้งหมด ทำให้สามารถลดเวลาประมวลผลและเวลาในการสอนโมเดล
+ []
+
+[10]
+File: ./image/unit4.png Graphic file (type bmp)
+<./image/unit4.png>
+
+
+LaTeX Warning: Citation `brownlee2017gentle' on page 11 undefined on input line 499.
+
+
+LaTeX Warning: Citation `8636278' on page 11 undefined on input line 506.
+
+
+LaTeX Warning: Citation `sarkar2018comprehensive' on page 11 undefined on input line 506.
+
+
+Overfull \hbox (5.45164pt too wide) in paragraph at lines 506--507
+[]\TU/THSarabunNew(0)/m/n/10 สำหรับการทำ transfer learning ที่เกี่ยวกับรูปภาพ[[]][[]]มีการสร้างโมเดลสำหรับ ImageNet ที่มีรูปภาพกว่า 1.4 ล้านรูปและมากกว่า
+ []
+
+
+LaTeX Warning: Reference `fig:vgg16-19' on page 11 undefined on input line 515.
+
+File: ./image/vgg16-19.png Graphic file (type bmp)
+<./image/vgg16-19.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11]
+
+LaTeX Warning: Reference `fig:webapp' on page 12 undefined on input line 531.
+
+[12]
+File: ./image/webapp.jpg Graphic file (type bmp)
+<./image/webapp.jpg>
+
+Overfull \hbox (24.18454pt too wide) in paragraph at lines 545--546
+[]\TU/THSarabunNew(0)/m/n/10 Python เป็นภาษาที่ใช้ในการเขียนโปรแกรม ซึ่งได้รับความนิยมเป็นอย่างมาก เนื่องจากเป็นภาษาที่เรียนรู้ง่าย ใช้งานง่ายและมีประสิทธิภาพ
+ []
+
+
+Overfull \hbox (4.62752pt too wide) in paragraph at lines 557--558
+[]\TU/THSarabunNew(0)/m/n/10 JavaScript เป็นภาษาคอมพิวเตอร์ชนิดหนึ่งที่ใช้ร่วมกับเอกสาร html เพื่อให้เว็บไซต์มีการเคลื่อนไหวเพื่อตอบสนองต่อการใช้งานของ
+ []
+
+[13]
+e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex:571: Missing $ inserted.
+<inserted text> 
+                $
+l.571   \item _
+               init_.py เป็นไฟล์ initial หรือไฟล์เปล่าที่มีไว้สำหรับเก็บ pac...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex:572: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.572   \item
+              setting.py เป็นไฟล์ที่ใช้ตั้งค่า project ตัวอย่างเช่น การตั้งค...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex:572: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.572   \item s
+               etting.py เป็นไฟล์ที่ใช้ตั้งค่า project ตัวอย่างเช่น การตั้งค...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex:572: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.572   \item s
+               etting.py เป็นไฟล์ที่ใช้ตั้งค่า project ตัวอย่างเช่น การตั้งค...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex:573: LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.573   \item
+              urls.py เป็นไฟล์ที่มีไว้สำหรับเก็บ HTTP Request หรือ url patte...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex:573: Missing $ inserted.
+<inserted text> 
+                $
+l.573   \item u
+               rls.py เป็นไฟล์ที่มีไว้สำหรับเก็บ HTTP Request หรือ url patte...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex:573: Missing } inserted.
+<inserted text> 
+                }
+l.573   \item u
+               rls.py เป็นไฟล์ที่มีไว้สำหรับเก็บ HTTP Request หรือ url patte...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no เ in font cmmi10!
+Missing character: There is no ป in font cmmi10!
+Missing character: There is no ็ in font cmmi10!
+Missing character: There is no น in font cmmi10!
+Missing character: There is no ไ in font cmmi10!
+Missing character: There is no ฟ in font cmmi10!
+Missing character: There is no ล in font cmmi10!
+Missing character: There is no ์ in font cmmi10!
+Missing character: There is no ห in font cmmi10!
+Missing character: There is no ร in font cmmi10!
+Missing character: There is no ื in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ไ in font cmmi10!
+Missing character: There is no ฟ in font cmmi10!
+Missing character: There is no ล in font cmmi10!
+Missing character: There is no ์ in font cmmi10!
+Missing character: There is no เ in font cmmi10!
+Missing character: There is no ป in font cmmi10!
+Missing character: There is no ล in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ท in font cmmi10!
+Missing character: There is no ี in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no ม in font cmmi10!
+Missing character: There is no ี in font cmmi10!
+Missing character: There is no ไ in font cmmi10!
+Missing character: There is no ว in font cmmi10!
+Missing character: There is no ้ in font cmmi10!
+Missing character: There is no ส in font cmmi10!
+Missing character: There is no ำ in font cmmi10!
+Missing character: There is no ห in font cmmi10!
+Missing character: There is no ร in font cmmi10!
+Missing character: There is no ั in font cmmi10!
+Missing character: There is no บ in font cmmi10!
+Missing character: There is no เ in font cmmi10!
+Missing character: There is no ก in font cmmi10!
+Missing character: There is no ็ in font cmmi10!
+Missing character: There is no บ in font cmmi10!
+Missing character: There is no ข in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no เ in font cmmi10!
+Missing character: There is no ป in font cmmi10!
+Missing character: There is no ็ in font cmmi10!
+Missing character: There is no น in font cmmi10!
+Missing character: There is no ไ in font cmmi10!
+Missing character: There is no ฟ in font cmmi10!
+Missing character: There is no ล in font cmmi10!
+Missing character: There is no ์ in font cmmi10!
+Missing character: There is no ท in font cmmi10!
+Missing character: There is no ี in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no ใ in font cmmi10!
+Missing character: There is no ช in font cmmi10!
+Missing character: There is no ้ in font cmmi10!
+Missing character: There is no ต in font cmmi10!
+Missing character: There is no ั in font cmmi10!
+Missing character: There is no ้ in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no ค in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ต in font cmmi10!
+Missing character: There is no ั in font cmmi10!
+Missing character: There is no ว in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ย in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no เ in font cmmi10!
+Missing character: There is no ช in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no น in font cmmi10!
+Missing character: There is no ก in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ร in font cmmi10!
+Missing character: There is no ต in font cmmi10!
+Missing character: There is no ั in font cmmi10!
+Missing character: There is no ้ in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no ค in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ก in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ร in font cmmi10!
+Missing character: There is no ต in font cmmi10!
+Missing character: There is no ั in font cmmi10!
+Missing character: There is no ้ in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no เ in font cmmi10!
+Missing character: There is no ว in font cmmi10!
+Missing character: There is no ล in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ก in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ร in font cmmi10!
+Missing character: There is no ต in font cmmi10!
+Missing character: There is no ั in font cmmi10!
+Missing character: There is no ้ in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no ค in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no เ in font cmmi10!
+Missing character: There is no ป in font cmmi10!
+Missing character: There is no ็ in font cmmi10!
+Missing character: There is no น in font cmmi10!
+Missing character: There is no ต in font cmmi10!
+Missing character: There is no ้ in font cmmi10!
+Missing character: There is no น in font cmmi10!
+e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex:573: Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.573   \item u
+               rls.py เป็นไฟล์ที่มีไว้สำหรับเก็บ HTTP Request หรือ url patte...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[14]
+File: ./image/django.png Graphic file (type bmp)
+<./image/django.png>
+ [15]
 บทที่ 3.
 
-Underfull \hbox (badness 10000) in paragraph at lines 465--466
+Underfull \hbox (badness 10000) in paragraph at lines 615--616
 []|\TU/THSarabunNew(0)/m/n/10 jobs/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 466--466
+Underfull \hbox (badness 10000) in paragraph at lines 616--616
 []|\TU/THSarabunNew(0)/m/n/10 jobs/
  []
 
-[10
+[16
 
 ]
 บทที่ 4.
-[11
+[17
 
 ]
 บทที่ 5.
-(undergrad-sample-thai.bbl [12
-
-]) [13
+No file undergrad-sample-thai.bbl.
+[18
 
 ]
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
-(Font)              scaled to size 21.25432pt on input line 544.
+(Font)              scaled to size 21.25432pt on input line 694.
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
-(Font)              scaled to size 21.25432pt on input line 544.
- [14]
-Underfull \hbox (badness 10000) in paragraph at lines 545--546
+(Font)              scaled to size 21.25432pt on input line 694.
+ [19]
+Underfull \hbox (badness 10000) in paragraph at lines 695--696
 
  []
 
 
-LaTeX Warning: Citation `kim01' on page 15 undefined on input line 563.
+LaTeX Warning: Reference `eq:norros' on page 20 undefined on input line 711.
 
 
-LaTeX Warning: Citation `eun01' on page 15 undefined on input line 602.
+LaTeX Warning: Citation `kim01' on page 20 undefined on input line 713.
 
-[15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 615--616
+
+LaTeX Warning: Reference `eq:loss_mva' on page 20 undefined on input line 736.
+
+
+LaTeX Warning: Citation `eun01' on page 20 undefined on input line 752.
+
+
+LaTeX Warning: Reference `eq:mx' on page 20 undefined on input line 755.
+
+[20] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 765--766
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 627--628
+Underfull \hbox (badness 10000) in paragraph at lines 777--778
 
  []
 
 
-LaTeX Warning: Citation `eun01' on page 17 undefined on input line 633.
+LaTeX Warning: Citation `eun01' on page 22 undefined on input line 783.
 
-[17] (undergrad-sample-thai.aux)
+
+LaTeX Warning: Reference `eq:mx' on page 22 undefined on input line 786.
+
+[22] (undergrad-sample-thai.aux)
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 8975 strings out of 411732
- 180692 string characters out of 2836994
+ 9013 strings out of 411732
+ 181364 string characters out of 2836994
  536020 words of memory out of 3000000
- 28817 multiletter control sequences out of 15000+200000
+ 28856 multiletter control sequences out of 15000+200000
  405759 words of font info for 77 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  110i,10n,117p,1015b,488s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on undergrad-sample-thai.xdv (27 pages, 238644 bytes).
+Output written on undergrad-sample-thai.xdv (31 pages, 325972 bytes).

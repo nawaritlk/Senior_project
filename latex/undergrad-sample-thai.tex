@@ -405,45 +405,195 @@ MANET & Mobile Ad Hoc Network
 \par\setlength{\parindent}{5ex}
 Artificial neural networks(ANN) คือโมเดลทางคณิตศาสตร์หรือโมเดลทางคอมพิวเตอร์ที่จำลองการทำงานของเซลล์ประสาทในสมองมนุษย์ที่มีเซลล์ประสาท(neurons) และจุดประสาทประสาท  ดึงเกิดเป็น ANN ซึ่งมีส่นประกอบในการทำงาน 3 ส่วนหลัก ๆ ดังรูปที่ 2.1 คือ input layer, hidden layer และ output layer ซึ่งการทำงานของ artificial neural networks จะมี 2 ส่วนคือ กระบวนการทำงานไปข้างหน้าหรือ feed forward คือป้อน input เข้าไป แล้วเข้า hidden layer ทำการประมวลผลแล้วได้ค่าออกมาส่งไปที่ output layer และ back propagation หรือกระบวนการทำย้อนกลับโดยจะเป็นการทำย้อนกลับจาก output layer ไป input layer
 
+%%%%%%%no ref
 \begin{figure}[!h]
   \centering
   \includegraphics[width=8cm]{./image/unit2.jpg}
   \caption{แสดงส่วนประกอบหลักของ Artificial neural networks}
-  \label{fig:modelcnn}
+  \label{fig:modelann}
+\end{figure}
+
+\par\setlength{\parindent}{5ex}
+ในแต่ละ layer จะมีก้อนกลม ๆ อยู่หรือก็คือ neuron unit อยู่ดังรูปที่ 2.2 ถ้าใน input layer ภายในจะเก็บข้อมูลที่รับเข้ามา แต่ถ้าเป็น hidden layer ภายในจะมีการคำนวณเกิดขึ้นโดยสามารถเพิ่ม hidden layer ได้หลาย layer ตามที่ผู้พัฒนาต้องการได้ ส่วนใน output layer จะมีการทำนายผลออกมาว่า ผลที่ได้เป็นคลาสอะไร
+
+
+\subsubsection{Neuron unit ใน hidden layer}
+\par\setlength{\parindent}{5ex}
+ภายใน neuron unit แต่ละตัวใน hidden layer จะมีการคำนวณโดยหลังจากผ่าน input layer เข้ามาจะมีการเพิ่ม weight ให้กับ input neuron unit แต่ละตัว จากนั้นเมื่อเข้า hidden layer ภายในจะรวมผลคูณระหว่าง weight กับ input neuron unit แต่ละตัวเข้าด้วยกันแล้วเข้า step function หรือส่วนใหญ่เรียกว่า activation function จากนั้นจะได้ output ออกมา ดังรูปที่ 2.3
+
+%%%%%%%no ref
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=8cm]{./image/neuron_unit.png}
+  \caption{แสดงการทำงานภายใน neuron unit \cite{geron2018neura}}
+  \label{fig:modelann}
+\end{figure}
+
+\subsubsection{Backward propagation}
+\par\setlength{\parindent}{5ex}
+Backward propagation เป็นกระบวนการทำงานย้อนกลับจาก output layer มา input layer เพื่อปรับค่า weight แต่ละตัวให้ดีขึ้น โดยจะทำไปเรื่อง ๆ จนกว่าจะได้ cost function หรือ error ที่น้อยตามที่ต้องการ 
+โดยลักษณะการทำงานของ feed forward กับ back propagation มีลักษณะต่างกันดังรูปที่~\ref{fig:feed-back}
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=8cm]{./image/feed_back.png}
+  \caption{แสดงการทำงานของ feed forward (forwardpass) กับ back propagation (backwardpass)}
+  \label{fig:feed-back}
+\end{figure}
+
+\par\setlength{\parindent}{5ex}
+ในการทำ back propagation จะใช้อัลกอริทึม optimization เพื่อเพิ่มประสิทธิภาพตัวนึงที่ชื่อว่า Gradient descent algorithm [13] ที่จะทำการหา weight ที่ต่ำที่สุดที่จะทำให้โมเดลสามารถทำนายผลได้ดีที่สุด เกิด error น้อย
+
+\subsubsection{Cost function}
+\par\setlength{\parindent}{5ex}
+Cost function หรือ loss function หรือค่า error ที่เกิดขึ้น ซึ่งจุดมุ่งหมายของโมเดลต่าง ๆ จะเหมือนกันคือ ต้องการให้เกิดค่า error ที่น้อยที่สุดที่เป็นไปได้ ซึ่งการคำนวณค่า error ที่เกิดขึ้นจะใช้การเปรียบเทียบระหว่างผลลัพธ์จริง ๆ ที่ได้มาจากข้อมูลจริงกับผลลัพธ์ที่เกิดจากการทำนายโดยโมเดลมาเทียบกันโดยใช้วิธีต่าง ๆ ตัวอย่างเช่น การคำนวณค่า Mean Squared Error Loss, Mean Absolute Error Loss, Binary Crossentropy Loss, Categorical Crossentropy Loss, Sparse Categorical Crossentropy Loss เป็นต้น ซึ่งการคำนวณแบบต่าง ๆ ก็เหมาะกับปัญหาคนละแบบ ตัวอย่างเช่น Binary Crossentropy Loss ที่เหมาะกับข้อมูลที่มีเพียง 2 คลาส เป็นต้น
+
+\subsection{Convolutional Neural Network (CNN)}
+\par\setlength{\parindent}{5ex}
+Convolutional Neural Network (CNN) หรือ ConvNet [2,11] เป็นอัลกอริทึม Deep Learning 
+ชนิดหนึ่งที่ใช้ประมวลผลรูปภาพ โดยเรียนรู้คุณลักษณะต่าง ๆ ของรูปภาพที่ป้อนเข้าผ่านการใช้ filters 
+ซึ่งเป็นการเรียนรู้ลักษณะของรูปภาพ เพื่อแยกแยะว่า รูปภาพที่ป้อนเข้ามาเป็นรูปอะไรดังรูปที่~\ref{fig:pic-cnn}
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=12cm]{./image/cnn.jpg}
+  \caption{แสดงให้เห็นถึงกระบวนการทำงานของ CNN ที่มีการเรียนรู้ 2 ส่วนคือ feature learning ซึ่งมี convolution layer และ pooling layer ประกอบกัน และ classification ซึ่งมี fully connected layer มาเกี่ยวข้อง}
+  \label{fig:pic-cnn}
 \end{figure}
 
 
+\subsubsection{Input data}
+\par\setlength{\parindent}{5ex}
+ข้อมูลที่เข้ามาประมวลใน CNN เป็นรูปภาพซึ่งมีหลากหลายรูปแบบที่เป็นขาวดำหรือ Grayscale, รูปภาพสีแบบ RGB, HSV หรือ CMYK เป็นต้น ซึ่งโดยส่วนใหญ่เป็นรูปภาพสีแบบ RGB ซึ่งเมื่อรับ input เข้ามาจะถูกแบ่งสีออกเป็น channels คือ Red(R) , Green(G) และ Blue(B) และแปลงขนาดความกว้างและความยาวของรูปภาพให้เป็น pixels 
+ทำให้อยู่ในรูป heights*weights*จำนวนของ channels ดังรูปที่~\ref{fig:rgb-layer}
 
-
-
-
-
-
-
-
-
-\section{อัลกอริทึมในการประมวลผลข้อความ}
-\subsection{อัลกอริทึม I}
-
-% Can define this in the preamble..
-You can place the figure and refer to it as รูปที่~\ref{fig:model2}.
-The figure and table numbering will be run and updated automatically when you add/remove tables/figures from the document.
-
-\begin{figure}[!h]\centering
-\setlength{\fboxrule}{0.2mm} % can define this in the preamble
-\setlength{\fboxsep}{1cm}
-\fbox{\includegraphics[width=5cm]{./model2.pdf}}
-\caption{The network model}\label{fig:model2}
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=8cm]{./image/unit3.png}
+  \caption{แสดงให้เห็นถึงลักษณะของ input data ที่มีการแบ่งชั้นสีเป็น 3 channels ซึ่งจากรูปนี้จะมีขนาดของรูปเป็น 4*4*3 RGB Image}
+  \label{fig:rgb-layer}
 \end{figure}
 
+\subsubsection{Convolution layer}
+\par\setlength{\parindent}{5ex}
+ในส่วนของ convolutional layer จะมี filter หรือ Kernel (K) ซึ่งเป็น matrix ขนาดต่าง ๆ ใช้สำหรับ map กับข้อมูลที่เข้ามา และมี stride ที่ใช้สำหรับบอกว่าต้องขยับ filter ไปกี่ pixels โดย filters จะเคลื่อนที่ไปเรื่อย ๆ จนผ่านครบทุก pixels ในข้อมูลที่เข้ามา และนอกจากนี้จะมีการใช้ non-linear functions เพื่อ scale ข้อมูลที่เข้ามาไม่ให้ติดลบซึ่งเหมาะกับการเรียนรู้ใน CNNs โดยตัวที่นิยมใช้คือ Rectified Linear Unit (ReLU) ที่มีฟังก์ชันคือ ƒ(x) = max(0,x) 
+
+\subsubsection{Pooling layer}
+\par\setlength{\parindent}{5ex}
+ในส่วนของ pooling layer จะทำงานต่อจาก convolution layer โดยจะทำการดึงข้อมูลออกมาหลังจากที่มีการทำ filter แต่ละครั้ง ออกมาเป็นข้อมูลที่ออกมา ณ ตำแหน่งนั้น ๆ ที่มีการทำ filter ทำให้สามารถดึงลักษณะสำคัญของข้อมูลที่เข้ามาได้ ตัวอย่างเช่น ขอบ สี รูปทรง เป็นต้น และยังทำให้ขนาดข้อมูลที่ได้ออกมามีขนาดเล็กลงเมื่อเทียบกับข้อมูลที่เข้ามา โดย pooling มี 3 แบบ คือ min pooling, max pooling และ average pooling ซึ่ง convolution layer กับ pooling layer จะทำงานคู่กัน ซึ่งใน CNN จะมีกี่ layer นั้นขึ้นอยู่กับความซับซ้อนของรูปภาพ
+
+\subsubsection{Fully connected layer}
+\par\setlength{\parindent}{5ex}
+เมื่อทำ feature learning โดยใช้ convolution layer กับ pooling layer แล้ว output ที่ได้จะอยู่ในรูปแบบที่เป็น 3 ชั้นหรือมี 3 มิติอยู่ จะมีการทำ flatten ก่อนเพื่อให้อยู่ในรูปแบบที่เป็น 1 มิติ เพื่อที่จะได้สามารถเข้าไปใน fully connected layer ได้ โดยใน fully connected layer มีการใช้ softmax classification ที่ใช้แยกว่าข้อมูล input ที่เข้ามาเป็นรูปอะไรโดยแสดงผลเป็นความเป็นไปได้ที่เป็นรูปต่าง ๆ 
+
+\subsection{Transfer Learning}
+\par\setlength{\parindent}{5ex}
+Transfer Learning เป็นการเรียนรู้ที่เป็นที่นิยมในการทำ machine learning(ML) โดยเป็นการนำโมเดลที่มีคนสร้างมาก่อนที่เหมาะกับงานหนึ่ง ๆ มาประยุกต์ใช้กับงานอื่นโดยไม่จำเป็นต้องสอนโมเดลใหม่ทั้งหมด 
+ทำให้สามารถลดเวลาประมวลผลและเวลาในการสอนโมเดลได้ ดังรูปที่~\ref{fig:ml-tl}
+
+\newpage
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=12cm]{./image/unit4.png}
+  \caption{แสดงให้เห็นถึงการเปรียบเทียบการทำงานระหว่าง traditional ML กับ transfer learning ที่มีรูปแบบการทำงานที่ต่างกัน \cite{brownlee2017gentle}}
+  \label{fig:ml-tl}
+\end{figure}
+
+\par\setlength{\parindent}{5ex}
+โดยในการทำ transfer learning มีอยู่ 2 รูปแบบ คือ develop model ซึ่งเป็นการนำโมเดลนั้นมาแก้ไขและพัฒนาให้ดีกว่าเดิมให้เหมาะกับงานที่โมเดลนั้นสร้างมาใช้และจึงนำไปใช้กับงานอื่น ๆ ส่วนอีกรูปแบบคือ pre-trained model ซึ่งเป็นการนำโมเดลไปใช้กับงานอื่นเลย โดยส่นใหญ่จะใช้ pre-trained model เป็นหลัก 
+\par\setlength{\parindent}{5ex}
+สำหรับการทำ transfer learning ที่เกี่ยวกับรูปภาพ\cite{8636278}\cite{sarkar2018comprehensive}มีการสร้างโมเดลสำหรับ ImageNet ที่มีรูปภาพกว่า 1.4 ล้านรูปและมากกว่า 1,000 คลาสที่เป็นความท้าทายสำหรับการทำ image classification ทำให้มีองค์การวิจัยต่าง ๆ มีการพัฒนาโมเดลขึ้นมาสำหรับแก้ปัญหานี้ และได้เปิดให้คนทั่วไปสามารถเอาไปใช้ได้ ตัวอย่างเช่น โมเดล VGG ของ Oxford, โมเดล Inception ของ Google และโมเดล ResNet ของ Microsoft เป็นต้น
+
+\subsubsection{VGGNet}
+\par\setlength{\parindent}{5ex}
+Visual Geometry Group (VGG) เป็น CNN สำหรับจดจำรูปภาพ ซึ่งสถาปัตยกรรมของ VGG จะประกอบไปด้วยบล็อค 
+แต่ละบล็อกจะเป็น 2 มิติ คือ Convolution layer และ Pooling layer แนวความคิดนี้ถูกพัฒนาโดย 
+Simonyan \& Zisserman จาก Oxford Robotics Institute ซึ่ง VGG นั้นมีโมเดล 2 ตัวคือ VGG16 และ VGG19 
+ซึ่งเลข 16 และ เลข 19 นั้นมาจากคือจำนวนของ hidden layer สำหรับ VGG16 จะประกอบไปด้วยบล็อคของ 
+convolutional layer และ Pooling ทั้งหมด 13 layers และ Fully connected layer 3 layers ส่วน VGG 19 
+นั้นคือ VGG16 ที่มีบล็อคของ convolutional layer เพิ่มมาอีก 3 layers  ดังรูปที่ ~\ref{fig:vgg16-19} 
+
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=8cm]{./image/vgg16-19.png}
+  \caption{แสดงสถาปัตยกรรมของ VGG16 และ VGG19}
+  \label{fig:vgg16-19}
+\end{figure}
+
+\newpage
+
+\subsection{Web Application}
+\par\setlength{\parindent}{5ex}
+Web Application เป็นซอฟต์แวร์นึงที่สามารถเข้าถึงผ่าน browser ใดก็ได้ โดยที่ผู้ใช้ไม่ต้องดาวน์โหลดก่อนใช้งานเพราะสามารถเข้าถึงได้ผ่าน network ซึ่ง Web Application นั้นออกแบบมาให้สามารถมีปฏิสัมพันธ์กับผู้ใช้ได้ ไม่ใช่แค่การดูข้อมูลต่าง ๆ แต่สามารถจัดการหรือใช้งานได้ ซึ่งผู้ใช้หลายคนสามารถเข้าถึงพร้อมกัน
+\par\setlength{\parindent}{5ex}
+หลักการทำงานของ web Application คือ ผู้ใช้งานติดต่อสื่อสารกับ web application ผ่าน frontend หรือ client-side ซึ่ง frontend จะมีการเรียกใช้หรือดึงข้อมูลออกมาจาก backend หรือ server-side ผ่าน http request ที่ถูกเรียกใช้โดยผู้ใช้งาน ภายใน backend จะมี web server, database 
+และไฟล์อื่น ๆ เก็บไว้ ดังรูปที่~\ref{fig:webapp} 
+
+%%%%no ref
+\newpage
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=8cm]{./image/webapp.jpg}
+  \caption{แสดงหลักการทำงานของ web application}
+  \label{fig:webapp}
+\end{figure}
+
+\subsection{Development Tools}
+\subsubsection{Python}
+\par\setlength{\parindent}{5ex}
+Python เป็นภาษาที่ใช้ในการเขียนโปรแกรม ซึ่งได้รับความนิยมเป็นอย่างมาก เนื่องจากเป็นภาษาที่เรียนรู้ง่าย ใช้งานง่ายและมีประสิทธิภาพสูง ถูกพัฒนาขึ้นโดย Guido van Rossum ในปี ค.ศ. 1991 ซึ่งสามารถทำงานบนแพลตฟอร์ต่าง ๆ ได้หลากหลาย มีไวยากรณ์ที่เข้าใจง่ายสามารถเขียนได้ทั้งแบบเชิงวัตถุ object-oriented หรือแบบฟังก์ชัน functional และรันบน interpreter system ซึ่งประมวลผลได้อย่างรวดเร็วและมี library หลากหลายให้ใช้งาน
+
+\subsubsection{Hypertext Markup Language (HTML)}
+\par\setlength{\parindent}{5ex}
+Hypertext Markup Language (HTML) เป็นภาษาคอมพิวเตอร์ที่ใช้ในการแสดงผลของข้อความ รูปภาพหรือวัตถุอื่น ๆ บนหน้าเว็บไซต์ โดยมีโครงสร้างการเขียนที่อาศัย tag ควบคุมซึ่งถูกพัฒนาโดย World Wide Web Consortium (W3C) โดยออกแบบมาให้สามารถทำความเข้าใจและเรียนรู้ง่าย โดยใน tag ต่าง ๆ จะแตกต่างกันไปแต่มีส่วนประกอบหลักที่เหมือนกันคือ เครื่องหมาย “<>” และมีชื่ออยู่ตรงกลางเครื่องหมายนั้น ตัวอย่างเช่น <head> </head> เป็นต้น
+
+\subsubsection{Cascading Style Sheets (CSS)}
+\par\setlength{\parindent}{5ex}
+Cascading Style Sheets (CSS) หรือ Style Sheets เป็นภาษาคอมพิวเตอร์ตัวนึง ที่ใช้สำหรับกำหนดรูปแบบการแสดงผลของเอกสาร html อันได้แก่ สีข้อความ ขนาดข้อความ ประเภทตัวอักษร ขนาดรูปภาพ การจัดวางข้อความ สีพื้นหลัง เป็นต้น
+
+\subsubsection{JavaScript}
+\par\setlength{\parindent}{5ex}
+JavaScript เป็นภาษาคอมพิวเตอร์ชนิดหนึ่งที่ใช้ร่วมกับเอกสาร html เพื่อให้เว็บไซต์มีการเคลื่อนไหวเพื่อตอบสนองต่อการใช้งานของผู้ใช้มากขึ้น โดยมีลักษณะการทำงานคือ แปลความและดำเนินงานไปทีละคำสั่ง หรือ object-oriented programming ซึ่งดำเนินการโดย browser เป็น client-side script ทำให้สามารถใช้งานกับ server ใดก็ได้ โดย javaScript นี้สามารถเขียนเพื่อเปลี่ยนแปลง html element ได้ สามารถตอบสนองกับผู้ใช้และตรวจสอบข้อมูล รวมไปถึงสร้าง cookies ที่ใช้เก็บข้อมูลในคอมพิวเตอร์ของผู้ใช้ได้
+
+\subsubsection{Pytorch}
+\par\setlength{\parindent}{5ex}
+Pytorch เป็น Deep learning library ที่ Facebook เป็นคนพัฒนาขึ้นด้วยภาษา python โดยดัดแปลงมาจาก library torch ที่ถูกใช้ในภาษา Lua มาก่อน โดยจะมองข้อมูลให้อยู่ในรูปของ tensor ซึ่งเป็นการเก็บข้อมูลหลายมิติแบบ arrays ทำให้สามารถใช้ numpy ในการคำนวณได้เลย และมีการเตรียม neural network แบบต่าง ๆ ไว้ให้ผู้พัฒนาสามารถนำไปพัฒนาต่อได้อย่างรวดเร็ว และยังสามารถใช้ GPU เข้ามาช่วยในการคำนวณได้ ทำให้สามารถประมวลผลได้เร็วขึ้น
+
+\subsubsection{Django}
+\par\setlength{\parindent}{5ex}
+Django เป็น high-level python web framework ที่ช่วยให้ผู้พัฒนาสามารถสร้าง web application ได้อย่างรวดเร็ว ซึ่งจุดเด่นของ Django คือ มีระบบ admin มาให้ทำให้ผู้พัฒนาไม่จำเป็นสร้างใหม่เอง สามารถใช้งานกับโปรแกรม editor ได้หลากหลายตามที่ผู้พัฒนาถนัด มีเครื่องมือที่ช่วยให้ผู้พัฒนาสามารถขึ้นโครงโปรแกรมได้อย่างรวดเร็ว ตัวอย่างเช่น ระบบการจัดการข้อมูล(models), ระบบแสดงผล(views), ระบบการเข้าใช้งานของผู้ใช้, ระบบการจัดการผู้ใช้งาน เป็นต้น รวมทั้งมี Django REST Framework ที่ช่วยให้ผู้พัฒนาสามารถสร้าง API เพื่อให้ในส่วน frontend สามารถติดต่อกับส่วน backend ได้อย่างสะดวก รวดเร็ว
+
+\par\setlength{\parindent}{5ex}
+หลักการของ Django คือ 1 Project มี 1 app โดย 1 app คือ 1 module ในเว็บไซต์ ในการสร้าง Django Project [9] ผู้ใช้จะได้ไฟล์หลายไฟล์ดังรูปที่ 2.10 ซึ่งไฟล์หลัก ๆ ประกอบไปด้วย
+\begin{enumerate}
+  \item manage.py ที่เป็นไฟล์ script สำหรับรันคำสั่งต่าง ๆ ที่เกี่ยวข้องกับ Django
+  \item _init_.py เป็นไฟล์ initial หรือไฟล์เปล่าที่มีไว้สำหรับเก็บ package ของ python
+  \item setting.py เป็นไฟล์ที่ใช้ตั้งค่า project ตัวอย่างเช่น การตั้งค่า app, การตั้งเวลา, การตั้งค่า path เป็นต้น
+  \item urls.py เป็นไฟล์ที่มีไว้สำหรับเก็บ HTTP Request หรือ url pattern ที่เป็นการ routing ภายใน Django project
+  \item wsgi.py เป็นไฟล์ที่เก็บข้อมูลสำหรับการ deployment หรือการ production ให้ผู้ใช้ใช้งาน
+\end{enumerate}
 
 
- 
-\subsection{อัลกอริทึม I}
-Add more subsections as you want.
+\newpage
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=8cm]{./image/django.png}
+  \caption{แสดงโครงสร้างโฟลเดอร์ของ Django project}
+  \label{fig:django}
+\end{figure}
+
+\par\setlength{\parindent}{5ex}
+และ Django เป็น model-view-template (MVT) ซึ่งมีกระบวนการทำงานหลัก ๆ 3 ส่วน ดังรูปที่ 2.11 คือ Model ที่เก็บข้อมูลของ application, View สำหรับประมวลผลคำสั่งหรือข้อมูลต่าง ๆ แล้วส่งไปที่ Template, Template คือหน้า application ที่ใช้แสดงผลข้อมูลที่ผ่านการประมวลผลจาก view ร่วกับ html โดยมีการใช้ http request และ http response ในการติดต่อกับส่วนต่าง ๆ 
 
 
-\section{เครื่องมือที่ใช้ในการพัฒนา}
+
+
+
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
