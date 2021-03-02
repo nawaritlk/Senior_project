@@ -1,11 +1,11 @@
 \contentsline {chapterx}{\mdseries ABSTRACT}{ii}{}%
 \contentsline {chapterx}{\mdseries บทคัดย่อ}{iii}{}%
 \contentsline {chapterx}{\mdseries กิตติกรรมประกาศ}{iv}{}%
-\contentsline {chapterx}{\mdseries สารบัญ}{v}{}%
-\contentsline {chapterx}{\mdseries สารบัญตาราง}{vi}{}%
-\contentsline {chapterx}{\mdseries สารบัญรูปภาพ}{vii}{}%
-\contentsline {chapterx}{\mdseries สารบัญสัญลักษณ์}{viii}{}%
-\contentsline {chapterx}{\mdseries สารบัญคำศัพท์ทางเทคนิคและคำย่อ}{ix}{}%
+\contentsline {chapterx}{\mdseries สารบัญ}{vi}{}%
+\contentsline {chapterx}{\mdseries สารบัญตาราง}{vii}{}%
+\contentsline {chapterx}{\mdseries สารบัญรูปภาพ}{viii}{}%
+\contentsline {chapterx}{\mdseries สารบัญสัญลักษณ์}{ix}{}%
+\contentsline {chapterx}{\mdseries สารบัญคำศัพท์ทางเทคนิคและคำย่อ}{x}{}%
 \contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {1}\hskip -0.8em บทนำ}}}{1}{}%
 \contentsline {section}{\numberline {1.1}ที่มาและความสำคัญ}{1}{}%
 \contentsline {section}{\numberline {1.2}ประเภทของโครงงาน}{1}{}%
@@ -41,30 +41,25 @@
 \contentsline {subsubsection}{\numberline {2.2.7.4}JavaScript}{13}{}%
 \contentsline {subsubsection}{\numberline {2.2.7.5}Pytorch}{13}{}%
 \contentsline {subsubsection}{\numberline {2.2.7.6}Django}{13}{}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {3}\hskip -0.8em วิธีการดำเนินงาน}}}{16}{}%
-\contentsline {section}{\numberline {3.1}ข้อกำหนดและความต้องการของระบบ}{16}{}%
-\contentsline {section}{\numberline {3.2}สถาปัตยกรรมระบบ}{16}{}%
-\contentsline {section}{\numberline {3.3}Hardware Module 1}{16}{}%
-\contentsline {subsection}{\numberline {3.3.1}Component 1}{16}{}%
-\contentsline {subsection}{\numberline {3.3.2}Logical Circuit Diagram}{16}{}%
-\contentsline {section}{\numberline {3.4}Hardware Module 2}{16}{}%
-\contentsline {subsection}{\numberline {3.4.1}Component 1}{16}{}%
-\contentsline {subsection}{\numberline {3.4.2}Component 2}{16}{}%
-\contentsline {section}{\numberline {3.5}Path Finding Algorithm}{16}{}%
-\contentsline {section}{\numberline {3.6}Database Design}{16}{}%
-\contentsline {section}{\numberline {3.7}UML Design}{16}{}%
-\contentsline {section}{\numberline {3.8}GUI Design}{16}{}%
-\contentsline {section}{\numberline {3.9}การออกแบบการทดลอง}{16}{}%
-\contentsline {subsection}{\numberline {3.9.1}ตัวชี้วัดและปัจจัยที่ศึกษา}{16}{}%
-\contentsline {subsection}{\numberline {3.9.2}รูปแบบการเก็บข้อมูล}{16}{}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {4}\hskip -0.8em ผลการดำเนินงาน}}}{17}{}%
-\contentsline {section}{\numberline {4.1}ประสิทฺธิภาพการทำงานของระบบ}{17}{}%
-\contentsline {section}{\numberline {4.2}ความพึงพอใจการใช้งาน}{17}{}%
-\contentsline {section}{\numberline {4.3}การวิเคราะห์ข้อมูลและผลการทดลอง}{17}{}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {5}\hskip -0.8em บทสรุป}}}{18}{}%
-\contentsline {section}{\numberline {5.1}สรุปผลโครงงาน}{18}{}%
-\contentsline {section}{\numberline {5.2}ปัญหาที่พบและการแก้ไข}{18}{}%
-\contentsline {section}{\numberline {5.3}ข้อจำกัดและข้อเสนอแนะ}{18}{}%
-\contentsline {chapter}{\mdseries \bf \MakeUppercase {Appendix}}{19}{}%
-\contentsline {apdx}{A\hskip 1em ชื่อภาคผนวกที่ 1}{20}{}%
-\contentsline {apdx}{B\hskip 1em ชื่อภาคผนวกที่ 2}{22}{}%
+\contentsline {subsubsection}{\numberline {2.2.7.7}MongoDB}{14}{}%
+\contentsline {section}{\numberline {2.3}การทบทวนวรรณกรรม}{15}{}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {3}\hskip -0.8em วิธีการดำเนินงาน}}}{17}{}%
+\contentsline {section}{\numberline {3.1}บทนำ}{17}{}%
+\contentsline {section}{\numberline {3.2}รายละเอียดของโครงงาน}{17}{}%
+\contentsline {subsection}{\numberline {3.2.1}Modeling}{17}{}%
+\contentsline {subsection}{\numberline {3.2.2}System Requirements สำหรับเว็บแอพพลิเคชัน}{17}{}%
+\contentsline {subsection}{\numberline {3.2.3}แผนผังแสดงความสัมพันธ์ (Use Case Diagram)}{18}{}%
+\contentsline {subsection}{\numberline {3.2.4}แผนภาพกิจกรรม (Activity Diagram)}{19}{}%
+\contentsline {subsubsection}{\numberline {3.2.4.1}ระบบลงชื่อเข้าใช้งาน}{19}{}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {4}\hskip -0.8em ผลการดำเนินงาน}}}{20}{}%
+\contentsline {section}{\numberline {4.1}ประสิทฺธิภาพการทำงานของระบบ}{20}{}%
+\contentsline {section}{\numberline {4.2}ความพึงพอใจการใช้งาน}{20}{}%
+\contentsline {section}{\numberline {4.3}การวิเคราะห์ข้อมูลและผลการทดลอง}{20}{}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {5}\hskip -0.8em บทสรุป}}}{21}{}%
+\contentsline {section}{\numberline {5.1}สรุปผลโครงงาน}{21}{}%
+\contentsline {section}{\numberline {5.2}ปัญหาที่พบและการแก้ไข}{21}{}%
+\contentsline {section}{\numberline {5.3}ข้อจำกัดและข้อเสนอแนะ}{21}{}%
+\contentsline {chapter}{\mdseries \bf \MakeUppercase {บรรณานุกรม}}{22}{}%
+\contentsline {chapter}{\mdseries \bf \MakeUppercase {Appendix}}{23}{}%
+\contentsline {apdx}{A\hskip 1em ชื่อภาคผนวกที่ 1}{24}{}%
+\contentsline {apdx}{B\hskip 1em ชื่อภาคผนวกที่ 2}{26}{}%

@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: undergrad-sample-thai.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: kmutt.bst
+Reallocating 'name_of_file' (item size: 1) to 7 items.
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+Database file #1: string.bib
+Database file #2: cpe.bib
+Warning--I didn't find a database entry for "geron2018neura"
+Warning--I didn't find a database entry for "kim01"
+Warning--I didn't find a database entry for "eun01"
+Warning--empty journal in geron2018neural
+You've used 6 entries,
+            2177 wiz_defined-function locations,
+            804 strings with 8485 characters,
+and the built_in function-call counts, 1671 in all, are:
+= -- 160
+> -- 59
+< -- 1
++ -- 28
+- -- 18
+* -- 114
+:= -- 294
+add.period$ -- 6
+call.type$ -- 6
+change.case$ -- 21
+chr.to.int$ -- 0
+cite$ -- 7
+duplicate$ -- 75
+empty$ -- 145
+format.name$ -- 18
+if$ -- 353
+int.to.chr$ -- 0
+int.to.str$ -- 6
+missing$ -- 6
+newline$ -- 33
+num.names$ -- 12
+pop$ -- 25
+preamble$ -- 1
+purify$ -- 21
+quote$ -- 0
+skip$ -- 55
+stack$ -- 0
+substring$ -- 74
+swap$ -- 15
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 24
+warning$ -- 1
+while$ -- 15
+width$ -- 7
+write$ -- 70
+(There were 4 warnings)

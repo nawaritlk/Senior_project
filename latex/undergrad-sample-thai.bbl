@@ -1,0 +1,40 @@
+\begin{thebibliography}{1}
+
+\bibitem{brownlee2017gentle}
+Jason Brownlee,
+\newblock  2017, ``A gentle introduction to transfer learning for deep
+  learning,''
+\newblock {\bf Machine Learning Mastery}, 2017.
+
+\bibitem{gatys2015neural}
+Leon~A Gatys, Alexander~S Ecker, and Matthias Bethge,
+\newblock  2015, ``A neural algorithm of artistic style,''
+\newblock {\bf arXiv preprint arXiv:1508.06576}, 2015.
+
+\bibitem{geron2018neural}
+Aur{\'e}lien G{\'e}ron,
+\newblock  2018, ``Neural networks and deep learning,''
+\newblock 2018.
+
+\bibitem{saha2018comprehensive}
+Sumit Saha,
+\newblock  2018, ``A comprehensive guide to convolutional neural networks—the
+  ELI5 way,''
+\newblock {\bf Towards Data Science}, vol. 15, 2018.
+
+\bibitem{sarkar2018comprehensive}
+Dipanjan Sarkar,
+\newblock  2018, ``A comprehensive hands-on guide to transfer learning with
+  real-world applications in deep learning,''
+\newblock {\bf Towards Data Science. Saatavissa: https://towardsdatascience.
+  com/a-comprehensive-handson-guide-to-transfer-learning-with-real-world-applications-in-deep-learning-212bf3b2f27a.
+  Hakup{\"a}iv{\"a}}, vol. 20, pp. 2020, 2018.
+
+\bibitem{8636278}
+C.~{Zheng} and Y.~{Zhang},  2018,
+\newblock ``Two-Stage Color ink Painting Style Transfer via Convolution Neural
+  Network,''
+\newblock in {\bf 2018 15th International Symposium on Pervasive Systems,
+  Algorithms and Networks (I-SPAN)}, 2018, pp. 193--200.
+
+\end{thebibliography}
