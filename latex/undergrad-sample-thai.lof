@@ -1,0 +1,20 @@
+\addvspace {0em}
+\addvspace {0em}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces แสดงหลักการทำงานของ Neural Style Transfer ที่ใช้ Convolutional Neural Network (CNN) \cite {gatys2015neural} }}{7}{}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces แสดงส่วนประกอบหลักของ Artificial neural networks}}{8}{}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces แสดงการทำงานภายใน neuron unit \cite {geron2018neura}}}{8}{}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces แสดงการทำงานของ feed forward (forwardpass) กับ back propagation (backwardpass)}}{9}{}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces แสดงให้เห็นถึงกระบวนการทำงานของ CNN ที่มีการเรียนรู้ 2 ส่วนคือ feature learning ซึ่งมี convolution layer และ pooling layer ประกอบกัน และ classification ซึ่งมี fully connected layer มาเกี่ยวข้อง}}{9}{}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces แสดงให้เห็นถึงลักษณะของ input data ที่มีการแบ่งชั้นสีเป็น 3 channels ซึ่งจากรูปนี้จะมีขนาดของรูปเป็น 4*4*3 RGB Image}}{10}{}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces แสดงให้เห็นถึงการเปรียบเทียบการทำงานระหว่าง traditional ML กับ transfer learning ที่มีรูปแบบการทำงานที่ต่างกัน \cite {brownlee2017gentle}}}{11}{}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces แสดงสถาปัตยกรรมของ VGG16 และ VGG19}}{12}{}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces แสดงหลักการทำงานของ web application}}{13}{}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces แสดงโครงสร้างโฟลเดอร์ของ Django project}}{14}{}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces แสดงกระบวนการทำงานของ Django}}{14}{}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces (บน) แสดงผลการประมวลผล (ล่างซ้าย) content image (ล่างขวา) style image: ชื่อภาพ ไปวัด ของชลูด นิ่มเสมอ}}{15}{}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces (บน) แสดงผลการประมวลผล (ล่างซ้าย) content image (ล่างขวา) style image: ชื่อภาพ ผูกอุบะของจักรพันธุ์ โปษยกฤต}}{16}{}%
+\addvspace {0em}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces แสดงภาพรวม Use Case Diagram}}{18}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces แสดงระบบลงชื่อเข้าใช้งาน}}{19}{}%
+\addvspace {0em}
+\addvspace {0em}

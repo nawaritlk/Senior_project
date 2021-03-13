@@ -1,0 +1,730 @@
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.2) (preloaded format=xelatex 2021.2.24)  2 MAR 2021 16:35
+entering extended mode
+**e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex
+(e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18> xparse <2020-03-03> (cpe-thai-project.cls
+
+LaTeX Warning: You have requested document class `cpe-thai-project',
+               but the document class provides `cpe-grad'.
+
+Document Class: cpe-grad 2016/05/30 CPE,KMUTT latex class
+(C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
+(C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count175
+\c@chapter=\count176
+\c@section=\count177
+\c@subsection=\count178
+\c@subsubsection=\count179
+\c@paragraph=\count180
+\c@subparagraph=\count181
+\c@figure=\count182
+\c@table=\count183
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+Document Style `CPE thesis/report'.
+(C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+) (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count184
+\Gm@cntv=\count185
+\c@Gm@tempcnt=\count186
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks16
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/xelatex/xetexconfig\geometry.cfg)) (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 105.
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xetex.def
+File: xetex.def 2020/08/26 v5.0i Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
+) (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen149
+\ar@mcellbox=\box47
+\extrarowheight=\dimen150
+\NC@list=\toks17
+\extratabsurround=\skip49
+\backup@length=\skip50
+\ar@cellbox=\box48
+) (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks18
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+) (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2020/09/23 v2.17i AMS math features
+\@mathmargin=\skip51
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen151
+)) (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen152
+) (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count187
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count188
+\leftroot@=\count189
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count190
+\DOTSCASE@=\count191
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box49
+\strutbox@=\box50
+\big@size=\dimen153
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count192
+\c@MaxMatrixCols=\count193
+\dotsspace@=\muskip16
+\c@parentequation=\count194
+\dspbrk@lvl=\count195
+\tag@help=\toks20
+\row@=\count196
+\column@=\count197
+\maxfields@=\count198
+\andhelp@=\toks21
+\eqnshift@=\dimen154
+\alignsep@=\dimen155
+\tagshift@=\dimen156
+\tagwidth@=\dimen157
+\totwidth@=\dimen158
+\lineht@=\dimen159
+\@envbody=\toks22
+\multlinegap=\skip52
+\multlinetaggap=\skip53
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
+) (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/xelatex/mathspec\mathspec.sty
+Package: mathspec 2016/12/22 v0.2b LaTeX Package (Mathematics font selection for XeLaTeX)
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count199
+) (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+) (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.sty (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2021-02-18 L3 programming layer (loader) 
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xetex.def
+File: l3backend-xetex.def 2021-02-18 L3 backend support: XeTeX
+ ()
+\c__kernel_sys_dvipdfmx_version_int=\count266
+\l__color_backend_stack_int=\count267
+\g__color_backend_stack_int=\count268
+\g__graphics_track_int=\count269
+\l__pdf_internal_box=\box51
+\g__pdf_backend_object_int=\count270
+\g__pdf_backend_annotation_int=\count271
+\g__pdf_backend_link_int=\count272
+))
+Package: xparse 2020-10-27 L3 Experimental document command parser
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse-generic.tex))
+Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec-xetex.sty
+Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count273
+\l__fontspec_language_int=\count274
+\l__fontspec_strnum_int=\count275
+\l__fontspec_tmp_int=\count276
+\l__fontspec_tmpa_int=\count277
+\l__fontspec_tmpb_int=\count278
+\l__fontspec_tmpc_int=\count279
+\l__fontspec_em_int=\count280
+\l__fontspec_emdef_int=\count281
+\l__fontspec_strong_int=\count282
+\l__fontspec_strongdef_int=\count283
+\l__fontspec_tmpa_dim=\dimen160
+\l__fontspec_tmpb_dim=\dimen161
+\l__fontspec_tmpc_dim=\dimen162
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+) (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.cfg))) (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
+)
+\XKV@depth=\count284
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+\c@eu@=\count285
+\c@eu@i=\count286
+\c@mkern=\count287
+) (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/xelatex/xunicode\xunicode.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many other characters in Unicode lower plane
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/tipa\t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+)
+\tipaTiiicode=\count288
+\tipasavetokens=\toks26
+\tipachecktokens=\toks27
+) (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/xltxtra\xltxtra.sty
+Package: xltxtra 2018/12/31 v0.7 Improvements for the "XeLaTeX" format
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/realscripts\realscripts.sty
+Package: realscripts 2016/02/13 v0.3d Access OpenType subscripts and superscripts
+\subsupersep=\dimen163
+) (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/metalogo\metalogo.sty
+Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
+\xl@everylogo=\toks28
+\xl@@everylogo=\toks29
+LaTeX Info: Redefining \TeX on input line 193.
+LaTeX Info: Redefining \LaTeX on input line 202.
+LaTeX Info: Redefining \LaTeXe on input line 219.
+)
+\l__xetex_show_hyphens_wrapping_box=\box52
+\l__xetex_show_hyphens_temp_box=\box53
+\l__xetex_show_hyphens_final_box=\box54
+\g__xetex_show_hyphens_word_box=\box55
+)
+\bibindent=\dimen164
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/base\latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+\c@definition=\count289
+)
+
+Package fontspec Info: Font family 'THSarabunNew(0)' created for font 'TH
+(fontspec)             Sarabun New' with options
+(fontspec)             [Mapping=tex-text,Scale=1.23,LetterSpace=0.0,Ligatures=TeX,Scale=1.23,LetterSpace=0,WordSpace=1.0,FakeStretch=1.0].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[1.23]"TH
+(fontspec)             Sarabun
+(fontspec)             New/OT:script=latn;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1.0\fontdimen 2\font \fontdimen
+(fontspec)             3\font =1.0\fontdimen 3\font \fontdimen 4\font
+(fontspec)             =1.0\fontdimen 4\font 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[1.23]"TH Sarabun
+(fontspec)             New/B/OT:script=latn;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1.0\fontdimen 2\font \fontdimen
+(fontspec)             3\font =1.0\fontdimen 3\font \fontdimen 4\font
+(fontspec)             =1.0\fontdimen 4\font 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->s*[1.23]"TH
+(fontspec)             Sarabun
+(fontspec)             New/I/OT:script=latn;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1.0\fontdimen 2\font \fontdimen
+(fontspec)             3\font =1.0\fontdimen 3\font \fontdimen 4\font
+(fontspec)             =1.0\fontdimen 4\font 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->s*[1.23]"TH
+(fontspec)             Sarabun
+(fontspec)             New/BI/OT:script=latn;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1.0\fontdimen 2\font \fontdimen
+(fontspec)             3\font =1.0\fontdimen 3\font \fontdimen 4\font
+(fontspec)             =1.0\fontdimen 4\font 
+
+LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
+(Font)              scaled to size 12.29996pt on input line 12.
+\c@theorem=\count290
+\c@lemma=\count291
+\c@corollary=\count292
+ (undergrad-sample-thai.aux
+
+LaTeX Warning: Label `fig:modelann' multiply defined.
+
+
+LaTeX Warning: Label `fig:django2' multiply defined.
+
+)
+\openout1 = `undergrad-sample-thai.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 109.
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 109.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 109.
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/tipa\t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 109.
+
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(113.81102pt, 426.79135pt, 56.9055pt)
+* v-part:(T,H,B)=(85.35826pt, 702.78308pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=433.62pt
+* \textheight=712.49861pt
+* \oddsidemargin=36.135pt
+* \evensidemargin=41.54103pt
+* \topmargin=-22.76228pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Missing character: There is no ​ in font TH Sarabun New/OT:script=latn;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;!
+LaTeX Font Info:    Trying to load font information for U+msa on input line 111.
+(C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 111.
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 111.
+ (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+Underfull \hbox (badness 10000) in alignment at lines 111--111
+[] [] 
+ []
+
+[1
+
+
+]
+Missing character: There is no ​ in font TH Sarabun New/OT:script=latn;language=dflt;letterspace=0.0;letterspace=0;extend=1.0;mapping=tex-text;!
+LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
+(Font)              scaled to size 12.29996pt on input line 116.
+
+Underfull \hbox (badness 10000) in alignment at lines 133--135
+[][] 
+ []
+
+[2]
+
+Package fontspec Info: Font family 'THSarabunNew:script=thai(0)' created for
+(fontspec)             font 'TH Sarabun New:script=thai' with options
+(fontspec)             [Mapping=tex-text,Scale=1.23,LetterSpace=0.0,Scale=1.3].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[1.3]"TH Sarabun
+(fontspec)             New:script=thai/OT:script=latn;language=dflt;letterspace=0.0;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[1.3]"TH Sarabun
+(fontspec)             New:script=thai/B/OT:script=latn;language=dflt;letterspace=0.0;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->s*[1.3]"TH
+(fontspec)             Sarabun
+(fontspec)             New:script=thai/I/OT:script=latn;language=dflt;letterspace=0.0;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->s*[1.3]"TH
+(fontspec)             Sarabun
+(fontspec)             New:script=thai/BI/OT:script=latn;language=dflt;letterspace=0.0;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/THSarabunNew:script=thai(0)/m/n' will be
+(Font)              scaled to size 13.00003pt on input line 144.
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+
+Package fontspec Info: Font family 'THSarabunNew:script=thai(1)' created for
+(fontspec)             font 'TH Sarabun New:script=thai' with options
+(fontspec)             [Mapping=tex-text,Scale=1.23,LetterSpace=0.0,Language=Thai,Scale=1.23].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[1.23]"TH
+(fontspec)             Sarabun
+(fontspec)             New:script=thai/OT:script=latn;language=dflt;letterspace=0.0;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[1.23]"TH Sarabun
+(fontspec)             New:script=thai/B/OT:script=latn;language=dflt;letterspace=0.0;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->s*[1.23]"TH
+(fontspec)             Sarabun
+(fontspec)             New:script=thai/I/OT:script=latn;language=dflt;letterspace=0.0;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->s*[1.23]"TH
+(fontspec)             Sarabun
+(fontspec)             New:script=thai/BI/OT:script=latn;language=dflt;letterspace=0.0;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+LaTeX Font Info:    Font shape `TU/THSarabunNew:script=thai(1)/m/n' will be
+(Font)              scaled to size 12.29996pt on input line 145.
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+
+Package fontspec Warning: Language 'Thai' not available for font 'TH Sarabun
+(fontspec)                New:script=thai' with script 'CustomDefault'.
+
+
+Overfull \hbox (11.69609pt too wide) in paragraph at lines 147--148
+\TU/THSarabunNew:script=thai(0)/m/n/10 ระดับความพึงพอใจต่อการให้บริการงาน ทั่วไปของสานักวิชาพื้นฐานและภาษา ของนักศึกษาที่มาใช้บริการสานักวิชาพื้นฐานและภาษา
+ []
+
+
+Overfull \hbox (4.8971pt too wide) in paragraph at lines 147--148
+\TU/THSarabunNew:script=thai(0)/m/n/10 สถาบัน เทคโนโลยีไทย-ญี่ปุ่น จาแนกตามเพศ คณะ และชั้นปีที่ศึกษา เพื่อศึกษาปัญหาและข้อเสนอแนะของ นักศึกษามาเป็นแนวทาง
+ []
+
+LaTeX Font Info:    Font shape `TU/THSarabunNew:script=thai(0)/b/n' will be
+(Font)              scaled to size 13.00003pt on input line 153.
+
+Underfull \hbox (badness 10000) in alignment at lines 150--154
+[][] 
+ []
+
+[3]
+LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
+(Font)              scaled to size 14.75995pt on input line 162.
+LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
+(Font)              scaled to size 14.75995pt on input line 162.
+ [4
+
+] (undergrad-sample-thai.toc [5
+
+])
+\tf@toc=\write3
+\openout3 = `undergrad-sample-thai.toc'.
+
+ [6] (undergrad-sample-thai.lot)
+\tf@lot=\write4
+\openout4 = `undergrad-sample-thai.lot'.
+
+ [7
+
+] (undergrad-sample-thai.lof
+
+LaTeX Warning: Citation `geron2018neura' on page viii undefined on input line 5.
+
+)
+\tf@lof=\write5
+\openout5 = `undergrad-sample-thai.lof'.
+
+ [8
+
+]
+Overfull \hbox (1.72173pt too wide) in paragraph at lines 181--181
+[]|\TU/THSarabunNew(0)/b/n/10 SYMBOL| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+[]|\TU/THSarabunNew(0)/m/n/10 jobs/
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+[]|\TU/THSarabunNew(0)/m/n/10 jobs/
+ []
+
+[9
+
+] [10
+
+]
+บทที่ 1.
+LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
+(Font)              scaled to size 17.71193pt on input line 206.
+LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
+(Font)              scaled to size 17.71193pt on input line 206.
+
+Overfull \hbox (5.99281pt too wide) in paragraph at lines 216--217
+\TU/THSarabunNew(0)/m/n/10 ศิลปินที่เสียชีวิตไปแล้วกลับมาวาดรูปขึ้นใหม่ จากความสำเร็จครั้งนั้น ส่งผลให้มีคนจำนวนมากสนใจในการทำ Neural Style Transfer (NST)
+ []
+
+
+Overfull \hbox (3.213pt too wide) in paragraph at lines 220--221
+[]\TU/THSarabunNew(0)/m/n/10 นําเสนอความต้องการของผู้มีส่วนได้ส่วนเสียเฉพาะกลุ่ม ผลิตภัณฑ์ทางการค้าที่มีศักยภาพ และ เว็บแอปพลิเคชันสำหรับคอมพิวเตอร์ 
+ []
+
+
+Overfull \hbox (2.99811pt too wide) in paragraph at lines 225--226
+[]\TU/THSarabunNew(0)/m/n/10 รวบรวมรูปภาพที่สร้างจากศิลปินที่มีชื่อเสียงและลักษณะภาพสามารถบอกได้ถึงเอกลักษณ์ของศิลปินท่านนั้นได้ โดยทางผู้จัด
+ []
+
+[1
+
+] [2] [3]
+File: ./image/plan_table1.jpg Graphic file (type bmp)
+<./image/plan_table1.jpg>
+
+Overfull \hbox (7.82814pt too wide) in paragraph at lines 322--327
+ [][] 
+ []
+
+[4]
+File: ./image/plan_table2.jpg Graphic file (type bmp)
+<./image/plan_table2.jpg>
+
+Overfull \hbox (7.82814pt too wide) in paragraph at lines 335--340
+ [][] 
+ []
+
+LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
+(Font)              scaled to size 13.52995pt on input line 346.
+[5] [6]
+บทที่ 2.
+File: ./image/unit1.png Graphic file (type bmp)
+<./image/unit1.png>
+
+Overfull \hbox (2.75792pt too wide) in paragraph at lines 400--401
+\TU/THSarabunNew(0)/m/n/10 ตัวอย่างเช่น การทำนายรูปภาพว่าเป็นหมาหรือแมว ซึ่งต้องสอนให้คอมพิวเตอร์รู้ว่ารูปภาพนี้เป็นหมาหรือแมวก่อนถึงจะเอาไปใช้ได้ เป็นต้น,
+ []
+
+[7
+
+]
+File: ./image/unit2.jpg Graphic file (type bmp)
+<./image/unit2.jpg>
+File: ./image/neuron_unit.png Graphic file (type bmp)
+<./image/neuron_unit.png>
+
+
+LaTeX Warning: Citation `geron2018neura' on page 8 undefined on input line 428.
+
+File: ./image/feed_back.png Graphic file (type bmp)
+<./image/feed_back.png>
+[8]
+File: ./image/cnn.jpg Graphic file (type bmp)
+<./image/cnn.jpg>
+File: ./image/unit3.png Graphic file (type bmp)
+<./image/unit3.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9]
+Overfull \hbox (4.43068pt too wide) in paragraph at lines 491--493
+\TU/THSarabunNew(0)/m/n/10 กับงานหนึ่ง ๆ มาประยุกต์ใช้กับงานอื่นโดยไม่จำเป็นต้องสอนโมเดลใหม่ทั้งหมด ทำให้สามารถลดเวลาประมวลผลและเวลาในการสอนโมเดล
+ []
+
+[10]
+File: ./image/unit4.png Graphic file (type bmp)
+<./image/unit4.png>
+
+Overfull \hbox (7.24745pt too wide) in paragraph at lines 506--507
+[]\TU/THSarabunNew(0)/m/n/10 สำหรับการทำ transfer learning ที่เกี่ยวกับรูปภาพ[[]][[]]มีการสร้างโมเดลสำหรับ ImageNet ที่มีรูปภาพกว่า 1.4 ล้านรูปและมากกว่า
+ []
+
+File: ./image/vgg16-19.png Graphic file (type bmp)
+<./image/vgg16-19.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11] [12]
+File: ./image/webapp.jpg Graphic file (type bmp)
+<./image/webapp.jpg>
+
+Overfull \hbox (24.18454pt too wide) in paragraph at lines 545--546
+[]\TU/THSarabunNew(0)/m/n/10 Python เป็นภาษาที่ใช้ในการเขียนโปรแกรม ซึ่งได้รับความนิยมเป็นอย่างมาก เนื่องจากเป็นภาษาที่เรียนรู้ง่าย ใช้งานง่ายและมีประสิทธิภาพ
+ []
+
+
+Overfull \hbox (4.62752pt too wide) in paragraph at lines 557--558
+[]\TU/THSarabunNew(0)/m/n/10 JavaScript เป็นภาษาคอมพิวเตอร์ชนิดหนึ่งที่ใช้ร่วมกับเอกสาร html เพื่อให้เว็บไซต์มีการเคลื่อนไหวเพื่อตอบสนองต่อการใช้งานของ
+ []
+
+[13]
+File: ./image/django.png Graphic file (type bmp)
+<./image/django.png>
+File: ./image/django2.png Graphic file (type bmp)
+<./image/django2.png>
+ [14]
+File: ./image/result1.png Graphic file (type bmp)
+<./image/result1.png>
+ [15]
+File: ./image/result2.png Graphic file (type bmp)
+<./image/result2.png>
+ [16]
+บทที่ 3.
+
+Overfull \hbox (8.98811pt too wide) in paragraph at lines 654--655
+[]\TU/THSarabunNew(0)/m/n/10 หลังจากทำสำเร็จแล้วรูปภาพใหม่แล้วจะทำ Color preservation โดยใช้ histogram matchingเพื่อให้รูปภาพใหม่ที่ได้มีโทนสีเหมือน
+ []
+
+
+Overfull \hbox (9.55977pt too wide) in paragraph at lines 659--660
+[]\TU/THSarabunNew(0)/m/n/10 เว็บไซต์จะต้องสามารถสร้างรูปภาพใหม่ที่เกิดจากการผสมผสานระหว่างรูปภาพที่สร้างโดยศิลปินชื่อดังกับรูปภาพที่ผู้ใช้ทำการอัพโหลด
+ []
+
+[17
+
+]
+File: ./image/use-case.png Graphic file (type bmp)
+<./image/use-case.png>
+ [18]
+File: ./image/ad-login.png Graphic file (type bmp)
+<./image/ad-login.png>
+ [19]
+บทที่ 4.
+[20
+
+]
+บทที่ 5.
+(undergrad-sample-thai.bbl [21
+
+]) [22
+
+]
+LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
+(Font)              scaled to size 21.25432pt on input line 747.
+LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
+(Font)              scaled to size 21.25432pt on input line 747.
+ [23]
+Underfull \hbox (badness 10000) in paragraph at lines 748--749
+
+ []
+
+
+LaTeX Warning: Citation `kim01' on page 24 undefined on input line 766.
+
+
+LaTeX Warning: Citation `eun01' on page 24 undefined on input line 805.
+
+[24] [25]
+Underfull \hbox (badness 10000) in paragraph at lines 818--819
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 830--831
+
+ []
+
+
+LaTeX Warning: Citation `eun01' on page 26 undefined on input line 836.
+
+[26] (undergrad-sample-thai.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 9061 strings out of 411732
+ 182327 string characters out of 2836994
+ 536020 words of memory out of 3000000
+ 28891 multiletter control sequences out of 15000+200000
+ 405759 words of font info for 77 fonts, out of 3000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 110i,9n,117p,1015b,488s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on undergrad-sample-thai.xdv (36 pages, 433496 bytes).
