@@ -1,1 +1,303 @@
-{% extends 'menubar_Login.html' %}
+{% include 'menubar_Login.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script&family=Playfair+Display&display=swap');
+
+    /*
+        font-family: 'Dancing Script', cursive;
+        font-family: 'DM Serif Display', serif;
+        font-family: 'Playfair Display', serif;*/
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #F8E8DB;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /*font-family: 'Montserrat', sans-serif;*/
+      font-family: 'DM Serif Display', serif;
+    }
+
+    body {
+      background-color: #F8E8DB;
+    }
+
+    /************************old style*****************************/
+    .wrapper {
+      margin: 0 auto 0 60px;
+      width: 1000px;
+    }
+
+    /*nav {
+      width: 100%;
+      height: 60px;
+      background-color: #ffffff;
+    }
+
+
+    a {
+      margin-left: 10%;
+      text-decoration: none;
+      line-height: 50px;
+      font-size: 20px;
+      font-family: arial;
+      color: #000000;
+      padding: 0 20px;
+    }*/
+
+    a:hover {
+      color: brown;
+    }
+
+    /***********************media setting*************************/
+
+    .grid-container1 {
+      display: grid;
+      grid-template-columns: 5% 500px 150px 500px auto;
+      float: left;
+    }
+
+    .grid-container2 {
+      display: grid;
+      grid-template-columns: 150% 60px 10px 700px 10px 300px auto;
+      float: left;
+    }
+
+    .grid-menu {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 400px 200px 180px auto;
+    }
+
+
+
+    /***************grid setting******************/
+
+
+    .grid1 {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 5%;
+      margin-top: 5%;
+    }
+
+
+    .grid2 {
+      width: 100%;
+
+    }
+
+
+    .logo {
+      font-size: 35px;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    #login-btn {
+      text-align: right;
+      margin-right: 3%;
+      grid-column-end: -1;
+    }
+
+
+    /*******************content***************/
+    .content1 {
+      max-width: 500px;
+      height: 280px;
+      background-color: white;
+      place-content: center;
+      border: 1px solid #b8adad;
+      border-radius: 3px;
+    }
+
+    .content1 .drop-zone {
+      position: relative;
+      left: 5%;
+      top: 5%;
+      right: 10%;
+      align-content: center;
+      width: 90%;
+      height: 90%;
+      padding: 25px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      font-size: 25px;
+      font-weight: lighter;
+      color: #000000;
+      border: 5px dashed #c2cdda;
+      overflow: auto;
+    }
+
+    .drop-zone--over {
+      border-style: solid;
+    }
+
+    .drop-zone__input {
+      display: none;
+    }
+
+    .drop-zone__thumb {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      overflow: hidden;
+      background-color: #cccccc;
+      background-size: cover;
+      position: relative;
+    }
+
+    .drop-zone__thumb::after {
+      content: attr(data-label);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 5px 0;
+      color: #ffffff;
+      background: rgb(0, 0, 0, 0.75);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    /***************picture style************************/
+
+    .populaStyle img {
+      width: 30%;
+      border-radius: 3px;
+    }
+
+
+    /*****************font setting********************/
+
+    p.text1 {
+      display: block;
+      margin-top: 3%;
+      line-height: 40px;
+      width: 150px;
+      height: 40px;
+      font-size: 20px;
+      text-align: center;
+      border: none;
+      border-top: 1px solid;
+      border-right: 1px solid;
+      border-left: 1px solid;
+      border-color: #b8adad;
+      border-radius: 3px;
+      background-color: white;
+
+    }
+
+    .lowerContent p.text2 {
+      font-size: 20px;
+      margin-top: 10%;
+    }
+
+
+
+
+    /************************lower content*****************************/
+
+    #email {
+      width: 700px;
+      height: 40px;
+      border: solid;
+      border-radius: 8px;
+      border-color: #b8adad;
+    }
+
+    #submitEmail {
+      width: 120px;
+      height: 40px;
+      border: solid;
+      border-color: #99653c;
+      border-radius: 8px;
+      color: white;
+      text-transform: uppercase;
+      font-size: 20px;
+      letter-spacing: 3px;
+      background: #99653C;
+    }
+  </style>
+  <title></title>
+</head>
+
+<body>
+  <div class="grid-container1">
+    <div class="grid1"></div>
+    <div class="grid1">
+      <h1>Photo</h1>
+      <p class="text1">Upload photo</p>
+      <div class="content1">
+        <div class="drop-zone">
+          <span class="drop-zone__prompt">Drop your photo here or click to select one from your computer.</span>
+          <!--<div class="drop-zone__thumb" data-label="myFile.txt"></div>-->
+          <input type="file" name="myFile" class="drop-zone__input">
+        </div>
+      </div>
+    </div>
+
+    <div class="grid1"></div>
+    <div class="grid1">
+      <h1>Style</h1>
+      <p class="text1">Popular style</p>
+      <div class="content1">
+        <span class="drop-zone__prompt">
+          <div class="populaStyle">
+            <img src="pic/v1.jpg" alt="vango1">
+            <img src="pic/v1.jpg" alt="vango2">
+            <img src="pic/v1.jpg" alt="vango2">
+            <img src="pic/v1.jpg" alt="vango2">
+          </div>
+        </span>
+        <!--<div class="drop-zone__thumb" data-label="myFile.txt"></div>-->
+      </div>
+    </div>
+    <div class="grid1"></div>
+
+    <!-----------------lower content-------------------------->
+    <div class="grid-container2">
+      <div class="grid2"></div>
+      <div class="grid2">
+        <div class="lowerContent">
+          <p class="text2">E-mail</p>
+        </div>
+      </div>
+      <div class="grid2"></div>
+      <div class="grid2">
+        <div class="inputEmail">
+          <form action="#">
+            <input type="email" id="email" name="email">
+          </form>
+        </div>
+      </div>
+      <div class="grid2"></div>
+      <div class="grid2">
+        <input type="submit" id="submitEmail">
+      </div>
+      <div class="grid2"></div>
+    </div>
+
+
+
+
+
+  </div>
+
+
+</body>
+
+</html>
