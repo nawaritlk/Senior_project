@@ -5,15 +5,14 @@
     margin: 0;
     padding: 0;
     /*font-family: 'Montserrat', sans-serif;*/
-    font-family: 'DM Serif Display', serif;
 }
 
-body{
-    background-color:#F8E8DB;
+body {
+    background-color: #F8E8DB;
 }
+
 
 /************************menu bar *****************************/
-
 
 nav {
     width: 100%;
@@ -25,23 +24,21 @@ nav li {
     list-style: none;
 }
 
-nav li a{
+nav li a {
     margin-left: 10%;
-    text-decoration: none; 
+    text-decoration: none;
     line-height: 50px;
     font-size: 20px;
     font-family: arial;
-    color:#000000;
+    color: #000000;
     padding: 0 20px;
 }
 
-nav li a:hover{
-    color:brown;
+nav li a:hover {
+    color: brown;
 }
 
-
-
-.logo{
+.logo {
     font-size: 35px;
     font-family: 'Roboto', sans-serif;
 }
@@ -53,20 +50,23 @@ nav li a:hover{
     grid-column-end: -1;
 }
 
+
 /***********************grid*************************/
+
 .grid-menu {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 400px 200px  180px auto ;
+    grid-template-columns: 400px 200px 180px auto;
 }
 
-@media only screen and (min-width: 1121px){
+@media only screen and (min-width: 1121px) {
     .grid-container1 {
         display: grid;
-        grid-template-columns: auto 1000px auto ;
-        
+        grid-template-columns: auto 1000px auto;
     }
 }
+
+
 /**************************counnt like******************************/
 
 .countlike {
@@ -79,7 +79,9 @@ nav li a:hover{
     transform: translate(-50%, -50%);
 }
 
+
 /************************* content**************************/
+
 .bg {
     height: auto;
 }
@@ -95,7 +97,7 @@ nav li a:hover{
     height: 480px;
     width: 75%;
     background-color: aqua;
-    margin-left: 13%;
+    /*margin-left: 13%;*/
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -125,11 +127,14 @@ nav li a:hover{
     padding-left: 10%;
     display: flex;
 }
+
 #like-btn {
     padding-left: 65%;
 }
 
+
 /*************content2*************************/
+
 .content2 {
     display: flex;
     justify-content: center;
@@ -141,13 +146,12 @@ nav li a:hover{
     width: 360px;
     height: 250px;
     border: solid 1px;
-    border-color:  #000000;
+    border-color: #000000;
     border-radius: 10px;
     margin-right: 3%;
 }
 
-
-.block-imgInput  img {
+.block-imgInput img {
     display: flex;
     align-content: center;
     width: 315px;
@@ -157,18 +161,20 @@ nav li a:hover{
     margin-top: 12.5px;
     margin-left: 17.5px;
 }
+
+
 /********************************/
+
 .block-style {
     margin-top: 3%;
     width: 360px;
     height: 250px;
     border: solid 1px;
-    border-color:  #000000;
+    border-color: #000000;
     border-radius: 10px;
 }
 
-
-.block-style .imgInput  img {
+.block-style .imgInput img {
     display: flex;
     align-content: center;
     width: 315px;
@@ -177,5 +183,4 @@ nav li a:hover{
     text-align: center;
     margin-top: 12.5px;
     margin-left: 17.5px;
-
 }

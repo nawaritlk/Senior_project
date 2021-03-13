@@ -14,72 +14,47 @@
         font-family: 'DM Serif Display', serif;
         font-family: 'Playfair Display', serif;*/
 
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      background-color: #F8E8DB;
-    }
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       /*font-family: 'Montserrat', sans-serif;*/
-      font-family: 'DM Serif Display', serif;
     }
 
     body {
       background-color: #F8E8DB;
     }
 
-    /************************old style*****************************/
-    .wrapper {
-      margin: 0 auto 0 60px;
-      width: 1000px;
-    }
-
-    /*nav {
-      width: 100%;
-      height: 60px;
-      background-color: #ffffff;
-    }
-
-
-    a {
-      margin-left: 10%;
-      text-decoration: none;
-      line-height: 50px;
-      font-size: 20px;
-      font-family: arial;
-      color: #000000;
-      padding: 0 20px;
-    }*/
-
-    a:hover {
-      color: brown;
-    }
 
     /***********************media setting*************************/
+    @media only screen and (min-width: 1254px) {
+      .grid-container1 {
+        display: grid;
+        grid-template-columns: 12% 500px 100px 500px;
+        float: left;
+      }
 
-    .grid-container1 {
-      display: grid;
-      grid-template-columns: 5% 500px 150px 500px auto;
-      float: left;
+      .grid-container2 {
+        display: grid;
+        grid-template-columns: 8% 60px 10px 700px 10px 150px;
+        float: left;
+      }
+
+      .grid-menu {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 400px 200px 180px auto;
+      }
     }
 
-    .grid-container2 {
-      display: grid;
-      grid-template-columns: 150% 60px 10px 700px 10px 300px auto;
-      float: left;
+    /*
+    @media only screen and (max-width: 1254px){
+        body{
+            background-color: red;
+        }
     }
 
-    .grid-menu {
-      display: grid;
-      grid-gap: 20px;
-      grid-template-columns: 400px 200px 180px auto;
-    }
+
 
 
 
@@ -296,7 +271,6 @@
 
 
   </div>
-
 
 </body>
 
