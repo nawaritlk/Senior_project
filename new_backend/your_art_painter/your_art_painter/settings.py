@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'community',
     'user_info',
     'register',
+    'authentication',
 ]
 
 MIDDLEWARE = [
