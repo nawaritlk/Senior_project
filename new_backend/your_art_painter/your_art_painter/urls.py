@@ -10,4 +10,5 @@ urlpatterns = [
     path('profile/', include('user_info.urls')),
     path('community/', include('community.urls')),
     path('register/', include('register.urls')),
+    path('login/', include('authentication.urls')),
 ]
