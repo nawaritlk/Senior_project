@@ -1,3 +1,4 @@
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Filename = cpe-project.cls v1.0
 %     Data Jun 4, 2020
@@ -38,10 +39,17 @@
 \usepackage{mathspec}
 \usepackage[no-math]{fontspec} %Font package
 \usepackage{xunicode,xltxtra}
- 
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+	linktocpage,
+    colorlinks=true, %set true if you want colored links
+%    linktoc=all,     %set to all if you want both sections and subsections linked
+    linkcolor=blue,  %choose some color if you want links to stand out
+}
 
 %%%% For using thaifonts
-\newcommand{\textthai}[1]{{\fontspec[Language=Thai,Scale=1.23]{TH Sarabun New:script=thai}#1}}
+% \newcommand{\textthai}[1]{{\fontspec[Language=Thai,Scale=1.23]{TH Sarabun New:script=thai}#1}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

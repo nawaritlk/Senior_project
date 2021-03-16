@@ -1,65 +1,73 @@
-\contentsline {chapterx}{\mdseries ABSTRACT}{ii}{}%
-\contentsline {chapterx}{\mdseries บทคัดย่อ}{iii}{}%
-\contentsline {chapterx}{\mdseries กิตติกรรมประกาศ}{iv}{}%
-\contentsline {chapterx}{\mdseries สารบัญ}{vi}{}%
-\contentsline {chapterx}{\mdseries สารบัญตาราง}{vii}{}%
-\contentsline {chapterx}{\mdseries สารบัญรูปภาพ}{viii}{}%
-\contentsline {chapterx}{\mdseries สารบัญสัญลักษณ์}{ix}{}%
-\contentsline {chapterx}{\mdseries สารบัญคำศัพท์ทางเทคนิคและคำย่อ}{x}{}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {1}\hskip -0.8em บทนำ}}}{1}{}%
-\contentsline {section}{\numberline {1.1}ที่มาและความสำคัญ}{1}{}%
-\contentsline {section}{\numberline {1.2}ประเภทของโครงงาน}{1}{}%
-\contentsline {section}{\numberline {1.3}วิธีการนำเสนอ}{1}{}%
-\contentsline {section}{\numberline {1.4}วัตถุประสงค์ของโครงการ}{2}{}%
-\contentsline {section}{\numberline {1.5}ขอบเขตของโครงงาน}{2}{}%
-\contentsline {section}{\numberline {1.6}เนื้อหาทางวิศวกรรมที่เป็นต้นฉบับ}{2}{}%
-\contentsline {section}{\numberline {1.7}การแยกย่อยงาน และร่างแผนการดำเนินงาน}{2}{}%
-\contentsline {section}{\numberline {1.8}ผลการดำเนินการ}{5}{}%
-\contentsline {subsection}{\numberline {1.8.1}ผลการดำเนินการในภาคการศึกษาที่1}{5}{}%
-\contentsline {subsection}{\numberline {1.8.2}ผลการดำเนินการในภาคการศึกษาที่2}{6}{}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {2}\hskip -0.8em ทฤษฎีความรู้และงานที่เกี่ยวข้อง}}}{7}{}%
-\contentsline {section}{\numberline {2.1}บทนำ}{7}{}%
-\contentsline {section}{\numberline {2.2}แนวความคิดทางทฤษฎี}{7}{}%
-\contentsline {subsection}{\numberline {2.2.1}Neural style transfer}{7}{}%
-\contentsline {subsection}{\numberline {2.2.2}Overview of machine learning}{7}{}%
-\contentsline {subsection}{\numberline {2.2.3}Classical artificial neural networks}{8}{}%
-\contentsline {subsubsection}{\numberline {2.2.3.1}Neuron unit ใน hidden layer}{8}{}%
-\contentsline {subsubsection}{\numberline {2.2.3.2}Backward propagation}{9}{}%
-\contentsline {subsubsection}{\numberline {2.2.3.3}Cost function}{9}{}%
-\contentsline {subsection}{\numberline {2.2.4}Convolutional Neural Network (CNN)}{9}{}%
-\contentsline {subsubsection}{\numberline {2.2.4.1}Input data}{9}{}%
-\contentsline {subsubsection}{\numberline {2.2.4.2}Convolution layer}{10}{}%
-\contentsline {subsubsection}{\numberline {2.2.4.3}Pooling layer}{10}{}%
-\contentsline {subsubsection}{\numberline {2.2.4.4}Fully connected layer}{10}{}%
-\contentsline {subsection}{\numberline {2.2.5}Transfer Learning}{10}{}%
-\contentsline {subsubsection}{\numberline {2.2.5.1}VGGNet}{11}{}%
-\contentsline {subsection}{\numberline {2.2.6}Web Application}{12}{}%
-\contentsline {subsection}{\numberline {2.2.7}Development Tools}{13}{}%
-\contentsline {subsubsection}{\numberline {2.2.7.1}Python}{13}{}%
-\contentsline {subsubsection}{\numberline {2.2.7.2}Hypertext Markup Language (HTML)}{13}{}%
-\contentsline {subsubsection}{\numberline {2.2.7.3}Cascading Style Sheets (CSS)}{13}{}%
-\contentsline {subsubsection}{\numberline {2.2.7.4}JavaScript}{13}{}%
-\contentsline {subsubsection}{\numberline {2.2.7.5}Pytorch}{13}{}%
-\contentsline {subsubsection}{\numberline {2.2.7.6}Django}{13}{}%
-\contentsline {subsubsection}{\numberline {2.2.7.7}MongoDB}{14}{}%
-\contentsline {section}{\numberline {2.3}การทบทวนวรรณกรรม}{15}{}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {3}\hskip -0.8em วิธีการดำเนินงาน}}}{17}{}%
-\contentsline {section}{\numberline {3.1}บทนำ}{17}{}%
-\contentsline {section}{\numberline {3.2}รายละเอียดของโครงงาน}{17}{}%
-\contentsline {subsection}{\numberline {3.2.1}Modeling}{17}{}%
-\contentsline {subsection}{\numberline {3.2.2}System Requirements สำหรับเว็บแอพพลิเคชัน}{17}{}%
-\contentsline {subsection}{\numberline {3.2.3}แผนผังแสดงความสัมพันธ์ (Use Case Diagram)}{18}{}%
-\contentsline {subsection}{\numberline {3.2.4}แผนภาพกิจกรรม (Activity Diagram)}{19}{}%
-\contentsline {subsubsection}{\numberline {3.2.4.1}ระบบลงชื่อเข้าใช้งาน}{19}{}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {4}\hskip -0.8em ผลการดำเนินงาน}}}{20}{}%
-\contentsline {section}{\numberline {4.1}ประสิทฺธิภาพการทำงานของระบบ}{20}{}%
-\contentsline {section}{\numberline {4.2}ความพึงพอใจการใช้งาน}{20}{}%
-\contentsline {section}{\numberline {4.3}การวิเคราะห์ข้อมูลและผลการทดลอง}{20}{}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {5}\hskip -0.8em บทสรุป}}}{21}{}%
-\contentsline {section}{\numberline {5.1}สรุปผลโครงงาน}{21}{}%
-\contentsline {section}{\numberline {5.2}ปัญหาที่พบและการแก้ไข}{21}{}%
-\contentsline {section}{\numberline {5.3}ข้อจำกัดและข้อเสนอแนะ}{21}{}%
-\contentsline {chapter}{\mdseries \bf \MakeUppercase {บรรณานุกรม}}{22}{}%
-\contentsline {chapter}{\mdseries \bf \MakeUppercase {Appendix}}{23}{}%
-\contentsline {apdx}{A\hskip 1em ชื่อภาคผนวกที่ 1}{24}{}%
-\contentsline {apdx}{B\hskip 1em ชื่อภาคผนวกที่ 2}{26}{}%
+\selectlanguage *{thai}
+\contentsline {chapterx}{\mdseries ABSTRACT}{ii}{Doc-Start}%
+\contentsline {chapterx}{\mdseries บทคัดย่อ}{iii}{Doc-Start}%
+\contentsline {chapterx}{\mdseries กิตติกรรมประกาศ}{iv}{Doc-Start}%
+\contentsline {chapterx}{\mdseries สารบัญ}{vi}{Doc-Start}%
+\contentsline {chapterx}{\mdseries สารบัญตาราง}{vii}{Doc-Start}%
+\contentsline {chapterx}{\mdseries สารบัญรูปภาพ}{viii}{Doc-Start}%
+\contentsline {chapterx}{\mdseries สารบัญสัญลักษณ์}{ix}{Doc-Start}%
+\contentsline {chapterx}{\mdseries สารบัญคำศัพท์ทางเทคนิคและคำย่อ}{x}{Doc-Start}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {1}\hskip -0.8em บทนำ}}}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}ที่มาและความสำคัญ}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}ประเภทของโครงงาน}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.3}วิธีการนำเสนอ}{1}{section.1.3}%
+\contentsline {section}{\numberline {1.4}วัตถุประสงค์ของโครงการ}{2}{section.1.4}%
+\contentsline {section}{\numberline {1.5}ขอบเขตของโครงงาน}{2}{section.1.5}%
+\contentsline {section}{\numberline {1.6}เนื้อหาทางวิศวกรรมที่เป็นต้นฉบับ}{2}{section.1.6}%
+\contentsline {section}{\numberline {1.7}การแยกย่อยงาน และร่างแผนการดำเนินงาน}{2}{section.1.7}%
+\contentsline {section}{\numberline {1.8}ผลการดำเนินการ}{5}{section.1.8}%
+\contentsline {subsection}{\numberline {1.8.1}ผลการดำเนินการในภาคการศึกษาที่1}{5}{subsection.1.8.1}%
+\contentsline {subsection}{\numberline {1.8.2}ผลการดำเนินการในภาคการศึกษาที่2}{6}{subsection.1.8.2}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {2}\hskip -0.8em ทฤษฎีความรู้และงานที่เกี่ยวข้อง}}}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}บทนำ}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}แนวความคิดทางทฤษฎี}{7}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Neural style transfer}{7}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Overview of machine learning}{7}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Classical artificial neural networks}{8}{subsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}Neuron unit ใน hidden layer}{8}{subsubsection.2.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.2.3.2}Backward propagation}{9}{subsubsection.2.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.2.3.3}Cost function}{9}{subsubsection.2.2.3.3}%
+\contentsline {subsection}{\numberline {2.2.4}Convolutional Neural Network (CNN)}{9}{subsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.4.1}Input data}{9}{subsubsection.2.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.2.4.2}Convolution layer}{10}{subsubsection.2.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.2.4.3}Pooling layer}{10}{subsubsection.2.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.2.4.4}Fully connected layer}{10}{subsubsection.2.2.4.4}%
+\contentsline {subsection}{\numberline {2.2.5}Transfer Learning}{10}{subsection.2.2.5}%
+\contentsline {subsubsection}{\numberline {2.2.5.1}VGGNet}{11}{subsubsection.2.2.5.1}%
+\contentsline {subsection}{\numberline {2.2.6}Web Application}{12}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Development Tools}{13}{subsection.2.2.7}%
+\contentsline {subsubsection}{\numberline {2.2.7.1}Python}{13}{subsubsection.2.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.2.7.2}Hypertext Markup Language (HTML)}{13}{subsubsection.2.2.7.2}%
+\contentsline {subsubsection}{\numberline {2.2.7.3}Cascading Style Sheets (CSS)}{13}{subsubsection.2.2.7.3}%
+\contentsline {subsubsection}{\numberline {2.2.7.4}JavaScript}{13}{subsubsection.2.2.7.4}%
+\contentsline {subsubsection}{\numberline {2.2.7.5}Pytorch}{13}{subsubsection.2.2.7.5}%
+\contentsline {subsubsection}{\numberline {2.2.7.6}Django}{13}{subsubsection.2.2.7.6}%
+\contentsline {subsubsection}{\numberline {2.2.7.7}MongoDB}{14}{subsubsection.2.2.7.7}%
+\contentsline {section}{\numberline {2.3}การทบทวนวรรณกรรม}{15}{section.2.3}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {3}\hskip -0.8em วิธีการดำเนินงาน}}}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}บทนำ}{17}{section.3.1}%
+\contentsline {section}{\numberline {3.2}รายละเอียดของโครงงาน}{17}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Modeling}{17}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}System Requirements สำหรับเว็บแอพพลิเคชัน}{17}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}แผนผังแสดงความสัมพันธ์ (Use Case Diagram)}{18}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}แผนภาพกิจกรรม (Activity Diagram)}{19}{subsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.4.1}ระบบลงชื่อเข้าใช้งาน}{19}{subsubsection.3.2.4.1}%
+\contentsline {subsubsection}{\numberline {3.2.4.2}ระบบบัญชีผู้ใช้}{20}{subsubsection.3.2.4.2}%
+\contentsline {subsubsection}{\numberline {3.2.4.3}ระบบวิธีการใช้งาน}{21}{subsubsection.3.2.4.3}%
+\contentsline {subsubsection}{\numberline {3.2.4.4}ระบบเกี่ยวกับเรา}{22}{subsubsection.3.2.4.4}%
+\contentsline {subsubsection}{\numberline {3.2.4.5}ระบบสร้างรูปภาพ}{23}{subsubsection.3.2.4.5}%
+\contentsline {subsubsection}{\numberline {3.2.4.6}ระบบชุมชน}{24}{subsubsection.3.2.4.6}%
+\contentsline {section}{\numberline {3.3}ไดอะแกรมสถาปัตยกรรมและคำอธิบาย}{25}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}User interface design}{25}{subsection.3.3.1}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {4}\hskip -0.8em ผลการดำเนินงาน}}}{28}{chapter.4}%
+\contentsline {section}{\numberline {4.1}ประสิทฺธิภาพการทำงานของระบบ}{28}{section.4.1}%
+\contentsline {section}{\numberline {4.2}ความพึงพอใจการใช้งาน}{28}{section.4.2}%
+\contentsline {section}{\numberline {4.3}การวิเคราะห์ข้อมูลและผลการทดลอง}{28}{section.4.3}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {5}\hskip -0.8em บทสรุป}}}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}สรุปผลโครงงาน}{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}ปัญหาที่พบและการแก้ไข}{29}{section.5.2}%
+\contentsline {section}{\numberline {5.3}ข้อจำกัดและข้อเสนอแนะ}{29}{section.5.3}%
+\contentsline {chapter}{\mdseries \bf \MakeUppercase {หนังสืออ้างอิง}}{30}{section.5.3}%
+\contentsline {chapter}{\mdseries \bf \MakeUppercase {Appendix}}{31}{section.5.3}%
+\contentsline {apdx}{A\hskip 1em ชื่อภาคผนวกที่ 1}{32}{section.5.3}%
+\contentsline {apdx}{B\hskip 1em ชื่อภาคผนวกที่ 2}{34}{equation.1.3.5}%
