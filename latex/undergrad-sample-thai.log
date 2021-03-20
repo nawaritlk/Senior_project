@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.2) (preloaded format=xelatex 2021.2.24)  17 MAR 2021 21:46
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.2) (preloaded format=xelatex 2021.2.24)  21 MAR 2021 00:06
 entering extended mode
 **e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex
 (e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex
@@ -798,11 +798,16 @@ LaTeX Info: Redefining \ttfamily on input line 1.
 \thai@year=\count321
  [5
 
-])
+]
+Overfull \hbox (3.38525pt too wide) in paragraph at lines 73--73
+ []  []\TU/THSarabunNew(0)/m/n/10 ทำการทดลองโดยใช้ target image เป็น noise image และ target image เป็นภาพที่มาจากการคัดลอก content 
+ []
+
+[6])
 \tf@toc=\write4
 \openout4 = `undergrad-sample-thai.toc'.
 
- [6] (undergrad-sample-thai.lot
+ [7] (undergrad-sample-thai.lot
 LaTeX Info: Redefining \rmfamily on input line 1.
 LaTeX Info: Redefining \sffamily on input line 1.
 LaTeX Info: Redefining \ttfamily on input line 1.
@@ -811,97 +816,93 @@ LaTeX Info: Redefining \ttfamily on input line 1.
 \tf@lot=\write5
 \openout5 = `undergrad-sample-thai.lot'.
 
- [7
+ [8
 
 ] (undergrad-sample-thai.lof
 LaTeX Info: Redefining \rmfamily on input line 1.
 LaTeX Info: Redefining \sffamily on input line 1.
 LaTeX Info: Redefining \ttfamily on input line 1.
 \thai@year=\count323
-
-
-LaTeX Warning: Citation `geron2018neura' on page viii undefined on input line 6.
-
 )
 \tf@lof=\write6
 \openout6 = `undergrad-sample-thai.lof'.
 
- [8
+ [9
 
 ]
-Overfull \hbox (1.72173pt too wide) in paragraph at lines 198--198
+Overfull \hbox (1.72173pt too wide) in paragraph at lines 204--204
 []|\TU/THSarabunNew(0)/b/n/10 SYMBOL| 
  []
 
 
-Overfull \hbox (1.9238pt too wide) in paragraph at lines 200--201
+Overfull \hbox (1.9238pt too wide) in paragraph at lines 206--207
 []|\TU/THSarabunNew(0)/m/n/10 jobs/second| 
  []
 
 
-Overfull \hbox (1.9238pt too wide) in paragraph at lines 201--202
+Overfull \hbox (1.9238pt too wide) in paragraph at lines 207--208
 []|\TU/THSarabunNew(0)/m/n/10 jobs/second| 
  []
 
-[9
+[10
 
-] [10
+] [11
 
 ]
 บทที่ 1.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -9.84pt
-(hyperref)                removed on input line 223.
+(hyperref)                removed on input line 229.
 
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
-(Font)              scaled to size 17.71193pt on input line 223.
+(Font)              scaled to size 17.71193pt on input line 229.
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
-(Font)              scaled to size 17.71193pt on input line 223.
+(Font)              scaled to size 17.71193pt on input line 229.
 
-Overfull \hbox (0.63002pt too wide) in paragraph at lines 232--233
+Overfull \hbox (0.63002pt too wide) in paragraph at lines 238--239
 \TU/THSarabunNew(0)/m/n/10 หรือเพิงพา โดยรูปภาพที่วาดออกมาจะเป็นภาพคน สัตว์ หรือการล่าสัตว์ ซึ่งแสดงให้เห็นถึงชีวิตความเป็นอยู่ของคนในยุคสมัยนั้น และหลัง-
  []
 
 
-Overfull \hbox (2.11829pt too wide) in paragraph at lines 232--233
+Overfull \hbox (2.11829pt too wide) in paragraph at lines 238--239
 \TU/THSarabunNew(0)/m/n/10 จากนั้นมนุษย์ได้มีการพัฒนาการวาดรูปอยู่ตลอดเวลา จากการวาดรูปตามผนังถ้ำ ตามผนังโบสถ์ หรือราชวังที่สำคัญต่างๆ จนมาเป็นวาดรูป-
  []
 
 
-Overfull \hbox (4.5168pt too wide) in paragraph at lines 232--233
+Overfull \hbox (4.5168pt too wide) in paragraph at lines 238--239
 \TU/THSarabunNew(0)/m/n/10 กด้วย ซึ่งศิลปินของโลกทางตะวันตกและตะวันออกก็มีลักษณะที่แตกต่างกัน และในแต่ละประเทศหรือศิลปินแต่ละท่านก็จะมีเทคนิตวิธีการ-
  []
 
 
-Overfull \hbox (3.21303pt too wide) in paragraph at lines 237--238
+Overfull \hbox (3.21303pt too wide) in paragraph at lines 243--244
 []\TU/THSarabunNew(0)/m/n/10 นําเสนอความต้องการของผู้มีส่วนได้ส่วนเสียเฉพาะกลุ่ม ผลิตภัณฑ์ทางการค้าที่มีศักยภาพ และ เว็บแอปพลิเคชันสำหรับคอมพิวเตอร์ 
  []
 
 
-Overfull \hbox (5.6549pt too wide) in paragraph at lines 242--243
+Overfull \hbox (5.6549pt too wide) in paragraph at lines 248--249
 []\TU/THSarabunNew(0)/m/n/10 รวบรวมรูปภาพที่สร้างจากศิลปินที่มีชื่อเสียงและลักษณะภาพสามารถบอกได้ถึงเอกลักษณ์ของศิลปินท่านนั้นได้ โดยทางผู้จัด-
  []
 
 [1
 
 ]
-Overfull \hbox (13.6557pt too wide) in paragraph at lines 272--273
+Overfull \hbox (13.6557pt too wide) in paragraph at lines 278--279
 []\TU/THSarabunNew(0)/m/n/10 ในส่วนที่คณะผู้จัดทำจะทำการรวมรูปภาพที่สร้างโดยศิลปินหรือ Style image เข้ากับรูปภาพคนหรือสัตว์หรือ content image เข้าด้วย-
  []
 
 [2]
-Overfull \hbox (16.72484pt too wide) in paragraph at lines 331--333
+Overfull \hbox (16.72484pt too wide) in paragraph at lines 337--339
 \TU/THSarabunNew(0)/m/n/10 หาข้อมูลและทดลองพัฒนาซอฟต์แวร์ตัวต้นแบบ ซึ่งสามารถแสดงรายการและระยะเวลาออกมาได้เป็นแผนภูมิแกนต์ดังตามตารางที่ [][]1.1[][]
  []
 
 
-Overfull \hbox (0.6365pt too wide) in paragraph at lines 331--333
+Overfull \hbox (0.6365pt too wide) in paragraph at lines 337--339
 \TU/THSarabunNew(0)/m/n/10 และในส่วนภาคการศึกษาที่ 2 นั้นมุ่งเน้นไปที่การพัฒนาต่อยอดซอฟต์แวร์ตัวต้นแบบให้สามารถทำงานได้อย่างถูกต้อง ครบทุกฟังก์-
  []
 
 
-Overfull \hbox (1.3376pt too wide) in paragraph at lines 331--333
+Overfull \hbox (1.3376pt too wide) in paragraph at lines 337--339
 \TU/THSarabunNew(0)/m/n/10 ชันและแก้ไขปัญหาเมื่อซอฟต์แวร์ได้ทำงานในสภาพแวดล้อมจริง ตลอดจนถึงขั้นตอนสุดท้ายสามารถเขียนเป็นแผนภูมิแกนต์ ดังตา-
  []
 
@@ -909,7 +910,7 @@ Overfull \hbox (1.3376pt too wide) in paragraph at lines 331--333
 File: ./image/plan_table1.jpg Graphic file (type bmp)
 <./image/plan_table1.jpg>
 
-Overfull \hbox (7.82813pt too wide) in paragraph at lines 339--344
+Overfull \hbox (7.82813pt too wide) in paragraph at lines 345--350
  [][] 
  []
 
@@ -917,28 +918,28 @@ Overfull \hbox (7.82813pt too wide) in paragraph at lines 339--344
 File: ./image/plan_table2.jpg Graphic file (type bmp)
 <./image/plan_table2.jpg>
 
-Overfull \hbox (7.82813pt too wide) in paragraph at lines 352--357
+Overfull \hbox (7.82813pt too wide) in paragraph at lines 358--363
  [][] 
  []
 
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
-(Font)              scaled to size 13.52995pt on input line 363.
+(Font)              scaled to size 13.52995pt on input line 369.
 [5] [6]
 บทที่ 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -9.84pt
-(hyperref)                removed on input line 391.
+(hyperref)                removed on input line 397.
 
 
-Overfull \hbox (3.33603pt too wide) in paragraph at lines 397--399
+Overfull \hbox (3.33603pt too wide) in paragraph at lines 403--405
 []\TU/THSarabunNew(0)/m/n/10 Neural Style Transfer [[]] เป็นกระบวนการที่ใช้ CNNs ในการประมวลผลรูปภาพให้ได้รูปภาพที่เหมือนกับรูปภาพที่ใช้เป็น content
  []
 
 File: ./image/unit1.png Graphic file (type bmp)
 <./image/unit1.png>
 
-Overfull \hbox (2.10606pt too wide) in paragraph at lines 409--416
+Overfull \hbox (2.10606pt too wide) in paragraph at lines 415--422
 []\TU/THSarabunNew(0)/m/n/10 ดังรูปที่ [][]2.1[][] จะเห็นได้ว่า มีการป้อนข้อมูลเป็น content image และ style image จากนั้นจะการประมวลผลรูปที่ป้อนเข้ามา โดยจะมี
  []
 
@@ -946,10 +947,10 @@ Overfull \hbox (2.10606pt too wide) in paragraph at lines 409--416
 
 ]
 
-LaTeX Warning: Reference `fig:cnn' on page 8 undefined on input line 424.
+LaTeX Warning: Reference `fig:cnn' on page 8 undefined on input line 430.
 
 
-Overfull \hbox (119.34833pt too wide) in paragraph at lines 424--425
+Overfull \hbox (119.34833pt too wide) in paragraph at lines 430--431
 []\TU/THSarabunNew(0)/m/n/10 Artificial neural networks(ANN) คือโมเดลทางคณิตศาสตร์หรือโมเดลทางคอมพิวเตอร์ที่จำลองการทำงานของเซลล์ประสาทในสมองมนุษย์ที่มีเซลล์ประสาท(neurons)
  []
 
@@ -957,9 +958,6 @@ File: ./image/unit2.jpg Graphic file (type bmp)
 <./image/unit2.jpg>
 File: ./image/neuron_unit.png Graphic file (type bmp)
 <./image/neuron_unit.png>
-
-LaTeX Warning: Citation `geron2018neura' on page 8 undefined on input line 447.
-
 File: ./image/feed_back.png Graphic file (type bmp)
 <./image/feed_back.png>
 [8]
@@ -972,7 +970,7 @@ File: ./image/unit3.png Graphic file (type bmp)
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [9]
-Overfull \hbox (1.96985pt too wide) in paragraph at lines 510--512
+Overfull \hbox (1.96985pt too wide) in paragraph at lines 516--518
 []\TU/THSarabunNew(0)/m/n/10 Transfer Learning เป็นการเรียนรู้ที่เป็นที่นิยมในการทำ machine learning(ML) โดยเป็นการนำโมเดลที่มีคนสร้างมาก่อนที่เหมาะ-
  []
 
@@ -1004,10 +1002,10 @@ File: ./image/result2.png Graphic file (type bmp)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -9.84pt
-(hyperref)                removed on input line 655.
+(hyperref)                removed on input line 661.
 
 
-Overfull \hbox (44.02428pt too wide) in paragraph at lines 678--679
+Overfull \hbox (44.02428pt too wide) in paragraph at lines 685--686
 []\TU/THSarabunNew(0)/m/n/10 เว็บไซต์จะต้องสามารถสร้างรูปภาพใหม่ที่เกิดจากการผสมผสานระหว่างรูปภาพที่สร้างโดยศิลปินชื่อดังกับรูปภาพที่ผู้ใช้ทำการอัพโหลดเข้าเว็บไซต์
  []
 
@@ -1020,7 +1018,7 @@ File: ./image/use-case.png Graphic file (type bmp)
 File: ./image/ad-login.png Graphic file (type bmp)
 <./image/ad-login.png>
 
-Overfull \hbox (32.64413pt too wide) in paragraph at lines 716--727
+Overfull \hbox (32.64413pt too wide) in paragraph at lines 723--734
 [][] 
  []
 
@@ -1071,80 +1069,200 @@ File: ./image/ui-commu3.png Graphic file (type bmp)
 File: ./image/database.png Graphic file (type bmp)
 <./image/database.png>
  [29] [30]
-Overfull \hbox (12.56746pt too wide) in paragraph at lines 1030--1031
+Overfull \hbox (12.56746pt too wide) in paragraph at lines 1037--1038
 []\TU/THSarabunNew(0)/m/n/10 Style image เป็นรูปภาพที่สร้างจากศิลปินที่มีชื่อเสียงโดยทางคณะผู้จัดทำเลือกรวบรวมรูปภาพที่มีลักษณะที่เด่นชัดสามารถบอกได้ว่า
  []
 
 File: ./image/ArchDesign.png Graphic file (type bmp)
 <./image/ArchDesign.png>
 [31]
+File: ./image/newplan.png Graphic file (type bmp)
+<./image/newplan.png>
+
+Overfull \hbox (7.82813pt too wide) in paragraph at lines 1080--1085
+ [][] 
+ []
+
+[32]
+Overfull \hbox (3.06543pt too wide) in paragraph at lines 1093--1094
+[]\TU/THSarabunNew(0)/m/n/10 ในการสร้างรูปภาพใหม่ที่มีเนื้อหาของรูปภาพเหมือนกับรูปภาพ content image ที่เป็นภาพคนหรือสัตว์ทั่วไปและมีลักษณะการวาด-
+ []
+
+File: ./image/styleTransfer.png Graphic file (type bmp)
+<./image/styleTransfer.png>
+
+Overfull \hbox (9.66469pt too wide) in paragraph at lines 1105--1106
+\TU/THSarabunNew(0)/m/n/10 ฐานว่า ผลลัพธ์ที่ได้ออกมาอาจมีบางจุดที่มีลักษณะเด่นเกินไปจึงทำการปรับเปลี่ยนจาก max pooling เป็น average pooling โดยกำ-
+ []
+
+[33]
 บทที่ 4.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -9.84pt
-(hyperref)                removed on input line 1088.
+(hyperref)                removed on input line 1125.
 
-[32
+File: ./image/model1.png Graphic file (type bmp)
+<./image/model1.png>
+File: ./image/model2.png Graphic file (type bmp)
+<./image/model2.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[34
 
 ]
+File: ./image/model3.png Graphic file (type bmp)
+<./image/model3.png>
+ [35]
+File: ./image/model4.png Graphic file (type bmp)
+<./image/model4.png>
+File: ./image/model5.png Graphic file (type bmp)
+<./image/model5.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: ./image/model6.png Graphic file (type bmp)
+<./image/model6.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[36]
+File: ./image/front1.png Graphic file (type bmp)
+<./image/front1.png>
+File: ./image/front2.png Graphic file (type bmp)
+<./image/front2.png>
+File: ./image/front3.png Graphic file (type bmp)
+<./image/front3.png>
+File: ./image/front-commu.png Graphic file (type bmp)
+<./image/front-commu.png>
+File: ./image/front-login.png Graphic file (type bmp)
+<./image/front-login.png>
+File: ./image/front-regis.png Graphic file (type bmp)
+<./image/front-regis.png>
+ [37] [38] [39]
+File: ./image/app_module.png Graphic file (type bmp)
+<./image/app_module.png>
+ [40]
 บทที่ 5.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -9.84pt
-(hyperref)                removed on input line 1103.
+(hyperref)                removed on input line 1263.
 
 
-Overfull \hbox (7.6041pt too wide) in paragraph at lines 1111--1114
-[]\TU/THSarabunNew(0)/m/n/10 แต่เมื่อทางผู้จัดทำได้ทำการศึกษาโครงงานที่มีเนื้อหาคล้ายคลึงกับโครงการนี้ ก็มีความคิดที่จะเปลี่ยนการสร้างรูปภาพจากการ ใช้ CNN
+Overfull \hbox (2.38892pt too wide) in paragraph at lines 1271--1272
+[]\TU/THSarabunNew(0)/m/n/10 แต่เมื่อทางผู้พัฒนาทำการศึกษาโครงงานที่มีเนื้อหาคล้ายคลึงกับโครงการนี้ ก็มีความคิดที่จะเปลี่ยนการสร้างรูปภาพจากการ ใช้ CNN
  []
 
-(undergrad-sample-thai.bbl [33
 
-]) [34
+Overfull \hbox (6.25107pt too wide) in paragraph at lines 1281--1282
+\TU/THSarabunNew(0)/m/n/10 การดึงจุดเด่นของรูปภาพที่เป็นสไตล์ต้นแบบเลย หรือทำให้เกิดรูปภาพใหม่ที่ผิดแปลกไป ทางผู้พัฒนาจึงได้ทำการทดลองเพื่อหาข้อสรุปที่จะ-
+ []
+
+(undergrad-sample-thai.bbl [41
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
+[][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][][][][] [] [][][] [] [][][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
+[][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
+[][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][][][][][][][][][][][][][][][][][][][][][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--9
+[][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][][][][][][][][][][][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] []
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 11--15
+[]\TU/THSarabunNew(0)/m/n/10 ``Deep Learning แบบฉบับคนสามัญชน EP 1 : Neural Network History | by Mr.P L | mmp-li | Medium,''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
+[][]$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][] [] [][][][][][][][][][][][][][][][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
+[][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
+[][]$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][][][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
+[][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--22
+[][] [] [][][][][][][][][][][][][][][][][][][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] []
+ []
+
+
+Underfull \hbox (badness 1769) in paragraph at lines 24--27
+[]\TU/THSarabunNew(0)/m/n/10 ``Neural Transfer Using PyTorch — PyTorch Tutorials 1.8.0 documentation,'' [][]$[][][][][] [] [] [] [][][][][][][] [] [][][] []
+ []
+
+) [42
 
 ]
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
-(Font)              scaled to size 21.25432pt on input line 1146.
+(Font)              scaled to size 21.25432pt on input line 1308.
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
-(Font)              scaled to size 21.25432pt on input line 1146.
- [35]
+(Font)              scaled to size 21.25432pt on input line 1308.
+ [43]
 
 Package hyperref Warning: bookmark level for unknown apdx defaults to 0.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 12.29996pt
-(hyperref)                replaced by space on input line 1146.
+(hyperref)                replaced by space on input line 1308.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1147--1148
+Underfull \hbox (badness 10000) in paragraph at lines 1309--1310
 
  []
 
 
-LaTeX Warning: Citation `kim01' on page 36 undefined on input line 1165.
+LaTeX Warning: Citation `kim01' on page 44 undefined on input line 1327.
 
 
-LaTeX Warning: Citation `eun01' on page 36 undefined on input line 1204.
+LaTeX Warning: Citation `eun01' on page 44 undefined on input line 1366.
 
-[36] [37]
+[44] [45]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 12.29996pt
-(hyperref)                replaced by space on input line 1216.
+(hyperref)                replaced by space on input line 1378.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1217--1218
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1229--1230
+Underfull \hbox (badness 10000) in paragraph at lines 1379--1380
 
  []
 
 
-LaTeX Warning: Citation `eun01' on page 38 undefined on input line 1235.
+Underfull \hbox (badness 10000) in paragraph at lines 1391--1392
+
+ []
+
+
+LaTeX Warning: Citation `eun01' on page 46 undefined on input line 1397.
 
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
@@ -1196,7 +1314,7 @@ braces):
 >  {english/babelname}  =>  {american}
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-[38] (undergrad-sample-thai.aux
+[46] (undergrad-sample-thai.aux
 LaTeX Info: Redefining \rmfamily on input line 19.
 LaTeX Info: Redefining \sffamily on input line 19.
 LaTeX Info: Redefining \ttfamily on input line 19.
@@ -1209,15 +1327,15 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `undergrad-sample-thai.out' has not changed.
-(rerunfilecheck)             Checksum: EEB220B82C617E7C9A2CD3B684C36F56;14841.
+(rerunfilecheck)             Checksum: CBD17561D7B96E099A5D0EBC4ED7BE8C;21353.
  ) 
 Here is how much of TeX's memory you used:
- 16910 strings out of 411732
- 301910 string characters out of 2836994
- 700494 words of memory out of 3000000
- 36613 multiletter control sequences out of 15000+200000
- 406087 words of font info for 74 fonts, out of 3000000 for 9000
+ 17028 strings out of 411732
+ 304188 string characters out of 2836994
+ 721369 words of memory out of 3000000
+ 36714 multiletter control sequences out of 15000+200000
+ 406095 words of font info for 75 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 110i,16n,117p,1015b,511s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 110i,16n,117p,1156b,511s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on undergrad-sample-thai.xdv (49 pages, 619996 bytes).
+Output written on undergrad-sample-thai.xdv (58 pages, 767804 bytes).

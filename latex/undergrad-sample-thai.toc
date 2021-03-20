@@ -2,11 +2,11 @@
 \contentsline {chapterx}{\mdseries ABSTRACT}{ii}{Doc-Start}%
 \contentsline {chapterx}{\mdseries บทคัดย่อ}{iii}{Doc-Start}%
 \contentsline {chapterx}{\mdseries กิตติกรรมประกาศ}{iv}{Doc-Start}%
-\contentsline {chapterx}{\mdseries สารบัญ}{vi}{Doc-Start}%
-\contentsline {chapterx}{\mdseries สารบัญตาราง}{vii}{Doc-Start}%
-\contentsline {chapterx}{\mdseries สารบัญรูปภาพ}{viii}{Doc-Start}%
-\contentsline {chapterx}{\mdseries สารบัญสัญลักษณ์}{ix}{Doc-Start}%
-\contentsline {chapterx}{\mdseries สารบัญคำศัพท์ทางเทคนิคและคำย่อ}{x}{Doc-Start}%
+\contentsline {chapterx}{\mdseries สารบัญ}{vii}{Doc-Start}%
+\contentsline {chapterx}{\mdseries สารบัญตาราง}{viii}{Doc-Start}%
+\contentsline {chapterx}{\mdseries สารบัญรูปภาพ}{ix}{Doc-Start}%
+\contentsline {chapterx}{\mdseries สารบัญสัญลักษณ์}{x}{Doc-Start}%
+\contentsline {chapterx}{\mdseries สารบัญคำศัพท์ทางเทคนิคและคำย่อ}{xi}{Doc-Start}%
 \contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {1}\hskip -0.8em บทนำ}}}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}ที่มาและความสำคัญ}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}ประเภทของโครงงาน}{1}{section.1.2}%
@@ -64,15 +64,36 @@
 \contentsline {subsection}{\numberline {3.3.4}Data structures/Class diagrams/ etc.}{31}{subsection.3.3.4}%
 \contentsline {subsubsection}{\numberline {3.3.4.1}Software Architectural Design}{31}{subsubsection.3.3.4.1}%
 \contentsline {subsection}{\numberline {3.3.5}Evaluation plans}{31}{subsection.3.3.5}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {4}\hskip -0.8em ผลการดำเนินงาน}}}{32}{chapter.4}%
-\contentsline {section}{\numberline {4.1}ประสิทฺธิภาพการทำงานของระบบ}{32}{section.4.1}%
-\contentsline {section}{\numberline {4.2}ความพึงพอใจการใช้งาน}{32}{section.4.2}%
-\contentsline {section}{\numberline {4.3}การวิเคราะห์ข้อมูลและผลการทดลอง}{32}{section.4.3}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {5}\hskip -0.8em บทสรุป}}}{33}{chapter.5}%
-\contentsline {section}{\numberline {5.1}ผลการดำเนินงานในภาคการศึกษาที่ 1 (Midterm)}{33}{section.5.1}%
-\contentsline {section}{\numberline {5.2}ผลการดำเนินงานในภาคการศึกษาที่ 2 (Final) }{33}{section.5.2}%
-\contentsline {section}{\numberline {5.3}ข้อจำกัดและข้อเสนอแนะ}{33}{section.5.3}%
-\contentsline {chapter}{\mdseries \bf \MakeUppercase {หนังสืออ้างอิง}}{34}{section.5.3}%
-\contentsline {chapter}{\mdseries \bf \MakeUppercase {Appendix}}{35}{section.5.3}%
-\contentsline {apdx}{A\hskip 1em ชื่อภาคผนวกที่ 1}{36}{section.5.3}%
-\contentsline {apdx}{B\hskip 1em ชื่อภาคผนวกที่ 2}{38}{equation.1.3.5}%
+\contentsline {section}{\numberline {3.4}ภาคการเรียนที่ 2}{32}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}แผนดำเนินงาน}{32}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}modeling}{33}{subsection.3.4.2}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {4}\hskip -0.8em ผลการดำเนินงาน}}}{34}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Modeling}{34}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}ปรับเปลี่ยนโมเดล VGG19 จาก max pooling เป็น average pooling}{34}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}ทำการทดลองโดยใช้ target image เป็น noise image และ target image เป็นภาพที่มาจากการคัดลอก content image }{34}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}ปรับเปลี่ยนขนาดของ style image}{35}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}ปรับเปลี่ยนจำนวนรอบที่ใช้ในการ train เพื่อสร้างรูปภาพใหม่}{36}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}ปรับเปลี่ยน style weight และ content weight}{36}{subsection.4.1.5}%
+\contentsline {section}{\numberline {4.2}WEB APPLICATION}{37}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}User Interface }{37}{subsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.1}Homepage}{37}{subsubsection.4.2.1.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.2}Create your art Page}{37}{subsubsection.4.2.1.2}%
+\contentsline {subsubsection}{\numberline {4.2.1.3}Community Page}{37}{subsubsection.4.2.1.3}%
+\contentsline {subsubsection}{\numberline {4.2.1.4}Login Page}{37}{subsubsection.4.2.1.4}%
+\contentsline {subsubsection}{\numberline {4.2.1.5}Register Page}{37}{subsubsection.4.2.1.5}%
+\contentsline {subsection}{\numberline {4.2.2}Backend และ Database}{40}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}Module assets: เก็บข้อมูล static (image, css) ที่ถูกรวบรวมมาจาก directory ต่าง ๆ}{40}{subsubsection.4.2.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}Module authentication: เป็น module ที่สำหรับการ login, register}{40}{subsubsection.4.2.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.3}Module community: ใช้สำหรับแสดงผลภาพที่มีคนโพสต์}{40}{subsubsection.4.2.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.2.4}Module create\_your\_art: ใช้สำหรับเก็บประมวลผล Nearal style transfer}{40}{subsubsection.4.2.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.2.5}Module Homepage: ใช้สำหรับแสดงผลหน้า homepage}{40}{subsubsection.4.2.2.5}%
+\contentsline {subsubsection}{\numberline {4.2.2.6}Module template: ใช้สำหรับเก็บ fronten ที่เป็น .html}{40}{subsubsection.4.2.2.6}%
+\contentsline {subsubsection}{\numberline {4.2.2.7}Module user\_info: ใช้สำหรับหน้า profile}{40}{subsubsection.4.2.2.7}%
+\contentsline {subsubsection}{\numberline {4.2.2.8}Module your\_art\_painter: เป็น module หลักในการ setting ค่าต่าง ๆ}{40}{subsubsection.4.2.2.8}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {5}\hskip -0.8em บทสรุป}}}{41}{chapter.5}%
+\contentsline {section}{\numberline {5.1}ผลการดำเนินงานในภาคการศึกษาที่ 1 (Midterm)}{41}{section.5.1}%
+\contentsline {section}{\numberline {5.2}ผลการดำเนินงานในภาคการศึกษาที่ 2 (Final) }{41}{section.5.2}%
+\contentsline {chapter}{\mdseries \bf \MakeUppercase {หนังสืออ้างอิง}}{42}{section.5.2}%
+\contentsline {chapter}{\mdseries \bf \MakeUppercase {Appendix}}{43}{section.5.2}%
+\contentsline {apdx}{A\hskip 1em ชื่อภาคผนวกที่ 1}{44}{section.5.2}%
+\contentsline {apdx}{B\hskip 1em ชื่อภาคผนวกที่ 2}{46}{equation.1.2.5}%

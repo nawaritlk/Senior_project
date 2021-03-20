@@ -3,7 +3,7 @@
 \addvspace {0em}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces แสดงหลักการทำงานของ Neural Style Transfer ที่ใช้ Convolutional Neural Network (CNN) \cite {gatys2015neural} }}{7}{figure.2.1}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces แสดงส่วนประกอบหลักของ Artificial neural networks}}{8}{figure.2.2}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces แสดงการทำงานภายใน neuron unit \cite {geron2018neura}}}{8}{figure.2.3}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces แสดงการทำงานภายใน neuron unit \cite {DeepLear55:online}}}{8}{figure.2.3}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces แสดงการทำงานของ feed forward (forwardpass) กับ back propagation (backwardpass)}}{9}{figure.2.4}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces แสดงให้เห็นถึงกระบวนการทำงานของ CNN ที่มีการเรียนรู้ 2 ส่วนคือ feature learning ซึ่งมี convolution layer และ pooling layer ประกอบกัน และ classification ซึ่งมี fully connected layer มาเกี่ยวข้อง}}{9}{figure.2.5}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces แสดงให้เห็นถึงลักษณะของ input data ที่มีการแบ่งชั้นสีเป็น 3 channels ซึ่งจากรูปนี้จะมีขนาดของรูปเป็น 4*4*3 RGB Image}}{10}{figure.2.6}%
@@ -29,5 +29,18 @@
 \contentsline {figure}{\numberline {3.12}{\ignorespaces แสดงหน้า Community}}{28}{figure.3.12}%
 \contentsline {figure}{\numberline {3.13}{\ignorespaces แสดงหน้า Entity Relationship diagram ของ database}}{29}{figure.3.13}%
 \contentsline {figure}{\numberline {3.14}{\ignorespaces แสดงโครงสร้างพื้นฐานของระบบซอฟต์แวร์ภายในเว็บไซต์ Your Art Painter}}{31}{figure.3.14}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces แสดงขั้นตอนการทำงานของ Style Transfer}}{33}{figure.3.15}%
 \addvspace {0em}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces แสดงผลลัพธ์ที่ได้จากการเปลี่ยน pooling layer ใน VGG19}}{34}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces แสดงผลลัพธ์ที่เกิดจากการใช้ target image ที่แตกต่างกัน}}{35}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces แสดงผลลัพธ์ที่เกิดจากการปรับขนาดรูปภาพ style image}}{35}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces แสดงผลลัพธ์ที่เกิดจากการเพิ่มจำนวนรอบในการ train เพื่อสร้างรูปภาพใหม่}}{36}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces แสดงผลลัพธ์ที่เกิดจากการปรับ weight โดยใช้ style image เป็นรูปภาพของ อ.ชลูด นิ่มเสมอ}}{37}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces แสดงผลลัพธ์ที่เกิดจากการปรับ weight โดยใช้ style image เป็นรูปภาพของ อ.จักรพันธุ์ โปษยกฤษ}}{37}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces แสดงหน้า Homepage}}{38}{figure.4.7}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces แสดงหน้า Create your art }}{38}{figure.4.8}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces แสดงหน้า Community}}{39}{figure.4.9}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces แสดงหน้า Login}}{39}{figure.4.10}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces แสดงหน้า Register}}{39}{figure.4.11}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces แสดง App (module) ในส่วนของ Backend}}{40}{figure.4.12}%
 \addvspace {0em}
