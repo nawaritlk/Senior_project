@@ -1,4 +1,5 @@
 {% include 'menubar_NoLogin.html' %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -163,6 +164,13 @@
     .headerSec2 {
       text-align: center;
     }
+
+    /************step image************/
+    .picStep img{
+        width: 330px;
+        height: 200px;
+        padding-left: 50px;
+    }
   </style>
 </head>
 
@@ -192,8 +200,8 @@
           <div class="text1">
             <p>Upload your image that you want to turn into artwork.</p>
           </div>
-          <div class="picStep1">
-            <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\inputImg.png" alt="">
+          <div class="picStep">
+            <img src= "{% static 'image\step1.png' %}" alt="step1">
           </div>
         </div>
         <!----------------step2------------------>
@@ -206,7 +214,7 @@
             <p>Choose style image prepared or upload your own style image.</p>
           </div>
           <div class="picStep1">
-            <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\style.png" alt="">
+            <img src="{% static 'image\step2.png' %}" alt="step2">
           </div>
         </div>
         <!----------------step3------------------>
@@ -219,7 +227,7 @@
             <p>Our servers generate new artwork. You can download when it is done.</p>
           </div>
           <div class="picStep1">
-            <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\output.png" alt="">
+            <img src="{% static 'image\step3.png' %}" alt="step3">
           </div>
         </div>
       </div>
