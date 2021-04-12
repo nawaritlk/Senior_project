@@ -12,35 +12,35 @@
 \contentsline {figure}{\numberline {2.9}{\ignorespaces แสดงหลักการทำงานของ web application}}{13}{figure.2.9}%
 \contentsline {figure}{\numberline {2.10}{\ignorespaces แสดงโครงสร้างโฟลเดอร์ของ Django project}}{14}{figure.2.10}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces แสดงกระบวนการทำงานของ Django}}{14}{figure.2.11}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces (บน) แสดงผลการประมวลผล (ล่างซ้าย) content image (ล่างขวา) style image: ชื่อภาพ ไปวัด ของชลูด นิ่มเสมอ}}{15}{figure.2.12}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces (บน) แสดงผลการประมวลผล (ล่างซ้าย) content image (ล่างขวา) style image: ชื่อภาพ ผูกอุบะของจักรพันธุ์ โปษยกฤต}}{16}{figure.2.13}%
 \addvspace {0em}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces แสดงภาพรวม Use Case Diagram}}{18}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces แสดงระบบลงชื่อเข้าใช้งาน}}{19}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces แสดงระบบบัญชีผู้ใช้งาน}}{20}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces แสดงระบบวิธีการใช้งาน}}{21}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces แสดงระบบเกี่ยวกับเรา}}{22}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces แสดงระบบเกี่ยวกับเรา}}{23}{figure.3.6}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces แสดงระบบชุมชน}}{24}{figure.3.7}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces แสดงหน้า Homepage}}{26}{figure.3.8}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces แสดงหน้า create your art ในขั้นตอนการเลือก content image และ style image}}{26}{figure.3.9}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces แสดงหน้า create your art ในขั้นตอนการเลือก content image และ style image}}{27}{figure.3.10}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces แสดงหน้า profile}}{27}{figure.3.11}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces แสดงหน้า Community}}{28}{figure.3.12}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces แสดงหน้า Entity Relationship diagram ของ database}}{29}{figure.3.13}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces แสดงโครงสร้างพื้นฐานของระบบซอฟต์แวร์ภายในเว็บไซต์ Your Art Painter}}{31}{figure.3.14}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces แสดงขั้นตอนการทำงานของ Style Transfer}}{33}{figure.3.15}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces (บน) แสดงผลการประมวลผล (ล่างซ้าย) content image (ล่างขวา) style image: ชื่อภาพ ไปวัด ของชลูด นิ่มเสมอ}}{16}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces (บน) แสดงผลการประมวลผล (ล่างซ้าย) content image (ล่างขวา) style image: ชื่อภาพ ผูกอุบะของจักรพันธุ์ โปษยกฤต}}{17}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces แสดงภาพรวม Use Case Diagram}}{19}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces แสดงระบบลงชื่อเข้าใช้งาน}}{20}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces แสดงระบบบัญชีผู้ใช้งาน}}{21}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces แสดงระบบวิธีการใช้งาน}}{22}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces แสดงระบบเกี่ยวกับเรา}}{23}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces แสดงระบบเกี่ยวกับเรา}}{24}{figure.3.8}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces แสดงระบบชุมชน}}{25}{figure.3.9}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces แสดงหน้า Homepage}}{27}{figure.3.10}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces แสดงหน้า create your art ในขั้นตอนการเลือก content image และ style image}}{27}{figure.3.11}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces แสดงหน้า create your art ในขั้นตอนการเลือก content image และ style image}}{28}{figure.3.12}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces แสดงหน้า profile}}{28}{figure.3.13}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces แสดงหน้า Community}}{29}{figure.3.14}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces แสดงหน้า Entity Relationship diagram ของ database}}{30}{figure.3.15}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces แสดงโครงสร้างพื้นฐานของระบบซอฟต์แวร์ภายในเว็บไซต์ Your Art Painter}}{32}{figure.3.16}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces แสดงขั้นตอนการทำงานของ Style Transfer}}{34}{figure.3.17}%
 \addvspace {0em}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces แสดงผลลัพธ์ที่ได้จากการเปลี่ยน pooling layer ใน VGG19}}{34}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces แสดงผลลัพธ์ที่เกิดจากการใช้ target image ที่แตกต่างกัน}}{35}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces แสดงผลลัพธ์ที่เกิดจากการปรับขนาดรูปภาพ style image}}{35}{figure.4.3}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces แสดงผลลัพธ์ที่เกิดจากการเพิ่มจำนวนรอบในการ train เพื่อสร้างรูปภาพใหม่}}{36}{figure.4.4}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces แสดงผลลัพธ์ที่เกิดจากการปรับ weight โดยใช้ style image เป็นรูปภาพของ อ.ชลูด นิ่มเสมอ}}{37}{figure.4.5}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces แสดงผลลัพธ์ที่เกิดจากการปรับ weight โดยใช้ style image เป็นรูปภาพของ อ.จักรพันธุ์ โปษยกฤษ}}{37}{figure.4.6}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces แสดงหน้า Homepage}}{38}{figure.4.7}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces แสดงหน้า Create your art }}{38}{figure.4.8}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces แสดงหน้า Community}}{39}{figure.4.9}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces แสดงหน้า Login}}{39}{figure.4.10}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces แสดงหน้า Register}}{39}{figure.4.11}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces แสดง App (module) ในส่วนของ Backend}}{40}{figure.4.12}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces แสดงผลลัพธ์ที่ได้จากการเปลี่ยน pooling layer ใน VGG19}}{35}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces แสดงผลลัพธ์ที่เกิดจากการใช้ target image ที่แตกต่างกัน}}{36}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces แสดงผลลัพธ์ที่เกิดจากการปรับขนาดรูปภาพ style image}}{36}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces แสดงผลลัพธ์ที่เกิดจากการเพิ่มจำนวนรอบในการ train เพื่อสร้างรูปภาพใหม่}}{37}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces แสดงผลลัพธ์ที่เกิดจากการปรับ weight โดยใช้ style image เป็นรูปภาพของ อ.ชลูด นิ่มเสมอ}}{38}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces แสดงผลลัพธ์ที่เกิดจากการปรับ weight โดยใช้ style image เป็นรูปภาพของ อ.จักรพันธุ์ โปษยกฤษ}}{38}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces แสดงหน้า Homepage}}{39}{figure.4.7}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces แสดงหน้า Create your art }}{39}{figure.4.8}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces แสดงหน้า Community}}{40}{figure.4.9}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces แสดงหน้า Login}}{40}{figure.4.10}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces แสดงหน้า Register}}{40}{figure.4.11}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces แสดง App (module) ในส่วนของ Backend}}{41}{figure.4.12}%
 \addvspace {0em}

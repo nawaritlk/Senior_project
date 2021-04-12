@@ -1130,7 +1130,7 @@ FUNCTION {presort}
 
 ITERATE {presort}
 
-SORT
+%SORT
 
 %%%%%%%%%%%%%%%%%%%
 

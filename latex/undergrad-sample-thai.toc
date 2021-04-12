@@ -44,56 +44,57 @@
 \contentsline {subsubsection}{\numberline {2.2.7.6}Django}{13}{subsubsection.2.2.7.6}%
 \contentsline {subsubsection}{\numberline {2.2.7.7}MongoDB}{14}{subsubsection.2.2.7.7}%
 \contentsline {section}{\numberline {2.3}การทบทวนวรรณกรรม}{15}{section.2.3}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {3}\hskip -0.8em วิธีการดำเนินงาน}}}{17}{chapter.3}%
-\contentsline {section}{\numberline {3.1}บทนำ}{17}{section.3.1}%
-\contentsline {section}{\numberline {3.2}รายละเอียดของโครงงาน}{17}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Modeling}{17}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}System Requirements สำหรับเว็บแอพพลิเคชัน}{17}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}แผนผังแสดงความสัมพันธ์ (Use Case Diagram)}{18}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}แผนภาพกิจกรรม (Activity Diagram)}{19}{subsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.4.1}ระบบลงชื่อเข้าใช้งาน}{19}{subsubsection.3.2.4.1}%
-\contentsline {subsubsection}{\numberline {3.2.4.2}ระบบบัญชีผู้ใช้}{20}{subsubsection.3.2.4.2}%
-\contentsline {subsubsection}{\numberline {3.2.4.3}ระบบวิธีการใช้งาน}{21}{subsubsection.3.2.4.3}%
-\contentsline {subsubsection}{\numberline {3.2.4.4}ระบบเกี่ยวกับเรา}{22}{subsubsection.3.2.4.4}%
-\contentsline {subsubsection}{\numberline {3.2.4.5}ระบบสร้างรูปภาพ}{23}{subsubsection.3.2.4.5}%
-\contentsline {subsubsection}{\numberline {3.2.4.6}ระบบชุมชน}{24}{subsubsection.3.2.4.6}%
-\contentsline {section}{\numberline {3.3}ไดอะแกรมสถาปัตยกรรมและคำอธิบาย}{25}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}User interface design}{25}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Database}{29}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Data Management}{31}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Data structures/Class diagrams/ etc.}{31}{subsection.3.3.4}%
-\contentsline {subsubsection}{\numberline {3.3.4.1}Software Architectural Design}{31}{subsubsection.3.3.4.1}%
-\contentsline {subsection}{\numberline {3.3.5}Evaluation plans}{31}{subsection.3.3.5}%
-\contentsline {section}{\numberline {3.4}ภาคการเรียนที่ 2}{32}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}แผนดำเนินงาน}{32}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}modeling}{33}{subsection.3.4.2}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {4}\hskip -0.8em ผลการดำเนินงาน}}}{34}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Modeling}{34}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}ปรับเปลี่ยนโมเดล VGG19 จาก max pooling เป็น average pooling}{34}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}ทำการทดลองโดยใช้ target image เป็น noise image และ target image เป็นภาพที่มาจากการคัดลอก content image }{34}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}ปรับเปลี่ยนขนาดของ style image}{35}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}ปรับเปลี่ยนจำนวนรอบที่ใช้ในการ train เพื่อสร้างรูปภาพใหม่}{36}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}ปรับเปลี่ยน style weight และ content weight}{36}{subsection.4.1.5}%
-\contentsline {section}{\numberline {4.2}WEB APPLICATION}{37}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}User Interface }{37}{subsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.1.1}Homepage}{37}{subsubsection.4.2.1.1}%
-\contentsline {subsubsection}{\numberline {4.2.1.2}Create your art Page}{37}{subsubsection.4.2.1.2}%
-\contentsline {subsubsection}{\numberline {4.2.1.3}Community Page}{37}{subsubsection.4.2.1.3}%
-\contentsline {subsubsection}{\numberline {4.2.1.4}Login Page}{37}{subsubsection.4.2.1.4}%
-\contentsline {subsubsection}{\numberline {4.2.1.5}Register Page}{37}{subsubsection.4.2.1.5}%
-\contentsline {subsection}{\numberline {4.2.2}Backend และ Database}{40}{subsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.2.1}Module assets: เก็บข้อมูล static (image, css) ที่ถูกรวบรวมมาจาก directory ต่าง ๆ}{40}{subsubsection.4.2.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2.2}Module authentication: เป็น module ที่สำหรับการ login, register}{40}{subsubsection.4.2.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.2.3}Module community: ใช้สำหรับแสดงผลภาพที่มีคนโพสต์}{40}{subsubsection.4.2.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.2.4}Module create\_your\_art: ใช้สำหรับเก็บประมวลผล Nearal style transfer}{40}{subsubsection.4.2.2.4}%
-\contentsline {subsubsection}{\numberline {4.2.2.5}Module Homepage: ใช้สำหรับแสดงผลหน้า homepage}{40}{subsubsection.4.2.2.5}%
-\contentsline {subsubsection}{\numberline {4.2.2.6}Module template: ใช้สำหรับเก็บ fronten ที่เป็น .html}{40}{subsubsection.4.2.2.6}%
-\contentsline {subsubsection}{\numberline {4.2.2.7}Module user\_info: ใช้สำหรับหน้า profile}{40}{subsubsection.4.2.2.7}%
-\contentsline {subsubsection}{\numberline {4.2.2.8}Module your\_art\_painter: เป็น module หลักในการ setting ค่าต่าง ๆ}{40}{subsubsection.4.2.2.8}%
-\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {5}\hskip -0.8em บทสรุป}}}{41}{chapter.5}%
-\contentsline {section}{\numberline {5.1}ผลการดำเนินงานในภาคการศึกษาที่ 1 (Midterm)}{41}{section.5.1}%
-\contentsline {section}{\numberline {5.2}ผลการดำเนินงานในภาคการศึกษาที่ 2 (Final) }{41}{section.5.2}%
-\contentsline {chapter}{\mdseries \bf \MakeUppercase {หนังสืออ้างอิง}}{42}{section.5.2}%
-\contentsline {chapter}{\mdseries \bf \MakeUppercase {Appendix}}{43}{section.5.2}%
-\contentsline {apdx}{A\hskip 1em ชื่อภาคผนวกที่ 1}{44}{section.5.2}%
-\contentsline {apdx}{B\hskip 1em ชื่อภาคผนวกที่ 2}{46}{equation.1.2.5}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {3}\hskip -0.8em วิธีการดำเนินงาน}}}{16}{chapter.3}%
+\contentsline {section}{\numberline {3.1}บทนำ}{16}{section.3.1}%
+\contentsline {section}{\numberline {3.2}รายละเอียดของโครงงาน}{16}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}การทบทวนวรรณกรรม}{16}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Modeling}{17}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}System Requirements สำหรับเว็บแอพพลิเคชัน}{18}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}แผนผังแสดงความสัมพันธ์ (Use Case Diagram)}{19}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}แผนภาพกิจกรรม (Activity Diagram)}{20}{subsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {3.2.5.1}ระบบลงชื่อเข้าใช้งาน}{20}{subsubsection.3.2.5.1}%
+\contentsline {subsubsection}{\numberline {3.2.5.2}ระบบบัญชีผู้ใช้}{21}{subsubsection.3.2.5.2}%
+\contentsline {subsubsection}{\numberline {3.2.5.3}ระบบวิธีการใช้งาน}{22}{subsubsection.3.2.5.3}%
+\contentsline {subsubsection}{\numberline {3.2.5.4}ระบบเกี่ยวกับเรา}{23}{subsubsection.3.2.5.4}%
+\contentsline {subsubsection}{\numberline {3.2.5.5}ระบบสร้างรูปภาพ}{24}{subsubsection.3.2.5.5}%
+\contentsline {subsubsection}{\numberline {3.2.5.6}ระบบชุมชน}{25}{subsubsection.3.2.5.6}%
+\contentsline {section}{\numberline {3.3}ไดอะแกรมสถาปัตยกรรมและคำอธิบาย}{26}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}User interface design}{26}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Database}{30}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Data Management}{32}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Data structures/Class diagrams/ etc.}{32}{subsection.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.4.1}Software Architectural Design}{32}{subsubsection.3.3.4.1}%
+\contentsline {subsection}{\numberline {3.3.5}Evaluation plans}{32}{subsection.3.3.5}%
+\contentsline {section}{\numberline {3.4}ภาคการเรียนที่ 2}{33}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}แผนดำเนินงาน}{33}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}modeling}{34}{subsection.3.4.2}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {4}\hskip -0.8em ผลการดำเนินงาน}}}{35}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Modeling}{35}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}ปรับเปลี่ยนโมเดล VGG19 จาก max pooling เป็น average pooling}{35}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}ทำการทดลองโดยใช้ target image เป็น noise image และ target image เป็นภาพที่มาจากการคัดลอก content image }{35}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}ปรับเปลี่ยนขนาดของ style image}{36}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}ปรับเปลี่ยนจำนวนรอบที่ใช้ในการ train เพื่อสร้างรูปภาพใหม่}{37}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}ปรับเปลี่ยน style weight และ content weight}{37}{subsection.4.1.5}%
+\contentsline {section}{\numberline {4.2}WEB APPLICATION}{38}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}User Interface }{38}{subsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.1}Homepage}{38}{subsubsection.4.2.1.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.2}Create your art Page}{38}{subsubsection.4.2.1.2}%
+\contentsline {subsubsection}{\numberline {4.2.1.3}Community Page}{38}{subsubsection.4.2.1.3}%
+\contentsline {subsubsection}{\numberline {4.2.1.4}Login Page}{38}{subsubsection.4.2.1.4}%
+\contentsline {subsubsection}{\numberline {4.2.1.5}Register Page}{38}{subsubsection.4.2.1.5}%
+\contentsline {subsection}{\numberline {4.2.2}Backend และ Database}{41}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}Module assets: เก็บข้อมูล static (image, css) ที่ถูกรวบรวมมาจาก directory ต่าง ๆ}{41}{subsubsection.4.2.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}Module authentication: เป็น module ที่สำหรับการ login, register}{41}{subsubsection.4.2.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.3}Module community: ใช้สำหรับแสดงผลภาพที่มีคนโพสต์}{41}{subsubsection.4.2.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.2.4}Module create\_your\_art: ใช้สำหรับเก็บประมวลผล Nearal style transfer}{41}{subsubsection.4.2.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.2.5}Module Homepage: ใช้สำหรับแสดงผลหน้า homepage}{41}{subsubsection.4.2.2.5}%
+\contentsline {subsubsection}{\numberline {4.2.2.6}Module template: ใช้สำหรับเก็บ fronten ที่เป็น .html}{41}{subsubsection.4.2.2.6}%
+\contentsline {subsubsection}{\numberline {4.2.2.7}Module user\_info: ใช้สำหรับหน้า profile}{41}{subsubsection.4.2.2.7}%
+\contentsline {subsubsection}{\numberline {4.2.2.8}Module your\_art\_painter: เป็น module หลักในการ setting ค่าต่าง ๆ}{41}{subsubsection.4.2.2.8}%
+\contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {5}\hskip -0.8em บทสรุป}}}{42}{chapter.5}%
+\contentsline {section}{\numberline {5.1}ผลการดำเนินงานในภาคการศึกษาที่ 1 (Midterm)}{42}{section.5.1}%
+\contentsline {section}{\numberline {5.2}ผลการดำเนินงานในภาคการศึกษาที่ 2 (Final) }{42}{section.5.2}%
+\contentsline {chapter}{\mdseries \bf \MakeUppercase {หนังสืออ้างอิง}}{43}{section.5.2}%
+\contentsline {chapter}{\mdseries \bf \MakeUppercase {Appendix}}{44}{section.5.2}%
+\contentsline {apdx}{A\hskip 1em ชื่อภาคผนวกที่ 1}{45}{section.5.2}%
+\contentsline {apdx}{B\hskip 1em ชื่อภาคผนวกที่ 2}{47}{equation.1.2.5}%

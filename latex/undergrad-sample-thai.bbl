@@ -1,34 +1,14 @@
 \begin{thebibliography}{10}
 
-\bibitem{ปูพื้นฐา98:online}
-``ปูพื้นฐานการพัฒนา Web Application
-  ภาษา Python ด้วย Django Framework | by Kong Ruksiamza |
-  Medium,''
-  \url{https://kongruksiamza.medium.com/%E0%B8%9B%E0%B8%B9%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B8%B2-web-application-%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2-python-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-django-framework-9d3b7f48718a},
-\newblock (Accessed on 03/20/2021).
+\bibitem{gatys2015neural}
+Leon~A Gatys, Alexander~S Ecker, and Matthias Bethge,
+\newblock  2015, ``A neural algorithm of artistic style,''
+\newblock {\bf arXiv preprint arXiv:1508.06576}, 2015.
 
 \bibitem{DeepLear55:online}
 ``Deep Learning แบบฉบับคนสามัญชน EP 1 : Neural
   Network History | by Mr.P L | mmp-li | Medium,''
   \url{https://medium.com/mmp-li/deep-learning-%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%89%E0%B8%9A%E0%B8%B1%E0%B8%9A%E0%B8%84%E0%B8%99%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%B1%E0%B8%8D%E0%B8%8A%E0%B8%99-ep-1-neural-network-history-f7789236a9a3},
-\newblock (Accessed on 03/20/2021).
-
-\bibitem{Gradient17:online}
-``Gradient Descent คีย์เวิร์ดที่ Data Science
-  ต้องรู้จัก ! : Machine Learning 101 | by Mr.P L | mmp-li
-  | Medium,''
-  \url{https://medium.com/mmp-li/gradient-descent-%E0%B8%84%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B9%80%E0%B8%A7%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%97%E0%B8%B5%E0%B9%88-data-science-%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%88%E0%B8%B1%E0%B8%81-machine-learning-101-b5c78c1787a0},
-\newblock (Accessed on 03/20/2021).
-
-\bibitem{NeuralTr45:online}
-``Neural Transfer Using PyTorch — PyTorch Tutorials 1.8.0 documentation,''
-  \url{https://pytorch.org/tutorials/advanced/neural_style_tutorial.html},
-\newblock (Accessed on 03/20/2021).
-
-\bibitem{WhatisWe89:online}
-``What is Web Application Architecture? How It Works, Trends, Best Practices
-  and More – Stackify,''
-  \url{https://stackify.com/web-application-architecture/},
 \newblock (Accessed on 03/20/2021).
 
 \bibitem{brownlee2017gentle}
@@ -37,21 +17,36 @@ Jason Brownlee,
   learning,''
 \newblock {\bf Machine Learning Mastery}, 2017.
 
-\bibitem{gatys2015neural}
-Leon~A Gatys, Alexander~S Ecker, and Matthias Bethge,
-\newblock  2015, ``A neural algorithm of artistic style,''
-\newblock {\bf arXiv preprint arXiv:1508.06576}, 2015.
-
-\bibitem{geron2018neural}
-Aur{\'e}lien G{\'e}ron,
-\newblock  2018, ``Neural networks and deep learning,''
-\newblock 2018.
-
 \bibitem{saha2018comprehensive}
 Sumit Saha,
 \newblock  2018, ``A comprehensive guide to convolutional neural networks—the
   ELI5 way,''
 \newblock {\bf Towards Data Science}, vol. 15, 2018.
+
+\bibitem{Gradient17:online}
+``Gradient Descent คีย์เวิร์ดที่ Data Science
+  ต้องรู้จัก ! : Machine Learning 101 | by Mr.P L | mmp-li
+  | Medium,''
+  \url{https://medium.com/mmp-li/gradient-descent-%E0%B8%84%E0%B8%B5%E0%B8%A2%E0%B9%8C%E0%B9%80%E0%B8%A7%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%94%E0%B8%97%E0%B8%B5%E0%B9%88-data-science-%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%88%E0%B8%B1%E0%B8%81-machine-learning-101-b5c78c1787a0},
+\newblock (Accessed on 03/20/2021).
+
+\bibitem{WhatisWe89:online}
+``What is Web Application Architecture? How It Works, Trends, Best Practices
+  and More – Stackify,''
+  \url{https://stackify.com/web-application-architecture/},
+\newblock (Accessed on 03/20/2021).
+
+\bibitem{NeuralTr45:online}
+``Neural Transfer Using PyTorch — PyTorch Tutorials 1.8.0 documentation,''
+  \url{https://pytorch.org/tutorials/advanced/neural_style_tutorial.html},
+\newblock (Accessed on 03/20/2021).
+
+\bibitem{8636278}
+C.~{Zheng} and Y.~{Zhang},  2018,
+\newblock ``Two-Stage Color ink Painting Style Transfer via Convolution Neural
+  Network,''
+\newblock in {\bf 2018 15th International Symposium on Pervasive Systems,
+  Algorithms and Networks (I-SPAN)}, 2018, pp. 193--200.
 
 \bibitem{sarkar2018comprehensive}
 Dipanjan Sarkar,
@@ -61,11 +56,11 @@ Dipanjan Sarkar,
   com/a-comprehensive-handson-guide-to-transfer-learning-with-real-world-applications-in-deep-learning-212bf3b2f27a.
   Hakup{\"a}iv{\"a}}, vol. 20, pp. 2020, 2018.
 
-\bibitem{8636278}
-C.~{Zheng} and Y.~{Zhang},  2018,
-\newblock ``Two-Stage Color ink Painting Style Transfer via Convolution Neural
-  Network,''
-\newblock in {\bf 2018 15th International Symposium on Pervasive Systems,
-  Algorithms and Networks (I-SPAN)}, 2018, pp. 193--200.
+\bibitem{ปูพื้นฐา98:online}
+``ปูพื้นฐานการพัฒนา Web Application
+  ภาษา Python ด้วย Django Framework | by Kong Ruksiamza |
+  Medium,''
+  \url{https://kongruksiamza.medium.com/%E0%B8%9B%E0%B8%B9%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B8%B2-web-application-%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%A0%E0%B8%B2%E0%B8%A9%E0%B8%B2-python-%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2-django-framework-9d3b7f48718a},
+\newblock (Accessed on 03/20/2021).
 
 \end{thebibliography}
