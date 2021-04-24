@@ -9,6 +9,19 @@ import time
 import model
 import function
 
+
+# Setting
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument('-content_image',help="Content image", default=r'Test\ContentImg.jpg')
+parser.add_argument('-style_image',help="Style image", default=r'Test\StyleImage\Chakrabhan\0001.jpg')
+parser.add_argument('-src_image',help="Source image for histogram matching", default=None)
+parser.add_argument('-ref_image',help="Reference image for histogram matching", default=None)
+params = parser.parse_args()
+
+print(params.content_image)
+print(params.style_image)
+
 # SETTINGS
 IMAGE_SIZE = 224
 NUM_EPOCHS = 1

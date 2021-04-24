@@ -2,9 +2,9 @@ from PIL import Image
 import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
-from skimage import exposure
+import skimage.exposure as exposure
 import torch
-from torchvision import transforms, datasets
+# from torchvision import transforms, datasets
 
 def loadImg(path):
     img = cv.imread(path)
@@ -67,19 +67,19 @@ def gram_matrix(tensor):
     #Returning gram matrix   
     return gram  
 
-def showStyleContentTarget(style,content,target,title='Show Style Content & Target Image'):
+def show3Image(style,content,target,title='Show Style Content & Target Image',title1='Content Image',title2='Style Image',title3='Generated Image'):
     fig,(ax1,ax2,ax3)=plt.subplots(1,3,figsize=(15,5))  
     fig.suptitle(title, fontsize=16)   
     #Plotting content image   
-    ax1.set_title('Content Image')
+    ax1.set_title(title1)
     ax1.imshow(content)  
     ax1.axis('off')  
     #Plotting style image  
-    ax2.set_title('Style Image')
+    ax2.set_title(title2)
     ax2.imshow(style)
     ax2.axis('off')  
     #Plotting target image  
-    ax3.set_title('Generated Image')
+    ax3.set_title(title3)
     ax3.imshow(target) 
     ax3.axis('off') 
     plt.show()
@@ -109,14 +109,18 @@ def plotLoss(contentLoss,styleLoss,totalLoss,title='Loss'):
     plt.show()
 
 
-STYLE_IMG_PATH = r'StyleImage/Chakrabhan/0001.jpg'
-CONTENT_IMG_PATH = r'Test/ContentImg.jpg'
-style_img = loadImg(STYLE_IMG_PATH)
-content_img = loadImg(CONTENT_IMG_PATH)
-showImg(style_img,'Chakrabhan Style Image')
-showStyleContentTarget(style_img,content_img,style_img)
-preserved_img = histogramMatching(style_img,content_img)
-showStyleContentTarget(style_img,content_img,preserved_img)
+# STYLE_IMG_PATH = r'Test\StyleImage\Chakrabhan\0001.jpg'
+# CONTENT_IMG_PATH = r'Test\ContentImg.jpg'
+# TARGET_IMG_PATH = r'result_test1.png'
+# style_img = loadImg(STYLE_IMG_PATH)
+# content_img = loadImg(CONTENT_IMG_PATH)
+# target_img = loadImg(TARGET_IMG_PATH )
+# showImg(style_img,'Chakrabhan Style Image')
+# show3Image(style_img,content_img,style_img)
+# preserved_img = histogramMatching(target_img,content_img)
+# img = cv.cvtColor(preserved_img, cv.COLOR_BGR2RGB)
+# saveImg(img, 'Presult_test1.png')
+# show3Image(style_img,content_img,preserved_img,title="Histogram Matching",title3="Preserved Image")
 
 # # concatanate image Horizontally
 # Hori = np.concatenate((style_img,preserve_img), axis=1)
