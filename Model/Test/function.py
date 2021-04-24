@@ -109,18 +109,18 @@ def plotLoss(contentLoss,styleLoss,totalLoss,title='Loss'):
     plt.show()
 
 
-# STYLE_IMG_PATH = r'Test\StyleImage\Chakrabhan\0001.jpg'
-# CONTENT_IMG_PATH = r'Test\ContentImg.jpg'
-# TARGET_IMG_PATH = r'result_test1.png'
-# style_img = loadImg(STYLE_IMG_PATH)
-# content_img = loadImg(CONTENT_IMG_PATH)
-# target_img = loadImg(TARGET_IMG_PATH )
-# showImg(style_img,'Chakrabhan Style Image')
-# show3Image(style_img,content_img,style_img)
-# preserved_img = histogramMatching(target_img,content_img)
-# img = cv.cvtColor(preserved_img, cv.COLOR_BGR2RGB)
-# saveImg(img, 'Presult_test1.png')
-# show3Image(style_img,content_img,preserved_img,title="Histogram Matching",title3="Preserved Image")
+STYLE_IMG_PATH = r'Test\StyleImage\Chakrabhan\0001.jpg'
+CONTENT_IMG_PATH = r'Test\ContentImg.jpg'
+TARGET_IMG_PATH = r'result_test1.png'
+style_img = loadImg(STYLE_IMG_PATH)
+content_img = loadImg(CONTENT_IMG_PATH)
+target_img = loadImg(TARGET_IMG_PATH )
+showImg(style_img,'Chakrabhan Style Image')
+show3Image(style_img,content_img,style_img)
+preserved_img = histogramMatching(target_img,content_img)
+img = cv.cvtColor(preserved_img, cv.COLOR_BGR2RGB)
+saveImg(img, 'Presult_test1.png')
+show3Image(style_img,content_img,preserved_img,title="Histogram Matching",title3="Preserved Image")
 
 # # concatanate image Horizontally
 # Hori = np.concatenate((style_img,preserve_img), axis=1)
