@@ -51,15 +51,18 @@ def train():
     print(device)
     import os
     print(os.listdir())
+
     # Dataset
     preprocess = transforms.Compose([
         transforms.Resize(IMAGE_SIZE),
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.5,0.5,0.5],std=[0.5,0.5,0.5])])
+    
     train_dataset = datasets.ImageFolder(DATASET_PATH, transform=preprocess)
     train_loader = torch.utils.data.DataLoader(train-dataset, batch_size=BATCH_SIZE, shuffle=True)
 
     # Model
+
     VGG = model.VGG19().to(device)
     print(VGG)
 
@@ -89,6 +92,9 @@ def train():
     start_time = time.time()
     for epoch in range(NUM_EPOCHS)
         print("Epoch : {}/{}".format(epoch+1,NUM_EPOCHS))
+        for content_batch,_ in train_loader:
+            curr_batch_size = content_batch.shape[0]
+            
         
 
 
