@@ -4,10 +4,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 import skimage.exposure as exposure
 import torch
-# from torchvision import transforms, datasets
+import torchvision.transforms as transforms
+import torchvision.datasets as datasets
+import os
 
 def loadImg(path):
     img = cv.imread(path)
+    print(path,type(img))
     img = cv.cvtColor(img, cv.COLOR_BGR2RGB)
     # cv.imshow("Img",img)
     return img
@@ -108,19 +111,19 @@ def plotLoss(contentLoss,styleLoss,totalLoss,title='Loss'):
     plt.title(title)
     plt.show()
 
-
-STYLE_IMG_PATH = r'Test\StyleImage\Chakrabhan\0001.jpg'
-CONTENT_IMG_PATH = r'Test\ContentImg.jpg'
-TARGET_IMG_PATH = r'result_test1.png'
-style_img = loadImg(STYLE_IMG_PATH)
-content_img = loadImg(CONTENT_IMG_PATH)
-target_img = loadImg(TARGET_IMG_PATH )
-showImg(style_img,'Chakrabhan Style Image')
-show3Image(style_img,content_img,style_img)
-preserved_img = histogramMatching(target_img,content_img)
-img = cv.cvtColor(preserved_img, cv.COLOR_BGR2RGB)
-saveImg(img, 'Presult_test1.png')
-show3Image(style_img,content_img,preserved_img,title="Histogram Matching",title3="Preserved Image")
+# path = os.getcwd()
+# STYLE_IMG_PATH = path+r'\StyleImage\Chakrabhan\0001.jpg'
+# CONTENT_IMG_PATH = path+r'Test\ContentImg.jpg'
+# # TARGET_IMG_PATH = path+r'\result_test1.png'
+# style_img = loadImg(STYLE_IMG_PATH)
+# content_img = loadImg(CONTENT_IMG_PATH)
+# # target_img = loadImg(TARGET_IMG_PATH )
+# showImg(style_img,'Chakrabhan Style Image')
+# show3Image(style_img,content_img,style_img)
+# preserved_img = histogramMatching(target_img,content_img)
+# img = cv.cvtColor(preserved_img, cv.COLOR_BGR2RGB)
+# saveImg(img, 'Presult_test1.png')
+# show3Image(style_img,content_img,preserved_img,title="Histogram Matching",title3="Preserved Image")
 
 # # concatanate image Horizontally
 # Hori = np.concatenate((style_img,preserve_img), axis=1)
