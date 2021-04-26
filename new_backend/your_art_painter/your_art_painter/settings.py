@@ -1,8 +1,8 @@
+from django.contrib.messages import constants as messages
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 
 
 # Quick-start development settings - unsuitable for production
@@ -70,8 +70,9 @@ WSGI_APPLICATION = 'your_art_painter.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE':  'djongo',  # 'django.db.backends.sqlite3',
+        'NAME':  'your_art_painter'
+        #os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -117,11 +118,10 @@ STATIC_URL = '/static/'
 # MEDIA_URL = '/media/'
 
 STATICFIES_DIRS = [os.path.join(BASE_DIR, 'static')
-]
+                   ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 
-from django.contrib.messages import constants as messages
 
 MESSAGE_TAGS = {
     messages.DEBUG: 'alert-info',
