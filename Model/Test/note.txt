@@ -1,0 +1,17 @@
+Gfilter.py
+
+1.  get_filter(model,model_weights,conv_layers)
+2.  visualizeLayerFilter(convLayer,model_weights)
+3.  visualImageFilter(img,model_weights,conv_layers)
+
+function.py
+
+1.  loadImg(path)
+2.  showImg(img,name='Image')
+3.  saveImg(img,img_path)
+4.  im_convert(tensor)  # change tensor to image
+5.  im_convertT(img, max_size=None) # change image to tensor
+6.  gram_matrix(tensor)
+7.  show3Image(style,content,target,title='Show Style Content & Target Image',title1='Content Image',title2='Style Image',title3='Generated Image')
+8.  histogramMatching(src, ref)
+9.  plotLoss(contentLoss,styleLoss,totalLoss,title='Loss')
