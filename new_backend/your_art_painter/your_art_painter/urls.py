@@ -12,8 +12,8 @@ urlpatterns = [
     path('submission/', include('create_your_art.urls')),
     path('profile/', include('user_info.urls')),
     path('community/', include('community.urls')),
-    path('register/', include('register.urls')),
-    path('login/', include('authentication.urls')),
+    # path('register/', include('authentication.urls')),
+    path('auth/', include('authentication.urls')),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 urlpatterns += staticfiles_urlpatterns()
