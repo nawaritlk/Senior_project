@@ -1,9 +1,5 @@
 {% include 'menubar_NoLogin.html' %}
-<form method="post" action="">
-  {% csrf_token %} {{form.as_p}}
-  <input type="submit" value="Register" />
-</form>
-<!--<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta
@@ -11,6 +7,8 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
     <style>
       @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script&family=Playfair+Display&display=swap");
@@ -98,7 +96,7 @@
         font-weight: 400;
         font-size: 17px;
         pointer-events: none;
-        transform: translateY(-50%);
+        transform: translateY(-100%);
         transition: all 0.3s ease;
       }
 
@@ -183,7 +181,7 @@
     <div class="wrapper">
       <div class="title">create account form</div>
       <!--<p class="createAccount">create account</p>-->
-<!-- {% for message in messages %}
+     <!--{% for message in messages %}
       <div class="alert {{ message.tags }} alert-dismissible" role="alert">
         <button
           type="button"
@@ -195,28 +193,42 @@
         </button>
         {{ message }}
       </div>
-      {% endfor %}
+      {% endfor %} --> 
 
-      <form action="register:UserInfo" method="POST"> 
+      <form action="" method="post">
         {% csrf_token %}
-        {{ UserForm }}
         <div class="field">
-          <label for = "{{ user_form.email.id_for_label }}">Email:</label> 
-          {{ user_form.email }}
-          <input type="text" name="email" required >
+          <input type="text" name="username" required />
+          <label>Username</label>
+        <div class="field">
+          <!--<label for="{{ form.email.id_for_label }}">Email:</label>
+          {{ user_form.email }}-->
+          <input type="text" name="email" required />
           <label>Email Address</label>
-          {{ user_form.email }}
+          <!--{{ form.email }}-->
         </div>
         <div class="field">
-          <input type="password" name="password" required >
+          <input type="password" name="password" required />
           <label>Password</label>
-          {{ user_form.password }}
+          <!--{{ form.password }}-->
         </div>
         <div class="field">
-          <input type="password" name="confirm_password" required >
+          <input type="password" name="confirm_password" required />
           <label>Confirm password</label>
-          {{ user_form.confirm_password }}
+          <!--{{ form.confirm_password }}-->
+        
+        <div class="alert alert-danger" role="alert">
+          This is a danger alert—check it out!
         </div>
+        
+        <!--{% if messages %}
+        {% for message in messages %}
+        <div class ="alert alert-danger" role="alert">
+          {{ message }}
+        </div>
+        {% endfor %}
+        {% endif %}-->
+
         <div class="field">
           <input type="submit" value="Register" />
         </div>
@@ -228,4 +240,4 @@
       </form>
     </div>
   </body>
-</html>-->
+</html>
