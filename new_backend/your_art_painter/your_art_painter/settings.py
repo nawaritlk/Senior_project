@@ -70,11 +70,25 @@ WSGI_APPLICATION = 'your_art_painter.wsgi.application'
 
 DATABASES = {
     'default': {
+<<<<<<< Updated upstream
         'ENGINE':  'djongo',  # 'django.db.backends.sqlite3',
         'NAME':  'Test2'
         #os.path.join(BASE_DIR, 'db.sqlite3'),
+=======
+        'ENGINE':  'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+>>>>>>> Stashed changes
     }
 }
+
+############## mommy##############
+#DATABASES = {
+    #'default': {
+    #    'ENGINE':  'djongo',  # 'django.db.backends.sqlite3',
+   #     'NAME':  'your_art_painter'
+    #    #os.path.join(BASE_DIR, 'db.sqlite3'),
+  #  }
+#}
 
 
 # Password validation

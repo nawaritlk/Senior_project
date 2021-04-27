@@ -165,3 +165,5 @@ def train():
 
     if(PLOT_LOSS):
         function.plotLoss(content_loss,style_loss,total_loss)
+
+train()
