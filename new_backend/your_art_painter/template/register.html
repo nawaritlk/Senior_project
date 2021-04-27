@@ -217,17 +217,13 @@
           <label>Confirm password</label>
           <!--{{ form.confirm_password }}-->
         
-        <div class="alert alert-danger" role="alert">
-          This is a danger alert—check it out!
-        </div>
-        
-        <!--{% if messages %}
+        {% if messages %}
         {% for message in messages %}
         <div class ="alert alert-danger" role="alert">
           {{ message }}
         </div>
         {% endfor %}
-        {% endif %}-->
+        {% endif %}
 
         <div class="field">
           <input type="submit" value="Register" />
