@@ -6,6 +6,7 @@ import skimage.exposure as exposure
 import torch
 import torchvision.transforms as transforms
 import torchvision.datasets as datasets
+from torchvision.utils import save_image
 import os
 
 def loadImg(path):
@@ -22,7 +23,11 @@ def showImg(img,name='Image'):
     plt.show()
 
 def saveImg(img,img_path):
-    cv.imwrite(img_path, img)
+    print(type(img))
+    if type(img).__module__=='numpy':
+        cv.imwrite(img_path, img)
+    else:
+        save_image(img, img_path)
 
 # change tensor to image
 def im_convert(tensor):  
@@ -60,15 +65,10 @@ def im_convertT(img, max_size=None):
 
 #Initializing gram_matrix function for our tensor image   
 def gram_matrix(tensor):  
-    #Unwrapping the tensor dimensions into respective variables i.e. batch size, distance, height and width   
-    _,d,h,w=tensor.size()   
-    #Reshaping data into a two dimensional of array or two dimensional of tensor  
-    tensor=tensor.view(d,h*w)  
-    #Multiplying the original tensor with its own transpose using torch.mm   
-    #tensor.t() will return the transpose of original tensor  
-    gram=torch.mm(tensor,tensor.t())  
-    #Returning gram matrix   
-    return gram  
+    b,c,h,w=tensor.shape   
+    tensor=tensor.view(b,c,h*w)    
+    tensor_transpose = tensor.transpose(1,2) 
+    return torch.bmm(tensor,tensor_transpose) / (c*h*w)
 
 def show3Image(style,content,target,title='Show Style Content & Target Image',title1='Content Image',title2='Style Image',title3='Generated Image'):
     fig,(ax1,ax2,ax3)=plt.subplots(1,3,figsize=(15,5))  
@@ -99,14 +99,14 @@ def histogramMatching(src, ref):
 #     return dst
 
 def plotLoss(contentLoss,styleLoss,totalLoss,title='Loss'):
-    x = [i for i in range(len(total_loss))]
+    x = [i for i in range(len(totalLoss))]
     plt.figure(figsize=[10,6])
-    plt.plot(x, c_loss, label="Content Loss")
-    plt.plot(x, s_loss, label="Style Loss")
-    plt.plot(x, total_loss, label="Total Loss")
+    plt.plot(x, contentLoss, label="Content Loss")
+    plt.plot(x, styleLoss, label="Style Loss")
+    plt.plot(x, totalLoss, label="Total Loss")
     
     plt.legend()
-    plt.xlabel('Every 500 iterations')
+    plt.xlabel('Iterations')
     plt.ylabel('Loss')
     plt.title(title)
     plt.show()

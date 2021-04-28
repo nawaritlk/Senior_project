@@ -53,7 +53,7 @@ class ConvLayer(nn.Module):
     def forward(self,x):
         x = self.pad(x)
         x = self.conv_layer(x)
-        out = x if norm_type=="None" else self.norm_layer(x)
+        out = x if self.norm_type=="None" else self.norm_layer(x)
         return out
 
 class ResidualLayer(nn.Module):
@@ -65,7 +65,7 @@ class ResidualLayer(nn.Module):
     
     def forward(self,x):
         identity = x
-        out = self.relu(self.conv1())
+        out = self.relu(self.conv1(x))
         out = self.conv2(out)
         out = out + identity
         return out
@@ -86,5 +86,5 @@ class DeconvLayer(nn.Module):
 
     def forward(self,x):
         x = self.convTran(x)
-        out = x if norm_type=="None" else self.norm_layer(x)
+        out = x if self.norm_type=="None" else self.norm_layer(x)
         return out

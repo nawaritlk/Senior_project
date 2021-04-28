@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
-# from torchvision import models,transforms
+import torchvision.transforms as transforms
+import torchvision.models as models
 
 model_urls = {
     'vgg11': 'https://download.pytorch.org/models/vgg11-bbd30ac9.pth',
@@ -13,8 +14,11 @@ model_urls = {
     'vgg19_bn': 'https://download.pytorch.org/models/vgg19_bn-c79401a0.pth',
 }
 
+import os
+BASE_PATH = os.getcwd()
+
 class VGG19(nn.Module):
-    def __init__(self,vgg19_path="models/vgg19-d01eb7cb.pth"):
+    def __init__(self,vgg19_path=BASE_PATH+r'\models\vgg19-dcbb9e9d.pth'):
         super(VGG19, self).__init__()
         vgg19_features = models.vgg19(pretrained=False)
         print(vgg19_path)
