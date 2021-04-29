@@ -34,16 +34,16 @@ ADAM_LEARNING_RATE = 0.001
 BASE_PATH = os.getcwd()
 # SAVE OUTPUT
 SAVE_EVERY = 1
-SAVE_MODEL_PATH = BASE_PATH+r'\tt\outputs\models\models'
-SAVE_IMAGE_PATH = BASE_PATH+r'\tt\outputs\models\generated_image'
+SAVE_MODEL_PATH = BASE_PATH+r'/outputs/fastT/models'
+SAVE_IMAGE_PATH = BASE_PATH+r'/outputs/fastT/generated_image'
 
-DATASET_PATH = r'\ContentImage'
+DATASET_PATH = r'/ContentImage'
 
 # SEED = 35
 PLOT_LOSS = 1
 
 # PATH IMAGE
-STYLE_IMG_PATH = BASE_PATH+r'\StyleImage\Chakrabhan\0001.jpg'
+STYLE_IMG_PATH = BASE_PATH+r'/StyleImage/Chakrabhan/0001.jpg'
 
 def train():
     # check device

@@ -18,7 +18,7 @@ import os
 BASE_PATH = os.getcwd()
 
 class VGG19(nn.Module):
-    def __init__(self,vgg19_path=BASE_PATH+r'\models\vgg19-dcbb9e9d.pth'):
+    def __init__(self,vgg19_path=BASE_PATH+r'/models/vgg19-dcbb9e9d.pth'):
         super(VGG19, self).__init__()
         vgg19_features = models.vgg19(pretrained=False)
         print(vgg19_path)

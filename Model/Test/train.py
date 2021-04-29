@@ -22,16 +22,16 @@ ADAM_LEARNING_RATE = 0.001
 BASE_PATH = os.getcwd()
 # SAVE OUTPUT
 SAVE_EVERY = 1
-SAVE_MODEL_PATH = BASE_PATH+r'\tt\outputs\models\models'
-SAVE_IMAGE_PATH = BASE_PATH+r'\tt\outputs\models\generated_image'
+SAVE_MODEL_PATH = BASE_PATH+r'/outputs/fastTL/models'
+SAVE_IMAGE_PATH = BASE_PATH+r'/outputs/fastTL/generated_image'
 
-DATASET_PATH = r'\ContentImage'
+DATASET_PATH = r'/ContentImage'
 
 # SEED = 35
 PLOT_LOSS = 1
 
 # PATH IMAGE
-STYLE_IMG_PATH = BASE_PATH+r'\StyleImage\Chakrabhan\0001.jpg'
+STYLE_IMG_PATH = BASE_PATH+r'/StyleImage/Chakrabhan/0001.jpg'
 
 def train():
     # check device
@@ -126,33 +126,33 @@ def train():
 
                 total_loss.backward()
 
-            optimizer.step(closure)
+        optimizer.step(closure(train_loader,batch_style_loss,batch_content_loss,batch_total_loss))
 
-            # save model
-            if (((batch_count-1)%SAVE_EVERY==0) or (batch_count==NUM_EPOCHS*len(train_loader))):
-                print("=== Iteration : {}/{} ===".format(batch_count,NUM_EPOCHS*len(train_loader)))
-                print("\tContent Loss : {:2f}".format(batch_content_loss/batch_count))
-                print("\tStyle Loss : {:2f}".format(batch_style_loss/batch_count))
-                print("\tTotal Loss : {:2f}".format(batch_total_loss/batch_count))
-                print("\t=> Time elapsed : {} seconds".format(time.time()-start_time))
+        # save model
+        if (((batch_count-1)%SAVE_EVERY==0) or (batch_count==NUM_EPOCHS*len(train_loader))):
+            print("=== Iteration : {}/{} ===".format(batch_count,NUM_EPOCHS*len(train_loader)))
+            print("\tContent Loss : {:2f}".format(batch_content_loss/batch_count))
+            print("\tStyle Loss : {:2f}".format(batch_style_loss/batch_count))
+            print("\tTotal Loss : {:2f}".format(batch_total_loss/batch_count))
+            print("\t=> Time elapsed : {} seconds".format(time.time()-start_time))
 
-                checkpoint_path = SAVE_MODEL_PATH+"checkpoint_"+str(batch_count-1)
-                torch.save(TransformerNetwork.state_dict(),checkpoint_path)
-                print("Save TransformerNetwork at {}".format(checkpoint_path))
+            checkpoint_path = SAVE_MODEL_PATH+"checkpoint_"+str(batch_count-1)
+            torch.save(TransformerNetwork.state_dict(),checkpoint_path)
+            print("Save TransformerNetwork at {}".format(checkpoint_path))
 
-                sample = generated_batch[0].clone().detach().unsqueeze(dim=0)
-                sample_image = function.im_convert(sample)
-                sample_path = SAVE_IMAGE_PATH+"sample_"+str(batch_count-1)+'.jpg'
-                # function.saveImg(sample_image,sample_path)
-                function.saveImg(sample,sample_path)
-                function.showImg(sample_image)
-                print("Save generated image at {}".format(sample_path))
+            sample = generated_batch[0].clone().detach().unsqueeze(dim=0)
+            sample_image = function.im_convert(sample)
+            sample_path = SAVE_IMAGE_PATH+"sample_"+str(batch_count-1)+'.jpg'
+            # function.saveImg(sample_image,sample_path)
+            function.saveImg(sample,sample_path)
+            function.showImg(sample_image)
+            print("Save generated image at {}".format(sample_path))
 
-                content_loss_history.append(batch_content_loss/batch_count)
-                style_loss_history.append(batch_style_loss/batch_count)
-                total_loss_history.append(batch_total_loss/batch_count)
+            content_loss_history.append(batch_content_loss/batch_count)
+            style_loss_history.append(batch_style_loss/batch_count)
+            total_loss_history.append(batch_total_loss/batch_count)
 
-            batch_count += 1    
+        batch_count += 1    
         
     stop_time = time.time()
 
