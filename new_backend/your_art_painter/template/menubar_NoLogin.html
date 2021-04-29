@@ -126,7 +126,14 @@
       </div>
       <div class="userMenu">
         <ul>
-          <li><a href="/auth">login</a></li>
+          {% if user.is_authenticated %}
+          <li><a href="{% url 'profile' %}">{{ user.get_username }}</a></li>
+          {% endif %}
+          {% if user.is_authenticated %}
+          <li><a href="{% url 'authlogout' %}">log out</a></li>
+          {% else %}
+          <li><a href="{% url 'authlogin' %}">Log in</a></li>
+          {% endif %}
         </ul>
       </div>
     </nav>
