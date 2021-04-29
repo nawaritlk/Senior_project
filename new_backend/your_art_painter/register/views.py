@@ -5,10 +5,6 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
 # from .forms import UserForm
 from django.views.decorators.csrf import csrf_exempt
-<<<<<<< HEAD
-=======
-#from .models import user_info
->>>>>>> frong
 
 # Create your views here.
 
@@ -27,11 +23,8 @@ def user_info(request):
             else:
                 registerdata = User.objects.create_user(username=username, email=email, password=password)
                 registerdata.save()
-<<<<<<< HEAD
                 # return redirect('homepage')
-=======
-                #return redirect('homepage')
->>>>>>> frong
+
         else:
             messages.error(request, 'Password and Confirm Password Not Matched')
             # print("password not match")

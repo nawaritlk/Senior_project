@@ -1,4 +1,4 @@
-{% include 'menubar_Login.html' %}
+{% include 'authentication/menubar_Login.html' %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -305,7 +305,7 @@
 </head>
 
 <body>
-  <p class="userName">Pablo Ruiz Picasso <i class='far fa-edit' style='font-size:23px'></i></p>
+  <p class="userName">{{ user.get_username }} <i class='far fa-edit' style='font-size:23px'></i></p>
   <div class="emailBlock">
     <p class="email">E-mail:</p>
     <p class="emailName">abc@gmail.com</p>

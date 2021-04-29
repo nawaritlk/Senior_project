@@ -71,7 +71,7 @@ WSGI_APPLICATION = 'your_art_painter.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE':  'djongo',  # 'django.db.backends.sqlite3',
-        'NAME':  'Test2' # databse ######
+        'NAME':  'Test' # databse ######
         #os.path.join(BASE_DIR, 'db.sqlite3'),
 
     }
