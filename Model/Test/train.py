@@ -25,7 +25,7 @@ SAVE_EVERY = 1
 SAVE_MODEL_PATH = BASE_PATH+r'\tt\outputs\models\models'
 SAVE_IMAGE_PATH = BASE_PATH+r'\tt\outputs\models\generated_image'
 
-DATASET_PATH = '\ContentImage'
+DATASET_PATH = r'\ContentImage'
 
 # SEED = 35
 PLOT_LOSS = 1
