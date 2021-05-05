@@ -1,37 +1,280 @@
+{% include 'menubar.html' %}
 {% load static %}
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="{% static 'menubar_nonLogin.css' %}"/>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script&family=Playfair+Display&display=swap');
+
+    /*
+    font-family: 'Dancing Script', cursive;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Playfair Display', serif;*/
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /*body {
+      background-color: #F8E8DB;
+    }*/
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*---------------------------section setting------------------------*/
+
+    #section2 {
+      height: 1024px;
+      background-color: white;
+    }
+
+    .wrapper {
+      margin: 1170px;
+      margin: auto;
+    }
+
+    /*.header ul {
+      margin: 0;
+    }*/
+
+    /*-----------------------------grid and container-----------------------*/
+    .container {
+      background-color: #F8E8DB;
+      text-align: center;
+    }
+
+    /*.container1 {
+      text-align: left;
+    }*/
+
+    .container2 {
+      background-color: #F8E8DB;
+      text-align: center:
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 5% 30% 30% 30% 5%;
+    }
+
+    .step1_head {
+      display: flex;
+    }
+
+    .grid-container1 {
+      display: grid;
+      grid-template-columns: 5% 60% 30% 5%;
+    }
+
+    .grid-container2 {
+      display: grid;
+      grid-template-columns: 5% 90% 5%;
+    }
 
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  </head>
+    /*------------------------------font logo------------------------------*/
+    .font-logo {
+      position: relative;
+      text-align: center;
+      height: 600px;
+    }
 
-  <body>
-    <nav>
-      <div class="logo">
-        <p>your art painter</p>
+    .font-logo h1 {
+      color: #000000;
+      text-transform: none;
+      font-size: 120px;
+      padding: 70px 0;
+      font-family: 'Dancing Script', cursive;
+    }
+
+    .font-logo a {
+      border: 1px solid #99653C;
+      border-radius: 10px;
+      background: #99653C;
+      padding: 10px 25px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 25px;
+      margin-top: 50px;
+      display: inline-block;
+      color: white;
+    }
+
+    .font-logo a:hover {
+      background: white;
+      color: teal;
+    }
+
+    /** -------------------------------------try it--------------------------- **/
+
+    .try_box {
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    .try_box h1 {
+      position: relative;
+      width: 700px;
+      height: 100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .try_it_step1 figure {
+      margin: 0px;
+      position: relative;
+      left: 150px;
+      top: 0;
+    }
+
+    .try_it_step1 img {
+      width: 50px;
+    }
+
+    .step1_text h2 {
+      margin: 0px 225px;
+    }
+
+    .content {
+      position: relative;
+      text-align: center;
+      /*height: 660px;*/
+    }
+
+    .container1 p1 {
+      color: #000000;
+      text-transform: none;
+      font-size: 50px;
+      font-family: 'DM Serif Display', serif;
+      text-align: center;
+    }
+
+    .container1 p {
+      color: #000000;
+      text-transform: none;
+      font-size: 20px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .headerSec2 {
+      text-align: center;
+    }
+
+    /************step image************/
+    .picStep img{
+        width: 330px;
+        height: 200px;
+        padding-left: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="font-logo">
+        <h1>Your Art Painter</h1>
+        <a href="/create">Create Your Art work</a>
       </div>
-      <div class="mainMenu">
-        <ul>
-          <li><a href="/create">create your art</a></li>
-          <li><a href="/community">community</a></li>
-        </ul>
+    </div>
+  </div>
+  <div class="container1">
+    <div class="headerSec2">
+      <p1> Turn your photo into art work - VERY EASY!!!!!
+        <br> IN 3 STEPS
+      </p1>
+    </div>
+    <div class="row">
+      <div class="grid-container">
+        <div class="grid1"></div>
+        <div class="grid1">
+          <div class="step1_head">
+            <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\step1.png" alt="">
+            <h2>Upload your photo</h2>
+          </div>
+          <div class="text1">
+            <p>Upload your image that you want to turn into artwork.</p>
+          </div>
+          <div class="picStep">
+            <img src= "{% static 'image\step1.png' %}" alt="step1">
+          </div>
+        </div>
+        <!----------------step2------------------>
+        <div class="grid1">
+          <div class="step1_head">
+            <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\step2.png" alt="">
+            <h2>Choose style image</h2>
+          </div>
+          <div class="text1">
+            <p>Choose style image prepared or upload your own style image.</p>
+          </div>
+          <div class="picStep1">
+            <img src="{% static 'image\step2.png' %}" alt="step2">
+          </div>
+        </div>
+        <!----------------step3------------------>
+        <div class="grid1">
+          <div class="step1_head">
+            <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\step3.png" alt="">
+            <h2>Submit</h2>
+          </div>
+          <div class="text1">
+            <p>Our servers generate new artwork. You can download when it is done.</p>
+          </div>
+          <div class="picStep1">
+            <img src="{% static 'image\step3.png' %}" alt="step3">
+          </div>
+        </div>
       </div>
-      <div class="userMenu">
-        <ul>
-          <li><a href="/profile">profile</a></li>
-          <li><a href="/">log out</a></li>
-        </ul>
+    </div>
+  </div>
+  <div class="container2">
+    <div class="row">
+      <div class="grid-container1">
+        <div class="grid1"></div>
+        <div class="grid1">
+          <p style="font-size: 50px; font-family: 'DM Serif Display', serif;">Style image</p>
+        </div>
       </div>
-    </nav>
-    {% load static %}
-            <img src= "{% static 'img/HP_step1.png' %}" alt="step1">
-  </body>
+    </div>
+    <div class="row">
+      <div class="grid-container2">
+        <div class="grid1"></div>
+        <div class="grid1">
+          <p style="font-size: 25px; font-family: 'Playfair Display', serif;">
+            &emsp; &emsp; &emsp; There are 30+ pictures which there are from famous artists that you can choose to be style image.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container1">
+    <div class="row">
+      <div class="grid-container2">
+        <div class="grid1"></div>
+        <div class="grid1">
+          <p style="font-size: 50px; font-family: 'DM Serif Display', serif;">About us</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="grid-container2">
+        <div class="grid1"></div>
+        <div class="grid1">
+          <p style="font-size: 25px; font-family: 'Playfair Display', serif;">
+            &emsp; &emsp; &emsp;Our mission is to provide a intelligence painting tool that allows to create and share your own artwork with just a few steps.
+            <br /> &emsp; &emsp; &emsp; We are one advisor and three members in 4th Computer engineering from King Mongkut's University of Technology Thonburi who develop this project.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
 </html>

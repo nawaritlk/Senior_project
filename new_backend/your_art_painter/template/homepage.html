@@ -1,4 +1,4 @@
-{% include 'menubar_NoLogin.html' %}
+{% include 'menubar.html' %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -194,40 +194,37 @@
         <div class="grid1"></div>
         <div class="grid1">
           <div class="step1_head">
-            <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\step1.png" alt="">
             <h2>Upload your photo</h2>
           </div>
           <div class="text1">
             <p>Upload your image that you want to turn into artwork.</p>
           </div>
           <div class="picStep">
-            <img src= "{% static 'image\step1.png' %}" alt="step1">
+            <img src= "static/homepage/1_original_image.png" alt="step1">
           </div>
         </div>
         <!----------------step2------------------>
         <div class="grid1">
           <div class="step1_head">
-            <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\step2.png" alt="">
             <h2>Choose style image</h2>
           </div>
           <div class="text1">
             <p>Choose style image prepared or upload your own style image.</p>
           </div>
           <div class="picStep1">
-            <img src="{% static 'image\step2.png' %}" alt="step2">
+            <img src="{% static 'homepage/2_style_image.png' %}" alt="step2">
           </div>
         </div>
         <!----------------step3------------------>
         <div class="grid1">
           <div class="step1_head">
-            <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\step3.png" alt="">
             <h2>Submit</h2>
           </div>
           <div class="text1">
             <p>Our servers generate new artwork. You can download when it is done.</p>
           </div>
           <div class="picStep1">
-            <img src="{% static 'image\step3.png' %}" alt="step3">
+            <img src="{% static 'homepage/3_output_NST.png' %}" alt="step3">
           </div>
         </div>
       </div>
@@ -252,6 +249,13 @@
         </div>
       </div>
     </div>
+    <div class="row">
+    <div class="grid-container2">
+    <div class="grid1"></div>
+        <div class="grid1">
+          <img src="{% static 'homepage/4_all_style.png' %}" alt="all_style">
+    </div>
+    </div>
   </div>
   <div class="container1">
     <div class="row">
@@ -263,6 +267,7 @@
       </div>
     </div>
     <div class="row">
+    <div class="container1">
       <div class="grid-container2">
         <div class="grid1"></div>
         <div class="grid1">
@@ -270,6 +275,29 @@
             &emsp; &emsp; &emsp;Our mission is to provide a intelligence painting tool that allows to create and share your own artwork with just a few steps.
             <br /> &emsp; &emsp; &emsp; We are one advisor and three members in 4th Computer engineering from King Mongkut's University of Technology Thonburi who develop this project.
           </p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="grid-container2">
+        <div class="grid1"></div>
+        <div class="grid1">
+          <img src="{% static 'homepage/5_DR.Nuttanart.png' %}" alt="Advisor">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="grid-container2">
+        <div class="grid1"></div>
+        <div class="grid1">
+          <img src="{% static 'homepage/6_Nawarit.png' %}" alt="Nawarit">
+        </div>
+         <div class="grid1">
+          <img src="{% static 'homepage/7_Pataraphon.png' %}" alt="Pataraphon">
+        </div>
+         <div class="grid1">
+          <img src="{% static 'homepage/8_Sukasama.png' %}" alt="Sukasama">
         </div>
       </div>
     </div>

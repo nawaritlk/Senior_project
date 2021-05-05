@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'user_info',
     'register',
     'authentication',
+    'temp',
 ]
 
 MIDDLEWARE = [
@@ -111,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Bangkok'
 
 USE_I18N = True
 
@@ -125,12 +126,15 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# MEDIA_URL = '/media/'
+MEDIA_URL = '/media/'
 
-STATICFIES_DIRS = [os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT= os.path.join(BASE_DIR, 'media')
+
+STATICFIES_DIRS = [ os.path.join(BASE_DIR, 'static'),
+                    os.path.join(BASE_DIR, 'media')
                    ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 MESSAGE_TAGS = {
@@ -140,3 +144,13 @@ MESSAGE_TAGS = {
     messages.WARNING: 'alert-warning',
     messages.ERROR: 'alert-danger',
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_POST = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
+
+# Login
+LOGIN_URL = '/auth/authlogin/'

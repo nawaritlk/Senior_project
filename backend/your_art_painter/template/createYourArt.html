@@ -1,133 +1,256 @@
+{% include 'menubar.html' %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <script src="./path/to/dropzone.js"></script>
+    <!-- Dropzone.js -->
+    <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css"
     />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
-      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-      * {
-        margin: 0;
-        padding: 0;
-        font-family: "DM Serif Display", serif;
+        @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script&family=Playfair+Display&display=swap");
+
+        /*
+          font-family: 'Dancing Script', cursive;
+          font-family: 'DM Serif Display', serif;
+          font-family: 'Playfair Display', serif;*/
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          /*font-family: 'Montserrat', sans-serif;*/
+        }
+
+        body {
+          background-color: #f8e8db;
+        }
+
+        /***********************media setting*************************/
+        @media only screen and (min-width: 1254px) {
+          .grid-container1 {
+            display: grid;
+            grid-template-columns: 12% 500px 100px 500px;
+            float: left;
+          }
+
+          .grid-container2 {
+            display: grid;
+            grid-template-columns: 8% 60px 10px 700px 10px 150px;
+            float: left;
+          }
+
+          .grid-menu {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 400px 200px 180px auto;
+          }
+        }
+
+        /*
+      @media only screen and (max-width: 1254px){
+          body{
+              background-color: red;
+          }
       }
 
-      body {
-        background-color: #f8e8db;
-      }
 
-      /************************menu bar *****************************/
-      nav {
-        width: 100%;
-        height: 50px;
-        background-color: #ffffff;
-      }
 
-      nav .logo {
-        float: left;
-        color: #000000;
-        font-weight: 600;
-        line-height: 50px;
-        padding-left: 60px;
-        font-size: 35px;
-        text-transform: capitalize;
-      }
 
-      nav .logo p {
-        border-bottom: 3px solid brown;
-      }
 
-      nav .mainMenu ul {
-        float: left;
-        margin-right: 40px;
-        list-style: none;
-        position: relative;
-      }
+      /***************grid setting******************/
 
-      /**********menu left*************/
+        .grid1 {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 5%;
+          margin-top: 5%;
+        }
 
-      nav .mainMenu ul li {
-        float: left;
-        display: inline-block;
-        margin: 0 25px;
-        /***********************  สีแทบ menu เผื่อแสดงว่าตอนนี้อยู่หน้าไหนแล้ว
-    border-bottom: 3px solid brown;
-    */
-      }
+        .grid2 {
+          width: 100%;
+        }
 
-      nav .mainMenu ul li a {
-        color: #000000;
-        line-height: 50px;
-        text-decoration: none;
-        text-transform: capitalize;
-        font-size: 20px;
-        padding: 8px 15px;
-      }
+        .logo {
+          font-size: 35px;
+          font-family: "Roboto", sans-serif;
+        }
 
-      nav .mainMenu ul li a:hover {
-        border-radius: 5px;
-        background: #f1f1f0;
-      }
+        #login-btn {
+          text-align: right;
+          margin-right: 3%;
+          grid-column-end: -1;
+        }
 
-      /************menu right************/
+        /*******************content***************/
+        .content1 {
+          max-width: 500px;
+          height: 280px;
+          background-color: white;
+          place-content: center;
+          border: 1px solid #b8adad;
+          border-radius: 3px;
+        }
 
-      nav .userMenu ul {
-        float: right;
-        margin-right: 10px;
-        list-style: none;
-        position: relative;
-      }
+        .content1 .dropzone {
+          position: relative;
+          left: 5%;
+          top: 5%;
+          right: 10%;
+          align-content: center;
+          width: 90%;
+          height: 90%;
+          padding: 25px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          cursor: pointer;
+          font-size: 25px;
+          font-weight: lighter;
+          color: #000000;
+          border: 5px dashed #c2cdda;
+          overflow: auto;
+        }
 
-      nav .userMenu ul li {
-        float: left;
-        display: inline-block;
-        margin: 0 25px;
-        /***********************  สีแทบ menu เผื่อแสดงว่าตอนนี้อยู่หน้าไหนแล้ว
-    border-bottom: 3px solid brown;
-    */
-      }
+        .dz {
+          border: dash !important;
+          border-color: #ccc !important;
+          border-radius: 10px !important:
+        }
 
-      nav .userMenu ul li a {
-        color: #000000;
-        line-height: 50px;
-        text-decoration: none;
-        text-transform: capitalize;
-        font-size: 20px;
-        padding: 8px 15px;
-      }
+        .dz:hover {
+          backgroung-color: aliceblue !important;
+        }
 
-      nav .userMenu ul li a:hover {
-        border-radius: 5px;
-        background: #f1f1f0;
-      }
+
+        /***************picture style************************/
+
+        .populaStyle img {
+          width: 30%;
+          border-radius: 3px;
+        }
+
+        /*****************font setting********************/
+
+        p.text1 {
+          display: block;
+          margin-top: 3%;
+          line-height: 40px;
+          width: 150px;
+          height: 40px;
+          font-size: 20px;
+          text-align: center;
+          border: none;
+          border-top: 1px solid;
+          border-right: 1px solid;
+          border-left: 1px solid;
+          border-color: #b8adad;
+          border-radius: 3px;
+          background-color: white;
+        }
+
+        .lowerContent p.text2 {
+          font-size: 20px;
+          margin-top: 10%;
+        }
+
+        /************************lower content*****************************/
+
+        #email {
+          width: 700px;
+          height: 40px;
+          border: solid;
+          border-radius: 8px;
+          border-color: #b8adad;
+        }
+
+        #submitEmail {
+          width: 120px;
+          height: 40px;
+          border: solid;
+          border-color: #99653c;
+          border-radius: 8px;
+          color: white;
+          text-transform: uppercase;
+          font-size: 20px;
+          letter-spacing: 3px;
+          background: #99653c;
+        }
     </style>
+    <title></title>
   </head>
 
   <body>
-    <nav>
-      <div class="logo">
-        <p>your art painter</p>
+    <div class="grid-container1">
+      <div class="grid1"></div>
+      <div class="grid1">
+        <h1>Photo</h1>
+        <p class="text1">Upload photo</p>
+        <div class="content1">
+          <!--<div class="drop-zone">
+          <span class="drop-zone__prompt">Drop your photo here or click to select one from your computer.</span>
+          <!--<div class="drop-zone__thumb" data-label="myFile.txt"></div>-->
+          <!--<input type="file" name="myFile" class="drop-zone__input">
+          </div>-->
+          <form
+            enctype="multipart/form-data"
+            action="/create/upload/"
+            class="dropzone dz"
+            id="my-dropzone"
+          >
+            {% csrf_token %}
+            <div class="fallback">
+              <input name="file" type="file" multipla />
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="mainMenu">
-        <ul>
-          <li><a href="/create">create your art</a></li>
-          <li><a href="/community">community</a></li>
-        </ul>
+
+      <div class="grid1"></div>
+      <div class="grid1">
+        <h1>Style</h1>
+        <p class="text1">Popular style</p>
+        <div class="content1">
+          <span class="drop-zone__prompt">
+            <div class="populaStyle">
+              <img src="pic/v1.jpg" alt="vango1" />
+              <img src="pic/v1.jpg" alt="vango2" />
+              <img src="pic/v1.jpg" alt="vango2" />
+              <img src="pic/v1.jpg" alt="vango2" />
+            </div>
+          </span>
+          <!--<div class="drop-zone__thumb" data-label="myFile.txt"></div>-->
+        </div>
       </div>
-      <div class="userMenu">
-        <ul>
-          <li><a href="/profile">profile</a></li>
-          <li><a href="/">log out</a></li>
-        </ul>
+      <div class="grid1"></div>
+
+      <!-----------------lower content-------------------------->
+      <div class="grid-container2">
+        <!--<div class="grid2"></div>
+        <div class="grid2">
+          <div class="lowerContent">
+            <p class="text2">E-mail</p>
+          </div>
+        </div>
+        <div class="grid2"></div>
+        <div class="grid2">
+          <div class="inputEmail">
+            <form action="#">
+              <input type="email" id="email" name="email" />
+            </form>
+          </div>
+        </div>
+        <div class="grid2"></div>
+        <div class="grid2">
+          <input type="submit" id="submitEmail" />
+        </div>-->
+        <div class="grid2"></div>
       </div>
-    </nav>
-    <h1>Create Your Art Page</h1>
+    </div>
   </body>
 </html>
