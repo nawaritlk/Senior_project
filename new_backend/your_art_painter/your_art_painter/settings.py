@@ -162,4 +162,4 @@ EMAIL_HOST_PASSWORD = '0901721457'
 DEFUALT_FROM_EMAIL = EMAIL_HOST_USER
 
 # Login
-LOGIN_URL = '/auth/authlogin/'
+LOGIN_URL = '/auth/login/'

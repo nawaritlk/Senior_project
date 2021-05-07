@@ -199,8 +199,8 @@
               <input name="file" type="file" />
             </div>
           </form>
-          <button id="uploadFile">Upload Files</button>
         </div>
+        <input type="submit" id="submit-all" value="Upload">
       </div>
 
       <div class="grid1"></div>
@@ -254,6 +254,7 @@
         uploadMultiple: false,
         addRemoveLinks: true,
         autoProcessQueue: false,
+        maxFiles: 1,
         resizeWidth: 224,
         resizeHeight: 224,
         renameFile: function (file) {
@@ -265,14 +266,18 @@
             this.removeAllFiles();
             this.addFile(file);
           });
+
+          var submitButton = document.querySelector("#submit-all")
+                myDropzone = this;
+
+                submitButton.addEventListener("click", function(e) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                    myDropzone.processQueue();
+                });
         },
-        /*complete: function() {
-                alert('Your file was successfully uploaded!');
-            }*/
       });
-      $("#uploadFile").click(function () {
-        myDropzone.processQueue();
-      });
+
     </script>
   </body>
 </html>
