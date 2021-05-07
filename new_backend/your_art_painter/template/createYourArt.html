@@ -189,15 +189,17 @@
           </div>-->
           <form
             enctype="multipart/form-data"
-            action="/create/upload/"
+            action="/create/upload/ "
             class="dropzone dz"
             id="my-dropzone"
+            method="post"
           >
             {% csrf_token %}
             <div class="fallback">
-              <input name="file" type="file" multipla />
+              <input name="file" type="file" />
             </div>
           </form>
+          <button id="uploadFile">Upload Files</button>
         </div>
       </div>
 
@@ -242,5 +244,35 @@
         <div class="grid2"></div>
       </div>
     </div>
+
+    <!--Script for Dropzone.js-->
+    <script type="text/javascript">
+      Dropzone.autoDiscover = false;
+
+      var myDropzone = new Dropzone("#my-dropzone", {
+        acceptedFiles: ".jpeg,.jpg,.png,.gif",
+        uploadMultiple: false,
+        addRemoveLinks: true,
+        autoProcessQueue: false,
+        resizeWidth: 224,
+        resizeHeight: 224,
+        renameFile: function (file) {
+          let newName = new Date().getTime() + "_" + file.name;
+          return newName;
+        },
+        init: function () {
+          this.on("maxfilesexceeded", function (file) {
+            this.removeAllFiles();
+            this.addFile(file);
+          });
+        },
+        /*complete: function() {
+                alert('Your file was successfully uploaded!');
+            }*/
+      });
+      $("#uploadFile").click(function () {
+        myDropzone.processQueue();
+      });
+    </script>
   </body>
 </html>

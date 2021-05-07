@@ -19,6 +19,7 @@ def file_upload_view(request):
         if request.method == 'POST':
             current_user = request.user
             my_file = request.FILES.get('file')
+            print(my_file)
             imagedata = upload.objects.create(user=current_user,image=my_file)
             imagedata.save()
             return HttpResponse('')

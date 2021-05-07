@@ -8,5 +8,5 @@ class upload(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     image = models.ImageField(upload_to='upload/')
 
-    # def __str__(self):
-    #     return self.create
+    def __str__(self):
+        return self.timestamp
