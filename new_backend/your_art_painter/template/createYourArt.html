@@ -110,20 +110,15 @@
         .dz {
           border: dash !important;
           border-color: #ccc !important;
-          border-radius: 10px !important:
+          border-radius: 10px !important;
         }
 
         .dz:hover {
-          backgroung-color: aliceblue !important;
+          background-color: aliceblue !important;
         }
 
 
-        /***************picture style************************/
-
-        .populaStyle img {
-          width: 30%;
-          border-radius: 3px;
-        }
+        
 
         /*****************font setting********************/
 
@@ -170,7 +165,51 @@
           font-size: 20px;
           letter-spacing: 3px;
           background: #99653c;
+        
         }
+        /***************picture style************************/
+
+        .populaStyle img {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            width: 150px;
+
+            /* max-height: 320px;
+            overflow: auto; */ 
+          
+        }
+        /***********************style image sitting**********************/
+        .box_style_image {
+          margin: 0 auto;
+          width: 75%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        .pics_in_a_row {
+          display: flex;
+        }
+
+        .img1 { flex: 1.3344; }
+        .img2 { flex: 1.3345; }
+        .img3 { flex: 0.7505; }
+        .img4 { flex: 1.5023; }
+        .img5 { flex: 0.75; }
+
+        .pics_in_a_row {
+          margin: 25px 0;
+        }
+
+        .pics_in_a_row > div:not(:last-child) {
+          margin-right: 2%;
+        }
+        
+        
     </style>
     <title></title>
   </head>
@@ -182,11 +221,7 @@
         <h1>Photo</h1>
         <p class="text1">Upload photo</p>
         <div class="content1">
-          <!--<div class="drop-zone">
-          <span class="drop-zone__prompt">Drop your photo here or click to select one from your computer.</span>
-          <!--<div class="drop-zone__thumb" data-label="myFile.txt"></div>-->
-          <!--<input type="file" name="myFile" class="drop-zone__input">
-          </div>-->
+         
           <form
             enctype="multipart/form-data"
             action="/create/upload/ "
@@ -210,10 +245,39 @@
         <div class="content1">
           <span class="drop-zone__prompt">
             <div class="populaStyle">
-              <img src="pic/v1.jpg" alt="vango1" />
-              <img src="pic/v1.jpg" alt="vango2" />
-              <img src="pic/v1.jpg" alt="vango2" />
-              <img src="pic/v1.jpg" alt="vango2" />
+              <div class="box_style_image">
+                <div class='pics_in_a_row'>
+                  <div class='img1'>
+                    <a href='https://www.guitarnerd.com.au/2011/07/fender-musicmaster-bass/'><img src='http://blimpage.com/pants/codepen/mm1.jpg'></a>
+                  </div>
+                  <div class='img2'>
+                    <a href='http://www.sheltonsguitars.com/2009/12-9-09/squier-musicmaster-bass-12-9-07.html'><img src='http://blimpage.com/pants/codepen/mm2.jpg'></a>
+                  </div>
+                  <div class='img3'>
+                    <a href='http://www.seymourduncan.com/forum/showthread.php?73445-Hot-Rails-as-a-single-for-Fender-Musicmaster-bass-guitar'><img src='http://blimpage.com/pants/codepen/mm3.jpg'></a>
+                  </div>
+                  <div class='img4'>
+                    <a href='http://imageevent.com/firstflight/fendermusicmasterbass'><img src='http://blimpage.com/pants/codepen/mm4.jpg'></a>
+                  </div>
+                  <div class='img5'>
+                    <a href='https://www.muffwiggler.com/forum/viewtopic.php?p=1810400'><img src='http://blimpage.com/pants/codepen/mm5.jpg'></a>
+                  </div>
+                </div>
+              </div>
+
+              
+
+              <!-- <section class="style_image">
+                <option data-img-src="http://127.0.0.1:8000/media/template/j1.jpg" alt="vango1">Adnan Sagar</option>
+              </section> -->  
+
+              <!-- <img src="http://127.0.0.1:8000/media/template/j1.jpg" alt="vango1" /> 
+              <img src="http://127.0.0.1:8000/media/template/j2.jpg" alt="vango2" />
+              <img src="http://127.0.0.1:8000/media/template/j3.jpg" alt="vango3" />
+              <img src="http://127.0.0.1:8000/media/template/s1.jpg" alt="vango4" />
+              <img src="http://127.0.0.1:8000/media/template/s2.jpg" alt="vango5" />
+              <img src="http://127.0.0.1:8000/media/template/s3.jpg" alt="vango6" /> -->
+
             </div>
           </span>
           <!--<div class="drop-zone__thumb" data-label="myFile.txt"></div>-->
