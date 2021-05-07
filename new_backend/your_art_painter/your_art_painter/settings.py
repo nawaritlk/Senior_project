@@ -17,6 +17,9 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -33,6 +36,9 @@ INSTALLED_APPS = [
     'register',
     'authentication',
     'temp',
+
+    # third party
+    "django_extensions",
 ]
 
 MIDDLEWARE = [
@@ -149,8 +155,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_POST = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
+EMAIL_HOST_USER = 'money0700@gmail.com'
+EMAIL_HOST_PASSWORD = '0901721457'
+# EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
+# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
+DEFUALT_FROM_EMAIL = EMAIL_HOST_USER
 
 # Login
 LOGIN_URL = '/auth/authlogin/'
