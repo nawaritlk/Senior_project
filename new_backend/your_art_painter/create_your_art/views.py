@@ -5,8 +5,6 @@ from .models import upload
 from django.contrib.auth.decorators import login_required
 
 
-
-
 # Create your views here.
 @login_required
 def create(request):
@@ -25,3 +23,6 @@ def file_upload_view(request):
             imagedata.save()
             return HttpResponse('')
     return JsonResponse({'post': 'false'})
+
+
+
