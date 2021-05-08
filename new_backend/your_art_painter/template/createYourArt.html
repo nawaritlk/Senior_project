@@ -37,11 +37,7 @@
         float: left;
       }
 
-      .grid-container2 {
-        display: grid;
-        grid-template-columns: 8% 60px 10px 700px 10px 150px;
-        float: left;
-      }
+
 
       .grid-menu {
         display: grid;
@@ -152,7 +148,14 @@
       border-color: #b8adad;
     }
 
-    #submitEmail {
+    .container2 {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 500px 300px 150px;
+      float: left;
+    }
+
+    #submit-all {
       width: 120px;
       height: 40px;
       border: solid;
@@ -168,16 +171,15 @@
 
     /***************picture style************************/
 
-    .populaStyle img {
+    /* .populaStyle img {
       border: 1px solid #ddd;
       border-radius: 4px;
       padding: 5px;
       width: 150px;
 
-      /* max-height: 320px;
-            overflow: auto; */
 
-    }
+
+    } */
 
     /***********************style image sitting**********************/
     .content2 {
@@ -190,51 +192,53 @@
       overflow: auto;
     }
 
-    .grid-row{
-      display: grid;
-      grid-template-columns: auto auto auto;
-    }
-
-    .boxStyleImage {
-      width: 75%;
-      flex-direction: row;
-      margin: 5px 5px;
-    }
-
-    .wrap {
-      -webkit-flex-wrap: wrap;
+    .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
       flex-wrap: wrap;
+      padding: 0 4px;
+      
     }
 
-    img {
+    .column {
+      position: relative;
+      display: block;
       width: 100%;
-      height: auto;
+      -ms-flex: 25%;
+      /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
     }
 
-    .column1 {
-      flex: calc(269/400);
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
     }
-
-    .column2 {
-      flex: calc(400/323);
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
     }
-
-    .column3 {
-      flex: calc(303/400);
+    .icon{
+        font-size: 50px;
+        text-align: center;
+        align-content: center;
+        background-color: rgb(91, 93, 93);
+        opacity: 0.6;
+        width: 100%;
+        height: 100%;
+        
     }
-
-    .column4 {
-      flex: calc(800/1213);
-    }
-
-    .column5 {
-      flex: calc(800/1046);
-    }
-
-    .column6 {
-      flex: calc(800/614);
-    }
-
   </style>
   <title></title>
 </head>
@@ -255,7 +259,6 @@
           </div>
         </form>
       </div>
-      <input type="submit" id="submit-all" value="Upload">
     </div>
 
     <div class="grid1"></div>
@@ -263,89 +266,75 @@
       <h1>Style</h1>
       <p class="text1">Popular styles</p>
       <div class="content2">
-        <span class="drop-zone__prompt">
-          <div class="populaStyle">
 
-            <div class="boxStyleImage wrap">
-              <div class="grid-row">
-                <div class="column1">
-                  <img src="http://127.0.0.1:8000/media/template/j1.jpg" alt="Nature" style="width:100%"
-                    onclick="myFunction(this);">
-                </div>
-                <div class="column2">
-                  <img src="http://127.0.0.1:8000/media/template/j2.jpg" alt="Snow" style="width:100%"
-                    onclick="myFunction(this);">
-                </div>
-                <div class="column3">
-                  <img src="http://127.0.0.1:8000/media/template/j3.jpg" alt="Mountains" style="width:100%"
-                    onclick="myFunction(this);">
-                </div>
+        <div class="populaStyle">
+
+          <div class="row">
+            <div class="column">
+              <img src="http://127.0.0.1:8000/media/template/j1.jpg" id="j1" alt="Nature" style="width:100%" onclick="changeImage()">
+              <div class="overlay">
+                <p class="icon" >
+                    &#10004;
+                </p>   
               </div>
+                
+            </div>
 
-              <div class="grid-row">
-                <div class="column4">
-                  <img src="http://127.0.0.1:8000/media/template/s1.jpg" alt="Lights" style="width:100%"
-                    onclick="myFunction(this);">
-                </div>
-                <div class="column5">
-                  <img src="http://127.0.0.1:8000/media/template/s2.jpg" alt="Lights" style="width:100%"
-                    onclick="myFunction(this);">
-                </div>
-                <div class="column6">
-                  <img src="http://127.0.0.1:8000/media/template/s3.jpg" alt="Lights" style="width:100%"
-                    onclick="myFunction(this);">
-                </div>
-              </div>
-              
 
-              
-              
-              
+            <div class="column">
+              <img src="http://127.0.0.1:8000/media/template/j2.jpg" id="j2" alt="Nature" style="width:100%"
+                onclick="changeImage()">
+                <div class="overlay">
+                  <p class="icon" >
+                      &#10004;
+                  </p>   
+                </div>
+            </div>
+
+
+            <div class="column">
+              <img src="http://127.0.0.1:8000/media/template/j3.jpg" id="j3" alt="Nature" style="width:100%"
+                onclick="changeImage()">
+            </div>
+
+            <div class="column">
+              <img src="http://127.0.0.1:8000/media/template/s1.jpg" id="s1" alt="Nature" style="width:100%"
+                onclick="changeImage()">
+            </div>
+
+            <div class="column">
+              <img src="http://127.0.0.1:8000/media/template/s2.jpg" id="s2" alt="Nature" style="width:100%"
+                onclick="changeImage()">
+            </div>
+
+            <div class="column">
+              <img src="http://127.0.0.1:8000/media/template/s3.jpg" id="s3" alt="Nature" style="width:100%"
+                onclick="changeImage()">
             </div>
 
 
 
-            <!-- <section class="style_image">
-                <option data-img-src="http://127.0.0.1:8000/media/template/j1.jpg" alt="vango1">Adnan Sagar</option>
-              </section> -->
-
-            <!-- <img src="http://127.0.0.1:8000/media/template/j1.jpg" alt="vango1" /> 
-              <img src="http://127.0.0.1:8000/media/template/j2.jpg" alt="vango2" />
-              <img src="http://127.0.0.1:8000/media/template/j3.jpg" alt="vango3" />
-              <img src="http://127.0.0.1:8000/media/template/s1.jpg" alt="vango4" />
-              <img src="http://127.0.0.1:8000/media/template/s2.jpg" alt="vango5" />
-              <img src="http://127.0.0.1:8000/media/template/s3.jpg" alt="vango6" /> -->
 
           </div>
-        </span>
+
+
+
+        </div>
         <!--<div class="drop-zone__thumb" data-label="myFile.txt"></div>-->
       </div>
     </div>
     <div class="grid1"></div>
 
     <!-----------------lower content-------------------------->
-    <div class="grid-container2">
-      <!--<div class="grid2"></div>
-        <div class="grid2">
-          <div class="lowerContent">
-            <p class="text2">E-mail</p>
-          </div>
-        </div>
-        <div class="grid2"></div>
-        <div class="grid2">
-          <div class="inputEmail">
-            <form action="#">
-              <input type="email" id="email" name="email" />
-            </form>
-          </div>
-        </div>
-        <div class="grid2"></div>
-        <div class="grid2">
-          <input type="submit" id="submitEmail" />
-        </div>-->
-      <div class="grid2"></div>
+    <div class="container2">
+      <div class="grid1"></div>
+      <input type="submit" id="submit-all" value="Upload" />
+      <div class="grid1"></div>
     </div>
   </div>
+
+
+
 
   <!--Script for Dropzone.js-->
   <script type="text/javascript">
@@ -380,6 +369,18 @@
       },
     });
 
+  </script>
+
+  <script language="javascript">
+    function changeImage() {
+
+      if (document.getElementById("j1").src == "http://www.userinterfaceicons.com/80x80/minimize.png") {
+        document.getElementById("j1").src = "http://www.userinterfaceicons.com/80x80/maximize.png";
+      }
+      else {
+        document.getElementById("j1").src = "http://www.userinterfaceicons.com/80x80/minimize.png";
+      }
+    }
   </script>
 </body>
 
