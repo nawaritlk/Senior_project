@@ -1,293 +1,331 @@
 {% include 'menubar.html' %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
-    <script src="./path/to/dropzone.js"></script>
-    <!-- Dropzone.js -->
-    <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css"
-    />
 
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script&family=Playfair+Display&display=swap");
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+  <script src="./path/to/dropzone.js"></script>
+  <!-- Dropzone.js -->
+  <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+  <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css" />
 
-        /*
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script&family=Playfair+Display&display=swap");
+
+    /*
           font-family: 'Dancing Script', cursive;
           font-family: 'DM Serif Display', serif;
           font-family: 'Playfair Display', serif;*/
 
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-          /*font-family: 'Montserrat', sans-serif;*/
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /*font-family: 'Montserrat', sans-serif;*/
+    }
 
-        body {
-          background-color: #f8e8db;
-        }
+    body {
+      background-color: #f8e8db;
+    }
 
-        /***********************media setting*************************/
-        @media only screen and (min-width: 1254px) {
-          .grid-container1 {
-            display: grid;
-            grid-template-columns: 12% 500px 100px 500px;
-            float: left;
-          }
+    /***********************media setting*************************/
+    @media only screen and (min-width: 1254px) {
+      .grid-container1 {
+        display: grid;
+        grid-template-columns: 12% 500px 100px 500px;
+        float: left;
+      }
 
-          .grid-container2 {
-            display: grid;
-            grid-template-columns: 8% 60px 10px 700px 10px 150px;
-            float: left;
-          }
+      .grid-container2 {
+        display: grid;
+        grid-template-columns: 8% 60px 10px 700px 10px 150px;
+        float: left;
+      }
 
-          .grid-menu {
-            display: grid;
-            grid-gap: 20px;
-            grid-template-columns: 400px 200px 180px auto;
-          }
-        }
-
-
-      /***************grid setting******************/
-
-        .grid1 {
-          width: 100%;
-          padding: 10px;
-          margin-bottom: 5%;
-          margin-top: 5%;
-        }
-
-        .grid2 {
-          width: 100%;
-        }
-
-        .logo {
-          font-size: 35px;
-          font-family: "Roboto", sans-serif;
-        }
-
-        #login-btn {
-          text-align: right;
-          margin-right: 3%;
-          grid-column-end: -1;
-        }
-
-        /*******************content***************/
-        .content1 {
-          max-width: 500px;
-          height: 280px;
-          background-color: white;
-          place-content: center;
-          border: 1px solid #b8adad;
-          border-radius: 3px;
-        }
-
-        .content1 .dropzone {
-          position: relative;
-          left: 5%;
-          top: 5%;
-          right: 10%;
-          align-content: center;
-          width: 90%;
-          height: 90%;
-          padding: 25px;
-          display: flex;
-          align-items: center;
-          text-align: center;
-          cursor: pointer;
-          font-size: 25px;
-          font-weight: lighter;
-          color: #000000;
-          border: 5px dashed #c2cdda;
-          overflow: auto;
-        }
-
-        .dz {
-          border: dash !important;
-          border-color: #ccc !important;
-          border-radius: 10px !important;
-        }
-
-        .dz:hover {
-          background-color: aliceblue !important;
-        }
+      .grid-menu {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 400px 200px 180px auto;
+      }
+    }
 
 
-        
+    /***************grid setting******************/
 
-        /*****************font setting********************/
+    .grid1 {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 5%;
+      margin-top: 5%;
+    }
 
-        p.text1 {
-          display: block;
-          margin-top: 3%;
-          line-height: 40px;
-          width: 150px;
-          height: 40px;
-          font-size: 20px;
-          text-align: center;
-          border: none;
-          border-top: 1px solid;
-          border-right: 1px solid;
-          border-left: 1px solid;
-          border-color: #b8adad;
-          border-radius: 3px;
-          background-color: white;
-        }
+    .grid2 {
+      width: 100%;
+    }
 
-        .lowerContent p.text2 {
-          font-size: 20px;
-          margin-top: 10%;
-        }
+    .logo {
+      font-size: 35px;
+      font-family: "Roboto", sans-serif;
+    }
 
-        /************************lower content*****************************/
+    #login-btn {
+      text-align: right;
+      margin-right: 3%;
+      grid-column-end: -1;
+    }
 
-        #email {
-          width: 700px;
-          height: 40px;
-          border: solid;
-          border-radius: 8px;
-          border-color: #b8adad;
-        }
+    /*******************content***************/
+    .content1 {
+      max-width: 500px;
+      height: 280px;
+      background-color: white;
+      place-content: center;
+      border: 1px solid #b8adad;
+      border-radius: 3px;
+    }
 
-        #submitEmail {
-          width: 120px;
-          height: 40px;
-          border: solid;
-          border-color: #99653c;
-          border-radius: 8px;
-          color: white;
-          text-transform: uppercase;
-          font-size: 20px;
-          letter-spacing: 3px;
-          background: #99653c;
-        
-        }
-        /***************picture style************************/
+    .content1 .dropzone {
+      position: relative;
+      left: 5%;
+      top: 5%;
+      right: 10%;
+      align-content: center;
+      width: 90%;
+      height: 90%;
+      padding: 25px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      font-size: 25px;
+      font-weight: lighter;
+      color: #000000;
+      border: 5px dashed #c2cdda;
+      overflow: auto;
+    }
 
-        .populaStyle img {
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            padding: 5px;
-            width: 150px;
+    .dz {
+      border: dash !important;
+      border-color: #ccc !important;
+      border-radius: 10px !important;
+    }
 
-            /* max-height: 320px;
-            overflow: auto; */ 
-          
-        }
-        /***********************style image sitting**********************/
-        .box_style_image {
-          margin: 0 auto;
-          width: 75%;
-        }
+    .dz:hover {
+      background-color: aliceblue !important;
+    }
 
-        img {
-            width: 100%;
-            height: auto;
-            vertical-align: middle;
-        }
 
-        .pics_in_a_row {
-          display: flex;
-        }
 
-        .img1 { flex: 1.3344; }
-        .img2 { flex: 1.3345; }
-        .img3 { flex: 0.7505; }
-        .img4 { flex: 1.5023; }
-        .img5 { flex: 0.75; }
 
-        .pics_in_a_row {
-          margin: 25px 0;
-        }
+    /*****************font setting********************/
 
-        .pics_in_a_row > div:not(:last-child) {
-          margin-right: 2%;
-        }
-        
-        
-    </style>
-    <title></title>
-  </head>
+    p.text1 {
+      display: block;
+      margin-top: 3%;
+      line-height: 40px;
+      width: 150px;
+      height: 40px;
+      font-size: 20px;
+      text-align: center;
+      border: none;
+      border-top: 1px solid;
+      border-right: 1px solid;
+      border-left: 1px solid;
+      border-color: #b8adad;
+      border-radius: 3px;
+      background-color: white;
+    }
 
-  <body>
-    <div class="grid-container1">
-      <div class="grid1"></div>
-      <div class="grid1">
-        <h1>Photo</h1>
-        <p class="text1">Upload photo</p>
-        <div class="content1">
-         
-          <form
-            enctype="multipart/form-data"
-            action="/create/upload/ "
-            class="dropzone dz"
-            id="my-dropzone"
-            method="post"
-          >
-            {% csrf_token %}
-            <div class="fallback">
-              <input name="file" type="file" />
-            </div>
-          </form>
-        </div>
-        <input type="submit" id="submit-all" value="Upload">
+    .lowerContent p.text2 {
+      font-size: 20px;
+      margin-top: 10%;
+    }
+
+    /************************lower content*****************************/
+
+    #email {
+      width: 700px;
+      height: 40px;
+      border: solid;
+      border-radius: 8px;
+      border-color: #b8adad;
+    }
+
+    #submitEmail {
+      width: 120px;
+      height: 40px;
+      border: solid;
+      border-color: #99653c;
+      border-radius: 8px;
+      color: white;
+      text-transform: uppercase;
+      font-size: 20px;
+      letter-spacing: 3px;
+      background: #99653c;
+
+    }
+
+    /***************picture style************************/
+
+    .populaStyle img {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+      width: 150px;
+
+      /* max-height: 320px;
+            overflow: auto; */
+
+    }
+
+    /***********************style image sitting**********************/
+    .content2 {
+      max-width: 500px;
+      max-height: 280px;
+      background-color: white;
+      place-content: center;
+      border: 1px solid #b8adad;
+      border-radius: 3px;
+      overflow: auto;
+    }
+
+    .grid-row{
+      display: grid;
+      grid-template-columns: auto auto auto;
+    }
+
+    .boxStyleImage {
+      width: 75%;
+      flex-direction: row;
+      margin: 5px 5px;
+    }
+
+    .wrap {
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .column1 {
+      flex: calc(269/400);
+    }
+
+    .column2 {
+      flex: calc(400/323);
+    }
+
+    .column3 {
+      flex: calc(303/400);
+    }
+
+    .column4 {
+      flex: calc(800/1213);
+    }
+
+    .column5 {
+      flex: calc(800/1046);
+    }
+
+    .column6 {
+      flex: calc(800/614);
+    }
+
+  </style>
+  <title></title>
+</head>
+
+<body>
+  <div class="grid-container1">
+    <div class="grid1"></div>
+    <div class="grid1">
+      <h1>Photo</h1>
+      <p class="text1">Upload photo</p>
+      <div class="content1">
+
+        <form enctype="multipart/form-data" action="/create/upload/ " class="dropzone dz" id="my-dropzone"
+          method="post">
+          {% csrf_token %}
+          <div class="fallback">
+            <input name="file" type="file" />
+          </div>
+        </form>
       </div>
+      <input type="submit" id="submit-all" value="Upload">
+    </div>
 
-      <div class="grid1"></div>
-      <div class="grid1">
-        <h1>Style</h1>
-        <p class="text1">Popular style</p>
-        <div class="content1">
-          <span class="drop-zone__prompt">
-            <div class="populaStyle">
-              <div class="box_style_image">
-                <div class='pics_in_a_row'>
-                  <div class='img1'>
-                    <a href='https://www.guitarnerd.com.au/2011/07/fender-musicmaster-bass/'><img src='http://blimpage.com/pants/codepen/mm1.jpg'></a>
-                  </div>
-                  <div class='img2'>
-                    <a href='http://www.sheltonsguitars.com/2009/12-9-09/squier-musicmaster-bass-12-9-07.html'><img src='http://blimpage.com/pants/codepen/mm2.jpg'></a>
-                  </div>
-                  <div class='img3'>
-                    <a href='http://www.seymourduncan.com/forum/showthread.php?73445-Hot-Rails-as-a-single-for-Fender-Musicmaster-bass-guitar'><img src='http://blimpage.com/pants/codepen/mm3.jpg'></a>
-                  </div>
-                  <div class='img4'>
-                    <a href='http://imageevent.com/firstflight/fendermusicmasterbass'><img src='http://blimpage.com/pants/codepen/mm4.jpg'></a>
-                  </div>
-                  <div class='img5'>
-                    <a href='https://www.muffwiggler.com/forum/viewtopic.php?p=1810400'><img src='http://blimpage.com/pants/codepen/mm5.jpg'></a>
-                  </div>
+    <div class="grid1"></div>
+    <div class="grid1">
+      <h1>Style</h1>
+      <p class="text1">Popular styles</p>
+      <div class="content2">
+        <span class="drop-zone__prompt">
+          <div class="populaStyle">
+
+            <div class="boxStyleImage wrap">
+              <div class="grid-row">
+                <div class="column1">
+                  <img src="http://127.0.0.1:8000/media/template/j1.jpg" alt="Nature" style="width:100%"
+                    onclick="myFunction(this);">
+                </div>
+                <div class="column2">
+                  <img src="http://127.0.0.1:8000/media/template/j2.jpg" alt="Snow" style="width:100%"
+                    onclick="myFunction(this);">
+                </div>
+                <div class="column3">
+                  <img src="http://127.0.0.1:8000/media/template/j3.jpg" alt="Mountains" style="width:100%"
+                    onclick="myFunction(this);">
                 </div>
               </div>
 
+              <div class="grid-row">
+                <div class="column4">
+                  <img src="http://127.0.0.1:8000/media/template/s1.jpg" alt="Lights" style="width:100%"
+                    onclick="myFunction(this);">
+                </div>
+                <div class="column5">
+                  <img src="http://127.0.0.1:8000/media/template/s2.jpg" alt="Lights" style="width:100%"
+                    onclick="myFunction(this);">
+                </div>
+                <div class="column6">
+                  <img src="http://127.0.0.1:8000/media/template/s3.jpg" alt="Lights" style="width:100%"
+                    onclick="myFunction(this);">
+                </div>
+              </div>
               
 
-              <!-- <section class="style_image">
-                <option data-img-src="http://127.0.0.1:8000/media/template/j1.jpg" alt="vango1">Adnan Sagar</option>
-              </section> -->  
+              
+              
+              
+            </div>
 
-              <!-- <img src="http://127.0.0.1:8000/media/template/j1.jpg" alt="vango1" /> 
+
+
+            <!-- <section class="style_image">
+                <option data-img-src="http://127.0.0.1:8000/media/template/j1.jpg" alt="vango1">Adnan Sagar</option>
+              </section> -->
+
+            <!-- <img src="http://127.0.0.1:8000/media/template/j1.jpg" alt="vango1" /> 
               <img src="http://127.0.0.1:8000/media/template/j2.jpg" alt="vango2" />
               <img src="http://127.0.0.1:8000/media/template/j3.jpg" alt="vango3" />
               <img src="http://127.0.0.1:8000/media/template/s1.jpg" alt="vango4" />
               <img src="http://127.0.0.1:8000/media/template/s2.jpg" alt="vango5" />
               <img src="http://127.0.0.1:8000/media/template/s3.jpg" alt="vango6" /> -->
 
-            </div>
-          </span>
-          <!--<div class="drop-zone__thumb" data-label="myFile.txt"></div>-->
-        </div>
+          </div>
+        </span>
+        <!--<div class="drop-zone__thumb" data-label="myFile.txt"></div>-->
       </div>
-      <div class="grid1"></div>
+    </div>
+    <div class="grid1"></div>
 
-      <!-----------------lower content-------------------------->
-      <div class="grid-container2">
-        <!--<div class="grid2"></div>
+    <!-----------------lower content-------------------------->
+    <div class="grid-container2">
+      <!--<div class="grid2"></div>
         <div class="grid2">
           <div class="lowerContent">
             <p class="text2">E-mail</p>
@@ -305,43 +343,44 @@
         <div class="grid2">
           <input type="submit" id="submitEmail" />
         </div>-->
-        <div class="grid2"></div>
-      </div>
+      <div class="grid2"></div>
     </div>
+  </div>
 
-    <!--Script for Dropzone.js-->
-    <script type="text/javascript">
-      Dropzone.autoDiscover = false;
+  <!--Script for Dropzone.js-->
+  <script type="text/javascript">
+    Dropzone.autoDiscover = false;
 
-      var myDropzone = new Dropzone("#my-dropzone", {
-        acceptedFiles: ".jpeg,.jpg,.png,.gif",
-        uploadMultiple: false,
-        addRemoveLinks: true,
-        autoProcessQueue: false,
-        maxFiles: 1,
-        resizeWidth: 224,
-        resizeHeight: 224,
-        renameFile: function (file) {
-          let newName = new Date().getTime() + "_" + file.name;
-          return newName;
-        },
-        init: function () {
-          this.on("maxfilesexceeded", function (file) {
-            this.removeAllFiles();
-            this.addFile(file);
-          });
+    var myDropzone = new Dropzone("#my-dropzone", {
+      acceptedFiles: ".jpeg,.jpg,.png,.gif",
+      uploadMultiple: false,
+      addRemoveLinks: true,
+      autoProcessQueue: false,
+      maxFiles: 1,
+      resizeWidth: 224,
+      resizeHeight: 224,
+      renameFile: function (file) {
+        let newName = new Date().getTime() + "_" + file.name;
+        return newName;
+      },
+      init: function () {
+        this.on("maxfilesexceeded", function (file) {
+          this.removeAllFiles();
+          this.addFile(file);
+        });
 
-          var submitButton = document.querySelector("#submit-all")
-                myDropzone = this;
+        var submitButton = document.querySelector("#submit-all")
+        myDropzone = this;
 
-                submitButton.addEventListener("click", function(e) {
-                    e.stopPropagation();
-                    e.preventDefault();
-                    myDropzone.processQueue();
-                });
-        },
-      });
+        submitButton.addEventListener("click", function (e) {
+          e.stopPropagation();
+          e.preventDefault();
+          myDropzone.processQueue();
+        });
+      },
+    });
 
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
