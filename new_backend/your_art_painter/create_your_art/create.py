@@ -225,15 +225,19 @@ def main(image_type,style,style_weight,content,content_weight,pool,iteration):
 
 if __name__ == "__main__":
 
-    IMAGE_TYPE = 'url'
-    STYLE_IMG = 'https://github.com/nawaritlk/Senior_project/blob/frong/Model/StyleImage/Chakrabhan/0001.jpg?raw=true'
-    CONTENT_IMG = 'https://github.com/nawaritlk/Senior_project/blob/frong/Model/Test/ContentImg.jpg?raw=true'
+    IMAGE_TYPE = 'path'
+    STYLE_IMG = 'assign2_1.png'
+    CONTENT_IMG = '3_output_NST.png'
+
+    # IMAGE_TYPE = 'url'
+    # STYLE_IMG = 'https://github.com/nawaritlk/Senior_project/blob/frong/Model/StyleImage/Chakrabhan/0001.jpg?raw=true'
+    # CONTENT_IMG = 'https://github.com/nawaritlk/Senior_project/blob/frong/Model/Test/ContentImg.jpg?raw=true'
     # or
     # IMAGE_TYPE = 'path'
     # STYLE_IMG = r'StyleImage\Chakrabhan\0001.jpg'
     # CONTENT_IMG = r'Test\ContentImg.jpg'
 
-    ITERATION = 5000
+    ITERATION = 10
     CONTENT_WEIGHT = 1e-2
     STYLE_WEIGHT = 1e6
     MODEL_POOLING = 'max' # or 'avg'
