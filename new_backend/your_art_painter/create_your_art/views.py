@@ -1,14 +1,17 @@
 from django.http.response import JsonResponse
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import upload
+from .models import upload, output
 from django.contrib.auth.decorators import login_required
+from .create import im_convert
 
 
 # model NST import
 #!/usr/bin/env python3
 from PIL import Image
+import matplotlib
 import matplotlib.pyplot as plt
+matplotlib.use ('Agg')
 import numpy as np
 
 import torch
@@ -45,26 +48,14 @@ def file_upload_view(request):
         if request.method == 'POST':
             current_user = request.user
             my_file = request.FILES.get('file')
-            print(my_file)
+            print(type(my_file))
             imagedata = upload.objects.create(user=current_user,image=my_file)
             imagedata.save()
-
+            # print(CONTENT_IMG)
             
-    #         import matplotlib.pyplot as plt
-    #         IMAGE_TYPE = 'url'
-    #         STYLE_IMG = 'https://github.com/nawaritlk/Senior_project/blob/frong/Model/StyleImage/Chakrabhan/0001.jpg?raw=true'
-    #         CONTENT_IMG = 'https://github.com/nawaritlk/Senior_project/blob/frong/Model/Test/ContentImg.jpg?raw=true'
-    # or
-    # IMAGE_TYPE = 'path'
-    # STYLE_IMG = r'StyleImage\Chakrabhan\0001.jpg'
-    # CONTENT_IMG = r'Test\ContentImg.jpg'
-
-    #         ITERATION = 5000
-    #         CONTENT_WEIGHT = 1e-2
-    #         STYLE_WEIGHT = 1e6
-    #         MODEL_POOLING = 'max' # or 'avg'
-
-    #         main(IMAGE_TYPE,STYLE_IMG,STYLE_WEIGHT,CONTENT_IMG,CONTENT_WEIGHT,MODEL_POOLING,ITERATION)
+            
+            NST(requests, my_file, current_user)
+            
 
 
             return HttpResponse('')
@@ -76,6 +67,7 @@ def load_image(img_path=None,url=None,max_size=400,shape=None):
       response = requests.get(url)
       if response.status_code == 200:
           image = Image.open(BytesIO(response.content))
+          print('Load image success!!')
       else:
           print('An error has occurred.') 
     else:
@@ -170,6 +162,7 @@ def gram_matrix(tensor):
   return gram  
 
 def train(content_image,content_weight,style_image,style_weight,model,steps,device):
+    print('TRAINNNNNNNNNNNNNN')
     feature_layers = {'0':'conv1_1','5':'conv2_1','10':'conv3_1','19':'conv4_1','21':'conv4_2','28':'conv5_1'}
     content_features=get_features(content_image,feature_layers,model)
     style_features=get_features(style_image,feature_layers,model)
@@ -258,36 +251,53 @@ def main(image_type,style,style_weight,content,content_weight,pool,iteration):
     target,result = train(content_image,content_weight,style_image,style_weight,vgg,iteration,device)
     title = 'Iteration '+str(result[0][0])+' content loss : {:2f}'.format(result[0][2]) +' style loss : {:2f}'.format(result[0][1]) +' total loss : {:2f}'.format(result[0][3])
     showStyleContentTarget(style_image, content_image,target,title)
+    print('train success')
+    # print(type(target))
 
+    target = im_convert(target)
+    content = im_convert(content_image)
+    
     # histogram matching
-    # multi = True if target.shape[-1] > 1 else False
-    # preserve_img = exposure.match_histograms(target, content_image, multichannel = multi)
-    # plt.imshow(preserve_img)
-    # plt.axis('off')
-    # plt.show()
+    multi = True if target.shape[-1] > 1 else False
+    preserve_img = exposure.match_histograms(target, content, multichannel = multi)
+    plt.imshow(preserve_img)
+    plt.axis('off')
+    plt.show()
 
     # save_image(preserve_img, 'result.jpg')
-    save_image(target, 'result.jpg')
+    # save_image(target, 'result.jpg')
+
+    return preserve_img
 
 
-if __name__ == "__main__":(main)
-
+def NST(request, myfile,current_user):
     IMAGE_TYPE = 'url'
-    STYLE_IMG = 'https://github.com/nawaritlk/Senior_project/blob/frong/Model/StyleImage/Chakrabhan/0001.jpg?raw=true'
-    CONTENT_IMG = 'https://github.com/nawaritlk/Senior_project/blob/frong/Model/Test/ContentImg.jpg?raw=true'
+    STYLE_IMG = 'http://127.0.0.1:8000/media/upload/1620407199377_Picture8.jpg'
+    CONTENT_IMG = 'http://127.0.0.1:8000/media/upload/'+str(myfile)
     # or
+
     # IMAGE_TYPE = 'path'
     # STYLE_IMG = r'StyleImage\Chakrabhan\0001.jpg'
-    # CONTENT_IMG = r'Test\ContentImg.jpg'
+    # CONTENT_IMG = myfile
+    # content = load_image(CONTENT_IMG)
+    # showAImg(content)
+    # print(CONTENT_IMG)
 
-    ITERATION = 5000
+    ITERATION = 5
     CONTENT_WEIGHT = 1e-2
     STYLE_WEIGHT = 1e6
     MODEL_POOLING = 'max' # or 'avg'
 
-    main(IMAGE_TYPE,STYLE_IMG,STYLE_WEIGHT,CONTENT_IMG,CONTENT_WEIGHT,MODEL_POOLING,ITERATION)
+    generate_image = main(IMAGE_TYPE,STYLE_IMG,STYLE_WEIGHT,CONTENT_IMG,CONTENT_WEIGHT,MODEL_POOLING,ITERATION)
+    print('run success')
+    print(type(generate_image))
+    generate_img = Image.fromarray(generate_image, 'RGB')
+    print(type(generate_img))
 
 
+    # current_user = request.user
+    # generateimg = output.objects.create(user=current_user,generate_img=generate_img)
+    # generateimg.save(commit=False)
 
 
 
