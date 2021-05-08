@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from .models import upload, output
 from django.contrib.auth.decorators import login_required
 from .create import im_convert
-
+from django.core.files.uploadedfile import InMemoryUploadedFile
 
 # model NST import
 #!/usr/bin/env python3
@@ -31,8 +31,9 @@ import cv2 as cv
 import pandas as pd
 
 import requests
-from io import BytesIO
+from io import BytesIO,StringIO
 import skimage.exposure as exposure
+from skimage import io
 
 # Create your views here.
 @login_required
@@ -48,15 +49,18 @@ def file_upload_view(request):
         if request.method == 'POST':
             current_user = request.user
             my_file = request.FILES.get('file')
-            print(type(my_file))
+            print('type of my_file : ',type(my_file))
             imagedata = upload.objects.create(user=current_user,image=my_file)
             imagedata.save()
-            # print(CONTENT_IMG)
-            
-            
-            NST(requests, my_file, current_user)
-            
 
+            generate = NST(requests, my_file, current_user)
+
+            genIO = BytesIO()
+            generate.save(genIO, format='JPEG')
+            generate_img = InMemoryUploadedFile(genIO, None, '123.jpeg', 'media/upload',genIO.tell(), None)
+            generateimg = output.objects.create(user=current_user,generate_img=generate_img)
+
+            generateimg.save()
 
             return HttpResponse('')
     return JsonResponse({'post': 'false'})
@@ -162,7 +166,6 @@ def gram_matrix(tensor):
   return gram  
 
 def train(content_image,content_weight,style_image,style_weight,model,steps,device):
-    print('TRAINNNNNNNNNNNNNN')
     feature_layers = {'0':'conv1_1','5':'conv2_1','10':'conv3_1','19':'conv4_1','21':'conv4_2','28':'conv5_1'}
     content_features=get_features(content_image,feature_layers,model)
     style_features=get_features(style_image,feature_layers,model)
@@ -239,30 +242,30 @@ def main(image_type,style,style_weight,content,content_weight,pool,iteration):
     # load image 
     if image_type=='path':
         style_image = load_image(style).to(device)
-        showAImg(im_convert(style_image),'style image')
+        # showAImg(im_convert(style_image),'style image')
         content_image = load_image(content).to(device)
-        showAImg(im_convert(content_image), 'content image')
+        # showAImg(im_convert(content_image), 'content image')
     elif image_type=='url':
         style_image = load_image(url=style).to(device)
-        showAImg(im_convert(style_image),'style image')
+        # showAImg(im_convert(style_image),'style image')
         content_image = load_image(url=content).to(device)
-        showAImg(im_convert(content_image), 'content image')
+        # showAImg(im_convert(content_image), 'content image')
 
     target,result = train(content_image,content_weight,style_image,style_weight,vgg,iteration,device)
     title = 'Iteration '+str(result[0][0])+' content loss : {:2f}'.format(result[0][2]) +' style loss : {:2f}'.format(result[0][1]) +' total loss : {:2f}'.format(result[0][3])
-    showStyleContentTarget(style_image, content_image,target,title)
-    print('train success')
+    # showStyleContentTarget(style_image, content_image,target,title)
     # print(type(target))
 
     target = im_convert(target)
     content = im_convert(content_image)
     
     # histogram matching
+    print('histogram matching')
     multi = True if target.shape[-1] > 1 else False
     preserve_img = exposure.match_histograms(target, content, multichannel = multi)
-    plt.imshow(preserve_img)
-    plt.axis('off')
-    plt.show()
+    # plt.imshow(preserve_img)
+    # plt.axis('off')
+    # plt.show()
 
     # save_image(preserve_img, 'result.jpg')
     # save_image(target, 'result.jpg')
@@ -271,6 +274,7 @@ def main(image_type,style,style_weight,content,content_weight,pool,iteration):
 
 
 def NST(request, myfile,current_user):
+
     IMAGE_TYPE = 'url'
     STYLE_IMG = 'http://127.0.0.1:8000/media/upload/1620407199377_Picture8.jpg'
     CONTENT_IMG = 'http://127.0.0.1:8000/media/upload/'+str(myfile)
@@ -283,16 +287,15 @@ def NST(request, myfile,current_user):
     # showAImg(content)
     # print(CONTENT_IMG)
 
-    ITERATION = 5
+    ITERATION = 100
     CONTENT_WEIGHT = 1e-2
     STYLE_WEIGHT = 1e6
     MODEL_POOLING = 'max' # or 'avg'
 
     generate_image = main(IMAGE_TYPE,STYLE_IMG,STYLE_WEIGHT,CONTENT_IMG,CONTENT_WEIGHT,MODEL_POOLING,ITERATION)
-    print('run success')
-    print(type(generate_image))
     generate_img = Image.fromarray(generate_image, 'RGB')
-    print(type(generate_img))
+
+    return generate_img
 
 
     # current_user = request.user
