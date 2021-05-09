@@ -10,6 +10,8 @@
   <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
   <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css" />
 
+  
+  
   <style>
     @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script&family=Playfair+Display&display=swap");
 
@@ -212,12 +214,17 @@
       flex: 25%;
       max-width: 25%;
       padding: 0 4px;
+      
     }
 
     .column img {
       margin-top: 8px;
       vertical-align: middle;
       width: 100%;
+      /* border-style: solid;
+      border-color: rgb(224, 35, 35); */
+      
+      
     }
     .overlay {
         position: absolute;
@@ -271,48 +278,41 @@
 
           <div class="row">
             <div class="column">
-              <img src="http://127.0.0.1:8000/media/template/j1.jpg" id="j1" alt="Nature" style="width:100%" onclick="changeImage()">
-              <div class="overlay">
-                <p class="icon" >
-                    &#10004;
-                </p>   
-              </div>
+              <img src="http://127.0.0.1:8000/media/template/j1.jpg" id="j1" alt="Nature"  style="width:100%" 
+              onclick="changeImage(this)">
+              <!-- <div class="overlay">
+                 
+              </div> -->
                 
             </div>
 
 
             <div class="column">
-              <img src="http://127.0.0.1:8000/media/template/j2.jpg" id="j2" alt="Nature" style="width:100%"
-                onclick="changeImage()">
-                <div class="overlay">
-                  <p class="icon" >
-                      &#10004;
-                  </p>   
-                </div>
+              <img src="http://127.0.0.1:8000/media/template/j1.jpg" id="j2" alt="Nature" style="width:100%"
+                onclick="changeImage(this)">
+                
             </div>
 
 
             <div class="column">
-              <img src="http://127.0.0.1:8000/media/template/j3.jpg" id="j3" alt="Nature" style="width:100%"
-                onclick="changeImage()">
+              <img src="http://127.0.0.1:8000/media/template/j1.jpg" id="j3" alt="Nature" style="width:100%"
+                onclick="changeImage(this)">
             </div>
 
             <div class="column">
-              <img src="http://127.0.0.1:8000/media/template/s1.jpg" id="s1" alt="Nature" style="width:100%"
-                onclick="changeImage()">
+              <img src="http://127.0.0.1:8000/media/template/j1.jpg" id="s1" alt="Nature" style="width:100%"
+                onclick="changeImage(this)">
             </div>
 
             <div class="column">
-              <img src="http://127.0.0.1:8000/media/template/s2.jpg" id="s2" alt="Nature" style="width:100%"
-                onclick="changeImage()">
+              <img src="http://127.0.0.1:8000/media/template/j1.jpg" id="s2" alt="Nature" style="width:100%"
+                onclick="changeImage(this)">
             </div>
 
             <div class="column">
-              <img src="http://127.0.0.1:8000/media/template/s3.jpg" id="s3" alt="Nature" style="width:100%"
-                onclick="changeImage()">
+              <img src="http://127.0.0.1:8000/media/template/j1.jpg" id="s3" alt="Nature" style="width:100%"
+                onclick="changeImage(this)">
             </div>
-
-
 
 
           </div>
@@ -368,20 +368,35 @@
         });
       },
     });
-
-  </script>
-
-  <script language="javascript">
-    function changeImage() {
-
-      if (document.getElementById("j1").src == "http://www.userinterfaceicons.com/80x80/minimize.png") {
-        document.getElementById("j1").src = "http://www.userinterfaceicons.com/80x80/maximize.png";
+    function changeImage(img) {
+    //   var selectImg = document.getElementByClassName("test1")[0];
+    //   if (selectImg.src == "http://127.0.0.1:8000/media/template/j2.jpg") {
+    //     selectImg.src = "http://127.0.0.1:8000/media/template/j1.jpg";
+    //   }
+    //   else {
+    //     selectImg.src == "http://127.0.0.1:8000/media/template/j2.jpg";
+    //   }
+     
+    // }
+      if (document.getElementById("j1").style.border = "thick solid #0000FF"){
+        document.getElementById("j1").style.border = hidden;
       }
-      else {
-        document.getElementById("j1").src = "http://www.userinterfaceicons.com/80x80/minimize.png";
+      else{
+        document.getElementById("j1").style.border = "thick solid #0000FF";
       }
+
+      if (document.getElementById("j2").style.border = "thick solid #0000FF"){
+        document.getElementById("j2").style.border = none;
+      }
+      else{
+        document.getElementById("j2").style.border = "thick solid #0000FF";
+      }
+    
     }
+
   </script>
+
+  
 </body>
 
 </html>
