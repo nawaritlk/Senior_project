@@ -54,10 +54,11 @@ def file_upload_view(request):
             imagedata.save()
 
             generate = NST(requests, my_file, current_user)
+            print(generate)
 
             genIO = BytesIO()
-            generate.save(genIO, format='JPEG')
-            generate_img = InMemoryUploadedFile(genIO, None, '123.jpeg', 'media/upload',genIO.tell(), None)
+            generate.save(genIO, format='JPG')
+            generate_img = InMemoryUploadedFile(genIO, None, '123.jpg', 'media/upload',genIO.tell(), None)
             generateimg = output.objects.create(user=current_user,generate_img=generate_img)
 
             generateimg.save()
@@ -287,20 +288,17 @@ def NST(request, myfile,current_user):
     # showAImg(content)
     # print(CONTENT_IMG)
 
-    ITERATION = 100
+    ITERATION = 5
     CONTENT_WEIGHT = 1e-2
     STYLE_WEIGHT = 1e6
     MODEL_POOLING = 'max' # or 'avg'
 
     generate_image = main(IMAGE_TYPE,STYLE_IMG,STYLE_WEIGHT,CONTENT_IMG,CONTENT_WEIGHT,MODEL_POOLING,ITERATION)
     generate_img = Image.fromarray(generate_image, 'RGB')
+    # generate_img1 = Image.open(generate_img).convert('RGB')
 
     return generate_img
 
 
     # current_user = request.user
-    # generateimg = output.objects.create(user=current_user,generate_img=generate_img)
-    # generateimg.save(commit=False)
-
-
 

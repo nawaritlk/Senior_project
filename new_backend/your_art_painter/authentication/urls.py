@@ -13,6 +13,7 @@ urlpatterns = [
     path("logout/", views.authlogout, name = 'authlogout'),
     path("forgetpassword/", views.forgetpassword, name = 'forgetpassword'),
     path("login/", views.login_before, name = 'login'),
+    path('', views.profile, name = 'profile'),
 
     #reset password
     path('password_reset/', auth_views.PasswordResetView.as_view(template_name="forgetpassword/password_reset_form.html"), name = 'password_reset'),

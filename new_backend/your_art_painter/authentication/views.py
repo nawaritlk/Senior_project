@@ -68,3 +68,6 @@ def login_before(request):
         else:
             print('invalid user')
     return render(request, 'login_before.html')
+
+def profile(request):
+    return render(request, 'profile.html')
