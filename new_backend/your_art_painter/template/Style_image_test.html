@@ -2,120 +2,54 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <title>Image Picker</title>
-
+    <title>Font Awesome Icons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Get your own code at fontawesome.com-->
 </head>
 <style>
-    /* The grid: Four equal columns that floats next to each other */
-    .column {
-        float: left;
-        width: 25%;
-        padding: 10px;
-    }
-
-    /* Style the images inside the grid */
-    .column img {
-        opacity: 0.8;
-        cursor: pointer;
-    }
-
-    .column img:hover {
+     .row{
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+     }
+     .styleImage img{
+        display: block;
+        width: 100%;
+     }
+     .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
         opacity: 1;
     }
-
-    /* Clear floats after the columns */
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    /* The expanding image container */
-    .container {
-        position: relative;
-        display: none;
-    }
-
-    /* Expanding image text */
-    #imgtext {
-        position: absolute;
-        bottom: 15px;
-        left: 15px;
-        color: white;
-        font-size: 20px;
-    }
-
-    /* Closable button inside the expanded image */
-    .closebtn {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        color: white;
-        font-size: 35px;
-        cursor: pointer;
+    .icon{
+        font-size: 100px;
+        text-align: center;
+       
+        
     }
 </style>
 
 <body>
 
-    <!-- The four columns -->
     <div class="row">
-        <div class="column">
-            <img src="http://127.0.0.1:8000/media/template/j1.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
+        <div class="styleImage">
+            <img src="http://127.0.0.1:8000/media/template/s3.jpg" id="s3" alt="Nature" style="width:100%">
         </div>
-        <div class="column">
-            <img src="http://127.0.0.1:8000/media/template/j2.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+        <div class="overlay">
+            <span class="icon" >
+                &#10004;
+            </span>   
         </div>
-        <div class="column">
-            <img src="http://127.0.0.1:8000/media/template/j3.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-            <img src="http://127.0.0.1:8000/media/template/s1.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-            <img src="http://127.0.0.1:8000/media/template/s2.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-            <img src="http://127.0.0.1:8000/media/template/s3.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
-        </div>
-        
     </div>
-
-    <div class="container">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <img id="expandedImg" style="width:100%">
-        <div id="imgtext"></div>
-    </div>
-
-
+   
     
-    <script>
-        function myFunction(imgs) {
-          var expandImg = document.getElementById("expandedImg");
-          var imgText = document.getElementById("imgtext");
-          expandImg.src = imgs.src;
-          imgText.innerHTML = imgs.alt;
-          expandImg.parentElement.style.display = "block";
-        }
-    </script>
 
-
-    <!-- <div class="container">
-            <select class="image-picker">
-                <optgroup label="Nature">
-                    <option data-img-src="">Nature 1</option>
-                    <option data-img-src="">Nature 1</option>
-                    <option data-img-src="">Nature 1</option>
-                    <option data-img-src="">Nature 1</option>
-
-                </optgroup>
-
-            </select>
-        </div>
-        <script src="jpuery.min.js"></script>
-        <script src="image-picker.min.js"></script>
-        <script></script> -->
 </body>
 
 </html>
