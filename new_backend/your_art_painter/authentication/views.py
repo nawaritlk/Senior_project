@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
+from create_your_art.models import upload
 
 
 @csrf_exempt
@@ -70,4 +71,9 @@ def login_before(request):
     return render(request, 'login_before.html')
 
 def profile(request):
-    return render(request, 'profile.html')
+    data = upload.objects.all()
+    print(data)
+    context={
+      'data': data
+    }
+    return render(request, 'profile.html', context)

@@ -1,7 +1,7 @@
 from django.http.response import JsonResponse
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import upload, output
+from .models import upload, output, style
 from django.contrib.auth.decorators import login_required
 from .create import im_convert
 from django.core.files.uploadedfile import InMemoryUploadedFile
@@ -38,6 +38,7 @@ from skimage import io
 # Create your views here.
 @login_required
 def create(request):
+
     return render(request, 'createYourArt.html')
 
 def submission(request):
@@ -53,15 +54,15 @@ def file_upload_view(request):
             imagedata = upload.objects.create(user=current_user,image=my_file)
             imagedata.save()
 
-            generate = NST(requests, my_file, current_user)
-            print(generate)
+            # generate = NST(requests, my_file, current_user)
+            # print(generate)
 
-            genIO = BytesIO()
-            generate.save(genIO, format='JPG')
-            generate_img = InMemoryUploadedFile(genIO, None, '123.jpg', 'media/upload',genIO.tell(), None)
-            generateimg = output.objects.create(user=current_user,generate_img=generate_img)
+            # genIO = BytesIO()
+            # generate.save(genIO, format='JPG')
+            # generate_img = InMemoryUploadedFile(genIO, None, '123.jpg', 'media/upload',genIO.tell(), None)
+            # generateimg = output.objects.create(user=current_user,generate_img=generate_img)
 
-            generateimg.save()
+            # generateimg.save()
 
             return HttpResponse('')
     return JsonResponse({'post': 'false'})

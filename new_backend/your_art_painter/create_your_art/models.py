@@ -24,7 +24,12 @@ def get_file_upload(instance, filename):
 def get_file_output(instance, filename):
     ext = filename.split('.')[-1]
     filename = "%s.%s" % (uuid.uuid4(), ext)
-    return os.path.join(instance.odirectory_string_var, filename)
+    return os.path.join(instance.directory_string_var, filename)
+
+def get_file_style(instance, filename):
+    ext = filename.split('.')[-1]
+    filename = "%s.%s" % (uuid.uuid4(), ext)
+    return os.path.join(instance.directory_string_var, filename)
 
 class upload(models.Model):
     timestamp = models.DateTimeField(auto_now_add=True)
@@ -43,3 +48,8 @@ class generateNST(models.Model):
     user = models.ForeignKey(User, on_delete = models.CASCADE)
     content = models.ForeignKey(upload, on_delete= models.CASCADE)
     generate = models.ForeignKey(output, on_delete= models.CASCADE)
+
+class style(models.Model):
+    timestamp = models.DateTimeField(auto_now_add=True)
+    style = models.ImageField(upload_to = get_file_style)
+    directory_string_var = 'style'

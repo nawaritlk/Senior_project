@@ -323,22 +323,24 @@
   <p class="myGallary">My gallary</p>
 
 <!-- show gallary -->
+<div class = "row">
+{% for image in data %}
   <div class="grid-container1">
     <div class="grid1"></div>
     <div class="grid1">
       <div class="block-imgInput1">
         <div class="imgInput">
-          <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\inputImg.png" alt="vango1">
+          <img src="/media/{{ upload.image }} " alt="vango1">
         </div>
       </div>
     </div>
-
+{% endfor%}
     <div class="grid1"></div>
     <div class="grid1">
       <div class="block-style">
-        <div class="imgInput">
-          <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\v1.jpg" alt="vango1">
-        </div>
+        <!--<div class="imgInput">
+          <img src="http://127.0.0.1:8000/media/style/be6a9179-7a42-4c9d-ae57-db07a6c41a3b.jpg" alt="vango1">
+        </div>-->
       </div>
     </div>
     <div class="grid1"></div>
@@ -348,7 +350,7 @@
     </div>
     <div class="grid1"></div>
     <div class="grid1">
-      <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\Union 1.png" alt="vango1" id="imgOutput">
+      <!--<img src="http://127.0.0.1:8000/media/style/be6a9179-7a42-4c9d-ae57-db07a6c41a3b.jpg" alt="vango1" id="imgOutput">-->
     </div>
     <div class="grid1"></div>
     <!----------------right content-------------------->
@@ -373,6 +375,7 @@
           <button class="delete-btn"><i class="fa fa-trash">&nbsp; &nbsp; </i>delete</button>
         </div>
       </div>
+    </div>
     </div>
 
     <!-----------------picture number 2------------------>
