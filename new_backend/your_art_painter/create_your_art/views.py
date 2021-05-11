@@ -1,10 +1,10 @@
 from django.http.response import JsonResponse
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.http import HttpResponse
 from .models import upload, output, style
 from django.contrib.auth.decorators import login_required
-from .create import im_convert
 from django.core.files.uploadedfile import InMemoryUploadedFile
+
 
 # model NST import
 #!/usr/bin/env python3
@@ -64,7 +64,7 @@ def file_upload_view(request):
 
             # generateimg.save()
 
-            return HttpResponse('')
+            return redirect('profile')
     return JsonResponse({'post': 'false'})
 
 def load_image(img_path=None,url=None,max_size=400,shape=None):  

@@ -1,4 +1,5 @@
 {% include 'menubar.html' %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -330,11 +331,10 @@
     <div class="grid1">
       <div class="block-imgInput1">
         <div class="imgInput">
-          <img src="/media/{{ upload.image }} " alt="vango1">
+          <img src="/media/{{image.image}} " alt="vango1">
         </div>
       </div>
     </div>
-{% endfor%}
     <div class="grid1"></div>
     <div class="grid1">
       <div class="block-style">
@@ -377,6 +377,7 @@
       </div>
     </div>
     </div>
+  {% endfor%}
 
     <!-----------------picture number 2------------------>
     <!--<div class="grid-container1">
