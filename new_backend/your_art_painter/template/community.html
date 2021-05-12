@@ -152,10 +152,11 @@
       <div class="container">
         <!---------- picture1---------->
         <div class="bg">
+        {% for content in data %}
           <div class="wrapper">
 
             <div class="image">
-              <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\Union 1.png" alt="vango1" id="imgOutput">
+              <img src="/media/{{content.generate_img}}" alt="vango1" id="imgOutput">
             </div>
             <div class="countlike">&#10084;98</div>
             <div class="use-style" id="use-styleID">
@@ -166,15 +167,16 @@
           <div class="content2">
             <div class="block-imgInput">
               <div class="picInput">
-                <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\inputImg.png" alt="vango1">
+                <img src="/media/{{content.gcontent}}" alt="vango1">
               </div>
             </div>
             <div class="block-style">
               <div class="imgInput">
-                <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\v1.jpg" alt="vango1">
+                <img src="/media/{{content.style}}" alt="vango1">
               </div>
             </div>
           </div>
+          {% endfor%}
         </div>
 
         <!---------- picture2---------->

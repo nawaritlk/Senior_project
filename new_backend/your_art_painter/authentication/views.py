@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
-from create_your_art.models import upload
+from create_your_art.models import upload,output,style
 
 
 @csrf_exempt
@@ -37,7 +37,7 @@ def register(request):
             else:
                 registerdata = User.objects.create_user(username=username, email=email, password=password)
                 registerdata.save()
-                # login(request, User)
+                login(request, User)
                 return redirect('homepage')
         else:
             messages.error(request, 'Password and Confirm Password Not Matched')
@@ -71,9 +71,13 @@ def login_before(request):
     return render(request, 'login_before.html')
 
 def profile(request):
-    data = upload.objects.all()
+    data = output.objects.filter(user=request.user)
+    content = upload.objects.filter(user=request.user)
+    print(content)
+    # content = output.objects.filter(content__id=image_id)
     print(data)
     context={
       'data': data
+    
     }
     return render(request, 'profile.html', context)

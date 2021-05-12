@@ -7,24 +7,13 @@ import os
 import uuid
 
 # Create your models here.
-# class upload(models.Model):
 
-#     timestamp = models.DateTimeField(auto_now_add=True)
-#     user = models.ForeignKey(User, on_delete=models.CASCADE)
-#     image = models.ImageField(upload_to='upload/')
-#     output = models.ImageField(upload_to='output')
-
-#     # def __str__(self):
-#     #     return self.user
-def get_file_upload(instance, filename):
-    ext = filename.split('.')[-1]
-    filename = "%s.%s" % (uuid.uuid4(), ext)
-    return os.path.join(instance.directory_string_var, filename)
 
 def get_file_output(instance, filename):
     ext = filename.split('.')[-1]
     filename = "%s.%s" % (uuid.uuid4(), ext)
     return os.path.join(instance.directory_string_var, filename)
+    
 
 def get_file_style(instance, filename):
     ext = filename.split('.')[-1]
@@ -34,13 +23,15 @@ def get_file_style(instance, filename):
 class upload(models.Model):
     timestamp = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(User, on_delete = models.CASCADE)
-    image = models.ImageField(upload_to = get_file_upload)
-    directory_string_var = 'upload'
+    image = models.ImageField(upload_to = 'upload/')
+    
 
 class output(models.Model):
     timestamp = models.DateTimeField(auto_now_add=True)
-    user = models.ForeignKey(User, on_delete = models.CASCADE)
+    user = models.ForeignKey(User, on_delete = models.CASCADE, related_name='user')
     generate_img = models.ImageField(upload_to = get_file_output)
+    content = models.ForeignKey('upload',on_delete= models.CASCADE, related_name='content')
+    style = models.ForeignKey('style',on_delete= models.CASCADE, related_name='image')
     directory_string_var = 'output'
 
 class generateNST(models.Model):
