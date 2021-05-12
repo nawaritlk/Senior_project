@@ -214,7 +214,6 @@
         width: 100%;
         /* border-style: solid;
       border-color: rgb(224, 35, 35); */
-<<<<<<< HEAD
       
     }
     .btn {
@@ -273,132 +272,11 @@
             </div>
 
 
-=======
-      }
-      .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 1;
-      }
-      .icon {
-        font-size: 50px;
-        text-align: center;
-        align-content: center;
-        background-color: rgb(91, 93, 93);
-        opacity: 0.6;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
-    <title></title>
-  </head>
-
-  <body>
-    <div class="grid-container1">
-      <div class="grid1"></div>
-      <div class="grid1">
-        <h1>Photo</h1>
-        <p class="text1">Upload photo</p>
-        <div class="content1">
-          <form
-            enctype="multipart/form-data"
-            action="/create/upload/ "
-            class="dropzone dz"
-            id="my-dropzone"
-            method="post"
-          >
-            {% csrf_token %}
-            <div class="fallback">
-              <input name="file" type="file" />
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <div class="grid1"></div>
-      <div class="grid1">
-        <h1>Style</h1>
-        <p class="text1">Popular styles</p>
-        <div class="content2">
-          <div class="populaStyle">
-            <div class="row">
-              <div class="column">
-                <img
-                  src="http://127.0.0.1:8000/media/template/j1.jpg"
-                  id="j1"
-                  alt="Nature"
-                  style="width: 100%"
-                  onclick="changeImage(this)"
-                  name="style1"
-                />
-                <!-- <div class="overlay">
-                 
-              </div> -->
-              </div>
-
-              <div class="column">
-                <img
-                  src="http://127.0.0.1:8000/media/template/j1.jpg"
-                  id="j2"
-                  alt="Nature"
-                  style="width: 100%"
-                  onclick="changeImage(this)"
-                  name="style2"
-                />
-              </div>
-
-              <div class="column">
-                <img
-                  src="http://127.0.0.1:8000/media/template/j1.jpg"
-                  id="j3"
-                  alt="Nature"
-                  style="width: 100%"
-                  onclick="changeImage(this)"
-                />
-              </div>
-
-              <div class="column">
-                <img
-                  src="http://127.0.0.1:8000/media/template/j1.jpg"
-                  id="s1"
-                  alt="Nature"
-                  style="width: 100%"
-                  onclick="changeImage(this)"
-                />
-              </div>
-
-              <div class="column">
-                <img
-                  src="http://127.0.0.1:8000/media/template/j1.jpg"
-                  id="s2"
-                  alt="Nature"
-                  style="width: 100%"
-                  onclick="changeImage(this)"
-                />
-              </div>
-
-              <div class="column">
-                <img
-                  src="http://127.0.0.1:8000/media/template/j1.jpg"
-                  id="s3"
-                  alt="Nature"
-                  style="width: 100%"
-                  onclick="changeImage(this)"
-                />
-              </div>
-            </div>
->>>>>>> frong
           </div>
           <!--<div class="drop-zone__thumb" data-label="myFile.txt"></div>-->
         </div>
       </div>
       <div class="grid1"></div>
-<<<<<<< HEAD
     </div>
   </div>
 
@@ -450,23 +328,6 @@
         }
 
   </script>
-=======
-
-      <!-----------------lower content-------------------------->
-      <div class="container2">
-        <div class="grid1"></div>
-        <input
-          type="submit"
-          id="submit-all"
-          value="Upload"
-          a
-          href="/submission"
-        />
-        <!--<a href="/create" id="createNow-btn">Create Your Art work</a>-->
-        <div class="grid1"></div>
-      </div>
-    </div>
->>>>>>> frong
 
     <!--Script for Dropzone.js-->
     <script type="text/javascript">
@@ -500,39 +361,18 @@
           });
         },
       });
-      function changeImage(img) {
-       /*$.ajax({
-                url: 'upload/',
-                data : {
-                  style: 1
-                },
-      success: function (data) {
-          $("#j1").html(data);
-      }*/
-      //   var selectImg = document.getElementByClassName("test1")[0];
-      //   if (selectImg.src == "http://127.0.0.1:8000/media/template/j2.jpg") {
-      //     selectImg.src = "http://127.0.0.1:8000/media/template/j1.jpg";
-      //   }
-      //   else {
-      //     selectImg.src == "http://127.0.0.1:8000/media/template/j2.jpg";
-      //   }
 
-      // }
-        if (document.getElementById("j1").style.border = "thick solid #0000FF"){
-          document.getElementById("j1").style.border = hidden;
-        }
-        else{
-          document.getElementById("j1").style.border = "thick solid #0000FF";
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
         }
 
-        if (document.getElementById("j2").style.border = "thick solid #0000FF"){
-          document.getElementById("j2").style.border = none;
-        }
-        else{
-          document.getElementById("j2").style.border = "thick solid #0000FF";
-        }
-
-      }
     </script>
   </body>
 </html>
