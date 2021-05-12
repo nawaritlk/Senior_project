@@ -50,7 +50,7 @@ def create(request):
     return render(request, 'createYourArt.html', context)
 
 def submission(request):
-    return render(request, 'submission.html', context)
+    return render(request, 'submission.html')
 
 
 def file_upload_view(request):
@@ -64,8 +64,9 @@ def file_upload_view(request):
             imagedata = upload.objects.create(user=current_user,image=my_file)
             imagedata.save()
             content = upload.objects.latest('timestamp')
+            style_img = style.objects.latest('timestamp')
 
-            NST(requests, my_file, current_user, content)
+            NST(requests, my_file, current_user, content, style_img)
             # print(generate)
 
             # generate = NST(requests, my_file, current_user)
@@ -290,7 +291,7 @@ def main(image_type,style,style_weight,content,content_weight,pool,iteration):
     return preserve_img
 
 
-def NST(request, content,current_user, contentforsave):
+def NST(request, content,current_user, contentforsave, styleforsave):
 
     IMAGE_TYPE = 'url'
     STYLE_IMG = 'http://127.0.0.1:8000/media/style/be6a9179-7a42-4c9d-ae57-db07a6c41a3b.jpg'
@@ -317,7 +318,7 @@ def NST(request, content,current_user, contentforsave):
     genIO = BytesIO()
     generate_img.save(genIO, format='JPEG')
     generate_image = InMemoryUploadedFile(genIO, None, '123.jpeg', 'media/upload',genIO.tell(), None)
-    generateimg = output.objects.create(user=current_user,content=contentforsave,generate_img=generate_image)
+    generateimg = output.objects.create(user=current_user,content=contentforsave,generate_img=generate_image,style=styleforsave)
 
     generateimg.save()
 

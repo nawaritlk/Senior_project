@@ -81,3 +81,15 @@ def profile(request):
     
     }
     return render(request, 'profile.html', context)
+    
+def community(request):
+    data = output.objects.all()
+    # output2 = output.objects.select_related(max_depth=2).all()
+    print(data)
+    # for i in output2:
+    #   print(i.content)
+    context={
+      'data': data
+    
+    }
+    return render(request, 'community.html', context)
