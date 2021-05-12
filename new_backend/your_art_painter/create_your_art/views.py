@@ -4,6 +4,8 @@ from django.http import HttpResponse
 from .models import upload, output, style
 from django.contrib.auth.decorators import login_required
 from django.core.files.uploadedfile import InMemoryUploadedFile
+from django.views.decorators.csrf import csrf_exempt
+
 
 
 # model NST import
@@ -37,22 +39,34 @@ from skimage import io
 
 # Create your views here.
 @login_required
+@csrf_exempt
 def create(request):
+    style = upload.objects.all()
+    context = {
+        'style': style
+    }
+    
 
-    return render(request, 'createYourArt.html')
+    return render(request, 'createYourArt.html', context)
 
 def submission(request):
-    return render(request, 'submission.html')
+    return render(request, 'submission.html', context)
+
 
 def file_upload_view(request):
-    # print(request.FILES)
     if request.user.is_authenticated:
         if request.method == 'POST':
             current_user = request.user
             my_file = request.FILES.get('file')
+            # style = request.GET('style')
+            # print(style)
             print('type of my_file : ',type(my_file))
             imagedata = upload.objects.create(user=current_user,image=my_file)
             imagedata.save()
+            content = upload.objects.latest('timestamp')
+
+            NST(requests, my_file, current_user, content)
+            # print(generate)
 
             # generate = NST(requests, my_file, current_user)
             # print(generate)
@@ -65,6 +79,7 @@ def file_upload_view(request):
             # generateimg.save()
 
             return redirect('profile')
+
     return JsonResponse({'post': 'false'})
 
 def load_image(img_path=None,url=None,max_size=400,shape=None):  
@@ -275,11 +290,12 @@ def main(image_type,style,style_weight,content,content_weight,pool,iteration):
     return preserve_img
 
 
-def NST(request, myfile,current_user):
+def NST(request, content,current_user, contentforsave):
 
     IMAGE_TYPE = 'url'
-    STYLE_IMG = 'http://127.0.0.1:8000/media/upload/1620407199377_Picture8.jpg'
-    CONTENT_IMG = 'http://127.0.0.1:8000/media/upload/'+str(myfile)
+    STYLE_IMG = 'http://127.0.0.1:8000/media/style/be6a9179-7a42-4c9d-ae57-db07a6c41a3b.jpg'
+    # STYLE_IMG = 'http://127.0.0.1:8000/media/upload/'+str(style)
+    CONTENT_IMG = 'http://127.0.0.1:8000/media/upload/'+str(content)
     # or
 
     # IMAGE_TYPE = 'path'
@@ -298,7 +314,17 @@ def NST(request, myfile,current_user):
     generate_img = Image.fromarray(generate_image, 'RGB')
     # generate_img1 = Image.open(generate_img).convert('RGB')
 
-    return generate_img
+    genIO = BytesIO()
+    generate_img.save(genIO, format='JPEG')
+    generate_image = InMemoryUploadedFile(genIO, None, '123.jpeg', 'media/upload',genIO.tell(), None)
+    generateimg = output.objects.create(user=current_user,content=contentforsave,generate_img=generate_image)
+
+    generateimg.save()
+
+
+
+
+    # return generate_img
 
 
     # current_user = request.user
