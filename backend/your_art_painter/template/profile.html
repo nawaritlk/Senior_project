@@ -1,0 +1,443 @@
+{% include 'menubar.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script&family=Playfair+Display&display=swap');
+
+    /*
+    font-family: 'Dancing Script', cursive;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Playfair Display', serif;*/
+    * {
+      margin: 0;
+      padding: 0;
+      /*font-family: 'Montserrat', sans-serif;*/
+      /*font-family: 'DM Serif Display', serif;*/
+    }
+
+    body {
+      background-color: #F8E8DB;
+    }
+
+
+    /***********************grid*************************/
+
+    @media only screen and (min-width: 1121px) {
+      .grid-container1 {
+        display: grid;
+        grid-template-columns: 80px 300px 10px 300px 10px 20px 10px 350px 20px 200px;
+        float: left;
+      }
+    }
+
+    /*************************upper content**************************/
+    .userName {
+      padding-top: 3%;
+      padding-left: 6%;
+      font-size: 40px;
+      font-family: 'DM Serif Display', serif;
+    }
+
+    .emailBlock {
+      display: flex;
+      padding-top: 1%;
+      padding-left: 6%;
+      font-size: 23px;
+      font-family: 'DM Serif Display', serif;
+    }
+
+    .line {
+      margin-top: 2%;
+      margin-left: 6%;
+    }
+
+    .line1 {
+      min-width: 1121px;
+      border-top: solid 7px;
+      border-radius: 10px;
+      border-color: #000000;
+    }
+
+    .line2 {
+      min-width: 1121px;
+      border-top: solid 3px;
+      border-radius: 10px;
+      border-color: #000000;
+      line-height: 200%;
+    }
+
+    .myGallary {
+      margin-top: 1%;
+      margin-left: 6%;
+      font-size: 30px;
+    }
+
+    /**************************************/
+
+    .block-imgInput1 {
+      margin-top: 3%;
+      width: 300px;
+      height: 250px;
+      border: solid 1px;
+      border-color: #000000;
+      border-radius: 10px;
+    }
+
+
+    .block-imgInput1 img {
+      display: flex;
+      align-content: center;
+      width: 275px;
+      height: 225px;
+      align-items: center;
+      text-align: center;
+      margin-top: 12.5px;
+      margin-left: 17.5px;
+
+
+    }
+
+    /********************************/
+    .block-style {
+      margin-top: 3%;
+      width: 300px;
+      height: 250px;
+      border: solid 1px;
+      border-color: #000000;
+      border-radius: 10px;
+    }
+
+
+    .block-style .imgInput img {
+      display: flex;
+      align-content: center;
+      width: 275px;
+      height: 225px;
+      align-items: center;
+      text-align: center;
+      margin-top: 12.5px;
+      margin-left: 17.5px;
+
+    }
+
+
+    /**************************************/
+    .block-output {
+      margin-top: 12px;
+      width: 275px;
+      height: 225px;
+      background-color: #000000;
+    }
+
+    #imgOutput {
+      margin-top: 2%;
+      width: 340px;
+      height: 250px;
+    }
+
+
+    /****************line lowercontent***********************/
+    .linecross {
+      margin-top: 50%;
+      width: 10px;
+      height: 250px;
+      border-left: 8px dashed #707070;
+
+    }
+
+    /*
+
+
+.numberlove {
+    float: left;
+    display: flex;
+}
+
+#loveIcon {
+    margin-left: 0%;
+    font-size: 24px;
+    margin-top: 18%;
+
+}
+
+#numberloves {
+    position: relative;
+    left: 20%;
+    font-size: 30px;
+}
+
+.statusRate {
+    position: relative;
+    left: 13%;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #7D7D7B;
+}
+
+#textlike {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #7D7D7B;
+}
+*/
+    /***************right content************************/
+    .right-content {
+      margin-top: 15%;
+    }
+
+    .gridstatus {
+      display: flex;
+    }
+
+    .like {
+      padding-left: 30%;
+    }
+
+    .likecontent {
+      padding-left: 10%;
+      display: flex;
+    }
+
+    #emolove {
+      margin-top: 10%;
+      font-size: 20px;
+    }
+
+    .like p {
+      padding-left: 25px;
+      text-transform: uppercase;
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+      color: #7D7D7B;
+    }
+
+    #numberloves {
+      padding-left: 8px;
+      font-size: 23px;
+
+    }
+
+    .rating {
+      margin-left: 3%;
+    }
+
+    #warningIcon {
+      font-size: 23px;
+      color: red;
+      position: relative;
+      margin-top: 16%;
+      left: 30%;
+    }
+
+    #alyRateIcon {
+      font-size: 23px;
+      color: green;
+      position: relative;
+      margin-top: 16%;
+      left: 30%;
+    }
+
+
+
+    .statusRate {
+      text-transform: uppercase;
+      font-family: 'Roboto', sans-serif;
+      font-size: 10px;
+      color: #7D7D7B;
+    }
+
+    /*********************button*************************/
+    .btn {
+      margin-top: 3%;
+
+    }
+
+    .download-btn {
+      margin-top: 5%;
+      width: 200px;
+      height: 30px;
+      font-size: 16px;
+      letter-spacing: 4px;
+      color: #ffffff;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 8px;
+      background-color: #99653C;
+      margin-bottom: 3%;
+
+    }
+
+    .makePrv-btn {
+      margin-top: 5%;
+      width: 200px;
+      height: 30px;
+      font-size: 16px;
+      letter-spacing: 2px;
+      color: #7B4E2B;
+      text-transform: uppercase;
+      border: solid 1px;
+      border-radius: 8px;
+      background-color: #ffffff;
+      margin-bottom: 3%;
+
+    }
+
+    .delete-btn {
+      margin-top: 5%;
+      width: 200px;
+      height: 30px;
+      font-size: 16px;
+      letter-spacing: 5px;
+      color: #ffffff;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 8px;
+      background-color: #D24444;
+      margin-bottom: 3%;
+
+    }
+  </style>
+</head>
+
+<body>
+<!-- Header -->
+  <p class="userName">{{ user.get_username }} <i class='far fa-edit' style='font-size:23px'></i></p>
+  <div class="emailBlock">
+    <p class="email">E-mail: </p>
+    <p class="emailName"> {{ user.email }} </p>
+  </div>
+
+  <div class="line">
+    <div class="line1">
+      <div class="line2">
+
+      </div>
+    </div>
+  </div>
+
+  <p class="myGallary">My gallary</p>
+
+<!-- show gallary -->
+<div class = "row">
+{% for content in data %}
+  <div class="grid-container1">
+    <div class="grid1"></div>
+    <div class="grid1">
+      <div class="block-imgInput1">
+        <div class="imgInput">
+          <img src="/media/{{content.content.image}} ">
+        </div>
+      </div>
+    </div>
+    <div class="grid1"></div>
+    <div class="grid1">
+      <div class="block-style">
+        <div class="imgInput">
+          <img src="/media/{{content.style.image}}">
+        </div>
+      </div>
+    </div>
+    <div class="grid1"></div>
+    <div class="grid1">
+      <div class="linecross">
+      </div>
+    </div>
+    <div class="grid1"></div>
+    <div class="grid1">
+      <img src="/media/{{content.generate_img}} " id="imgOutput">
+    </div>
+    <div class="grid1"></div>
+    <!----------------right content-------------------->
+    <div class="grid1">
+      <div class="right-content">
+        <div class="gridstatus">
+          <div class="rating">
+            <i class='fas fa-exclamation-circle' id="warningIcon"></i>
+            <P class="statusRate">not rating</P>
+          </div>
+          <div class="like">
+            <div class="likecontent">
+              <h1 id="emolove"> </i>&#10084;</h1>
+              <h1 id="numberloves"> </i>98</h1>
+            </div>
+            <p>like</p>
+          </div>
+        </div>
+        <div class="btn">
+          <button class="download-btn">download</button>
+          <button class="makePrv-btn">make it private</button>
+          <button class="delete-btn"><i class="fa fa-trash">&nbsp; &nbsp; </i>delete</button>
+        </div>
+      </div>
+    </div>
+    </div>
+  {% endfor%}
+
+    <!-----------------picture number 2------------------>
+    <!--<div class="grid-container1">
+      <div class="grid1"></div>
+      <div class="grid1">
+        <div class="block-imgInput1">
+          <div class="imgInput">
+            <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\inputImg.png" alt="vango1">
+          </div>
+        </div>
+      </div>
+
+      <div class="grid1"></div>
+      <div class="grid1">
+        <div class="block-style">
+          <div class="imgInput">
+            <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\v1.jpg" alt="vango1">
+          </div>
+        </div>
+      </div>
+      <div class="grid1"></div>
+      <div class="grid1">
+        <div class="linecross">
+        </div>
+      </div>
+      <div class="grid1"></div>
+      <div class="grid1">
+        <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\Union 1.png" alt="vango1" id="imgOutput">
+      </div>
+      <div class="grid1"></div>-->
+      <!----------------right content-------------------->
+      <!--<div class="grid1">
+        <div class="right-content">
+          <div class="gridstatus">
+            <div class="rating">
+              <i class="fa fa-check-circle" id="alyRateIcon"></i>
+              <P class="statusRate">rating</P>
+            </div>
+            <div class="like">
+              <div class="likecontent">
+                <h1 id="emolove"> </i>&#10084;</h1>
+                <h1 id="numberloves"> </i>98</h1>
+              </div>
+              <p>like</p>
+            </div>
+          </div>
+          <div class="btn">
+            <button class="download-btn">download</button>
+            <button class="makePrv-btn">make it private</button>
+            <button class="delete-btn"><i class="fa fa-trash">&nbsp; &nbsp; </i>delete</button>
+          </div>
+        </div>
+      </div>-->
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

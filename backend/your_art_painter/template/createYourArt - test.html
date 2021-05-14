@@ -1,0 +1,393 @@
+{% include 'menubar.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+  <script src="./path/to/dropzone.js"></script>
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <!-- Dropzone.js -->
+  <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+  <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css" />
+  <script type="text/javascript">
+    Dropzone.autoDiscover = false;
+
+    var myDropzone = new Dropzone("#my-dropzone", {
+      acceptedFiles: ".jpeg,.jpg,.png,.gif",
+      uploadMultiple: false,
+      addRemoveLinks: true,
+      autoProcessQueue: false,
+      maxFiles: 1,
+      resizeWidth: 224,
+      resizeHeight: 224,
+      renameFile: function (file) {
+        let newName = new Date().getTime() + "_" + file.name;
+        return newName;
+      },
+      init: function () {
+        this.on("maxfilesexceeded", function (file) {
+          this.removeAllFiles();
+          this.addFile(file);
+        });
+
+        var submitButton = document.querySelector("#submit-all")
+        myDropzone = this;
+
+        submitButton.addEventListener("click", function (e) {
+          e.stopPropagation();
+          e.preventDefault();
+          myDropzone.processQueue();
+        });
+      },
+    });
+
+    var clickOne = document.getElementById("j1");
+    clickOne.addEventListener("click",function(){
+      this.style="border: 15px solid #0000FF";
+
+    });
+    
+    // function changeImage(event) {
+    //     event.style"border: thick solid #0000FF"
+    
+    // }
+
+
+  </script>
+  
+  
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script&family=Playfair+Display&display=swap");
+
+    /*
+          font-family: 'Dancing Script', cursive;
+          font-family: 'DM Serif Display', serif;
+          font-family: 'Playfair Display', serif;*/
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /*font-family: 'Montserrat', sans-serif;*/
+    }
+
+    body {
+      background-color: #f8e8db;
+    }
+
+    /***********************media setting*************************/
+    @media only screen and (min-width: 1254px) {
+      .grid-container1 {
+        display: grid;
+        grid-template-columns: 12% 500px 100px 500px;
+        float: left;
+      }
+
+
+
+      .grid-menu {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 400px 200px 180px auto;
+      }
+    }
+
+
+    /***************grid setting******************/
+
+    .grid1 {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 5%;
+      margin-top: 5%;
+    }
+
+    .grid2 {
+      width: 100%;
+    }
+
+    .logo {
+      font-size: 35px;
+      font-family: "Roboto", sans-serif;
+    }
+
+    #login-btn {
+      text-align: right;
+      margin-right: 3%;
+      grid-column-end: -1;
+    }
+
+    /*******************content***************/
+    .content1 {
+      max-width: 500px;
+      height: 280px;
+      background-color: white;
+      place-content: center;
+      border: 1px solid #b8adad;
+      border-radius: 3px;
+    }
+
+    .content1 .dropzone {
+      position: relative;
+      left: 5%;
+      top: 5%;
+      right: 10%;
+      align-content: center;
+      width: 90%;
+      height: 90%;
+      padding: 25px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      font-size: 25px;
+      font-weight: lighter;
+      color: #000000;
+      border: 5px dashed #c2cdda;
+      overflow: auto;
+    }
+
+    .dz {
+      border: dash !important;
+      border-color: #ccc !important;
+      border-radius: 10px !important;
+    }
+
+    .dz:hover {
+      background-color: aliceblue !important;
+    }
+
+
+
+
+    /*****************font setting********************/
+
+    p.text1 {
+      display: block;
+      margin-top: 3%;
+      line-height: 40px;
+      width: 150px;
+      height: 40px;
+      font-size: 20px;
+      text-align: center;
+      border: none;
+      border-top: 1px solid;
+      border-right: 1px solid;
+      border-left: 1px solid;
+      border-color: #b8adad;
+      border-radius: 3px;
+      background-color: white;
+    }
+
+    .lowerContent p.text2 {
+      font-size: 20px;
+      margin-top: 10%;
+    }
+
+    /************************lower content*****************************/
+
+    #email {
+      width: 700px;
+      height: 40px;
+      border: solid;
+      border-radius: 8px;
+      border-color: #b8adad;
+    }
+
+    .container2 {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 500px 300px 150px;
+      float: left;
+    }
+
+    #submit-all {
+      width: 120px;
+      height: 40px;
+      border: solid;
+      border-color: #99653c;
+      border-radius: 8px;
+      color: white;
+      text-transform: uppercase;
+      font-size: 20px;
+      letter-spacing: 3px;
+      background: #99653c;
+
+    }
+
+    /***************picture style************************/
+
+    /* .populaStyle img {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+      width: 150px;
+
+
+
+    } */
+
+    /***********************style image sitting**********************/
+    .content2 {
+      max-width: 500px;
+      max-height: 280px;
+      background-color: white;
+      place-content: center;
+      border: 1px solid #b8adad;
+      border-radius: 3px;
+      overflow: auto;
+    }
+
+    .row {
+      display: -ms-flexbox;
+      /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap;
+      /* IE10 */
+      flex-wrap: wrap;
+      padding: 0 4px;
+      
+    }
+
+    .column {
+      position: relative;
+      display: block;
+      width: 100%;
+      -ms-flex: 25%;
+      /* IE10 */
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+      
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+      /* border-style: solid;
+      border-color: rgb(224, 35, 35); */
+      
+      
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+    }
+    .icon{
+        font-size: 50px;
+        text-align: center;
+        align-content: center;
+        background-color: rgb(91, 93, 93);
+        opacity: 0.6;
+        width: 100%;
+        height: 100%;
+        
+    }
+  </style>
+  <title></title>
+</head>
+
+<body>
+  <div class="grid-container1">
+    <div class="grid1"></div>
+    <div class="grid1">
+      <h1>Photo</h1>
+      <p class="text1">Upload photo</p>
+      <div class="content1">
+
+        <form enctype="multipart/form-data" action="/create/submission/ " class="dropzone dz" id="my-dropzone"
+          method="post">
+          {% csrf_token %}
+          <div class="fallback">
+            <input name="file" type="file" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="grid1"></div>
+    <div class="grid1">
+      <h1>Style</h1>
+      <p class="text1">Popular styles</p>
+      <div class="content2">
+
+        <div class="populaStyle">
+
+          <div class="row">
+            <div class="column">
+              <img src="http://127.0.0.1:8000/media/template/j1.jpg" id="j1" alt="Nature"  style="width:100%" 
+              >
+              <div class="overlay">
+                <i class="fas fa-check"></i>
+              </div>
+                
+            </div>
+
+
+            <!-- <div class="column">
+              <img src="http://127.0.0.1:8000/media/template/j1.jpg" id="j2" alt="Nature" style="width:100%"
+                >
+                <div class="overlay">
+                 
+                </div>
+                
+            </div>
+
+
+            <div class="column">
+              <img src="http://127.0.0.1:8000/media/template/j1.jpg" id="j3" alt="Nature" style="width:100%"
+                >
+            </div>
+
+            <div class="column">
+              <img src="http://127.0.0.1:8000/media/template/j1.jpg" id="s1" alt="Nature" style="width:100%"
+                >
+            </div>
+
+            <div class="column">
+              <img src="http://127.0.0.1:8000/media/template/j1.jpg" id="s2" alt="Nature" style="width:100%"
+                >
+            </div>
+
+            <div class="column">
+              <img src="http://127.0.0.1:8000/media/template/j1.jpg" id="s3" alt="Nature" style="width:100%"
+                >
+            </div> -->
+
+
+          </div>
+
+
+
+        </div>
+        <!--<div class="drop-zone__thumb" data-label="myFile.txt"></div>-->
+      </div>
+    </div>
+    <div class="grid1"></div>
+
+    <!-----------------lower content-------------------------->
+    <div class="container2">
+      <div class="grid1"></div>
+      <input type="submit" id="submit-all" value="Upload"/>
+      <div class="grid1"></div>
+    </div>
+  </div>
+
+
+
+
+  <!--Script for Dropzone.js-->
+ 
+
+  
+</body>
+
+</html>

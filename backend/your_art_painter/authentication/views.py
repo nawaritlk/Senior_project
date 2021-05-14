@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
+from create_your_art.models import upload,output,style
 
 
 @csrf_exempt
@@ -36,7 +37,7 @@ def register(request):
             else:
                 registerdata = User.objects.create_user(username=username, email=email, password=password)
                 registerdata.save()
-                # login(request, User)
+                login(request, User)
                 return redirect('homepage')
         else:
             messages.error(request, 'Password and Confirm Password Not Matched')
@@ -52,3 +53,43 @@ def homepage(request):
 
 def forgetpassword(request):
     return render(request, 'forgetPassword.html')
+
+
+@csrf_exempt
+def login_before(request):
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        print(username, password)
+        user = authenticate(request, username=username, password=password)
+        print(user)
+        if user is not None:
+            login(request,user)
+            return redirect('homepage')
+        else:
+            print('invalid user')
+    return render(request, 'login_before.html')
+
+def profile(request):
+    data = output.objects.filter(user=request.user)
+    content = upload.objects.filter(user=request.user)
+    print(content)
+    # content = output.objects.filter(content__id=image_id)
+    print(data)
+    context={
+      'data': data
+    
+    }
+    return render(request, 'profile.html', context)
+    
+def community(request):
+    data = output.objects.all()
+    # output2 = output.objects.select_related(max_depth=2).all()
+    print(data)
+    # for i in output2:
+    #   print(i.content)
+    context={
+      'data': data
+    
+    }
+    return render(request, 'community.html', context)

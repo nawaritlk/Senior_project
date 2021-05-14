@@ -10,10 +10,11 @@ from django.views.decorators.csrf import csrf_exempt
 
 # model NST import
 #!/usr/bin/env python3
+import scipy.misc
 from PIL import Image
 import matplotlib
 import matplotlib.pyplot as plt
-matplotlib.use ('Agg')
+matplotlib.use ('TkAgg')
 import numpy as np
 
 import torch
@@ -52,7 +53,7 @@ def create(request):
 def submission(request):
     return render(request, 'submission.html')
 
-
+@login_required
 def file_upload_view(request):
     if request.user.is_authenticated:
         if request.method == 'POST':
@@ -66,7 +67,7 @@ def file_upload_view(request):
             content = upload.objects.latest('timestamp')
             style_img = style.objects.latest('timestamp')
 
-            NST(requests, my_file, current_user, content, style_img)
+            # NST(requests, my_file, current_user, content, style_img)
             # print(generate)
 
             # generate = NST(requests, my_file, current_user)
@@ -79,7 +80,7 @@ def file_upload_view(request):
 
             # generateimg.save()
 
-            return redirect('profile')
+            return NST(requests, my_file, current_user, content, style_img)
 
     return JsonResponse({'post': 'false'})
 
@@ -234,7 +235,7 @@ def train(content_image,content_weight,style_image,style_weight,model,steps,devi
         #print('Iteration ',ii,' / content loss = ',content_loss.item(),'  style loss = ',style_loss.item(),' => total loss = ',total_loss.item())
     return target,result
 
-def main(image_type,style,style_weight,content,content_weight,pool,iteration):
+def main(image_type,style,style_weight,content,content_weight,pool,iteration,current_user, contentforsave, styleforsave):
     #importing model features   
     if pool == 'max':
         print('VGG19 using max pooling')
@@ -281,9 +282,10 @@ def main(image_type,style,style_weight,content,content_weight,pool,iteration):
     print('histogram matching')
     multi = True if target.shape[-1] > 1 else False
     preserve_img = exposure.match_histograms(target, content, multichannel = multi)
-    # plt.imshow(preserve_img)
-    # plt.axis('off')
-    # plt.show()
+    plt.imshow(preserve_img)
+    plt.axis('off')
+    plt.show()
+    print(type(preserve_img))
 
     # save_image(preserve_img, 'result.jpg')
     # save_image(target, 'result.jpg')
@@ -311,9 +313,14 @@ def NST(request, content,current_user, contentforsave, styleforsave):
     STYLE_WEIGHT = 1e6
     MODEL_POOLING = 'max' # or 'avg'
 
-    generate_image = main(IMAGE_TYPE,STYLE_IMG,STYLE_WEIGHT,CONTENT_IMG,CONTENT_WEIGHT,MODEL_POOLING,ITERATION)
-    generate_img = Image.fromarray(generate_image, 'RGB')
-    # generate_img1 = Image.open(generate_img).convert('RGB')
+    generate_image = main(IMAGE_TYPE,STYLE_IMG,STYLE_WEIGHT,CONTENT_IMG,CONTENT_WEIGHT,MODEL_POOLING,ITERATION,current_user, contentforsave,styleforsave)
+    
+    generate_img = scipy.misc.toimage(generate_image)
+
+    plt.imshow(generate_img)
+    print(generate_img.size)
+    plt.axis('off')
+    plt.show()
 
     genIO = BytesIO()
     generate_img.save(genIO, format='JPEG')
@@ -321,6 +328,16 @@ def NST(request, content,current_user, contentforsave, styleforsave):
     generateimg = output.objects.create(user=current_user,content=contentforsave,generate_img=generate_image,style=styleforsave)
 
     generateimg.save()
+    
+    # generate_img = Image.fromarray(generate_image, 'RGB')
+    # # generate_img1 = Image.open(generate_img).convert('RGB')
+
+    # genIO = BytesIO()
+    # generate_img.save(genIO, format='JPEG')
+    # generate_image = InMemoryUploadedFile(genIO, None, '123.jpeg', 'media/upload',genIO.tell(), None)
+    # generateimg = output.objects.create(user=current_user,content=contentforsave,generate_img=generate_image,style=styleforsave)
+
+    # generateimg.save()
 
 
 

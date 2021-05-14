@@ -17,6 +17,9 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -33,6 +36,9 @@ INSTALLED_APPS = [
     'register',
     'authentication',
     'temp',
+
+    # third party
+    "django_extensions",
 ]
 
 MIDDLEWARE = [
@@ -72,7 +78,7 @@ WSGI_APPLICATION = 'your_art_painter.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE':  'djongo',  # 'django.db.backends.sqlite3',
-        'NAME':  'Test' # databse ######
+        'NAME':  'your_art_painter' # databse ######
         #os.path.join(BASE_DIR, 'db.sqlite3'),
 
     }
@@ -134,7 +140,7 @@ STATICFIES_DIRS = [ os.path.join(BASE_DIR, 'static'),
                     os.path.join(BASE_DIR, 'media')
                    ]
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 MESSAGE_TAGS = {
@@ -149,8 +155,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_POST = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
+EMAIL_HOST_USER = 'money0700@gmail.com'
+EMAIL_HOST_PASSWORD = '0901721457'
+# EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
+# EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
+DEFUALT_FROM_EMAIL = EMAIL_HOST_USER
 
 # Login
-LOGIN_URL = '/auth/authlogin/'
+LOGIN_URL = '/auth/login/'

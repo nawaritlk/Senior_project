@@ -234,7 +234,7 @@
       <p class="text1">Upload photo</p>
       <div class="content1">
 
-        <form enctype="multipart/form-data" action="/create/submission/ " class="dropzone dz" id="my-dropzone"
+        <form enctype="multipart/form-data" action="/create/upload/ " class="dropzone dz" id="my-dropzone"
           method="post">
           {% csrf_token %}
           <div class="fallback">
@@ -274,6 +274,19 @@
       <input type="submit" id="submit-all" value="Upload"/>
       <div class="grid1"></div>
     </div>
+    <div class="container2">
+        <div class="grid1"></div>
+        <input
+          type="submit"
+          id="submit-all"
+          value="Upload"
+          a
+          href="/submission"
+        />
+        <!--<a href="/create" id="createNow-btn">Create Your Art work</a>-->
+        <div class="grid1"></div>
+      </div>
+    </div>
   </div>
 
 
@@ -289,8 +302,8 @@
       addRemoveLinks: true,
       autoProcessQueue: false,
       maxFiles: 1,
-      resizeWidth: 224,
-      resizeHeight: 224,
+      //resizeWidth: 224,
+      //resizeHeight: 224,
       renameFile: function (file) {
         let newName = new Date().getTime() + "_" + file.name;
         return newName;
@@ -329,23 +342,24 @@
   <script type="text/javascript">
     Dropzone.autoDiscover = false;
 
-    var myDropzone = new Dropzone("#my-dropzone", {
-      acceptedFiles: ".jpeg,.jpg,.png,.gif",
-      uploadMultiple: false,
-      addRemoveLinks: true,
-      autoProcessQueue: false,
-      maxFiles: 1,
-      resizeWidth: 224,
-      resizeHeight: 224,
-      renameFile: function (file) {
-        let newName = new Date().getTime() + "_" + file.name;
-        return newName;
-      },
-      init: function () {
-        this.on("maxfilesexceeded", function (file) {
-          this.removeAllFiles();
-          this.addFile(file);
-        });
+      var myDropzone = new Dropzone("#my-dropzone", {
+        acceptedFiles: ".jpeg,.jpg,.png,.gif",
+        uploadMultiple: false,
+        addRemoveLinks: true,
+        autoProcessQueue: false,
+        timeout: 180000,
+        maxFiles: 1,
+        resizeWidth: 224,
+        resizeHeight: 224,
+        renameFile: function (file) {
+          let newName = new Date().getTime() + "_" + file.name;
+          return newName;
+        },
+        init: function () {
+          this.on("maxfilesexceeded", function (file) {
+            this.removeAllFiles();
+            this.addFile(file);
+          });
 
         var submitButton = document.querySelector("#submit-all")
         myDropzone = this;
