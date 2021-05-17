@@ -10,6 +10,7 @@ from .models import Like
 
 
 # Create your views here.
+@login_required
 def community(request):
     data = output.objects.all()
     liked_post = Like.objects.filter(user=request.user)
@@ -30,6 +31,8 @@ def liked(request, pk):
     already_liked = Like.objects.filter(post=post, user=request.user)
     if not already_liked:
         liked_post = Like(post=post, user=request.user)
+        post.total_like = post.total_like+1
+        post.save()
         liked_post.save()
     return HttpResponseRedirect(reverse('community'))
 
@@ -38,4 +41,8 @@ def unliked(request, pk):
     post = output.objects.get(pk=pk)
     already_liked = Like.objects.filter(post=post,user=request.user)
     already_liked.delete()
+    post.total_like = post.total_like-1
+    post.save()
+    # total_like = countingLike(total_like=all_like)
+    # total_like.save()
     return HttpResponseRedirect(reverse('community'))

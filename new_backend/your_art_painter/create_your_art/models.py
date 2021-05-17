@@ -33,13 +33,10 @@ class output(models.Model):
     generate_img = models.ImageField(upload_to = get_file_output)
     content = models.ForeignKey('create_your_art.upload',on_delete= models.CASCADE, related_name='content')
     style = models.ForeignKey('create_your_art.style',on_delete= models.CASCADE, related_name='style', default='1')
+    total_like = models.IntegerField(default='0')
+    public = models.BooleanField(default=True)
     directory_string_var = 'output'
 
-class generateNST(models.Model):
-    timestamp = models.DateTimeField(auto_now_add=True)
-    user = models.ForeignKey(User, on_delete = models.CASCADE)
-    content = models.ForeignKey(upload, on_delete= models.CASCADE)
-    generate = models.ForeignKey(output, on_delete= models.CASCADE)
 
 class style(models.Model):
     timestamp = models.DateTimeField(auto_now_add=True)

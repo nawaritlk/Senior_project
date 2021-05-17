@@ -1,2 +1,400 @@
+{% include 'menubar.html' %}
 <!DOCTYPE html>
-{{user.upload.image}}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+  <script src="./path/to/dropzone.js"></script>
+  <!-- Dropzone.js -->
+  <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
+  <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css" />
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script&family=Playfair+Display&display=swap");
+
+    /*
+          font-family: 'Dancing Script', cursive;
+          font-family: 'DM Serif Display', serif;
+          font-family: 'Playfair Display', serif;*/
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /*font-family: 'Montserrat', sans-serif;*/
+    }
+
+    body {
+      background-color: #f8e8db;
+    }
+
+    /***********************media setting*************************/
+    @media only screen and (min-width: 1254px) {
+      .grid-container1 {
+        display: grid;
+        grid-template-columns: 12% 500px 100px 500px;
+        float: left;
+      }
+
+      .grid-menu {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 400px 200px 180px auto;
+      }
+    }
+
+    /***************grid setting******************/
+
+    .grid1 {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 5%;
+      margin-top: 5%;
+    }
+
+    .grid2 {
+      width: 100%;
+    }
+
+    .logo {
+      font-size: 35px;
+      font-family: "Roboto", sans-serif;
+    }
+
+    #login-btn {
+      text-align: right;
+      margin-right: 3%;
+      grid-column-end: -1;
+    }
+
+    /*******************content***************/
+    .content1 {
+      max-width: 500px;
+      height: 280px;
+      background-color: white;
+      place-content: center;
+      border: 1px solid #b8adad;
+      border-radius: 3px;
+    }
+
+    .content1 .dropzone {
+      position: relative;
+      left: 5%;
+      top: 5%;
+      right: 10%;
+      align-content: center;
+      width: 90%;
+      height: 90%;
+      padding: 25px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      cursor: pointer;
+      font-size: 25px;
+      font-weight: lighter;
+      color: #000000;
+      border: 5px dashed #c2cdda;
+      overflow: auto;
+    }
+
+    .dz {
+      border: dash !important;
+      border-color: #ccc !important;
+      border-radius: 10px !important;
+    }
+
+    .dz:hover {
+      background-color: aliceblue !important;
+    }
+
+    /*****************font setting********************/
+
+    p.text1 {
+      display: block;
+      margin-top: 3%;
+      line-height: 40px;
+      width: 150px;
+      height: 40px;
+      font-size: 20px;
+      text-align: center;
+      border: none;
+      border-top: 1px solid;
+      border-right: 1px solid;
+      border-left: 1px solid;
+      border-color: #b8adad;
+      border-radius: 3px;
+      background-color: white;
+    }
+
+    .lowerContent p.text2 {
+      font-size: 20px;
+      margin-top: 10%;
+    }
+
+    /************************lower content*****************************/
+
+    #email {
+      width: 700px;
+      height: 40px;
+      border: solid;
+      border-radius: 8px;
+      border-color: #b8adad;
+    }
+
+    .container2 {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: 500px 300px 150px;
+      float: left;
+    }
+
+    #submit-all {
+      width: 120px;
+      height: 40px;
+      border: solid;
+      border-color: #99653c;
+      border-radius: 8px;
+      color: white;
+      text-transform: uppercase;
+      font-size: 20px;
+      letter-spacing: 3px;
+      background: #99653c;
+    }
+
+    /***************picture style************************/
+
+    /* .populaStyle img {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+      width: 150px;
+
+
+
+    } */
+
+    /***********************style image sitting**********************/
+    .content2 {
+      max-width: 500px;
+      max-height: 280px;
+      background-color: white;
+      place-content: center;
+      border: 1px solid #b8adad;
+      border-radius: 3px;
+      overflow: auto;
+    }
+    .column {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      padding: 0 4px;
+      width: 100%;
+    }
+
+    .column img {
+      
+      cursor: pointer;
+    }
+    .column .btn {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%; 
+    }
+
+
+    .btn {
+      border: none;
+      outline: none;
+      padding: 5px 10px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+    }
+
+    .active,
+    .btn:hover {
+      background-color: rgb(167, 164, 164);
+      color: white;/* color text */
+    }
+
+    .btn img {
+      float: left;
+      width: 150px;
+      height: 150px;
+      object-fit: fill;
+    }
+  </style>
+  <title></title>
+</head>
+
+<body>
+  <div class="grid-container1">
+    <div class="grid1"></div>
+    <div class="grid1">
+      <h1>Photo</h1>
+      <p class="text1">Upload photo</p>
+      <div class="content1">
+
+        <form enctype="multipart/form-data" action="/temp/upload_temp/ " class="dropzone dz" id="my-dropzone"
+          method="post">
+          {% csrf_token %}
+          <div class="fallback">
+            <input name="file" type="file" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="grid1"></div>
+    <div class="grid1">
+      <h1>Style</h1>
+      <p class="text1">Popular styles</p>
+      <div class="content2">
+        <div class="column" id="myDIV" action="/temp/upload_temp/" method="post">
+          <button class="btn"><img src="http://127.0.0.1:8000/media/template/j1.jpg" alt="Nature"
+              style="width:100%" name = "style1"></button>
+          <button class="btn active"><img src="http://127.0.0.1:8000/media/template/j2.jpg" alt="Nature"
+              style="width:100%" name = "style2" ></button>
+          <button class="btn"><img src="http://127.0.0.1:8000/media/template/j3.jpg" alt="Nature"
+              style="width:100%" name = "style3"></button>
+          <button class="btn"><img src="http://127.0.0.1:8000/media/template/s1.jpg" alt="Nature"
+              style="width:100%" name = "style4"></button>
+          <button class="btn"><img src="http://127.0.0.1:8000/media/template/s2.jpg" alt="Nature"
+              style="width:100%" name = "style5"></button>
+          <button class="btn"><img src="http://127.0.0.1:8000/media/template/s3.jpg" alt="Nature"
+              style="width:100%" name = "style6" ></button>
+        </div>
+      </div>
+
+      <!--<div class="drop-zone__thumb" data-label="myFile.txt"></div>-->
+      
+    </div>
+    <div class="grid1"></div>
+    <!-----------------lower content-------------------------->
+    <div class="container2">
+      <div class="grid1"></div>
+      <input type="submit" id="submit-all" value="Upload"/>
+      <div class="grid1"></div>
+    </div>
+        <!--<a href="/create" id="createNow-btn">Create Your Art work</a>-->
+        <div class="grid1"></div>
+      {% for image in data %}
+      <a href="media/{{image.image}}}">image 1 url</a>
+      <!--<div class="drop-zone__thumb" data-label="myFile.txt"></div>-->
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--Script for Dropzone.js-->
+  <script type="text/javascript">
+    Dropzone.autoDiscover = false;
+
+    var myDropzone = new Dropzone("#my-dropzone", {
+      acceptedFiles: ".jpeg,.jpg,.png,.gif",
+      uploadMultiple: false,
+      addRemoveLinks: true,
+      autoProcessQueue: false,
+      maxFiles: 1,
+      //resizeWidth: 224,
+      //resizeHeight: 224,
+      renameFile: function (file) {
+        let newName = new Date().getTime() + "_" + file.name;
+        return newName;
+      },
+      init: function () {
+        this.on("maxfilesexceeded", function (file) {
+          this.removeAllFiles();
+          this.addFile(file);
+        });
+
+        var submitButton = document.querySelector("#submit-all")
+        myDropzone = this;
+
+        submitButton.addEventListener("click", function (e) {
+          e.stopPropagation();
+          e.preventDefault();
+          myDropzone.processQueue();
+        });
+      },
+    });
+
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("myDIV");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+
+  </script>
+
+  <!--Script for Dropzone.js-->
+  <script type="text/javascript">
+    Dropzone.autoDiscover = false;
+
+      var myDropzone = new Dropzone("#my-dropzone", {
+        acceptedFiles: ".jpeg,.jpg,.png,.gif",
+        uploadMultiple: false,
+        addRemoveLinks: true,
+        autoProcessQueue: false,
+        timeout: 180000,
+        maxFiles: 1,
+        resizeWidth: 224,
+        resizeHeight: 224,
+        renameFile: function (file) {
+          let newName = new Date().getTime() + "_" + file.name;
+          return newName;
+        },
+        init: function () {
+          this.on("maxfilesexceeded", function (file) {
+            this.removeAllFiles();
+            this.addFile(file);
+          });
+
+        var submitButton = document.querySelector("#submit-all")
+        myDropzone = this;
+
+        submitButton.addEventListener("click", function (e) {
+          e.stopPropagation();
+          e.preventDefault();
+          myDropzone.processQueue();
+        });
+      },
+    });
+
+    function test(){
+      $.ajax({
+        url: 'ajax/foo/',
+        data : {
+          'foo': foo,
+          'bar': bar
+        },
+        success: function (data) {
+        $("#idImg").html(data);
+    }
+});
+    }
+
+
+  </script>
+  <script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("myDIV");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+</body>
+
+</html>

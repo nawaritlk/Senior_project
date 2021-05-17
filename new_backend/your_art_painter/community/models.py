@@ -10,3 +10,7 @@ class Like(models.Model):
 
     def __str__(self):
         return '{} : {}'.format(self.user, self.post)
+
+# class countingLike(models.Model):
+#     total_like = models.IntegerField(default='0')
+#     post = models.ForeignKey(output, on_delete=models.CASCADE, related_name='all_liked_post')

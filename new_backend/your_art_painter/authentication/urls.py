@@ -16,6 +16,9 @@ urlpatterns = [
     path("login/", views.login_before, name = 'login'),
     path("", views.profile, name = 'profile'),
     path("delete/<pk>/", views.delete_output, name='delete-output'),
+    path("private/<pk>/", views.make_private, name='private'),
+    path("public/<pk>/", views.make_public, name='public'),
+
 
     #reset password
     path('password_reset/', auth_views.PasswordResetView.as_view(template_name="forgetpassword/password_reset_form.html"), name = 'password_reset'),

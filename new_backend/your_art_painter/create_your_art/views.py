@@ -60,24 +60,24 @@ def file_upload_view(request):
         if request.method == 'POST':
             current_user = request.user
             my_file = request.FILES.get('file')
-            style1 = request.POST.get('style1')
-            style2 = request.POST.get('style2')
-            style3 = request.POST.get('style3')
-            style4 = request.POST.get('style4')
-            style5 = request.POST.get('style5')
-            style6 = request.POST.get('style6')
+            # style1 = request.POST.get('style1')
+            # style2 = request.POST.get('style2')
+            # style3 = request.POST.get('style3')
+            # style4 = request.POST.get('style4')
+            # style5 = request.POST.get('style5')
+            # style6 = request.POST.get('style6')
 
-            if style1 == []:
-                print("empty")
+            # if style1 == []:
+            #     print("empty")
                 
-            print(style1)
+            # print(style1)
             # print('type of my_file : ',type(my_file))
-            # imagedata = upload.objects.create(user=current_user,image=my_file)
-            # imagedata.save()
-            # content = upload.objects.latest('timestamp')
-            # style_img = style.objects.latest('timestamp')
+            imagedata = upload.objects.create(user=current_user,image=my_file)
+            imagedata.save()
+            content = upload.objects.latest('timestamp')
+            style_img = style.objects.latest('timestamp')
 
-            # NST(requests, my_file, current_user, content, style_img)
+            NST(requests, my_file, current_user, content, style_img)
             # print(generate)
 
             # generate = NST(requests, my_file, current_user)
@@ -307,7 +307,7 @@ def main(image_type,style,style_weight,content,content_weight,pool,iteration,cur
 def NST(request, content,current_user, contentforsave, styleforsave):
 
     IMAGE_TYPE = 'url'
-    STYLE_IMG = 'http://127.0.0.1:8000/media/style/be6a9179-7a42-4c9d-ae57-db07a6c41a3b.jpg'
+    STYLE_IMG = 'http://127.0.0.1:8000/media/style/f4dbc7e6-b3e4-4019-abc3-3ae066b101e6.jpg'
     # STYLE_IMG = 'http://127.0.0.1:8000/media/upload/'+str(style)
     CONTENT_IMG = 'http://127.0.0.1:8000/media/upload/'+str(content)
     # or
@@ -336,10 +336,9 @@ def NST(request, content,current_user, contentforsave, styleforsave):
     genIO = BytesIO()
     generate_img.save(genIO, format='JPEG')
     generate_image = InMemoryUploadedFile(genIO, None, '123.jpeg', 'media/upload',genIO.tell(), None)
-    generateimg = output.objects.create(user=current_user,content=contentforsave,generate_img=generate_image,style=styleforsave)
+    generateimg = output.objects.create(user=current_user,content=contentforsave,generate_img=generate_image,style=styleforsave,total_like='0')
 
     generateimg.save()
-    
     # generate_img = Image.fromarray(generate_image, 'RGB')
     # # generate_img1 = Image.open(generate_img).convert('RGB')
 
