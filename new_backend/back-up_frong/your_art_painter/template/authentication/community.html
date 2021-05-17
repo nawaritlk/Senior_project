@@ -1,0 +1,211 @@
+{% include 'menubar.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script&family=Playfair+Display&display=swap');
+
+    /*
+      font-family: 'Dancing Script', cursive;
+      font-family: 'DM Serif Display', serif;
+      font-family: 'Playfair Display', serif;*/
+    * {
+      margin: 0;
+      padding: 0;
+      /*font-family: 'Montserrat', sans-serif;*/
+    }
+
+    body {
+      background-color: #F8E8DB;
+    }
+
+    /***********************grid*************************/
+      .grid-container1 {
+        display: grid;
+        margin-right: 50%;
+        grid-template-columns: auto 1000px auto;
+      }
+
+    /**************************counnt like******************************/
+
+    .countlike {
+      position: absolute;
+      font-size: 100px;
+      color: #F8E8DB;
+      letter-spacing: 3px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /************************* content**************************/
+    .bg {
+      height: auto;
+    }
+
+    .container {
+      height: auto;
+      width: auto;
+      background-color: #FCF7F7;
+    }
+
+    .container .wrapper {
+      position: relative;
+      height: 480px;
+      width: 75%;
+      background-color: aqua;
+      margin-left: 13%;
+      display: flex;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .wrapper .image {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .wrapper .image img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .wrapper .use-style {
+      position: absolute;
+      width: 100%;
+      background-color: bisque;
+      bottom: 0px;
+      font-size: 25px;
+      padding-left: 10%;
+      display: flex;
+    }
+
+    #like-btn {
+      padding-left: 65%;
+    }
+
+    /*************content2*************************/
+    .content2 {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 8%;
+    }
+
+    .block-imgInput {
+      margin-top: 3%;
+      width: 360px;
+      height: 250px;
+      border: solid 1px;
+      border-color: #000000;
+      border-radius: 10px;
+      margin-right: 3%;
+    }
+
+
+    .block-imgInput img {
+      display: flex;
+      align-content: center;
+      width: 315px;
+      height: 225px;
+      align-items: center;
+      text-align: center;
+      margin-top: 12.5px;
+      margin-left: 17.5px;
+    }
+
+    /********************************/
+    .block-style {
+      margin-top: 3%;
+      width: 360px;
+      height: 250px;
+      border: solid 1px;
+      border-color: #000000;
+      border-radius: 10px;
+    }
+
+
+    .block-style .imgInput img {
+      display: flex;
+      align-content: center;
+      width: 315px;
+      height: 225px;
+      align-items: center;
+      text-align: center;
+      margin-top: 12.5px;
+      margin-left: 17.5px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid-container1">
+    <div class="grid1"></div>
+    <div class="grid1">
+      <div class="container">
+        <!---------- picture1---------->
+        <div class="bg">
+          <div class="wrapper">
+
+            <div class="image">
+              <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\Union 1.png" alt="vango1" id="imgOutput">
+            </div>
+            <div class="countlike">&#10084;98</div>
+            <div class="use-style" id="use-styleID">
+              <p>use style</p>
+              <p id="like-btn">&#10084; like</p>
+            </div>
+          </div>
+          <div class="content2">
+            <div class="block-imgInput">
+              <div class="picInput">
+                <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\inputImg.png" alt="vango1">
+              </div>
+            </div>
+            <div class="block-style">
+              <div class="imgInput">
+                <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\v1.jpg" alt="vango1">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!---------- picture2---------->
+        <div class="wrapper">
+          <div class="image">
+            <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\Union 1.png" alt="vango1" id="imgOutput">
+          </div>
+          <div class="countlike">&#10084;98</div>
+          <div class="use-style" id="use-styleID">
+            <p>use style</p>
+            <p id="like-btn">&#10084; like</p>
+          </div>
+        </div>
+        <div class="content2">
+          <div class="block-imgInput">
+            <div class="picInput">
+              <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\inputImg.png" alt="vango1">
+            </div>
+          </div>
+          <div class="block-style">
+            <div class="imgInput">
+              <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\v1.jpg" alt="vango1">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="grid1"></div>
+
+  </div>
+</body>
+
+</html>
