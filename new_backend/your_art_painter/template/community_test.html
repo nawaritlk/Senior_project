@@ -59,7 +59,7 @@
       margin-left: 13%;
       display: flex;
       justify-content: center;
-      
+      overflow: hidden;
     }
 
     .wrapper .image {
@@ -79,7 +79,7 @@
 
     .wrapper .use-style {
       position: absolute;
-      width: 90%;
+      width: 100%;
       background-color: bisque;
       bottom: 0px;
       font-size: 25px;
@@ -90,25 +90,8 @@
     #like-btn {
       padding-left: 65%;
     }
-
-    /**********************use style css ***********************
-    .useStyle {
-      visibility: hidden;
-      width: 75%;
-      position: absolute;),
-      background-color: rgb(81, 13, 255);
-
-    }
-    .image img:hover .useStyle{
-      visibility: visible;
-      opacity: 0.8;
-
-    }
-    .textUse_style {
-      position: absolute;
-      width: 100px;
-      background-color: blanchedalmond;
-    }****/
+    /**********************use style css ***************************/
+   
 
     /*************content2*************************/
     .content2 {
@@ -172,27 +155,21 @@
         <!---------- picture1---------->
         <div class="bg">
         {% for content in data %}
+        {% if content.public %}
           <div class="wrapper">
 
             <div class="image">
-              <img src="http://127.0.0.1:8000/media/template/s3.jpg" id="imgOutput">
-              <!-- <div class="useStyle">
-                <div class="textUse_style">
-                  USE STYLE
-                </div>
-              </div> -->
+              <img src="/media/{{content.generate_img}}" id="imgOutput">
             </div>
-            <div class="countlike">&#10084;98</div>
-            
-             <div class="use-style" id="use-styleID">
+            <div class="countlike">&#10084;{{content.total_like}}</div>
+            <div class="use-style" id="use-styleID">
               <p>use style</p>
               {% if content.id in like_post_list %}
-              <a href="{% url 'unliked' pk=content.id %} " style="text-decoration: none; color:#A8A8A8"><p id="unlike-btn">&#x2661; unlike</p></a>
+              <a href="{% url 'unliked' pk=content.id %} " style="text-decoration: none; color:#A8A8A8"><p id="unlike-btn">&#10084;unlike</p></a>
               {% else %}
-              <a href="{% url 'liked' pk=content.id %}" style="text-decoration: none; color:#A8A8A8; text-align:right;"><p id="like-btn">&#10084; like</p></a>
+              <a href="{% url 'liked' pk=content.id %}" style="text-decoration: none; color:#A8A8A8; text-align:right;"><p id="like-btn">&#x2661;like</p></a>
               {% endif %}
-            </div> 
-
+            </div>
           </div>
           <div class="content2">
             <div class="block-imgInput">
@@ -206,6 +183,7 @@
               </div>
             </div>
           </div>
+          {% endif %}
           {% endfor%}
         </div>
 

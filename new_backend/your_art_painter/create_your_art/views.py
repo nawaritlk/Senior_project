@@ -307,7 +307,7 @@ def main(image_type,style,style_weight,content,content_weight,pool,iteration,cur
 def NST(request, content,current_user, contentforsave, styleforsave):
 
     IMAGE_TYPE = 'url'
-    STYLE_IMG = 'http://127.0.0.1:8000/media/style/f4dbc7e6-b3e4-4019-abc3-3ae066b101e6.jpg'
+    STYLE_IMG = 'http://127.0.0.1:8000/media/style/b683e69d-f20c-4d5f-87b4-181ea1d6d579.jpg'
     # STYLE_IMG = 'http://127.0.0.1:8000/media/upload/'+str(style)
     CONTENT_IMG = 'http://127.0.0.1:8000/media/upload/'+str(content)
     # or
@@ -326,7 +326,8 @@ def NST(request, content,current_user, contentforsave, styleforsave):
 
     generate_image = main(IMAGE_TYPE,STYLE_IMG,STYLE_WEIGHT,CONTENT_IMG,CONTENT_WEIGHT,MODEL_POOLING,ITERATION,current_user, contentforsave,styleforsave)
     
-    generate_img = scipy.misc.toimage(generate_image)
+    # generate_img = scipy.misc.toimage(generate_image)
+    generate_img = Image.fromarray(generate_image, 'RGB')
 
     plt.imshow(generate_img)
     print(generate_img.size)
