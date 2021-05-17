@@ -12,7 +12,7 @@ urlpatterns = [
     path('create/', include('create_your_art.urls')),
     path('submission/', include('create_your_art.urls')),
     path('profile/', include('authentication.urls')),
-    path('community/', include('authentication.urls')),
+    path('community/', include('community.urls')),
     # path('register/', include('authentication.urls')),
     path('auth/', include('authentication.urls')),
     path('temp/', include('temp.urls')),

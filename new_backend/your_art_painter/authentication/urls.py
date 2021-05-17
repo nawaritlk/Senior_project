@@ -3,6 +3,7 @@ from django.urls import path,include
 from . import views
 from django.contrib.auth import views as auth_views
 from django.conf.urls import *
+# app_name = "App_Posts"
 
 admin.autodiscover()
 
@@ -14,8 +15,7 @@ urlpatterns = [
     path("forgetpassword/", views.forgetpassword, name = 'forgetpassword'),
     path("login/", views.login_before, name = 'login'),
     path("", views.profile, name = 'profile'),
-    path("community",views.community, name = 'community'),
-
+    path("delete/<pk>/", views.delete_output, name='delete-output'),
 
     #reset password
     path('password_reset/', auth_views.PasswordResetView.as_view(template_name="forgetpassword/password_reset_form.html"), name = 'password_reset'),

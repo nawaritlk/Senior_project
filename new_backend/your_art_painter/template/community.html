@@ -161,7 +161,11 @@
             <div class="countlike">&#10084;98</div>
             <div class="use-style" id="use-styleID">
               <p>use style</p>
-              <p id="like-btn">&#10084; like</p>
+              {% if content.id in like_post_list %}
+              <a href="{% url 'unliked' pk=content.id %} " style="text-decoration: none; color:#A8A8A8"><p id="unlike-btn">&#x2661; unlike</p></a>
+              {% else %}
+              <a href="{% url 'liked' pk=content.id %}" style="text-decoration: none; color:#A8A8A8; text-align:right;"><p id="like-btn">&#10084; like</p></a>
+              {% endif %}
             </div>
           </div>
           <div class="content2">

@@ -1,9 +1,14 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponseRedirect
 from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from create_your_art.models import upload,output,style
+from django.contrib.auth.decorators import login_required
+from community.models import Like
+from django.db.models import Count
+# from .models import Like
+from django.urls import reverse
 
 
 @csrf_exempt
@@ -70,26 +75,36 @@ def login_before(request):
             print('invalid user')
     return render(request, 'login_before.html')
 
+@login_required
 def profile(request):
     data = output.objects.filter(user=request.user)
-    content = upload.objects.filter(user=request.user)
-    print(content)
-    # content = output.objects.filter(content__id=image_id)
-    print(data)
+    # liked_post_list = Like.objects.filter(user=request.user).count()
+    # liked_post_list = liked_post.values_list('post', flat=True)
+
+    print("data:", data)
+    # print("like_post:",liked_post_list)
+    # liked_post_list = liked_post.values_list('post', flat=True)
+    
+    # print(content)
+    # content = output.objects.filter(content__id=image_id))
     context={
-      'data': data
+      'data': data,
+    #   'like_post_list': liked_post_list
     
     }
     return render(request, 'profile.html', context)
+
     
-def community(request):
-    data = output.objects.all()
-    # output2 = output.objects.select_related(max_depth=2).all()
-    print(data)
-    # for i in output2:
-    #   print(i.content)
-    context={
-      'data': data
-    
-    }
-    return render(request, 'community.html', context)
+def delete_output(request, pk):
+    generate = output.objects.get(pk=pk)
+    print(generate)
+    generate.delete()
+    return HttpResponseRedirect(reverse('profile'))
+
+
+# @login_required
+# def unliked(request, pk):
+#     post = output.objects.get(pk=pk)
+#     already_liked = Like.objects.filter(post=post,user=request.user)
+#     already_liked.delete()
+#     return HttpResponseRedirect(reverse('community'))

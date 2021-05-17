@@ -1,10 +1,11 @@
 from django.http.response import JsonResponse
-from django.shortcuts import redirect, render
+from django.shortcuts import redirect, render, HttpResponseRedirect
 from django.http import HttpResponse
 from .models import upload, output, style
 from django.contrib.auth.decorators import login_required
 from django.core.files.uploadedfile import InMemoryUploadedFile
 from django.views.decorators.csrf import csrf_exempt
+from django.urls import reverse
 
 
 
@@ -59,13 +60,22 @@ def file_upload_view(request):
         if request.method == 'POST':
             current_user = request.user
             my_file = request.FILES.get('file')
-            # style = request.GET('style')
-            # print(style)
-            print('type of my_file : ',type(my_file))
-            imagedata = upload.objects.create(user=current_user,image=my_file)
-            imagedata.save()
-            content = upload.objects.latest('timestamp')
-            style_img = style.objects.latest('timestamp')
+            style1 = request.POST.get('style1')
+            style2 = request.POST.get('style2')
+            style3 = request.POST.get('style3')
+            style4 = request.POST.get('style4')
+            style5 = request.POST.get('style5')
+            style6 = request.POST.get('style6')
+
+            if style1 == []:
+                print("empty")
+                
+            print(style1)
+            # print('type of my_file : ',type(my_file))
+            # imagedata = upload.objects.create(user=current_user,image=my_file)
+            # imagedata.save()
+            # content = upload.objects.latest('timestamp')
+            # style_img = style.objects.latest('timestamp')
 
             # NST(requests, my_file, current_user, content, style_img)
             # print(generate)
@@ -80,7 +90,8 @@ def file_upload_view(request):
 
             # generateimg.save()
 
-            return NST(requests, my_file, current_user, content, style_img)
+            # return NST(requests, my_file, current_user, content, style_img)
+            return HttpResponseRedirect(reverse('homepage'))
 
     return JsonResponse({'post': 'false'})
 

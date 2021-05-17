@@ -364,7 +364,11 @@
           <div class="like">
             <div class="likecontent">
               <h1 id="emolove"> </i>&#10084;</h1>
-              <h1 id="numberloves"> </i>98</h1>
+              {% if content.id in like_post_list %}
+              <h1 id="numberloves"> </i>{{content.id.count}}</h1>
+              {% else %}
+              <h1 id="numberloves"> </i>0</h1>
+              {% endif %}
             </div>
             <p>like</p>
           </div>
@@ -372,7 +376,7 @@
         <div class="btn">
           <button class="download-btn">download</button>
           <button class="makePrv-btn">make it private</button>
-          <button class="delete-btn"><i class="fa fa-trash">&nbsp; &nbsp; </i>delete</button>
+           <a href="{% url 'delete-output' pk=content.id %}"><button class="delete-btn"><i class="fa fa-trash">&nbsp; &nbsp; </i>delete</button></a>
         </div>
       </div>
     </div>

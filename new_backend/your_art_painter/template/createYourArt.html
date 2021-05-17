@@ -249,21 +249,22 @@
       <h1>Style</h1>
       <p class="text1">Popular styles</p>
       <div class="content2">
-        <div class="column" id="myDIV">
+        <div class="column" id="myDIV" action="/create/upload/" method="post">
           <button class="btn"><img src="http://127.0.0.1:8000/media/template/j1.jpg" alt="Nature"
-              style="width:100%"></button>
+              style="width:100%" name = "style1"></button>
           <button class="btn active"><img src="http://127.0.0.1:8000/media/template/j2.jpg" alt="Nature"
-              style="width:100%"></button>
+              style="width:100%" name = "style2" ></button>
           <button class="btn"><img src="http://127.0.0.1:8000/media/template/j3.jpg" alt="Nature"
-              style="width:100%"></button>
+              style="width:100%" name = "style3"></button>
           <button class="btn"><img src="http://127.0.0.1:8000/media/template/s1.jpg" alt="Nature"
-              style="width:100%"></button>
+              style="width:100%" name = "style4"></button>
           <button class="btn"><img src="http://127.0.0.1:8000/media/template/s2.jpg" alt="Nature"
-              style="width:100%"></button>
+              style="width:100%" name = "style5"></button>
           <button class="btn"><img src="http://127.0.0.1:8000/media/template/s3.jpg" alt="Nature"
-              style="width:100%"></button>
+              style="width:100%" name = "style6" ></button>
         </div>
       </div>
+
       <!--<div class="drop-zone__thumb" data-label="myFile.txt"></div>-->
       
     </div>
@@ -274,17 +275,12 @@
       <input type="submit" id="submit-all" value="Upload"/>
       <div class="grid1"></div>
     </div>
-    <div class="container2">
-        <div class="grid1"></div>
-        <input
-          type="submit"
-          id="submit-all"
-          value="Upload"
-          a
-          href="/submission"
-        />
         <!--<a href="/create" id="createNow-btn">Create Your Art work</a>-->
         <div class="grid1"></div>
+      {% for image in data %}
+      <a href="media/{{iamge.image}}}">image 1 url</a>
+      <!--<div class="drop-zone__thumb" data-label="myFile.txt"></div>-->
+      {% endfor %}
       </div>
     </div>
   </div>
@@ -371,6 +367,19 @@
         });
       },
     });
+
+    function test(){
+      $.ajax({
+        url: 'ajax/foo/',
+        data : {
+          'foo': foo,
+          'bar': bar
+        },
+        success: function (data) {
+        $("#idImg").html(data);
+    }
+});
+    }
 
 
   </script>
