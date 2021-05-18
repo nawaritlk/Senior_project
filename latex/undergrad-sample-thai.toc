@@ -5,8 +5,6 @@
 \contentsline {chapterx}{\mdseries สารบัญ}{vii}{Doc-Start}%
 \contentsline {chapterx}{\mdseries สารบัญตาราง}{viii}{Doc-Start}%
 \contentsline {chapterx}{\mdseries สารบัญรูปภาพ}{ix}{Doc-Start}%
-\contentsline {chapterx}{\mdseries สารบัญสัญลักษณ์}{x}{Doc-Start}%
-\contentsline {chapterx}{\mdseries สารบัญคำศัพท์ทางเทคนิคและคำย่อ}{xi}{Doc-Start}%
 \contentsline {chapter}{\normalsize \bf \MakeUppercase {บทที่ {\numberline {1}\hskip -0.8em บทนำ}}}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}ที่มาและความสำคัญ}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}ประเภทของโครงงาน}{1}{section.1.2}%
@@ -49,7 +47,7 @@
 \contentsline {section}{\numberline {3.2}รายละเอียดของโครงงาน}{16}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}การทบทวนวรรณกรรม}{16}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Modeling}{17}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}System Requirements สำหรับเว็บแอพพลิเคชัน}{18}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.3}System Requirements สำหรับเว็บแอปพลิเคชัน}{18}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}แผนผังแสดงความสัมพันธ์ (Use Case Diagram)}{19}{subsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.2.5}แผนภาพกิจกรรม (Activity Diagram)}{20}{subsection.3.2.5}%
 \contentsline {subsubsection}{\numberline {3.2.5.1}ระบบลงชื่อเข้าใช้งาน}{20}{subsubsection.3.2.5.1}%
