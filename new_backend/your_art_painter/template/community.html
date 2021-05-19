@@ -1,259 +1,222 @@
 {% include 'menubar.html' %}
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script&family=Playfair+Display&display=swap");
 
-<head>
-  <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script&family=Playfair+Display&display=swap');
-
-    /*
+      /*
       font-family: 'Dancing Script', cursive;
       font-family: 'DM Serif Display', serif;
       font-family: 'Playfair Display', serif;*/
-    * {
-      margin: 0;
-      padding: 0;
-      /*font-family: 'Montserrat', sans-serif;*/
-    }
+      * {
+        margin: 0;
+        padding: 0;
+        /*font-family: 'Montserrat', sans-serif;*/
+      }
 
-    body {
-      background-color: #F8E8DB;
-    }
+      body {
+        background-color: #f8e8db;
+      }
 
-    /***********************grid*************************/
-    .grid-container1 {
-      display: grid;
-      margin-right: 50%;
-      grid-template-columns: auto 1000px auto;
-    }
+      /***********************grid*************************/
+      .grid-container1 {
+        display: grid;
+        margin-right: 50%;
+        grid-template-columns: auto 1000px auto;
+      }
 
-    /**************************counnt like******************************/
+      /**************************counnt like******************************/
 
-    .countlike {
-      position: absolute;
-      font-size: 100px;
-      color: #F8E8DB;
-      letter-spacing: 3px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+      .countlike {
+        position: absolute;
+        font-size: 100px;
+        color: #f8e8db;
+        letter-spacing: 3px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
 
-    /************************* content**************************/
-    .bg {
-      height: auto;
-    }
+      /************************* content**************************/
+      .bg {
+        height: auto;
+        justify-content: center;
+      }
 
-    .container {
-      height: auto;
-      width: 1100px;
-      background-color: #FCF7F7;
-      justify-content: center;
-      
-    }
+      .container {
+        height: auto;
+        width: 1100px;
+        background-color: #fcf7f7;
+        justify-content: center;
+      }
 
-    .container .wrapper {
-      position: relative;
-      height: 480px;
-      width: 74%;
-      background-color: aqua;
-      margin-left: 13%;
-      display: flex;
-      justify-content: center;
-      overflow: hidden;
-    }
+      .container .wrapper {
+        position: relative;
+        height: 480px;
+        width: 74%;
+        background-color: aqua;
+        margin-left: 13%;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+      }
 
-    .wrapper .image {
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+      .wrapper .image {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-    .wrapper .image img {
-      height: 480px;
-      width: 815px;
-      
-    }
+      .wrapper .image img {
+        height: 480px;
+        width: 815px;
+      }
 
-    .wrapper .use-style {
-      position: absolute;
-      width: 100%;
-      background-color: rgb(169, 169, 169);
-      bottom: 0px;
-      font-size: 25px;
-      
-    }
+      .wrapper .use-style {
+        position: absolute;
+        width: 100%;
+        background-color: rgb(169, 169, 169);
+        bottom: 0px;
+        font-size: 25px;
+      }
 
-    /* #like-btn {
+      /* #like-btn {
       padding-left: 50%;
     } */
 
-    /**********************use style css ***************************/
-    .btn {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      /*justify-content: flex-start;*/
-      padding: 5px;
-    }
-    .text_useStyle {
-      font-size: 20px;
-      text-decoration: none;
-      color: #FFF;
-      
-    }
+      /**********************use style css ***************************/
+      .btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /*justify-content: flex-start;*/
+        padding: 5px;
+      }
+      .text_useStyle {
+        font-size: 20px;
+        text-decoration: none;
+        color: #fff;
+      }
 
-    .material-icons {
-      position: relative;
-      top: 4px;
-      font-size: 20px;
-    } 
+      .material-icons {
+        position: relative;
+        top: 4px;
+        font-size: 20px;
+      }
 
-    .like-btn {
-      position: relative;
-      bottom: 3px;
-      padding-left: 15px;
-      text-decoration: none; 
-      color:#ffffff;
-      font-size: 22px;
-    }
+      .like-btn {
+        position: relative;
+        bottom: 3px;
+        padding-left: 15px;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 22px;
+      }
 
-    .unlike-btn {
-      position: relative;
-      bottom: 3px;
-      padding-left: 15px;
-      text-decoration: none; 
-      color:#ffffff;
-      font-size: 22px;
-    }
+      .unlike-btn {
+        position: relative;
+        bottom: 3px;
+        padding-left: 15px;
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 22px;
+      }
 
-    
+      /*************content2*************************/
+      .content2 {
+        display: flex;
+        justify-content: center;
 
-    /*************content2*************************/
-    .content2 {
-      display: flex;
-      justify-content: center;
-      
-      margin-bottom: 8%;
-    }
+        margin-bottom: 8%;
+      }
 
-    .block-imgInput {
-      margin-top: 2%;
-      padding-right: 0px;
-      margin-bottom: 2%;
-    }
-    
-    .block-imgInput img {
-      width: 400px;
-      height: 300px;
-      
-      
-      /* margin-top: 12.5px;
+      .block-imgInput {
+        margin-top: 2%;
+        padding-right: 0px;
+        margin-bottom: 2%;
+      }
+
+      .block-imgInput img {
+        width: 400px;
+        height: 300px;
+
+        /* margin-top: 12.5px;
       margin-left: 17.5px; */
-    }
+      }
 
-    /********************************/
-    .block-style {
-      margin-top: 2%;
-      padding-left: 15px;
-      margin-bottom: 2%;
-    }
+      /********************************/
+      .block-style {
+        margin-top: 2%;
+        padding-left: 15px;
+        margin-bottom: 2%;
+      }
 
-
-    .block-style .imgInput img {
-      width: 400px;
-      height: 300px;
-      /* margin-top: 12.5px;
+      .block-style .imgInput img {
+        width: 400px;
+        height: 300px;
+        /* margin-top: 12.5px;
       margin-left: 17.5px; */
+      }
+    </style>
+  </head>
 
-    }
-  </style>
-</head>
-
-<body>
-  <div class="grid-container1">
-    <div class="grid1"></div>
-    <div class="grid1">
-      <div class="container">
-        <!---------- picture1---------->
-        <div class="bg">
-          {% for content in data %}
-          {% if content.public %}
-          <div class="wrapper">
-
-            <div class="image">
-              <img src="/media/{{content.generate_img}}" id="imgOutput">
-            </div>
-            <div class="countlike">&#10084;{{content.total_like}}</div>
-            <div class="use-style" id="use-styleID">
-              <div class="btn">
-
-              <a href="#" class="text_useStyle"><i class="material-icons">image</i>USE STYLE</a>
-              {% if content.id in like_post_list %}
-              <a href="{% url 'unliked' pk=content.id %} " class="unlike-btn">
-                <p id="unlike-btn">&#x2661;UNLIKE</p>
-              </a>
-              {% else %}
-              <a href="{% url 'liked' pk=content.id %}" class="like-btn">
-                <p id="like-btn">&#10084;LIKE</p>
-              </a>
-              {% endif %}
-
+  <body>
+    <div class="grid-container1">
+      <div class="grid1"></div>
+      <div class="grid1">
+        <div class="container">
+          <!---------- picture1---------->
+          <div class="bg">
+            {% for content in data %} {% if content.public %}
+            <div class="wrapper">
+              <div class="image">
+                <img src="/media/{{content.generate_img}}" id="imgOutput" />
               </div>
-              
-              
-            </div>
-          </div>
-          <div class="content2">
-            <div class="block-imgInput">
-              <div class="picInput">
-                <img src="/media/{{content.content.image}}">
+              <div class="countlike">&#10084;{{content.total_like}}</div>
+              <div class="use-style" id="use-styleID">
+                <div class="btn">
+                  <!--<a href="#" class="text_useStyle"><i class="material-icons">image</i>USE STYLE</a>-->
+                  {% if content.id in like_post_list %}
+                  <a
+                    href="{% url 'unliked' pk=content.id %} "
+                    class="unlike-btn"
+                  >
+                    <p id="unlike-btn">&#x2661;UNLIKE</p>
+                  </a>
+                  {% else %}
+                  <a href="{% url 'liked' pk=content.id %}" class="like-btn">
+                    <p id="like-btn">&#10084;LIKE</p>
+                  </a>
+                  {% endif %}
+                </div>
               </div>
             </div>
-            <div class="block-style">
-              <div class="imgInput">
-                <img src="/media/{{content.style.image}}">
+            <div class="content2">
+              <div class="block-imgInput">
+                <div class="picInput">
+                  <img src="/media/{{content.content.image}}" />
+                </div>
+              </div>
+              <div class="block-style">
+                <div class="imgInput">
+                  <img src="/media/{{content.style.image}}" />
+                </div>
               </div>
             </div>
-          </div>
-          {% endif %}
-          {% endfor%}
-        </div>
-
-        <!---------- picture2---------->
-        <!--<div class="wrapper">
-          <div class="image">
-            <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\Union 1.png" alt="vango1" id="imgOutput">
-          </div>
-          <div class="countlike">&#10084;98</div>
-          <div class="use-style" id="use-styleID">
-            <p>use style</p>
-            <p id="like-btn">&#10084; like</p>
+            {% endif %} {% endfor%}
           </div>
         </div>
-        <div class="content2">
-          <div class="block-imgInput">
-            <div class="picInput">
-              <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\inputImg.png" alt="vango1">
-            </div>
-          </div>
-          <div class="block-style">
-            <div class="imgInput">
-              <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\v1.jpg" alt="vango1">
-            </div>
-          </div>
-        </div>-->
-
       </div>
+      <div class="grid1"></div>
     </div>
-    <div class="grid1"></div>
-
-  </div>
-</body>
-
+  </body>
 </html>
