@@ -3,6 +3,8 @@ from django.urls import path,include
 from . import views
 from django.contrib.auth import views as auth_views
 from django.conf.urls import *
+from django.views.static import serve
+from django.conf import settings
 # app_name = "App_Posts"
 
 admin.autodiscover()

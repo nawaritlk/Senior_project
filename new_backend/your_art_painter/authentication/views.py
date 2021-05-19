@@ -1,5 +1,6 @@
 
-from django.shortcuts import render, redirect, HttpResponseRedirect
+from django.http.response import Http404, HttpResponse
+from django.shortcuts import render, redirect, HttpResponseRedirect, HttpResponse
 from django.contrib.auth.models import User
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib import messages
@@ -7,6 +8,8 @@ from django.contrib.auth import authenticate, login, logout
 from create_your_art.models import upload,output,style
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse
+import os
+from django.conf import settings
 
 
 @csrf_exempt
@@ -106,3 +109,14 @@ def make_public(request, pk):
     generated.public=True
     generated.save()
     return HttpResponseRedirect(reverse('profile'))
+
+@login_required
+def download(request, path):
+    file_path=os.path.join(settings.MEDIA_ROOT,path)
+    if os.path.exists(file_path):
+        with open(file_path, 'rb')as fh:
+            response=HttpResponse(fh.read(),content_type="output/generate_img")
+            response['Content-Dispposition']='inline:filename='+os.path.basename(file_path)
+            return response
+    
+    return Http404

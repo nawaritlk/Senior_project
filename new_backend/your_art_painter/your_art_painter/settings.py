@@ -163,3 +163,5 @@ DEFUALT_FROM_EMAIL = EMAIL_HOST_USER
 
 # Login
 LOGIN_URL = '/auth/login/'
+
+# DEFAULT_FILE_STORAGE = 'db_file_storage.storage.DatabaseFileStorage'

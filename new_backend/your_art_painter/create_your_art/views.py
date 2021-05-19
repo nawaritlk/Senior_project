@@ -1,12 +1,11 @@
 from django.http.response import JsonResponse
 from django.shortcuts import redirect, render, HttpResponseRedirect
 from django.http import HttpResponse
-from .models import upload, output, style
 from django.contrib.auth.decorators import login_required
 from django.core.files.uploadedfile import InMemoryUploadedFile
 from django.views.decorators.csrf import csrf_exempt
 from django.urls import reverse
-
+from .models import style, upload, output
 
 
 # model NST import
@@ -43,15 +42,20 @@ from skimage import io
 @login_required
 @csrf_exempt
 def create(request):
-    style = upload.objects.all()
+    data = style.objects.all()
+    print(style)
     context = {
-        'style': style
+        'data': data
     }
     
 
     return render(request, 'createYourArt.html', context)
 
-def submission(request):
+def submission(request,pk):
+    style_image = style.objects.get(pk=pk)
+    content_image = upload.objects.latest(user=request.user)
+
+    NST(requests, my_file, current_user, content, style_img)
     return render(request, 'submission.html')
 
 @login_required
@@ -60,38 +64,11 @@ def file_upload_view(request):
         if request.method == 'POST':
             current_user = request.user
             my_file = request.FILES.get('file')
-            # style1 = request.POST.get('style1')
-            # style2 = request.POST.get('style2')
-            # style3 = request.POST.get('style3')
-            # style4 = request.POST.get('style4')
-            # style5 = request.POST.get('style5')
-            # style6 = request.POST.get('style6')
-
-            # if style1 == []:
-            #     print("empty")
-                
-            # print(style1)
-            # print('type of my_file : ',type(my_file))
+            print('my_file : ',my_file)
+            # save content image
             imagedata = upload.objects.create(user=current_user,image=my_file)
             imagedata.save()
-            content = upload.objects.latest('timestamp')
-            style_img = style.objects.latest('timestamp')
-
-            NST(requests, my_file, current_user, content, style_img)
-            # print(generate)
-
-            # generate = NST(requests, my_file, current_user)
-            # print(generate)
-
-            # genIO = BytesIO()
-            # generate.save(genIO, format='JPG')
-            # generate_img = InMemoryUploadedFile(genIO, None, '123.jpg', 'media/upload',genIO.tell(), None)
-            # generateimg = output.objects.create(user=current_user,generate_img=generate_img)
-
-            # generateimg.save()
-
-            # return NST(requests, my_file, current_user, content, style_img)
-            return HttpResponseRedirect(reverse('homepage'))
+            return HttpResponse("")
 
     return JsonResponse({'post': 'false'})
 
@@ -319,41 +296,25 @@ def NST(request, content,current_user, contentforsave, styleforsave):
     # showAImg(content)
     # print(CONTENT_IMG)
 
-    ITERATION = 5
+    ADAM_LR = 0.03 
+    NUM_EPOCHS = 50
+    # ADAM_LR = 0.003  
+    # NUM_EPOCHS = 500
+    STYLE_WEIGHT = 1e1
+    CONTENT_WEIGHT = 1e-1
+    IMG_SIZE = (224,224)
     CONTENT_WEIGHT = 1e-2
     STYLE_WEIGHT = 1e6
     MODEL_POOLING = 'max' # or 'avg'
+    METHOD = 'after' # 'before'
+    COLOR = None # 'histogram', 'luminance'
 
-    generate_image = main(IMAGE_TYPE,STYLE_IMG,STYLE_WEIGHT,CONTENT_IMG,CONTENT_WEIGHT,MODEL_POOLING,ITERATION,current_user, contentforsave,styleforsave)
-    
-    generate_img = scipy.misc.toimage(generate_image)
-
-    plt.imshow(generate_img)
-    print(generate_img.size)
-    plt.axis('off')
-    plt.show()
-
+    generate = main(MODEL_POOLING,IMG_SIZE,STYLE_IMG,CONTENT_IMG,METHOD,COLOR,NUM_EPOCHS,ADAM_LR,STYLE_WEIGHT,CONTENT_WEIGHT)
+    generate_img = scipy.misc.toimage(generate)
     genIO = BytesIO()
     generate_img.save(genIO, format='JPEG')
     generate_image = InMemoryUploadedFile(genIO, None, '123.jpeg', 'media/upload',genIO.tell(), None)
-    generateimg = output.objects.create(user=current_user,content=contentforsave,generate_img=generate_image,style=styleforsave,total_like='0')
+    generateimg = output.objects.create(user=current_user,content=contentforsave,generate_img=generate_image,style=styleforsave)
 
     generateimg.save()
-    # generate_img = Image.fromarray(generate_image, 'RGB')
-    # # generate_img1 = Image.open(generate_img).convert('RGB')
-
-    # genIO = BytesIO()
-    # generate_img.save(genIO, format='JPEG')
-    # generate_image = InMemoryUploadedFile(genIO, None, '123.jpeg', 'media/upload',genIO.tell(), None)
-    # generateimg = output.objects.create(user=current_user,content=contentforsave,generate_img=generate_image,style=styleforsave)
-
-    # generateimg.save()
-
-
-
-
-    # return generate_img
-
-
-    # current_user = request.user
 

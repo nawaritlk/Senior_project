@@ -370,7 +370,7 @@
           </div>
         </div>
         <div class="btn">
-          <button class="download-btn">download</button>
+          <a href="{{ content.generate_img.url }}" download="{{ content.generate_img.url }}"><button class="download-btn">download</button>
           {% if content.public %}
           <a href="{% url 'private' pk=content.id %}"><button class="makePrv-btn">make it private</button></a>
           {% else %}

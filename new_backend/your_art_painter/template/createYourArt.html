@@ -5,10 +5,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
-  <script src="./path/to/dropzone.js"></script>
   <!-- Dropzone.js -->
   <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
   <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
 
   <style>
     @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script&family=Playfair+Display&display=swap");
@@ -238,9 +239,9 @@
           method="post">
           {% csrf_token %}
           <div class="fallback">
-            <input name="file" type="file" />
+            <input name="file" type="file" >
           </div>
-        </form>
+          </form>
       </div>
     </div>
 
@@ -249,9 +250,10 @@
       <h1>Style</h1>
       <p class="text1">Popular styles</p>
       <div class="content2">
-        <div class="column" id="myDIV" action="/create/upload/" method="post">
-          <button class="btn"><img src="http://127.0.0.1:8000/media/template/j1.jpg" alt="Nature"
-              style="width:100%" name = "style1"></button>
+      
+        <div class="column" id="myDIV" action="/create/submission/" method="post">
+         <button class="btn"><img src="http://127.0.0.1:8000/media/template/j1.jpg" alt="Nature"
+              style="width:100%" name = "style1" onclick="test(event)"></button>
           <button class="btn active"><img src="http://127.0.0.1:8000/media/template/j2.jpg" alt="Nature"
               style="width:100%" name = "style2" ></button>
           <button class="btn"><img src="http://127.0.0.1:8000/media/template/j3.jpg" alt="Nature"
@@ -265,135 +267,81 @@
         </div>
       </div>
 
+
       <!--<div class="drop-zone__thumb" data-label="myFile.txt"></div>-->
       
     </div>
     <div class="grid1"></div>
     <!-----------------lower content-------------------------->
-    <div class="container2">
+    <!--<div class="container2">
       <div class="grid1"></div>
       <input type="submit" id="submit-all" value="Upload"/>
       <div class="grid1"></div>
-    </div>
+    </div>-->
         <!--<a href="/create" id="createNow-btn">Create Your Art work</a>-->
         <div class="grid1"></div>
-      {% for image in data %}
-      <a href="media/{{image.image}}}">image 1 url</a>
       <!--<div class="drop-zone__thumb" data-label="myFile.txt"></div>-->
-      {% endfor %}
       </div>
     </div>
   </div>
 
+{% comment %} <script>
 
-
-
-  <!--Script for Dropzone.js-->
-  <script type="text/javascript">
-    Dropzone.autoDiscover = false;
-
-    var myDropzone = new Dropzone("#my-dropzone", {
-      acceptedFiles: ".jpeg,.jpg,.png,.gif",
-      uploadMultiple: false,
-      addRemoveLinks: true,
-      autoProcessQueue: false,
-      maxFiles: 1,
-      //resizeWidth: 224,
-      //resizeHeight: 224,
-      renameFile: function (file) {
-        let newName = new Date().getTime() + "_" + file.name;
-        return newName;
-      },
-      init: function () {
-        this.on("maxfilesexceeded", function (file) {
-          this.removeAllFiles();
-          this.addFile(file);
-        });
-
-        var submitButton = document.querySelector("#submit-all")
-        myDropzone = this;
-
-        submitButton.addEventListener("click", function (e) {
-          e.stopPropagation();
-          e.preventDefault();
-          myDropzone.processQueue();
-        });
-      },
-    });
-
-    // Add active class to the current button (highlight it)
-    var header = document.getElementById("myDIV");
-    var btns = header.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
+// Add active class to the current button (highlight it)
+  var header = document.getElementById("#myDIV");
+  var btns = document.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
       });
     }
+</script> {% endcomment %}
+<script>
+function test(event){
+  
+}
+</script>
+<script type="text/javascript">
+var submitButton = document.querySelector("#submit-all")
+submitButton.addEventListener("click", function (event) {
+  event.stopPropagation();
+  event.preventDefault();
 
-  </script>
-
-  <!--Script for Dropzone.js-->
-  <script type="text/javascript">
-    Dropzone.autoDiscover = false;
-
-      var myDropzone = new Dropzone("#my-dropzone", {
-        acceptedFiles: ".jpeg,.jpg,.png,.gif",
-        uploadMultiple: false,
-        addRemoveLinks: true,
-        autoProcessQueue: false,
-        timeout: 180000,
-        maxFiles: 1,
-        resizeWidth: 224,
-        resizeHeight: 224,
-        renameFile: function (file) {
-          let newName = new Date().getTime() + "_" + file.name;
-          return newName;
-        },
-        init: function () {
-          this.on("maxfilesexceeded", function (file) {
-            this.removeAllFiles();
-            this.addFile(file);
-          });
-
-        var submitButton = document.querySelector("#submit-all")
-        myDropzone = this;
-
-        submitButton.addEventListener("click", function (e) {
-          e.stopPropagation();
-          e.preventDefault();
-          myDropzone.processQueue();
-        });
-      },
-    });
-
-    function test(){
-      $.ajax({
-        url: 'ajax/foo/',
-        data : {
-          'foo': foo,
-          'bar': bar
-        },
-        success: function (data) {
-        $("#idImg").html(data);
-    }
-});
-    }
+  return false;
+  });
+</script>
 
 
-  </script>
-  <script>
-    // Add active class to the current button (highlight it)
-    var header = document.getElementById("myDIV");
-    var btns = header.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function () {
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
+
+
+<!--Script for Dropzone.js-->
+<script type="text/javascript">
+Dropzone.autoDiscover = false;
+
+var myDropzone = new Dropzone("#my-dropzone", {
+  acceptedFiles: ".jpeg,.jpg,.png,.gif",
+  uploadMultiple: false,
+  addRemoveLinks: true,
+  //autoProcessQueue: false,
+  timeout: 180000,
+  maxFiles: 1,
+  resizeWidth: 224,
+  resizeHeight: 224,
+  renameFile: function (file) {
+    let newName = new Date().getTime() + "_" + file.name;
+    return newName;
+    },
+  init: function () {
+    this.on("maxfilesexceeded", function (file) {
+      this.removeAllFiles();
+      this.addFile(file);
       });
-    }
+    },
+  });
+
+
   </script>
 </body>
 
