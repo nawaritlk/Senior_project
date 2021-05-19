@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Font Awesome Icons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Get your own code at fontawesome.com-->
+</head>
+<style>
+    #myDIV {
+        float: left;
+        width: 100%;
+        max-width: 400px;
+    }
+    .btn {
+      border: none;
+      outline: none;
+      padding: 10px 16px;
+      background-color: #f1f1f1;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    .active,
+    .btn:hover {
+      background-color: #666;
+      color: white;
+    }
+
+
+</style>
+
+<body>
+  <div class="row">
+    <div id="myDIV">
+      <button class="btn"><img src="http://127.0.0.1:8000/media/template/s3.jpg"  alt="Nature" style="width:100%"></button>
+      <button class="btn active"><img src="http://127.0.0.1:8000/media/template/s3.jpg"  alt="Nature" style="width:100%"></button>
+      <button class="btn"><img src="http://127.0.0.1:8000/media/template/s3.jpg"  alt="Nature" style="width:100%"></button>
+      <button class="btn"><img src="http://127.0.0.1:8000/media/template/s3.jpg"  alt="Nature" style="width:100%"></button>
+    </div>
+  </div>
+
+    
+
+
+    
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+      </script>
+
+
+</body>
+
+</html>
