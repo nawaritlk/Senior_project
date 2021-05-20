@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.2) (preloaded format=xelatex 2021.2.24)  18 MAY 2021 22:13
+This is XeTeX, Version 3.141592653-2.6-0.999993 (MiKTeX 21.2) (preloaded format=xelatex 2021.2.24)  20 MAY 2021 13:14
 entering extended mode
 **e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex
 (e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex
@@ -540,21 +540,7 @@ LaTeX Font Info:    Font shape `TU/THSarabunNew(1)/m/n' will be
 \c@theorem=\count303
 \c@lemma=\count304
 \c@corollary=\count305
- (undergrad-sample-thai.aux
-LaTeX Info: Redefining \rmfamily on input line 19.
-LaTeX Info: Redefining \sffamily on input line 19.
-LaTeX Info: Redefining \ttfamily on input line 19.
-LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
-(Font)              scaled to size 12.29996pt on input line 19.
-\thai@year=\count306
-
-
-LaTeX Warning: Label `fig:ad-howTouse' multiply defined.
-
-
-LaTeX Warning: Label `tbl:ad-howTouse' multiply defined.
-
-)
+ (undergrad-sample-thai.aux)
 \openout1 = `undergrad-sample-thai.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
@@ -629,14 +615,17 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (C:\Users\nawar\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count307
+\c@section@level=\count306
 )
 LaTeX Info: Redefining \ref on input line 116.
 LaTeX Info: Redefining \pageref on input line 116.
 LaTeX Info: Redefining \nameref on input line 116.
- (undergrad-sample-thai.out) (undergrad-sample-thai.out)
 \@outlinefile=\write3
 \openout3 = `undergrad-sample-thai.out'.
+
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 LaTeX Info: Redefining \rmfamily on input line 116.
 LaTeX Info: Redefining \sffamily on input line 116.
@@ -644,11 +633,13 @@ LaTeX Info: Redefining \ttfamily on input line 116.
 LaTeX Info: Redefining \rmfamily on input line 116.
 LaTeX Info: Redefining \sffamily on input line 116.
 LaTeX Info: Redefining \ttfamily on input line 116.
-\thai@year=\count308
+LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
+(Font)              scaled to size 12.29996pt on input line 116.
+\thai@year=\count307
 File: logo02.jpg Graphic file (type bmp)
 <logo02.jpg>
 Missing character: There is no ​ in font TH Sarabun New/OT:script=thai;language=dflt;!
- [1
+[1
 
 
 ]
@@ -682,6 +673,13 @@ Underfull \hbox (badness 10000) in alignment at lines 139--141
  []
 
 [2]
+LaTeX Info: Redefining \rmfamily on input line 151.
+LaTeX Info: Redefining \sffamily on input line 151.
+LaTeX Info: Redefining \ttfamily on input line 151.
+\thai@year=\count308
+LaTeX Info: Redefining \rmfamily on input line 151.
+LaTeX Info: Redefining \sffamily on input line 151.
+LaTeX Info: Redefining \ttfamily on input line 151.
 LaTeX Info: Redefining \rmfamily on input line 151.
 LaTeX Info: Redefining \sffamily on input line 151.
 LaTeX Info: Redefining \ttfamily on input line 151.
@@ -759,113 +757,109 @@ LaTeX Info: Redefining \ttfamily on input line 151.
 LaTeX Info: Redefining \rmfamily on input line 151.
 LaTeX Info: Redefining \sffamily on input line 151.
 LaTeX Info: Redefining \ttfamily on input line 151.
-LaTeX Info: Redefining \rmfamily on input line 151.
-LaTeX Info: Redefining \sffamily on input line 151.
-LaTeX Info: Redefining \ttfamily on input line 151.
-\thai@year=\count320
-LaTeX Info: Redefining \rmfamily on input line 151.
-LaTeX Info: Redefining \sffamily on input line 151.
-LaTeX Info: Redefining \ttfamily on input line 151.
  [3]
-LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
-(Font)              scaled to size 14.75995pt on input line 168.
-LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
-(Font)              scaled to size 14.75995pt on input line 168.
- [4
+LaTeX Font Info:    Font shape `TU/THSarabunNew(1)/m/n' will be
+(Font)              scaled to size 14.75995pt on input line 171.
+LaTeX Font Info:    Font shape `TU/THSarabunNew(1)/b/n' will be
+(Font)              scaled to size 14.75995pt on input line 171.
 
-] (undergrad-sample-thai.toc
-LaTeX Info: Redefining \rmfamily on input line 1.
-LaTeX Info: Redefining \sffamily on input line 1.
-LaTeX Info: Redefining \ttfamily on input line 1.
-\thai@year=\count321
- [5
-
-]
-Overfull \hbox (3.38525pt too wide) in paragraph at lines 72--72
- []  []\TU/THSarabunNew(0)/m/n/10 ทำการทดลองโดยใช้ target image เป็น noise image และ target image เป็นภาพที่มาจากการคัดลอก content 
+Overfull \hbox (0.94983pt too wide) in paragraph at lines 173--176
+[]\TU/THSarabunNew(0)/m/n/10 โครงงานนี้จะไม่สามารถเกิดขึ้นได้หากปราศจากความกรุณาจาก ผศ.ดร.ณัฐนาถ ฟาคุนเด๊ซ อาจารย์ที่ปรึกษาโครงการที่ได้ให้คำเสนอ 
  []
 
-[6])
+
+Overfull \hbox (3.75423pt too wide) in paragraph at lines 177--180
+[]\TU/THSarabunNew(0)/m/n/10 ผู้จัดทำโครงการจึงขอกราบขอบพระคุณเป็นอย่างสูงนอกจากนี้คณะผู้จัดทำขอขอบคุณเพื่อนนักศึกษาภาควิชาวิศวกรรมคอมพิวเตอร์ 
+ []
+
+[4
+
+]
+LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
+(Font)              scaled to size 14.75995pt on input line 192.
 \tf@toc=\write4
 \openout4 = `undergrad-sample-thai.toc'.
 
- [7] (undergrad-sample-thai.lot
-LaTeX Info: Redefining \rmfamily on input line 1.
-LaTeX Info: Redefining \sffamily on input line 1.
-LaTeX Info: Redefining \ttfamily on input line 1.
-\thai@year=\count322
-)
+ [5
+
+]
+LaTeX Font Info:    Font shape `TU/THSarabunNew(1)/b/n' will be
+(Font)              scaled to size 12.29996pt on input line 193.
 \tf@lot=\write5
 \openout5 = `undergrad-sample-thai.lot'.
 
- [8
+ [6
 
-] (undergrad-sample-thai.lof
-LaTeX Info: Redefining \rmfamily on input line 1.
-LaTeX Info: Redefining \sffamily on input line 1.
-LaTeX Info: Redefining \ttfamily on input line 1.
-\thai@year=\count323
-)
+]
 \tf@lof=\write6
 \openout6 = `undergrad-sample-thai.lof'.
 
- [9
+ [7
 
 ]
 บทที่ 1.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -9.84pt
-(hyperref)                removed on input line 224.
+(hyperref)                removed on input line 234.
 
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
-(Font)              scaled to size 17.71193pt on input line 224.
-LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
-(Font)              scaled to size 17.71193pt on input line 224.
+(Font)              scaled to size 17.71193pt on input line 234.
+LaTeX Font Info:    Font shape `TU/THSarabunNew(1)/m/n' will be
+(Font)              scaled to size 17.71193pt on input line 234.
+LaTeX Font Info:    Font shape `TU/THSarabunNew(1)/b/n' will be
+(Font)              scaled to size 17.71193pt on input line 234.
 
-Overfull \hbox (0.63002pt too wide) in paragraph at lines 233--234
+Overfull \hbox (0.63002pt too wide) in paragraph at lines 243--244
 \TU/THSarabunNew(0)/m/n/10 หรือเพิงพา โดยรูปภาพที่วาดออกมาจะเป็นภาพคน สัตว์ หรือการล่าสัตว์ ซึ่งแสดงให้เห็นถึงชีวิตความเป็นอยู่ของคนในยุคสมัยนั้น และหลัง-
  []
 
 
-Overfull \hbox (2.11829pt too wide) in paragraph at lines 233--234
+Overfull \hbox (2.11829pt too wide) in paragraph at lines 243--244
 \TU/THSarabunNew(0)/m/n/10 จากนั้นมนุษย์ได้มีการพัฒนาการวาดรูปอยู่ตลอดเวลา จากการวาดรูปตามผนังถ้ำ ตามผนังโบสถ์ หรือราชวังที่สำคัญต่างๆ จนมาเป็นวาดรูป-
  []
 
 
-Overfull \hbox (4.54138pt too wide) in paragraph at lines 233--234
+Overfull \hbox (4.54138pt too wide) in paragraph at lines 243--244
 \TU/THSarabunNew(0)/m/n/10 กด้วย ซึ่งศิลปินของโลกทางตะวันตกและตะวันออกก็มีลักษณะที่แตกต่างกัน และในแต่ละประเทศหรือศิลปินแต่ละท่านก็จะมีเทคนิควิธีการ-
  []
 
 
-Overfull \hbox (3.21303pt too wide) in paragraph at lines 238--239
+Overfull \hbox (3.21303pt too wide) in paragraph at lines 248--249
 []\TU/THSarabunNew(0)/m/n/10 นําเสนอความต้องการของผู้มีส่วนได้ส่วนเสียเฉพาะกลุ่ม ผลิตภัณฑ์ทางการค้าที่มีศักยภาพ และ เว็บแอปพลิเคชันสำหรับคอมพิวเตอร์ 
  []
 
 
-Overfull \hbox (5.6549pt too wide) in paragraph at lines 243--244
+Overfull \hbox (5.6549pt too wide) in paragraph at lines 253--254
 []\TU/THSarabunNew(0)/m/n/10 รวบรวมรูปภาพที่สร้างจากศิลปินที่มีชื่อเสียงและลักษณะภาพสามารถบอกได้ถึงเอกลักษณ์ของศิลปินท่านนั้นได้ โดยทางผู้จัด-
  []
 
 [1
 
 ]
-Overfull \hbox (13.6557pt too wide) in paragraph at lines 273--274
+Overfull \hbox (13.6557pt too wide) in paragraph at lines 283--284
 []\TU/THSarabunNew(0)/m/n/10 ในส่วนที่คณะผู้จัดทำจะทำการรวมรูปภาพที่สร้างโดยศิลปินหรือ Style image เข้ากับรูปภาพคนหรือสัตว์หรือ content image เข้าด้วย-
  []
 
 [2]
-Overfull \hbox (16.72484pt too wide) in paragraph at lines 332--334
-\TU/THSarabunNew(0)/m/n/10 หาข้อมูลและทดลองพัฒนาซอฟต์แวร์ตัวต้นแบบ ซึ่งสามารถแสดงรายการและระยะเวลาออกมาได้เป็นแผนภูมิแกนต์ดังตามตารางที่ [][]1.1[][]
+
+LaTeX Warning: Reference `tbl:plan1' on page 3 undefined on input line 342.
+
+
+LaTeX Warning: Reference `tbl:plan2' on page 3 undefined on input line 343.
+
+
+Overfull \hbox (12.93645pt too wide) in paragraph at lines 342--344
+\TU/THSarabunNew(0)/m/n/10 หาข้อมูลและทดลองพัฒนาซอฟต์แวร์ตัวต้นแบบ ซึ่งสามารถแสดงรายการและระยะเวลาออกมาได้เป็นแผนภูมิแกนต์ดังตามตารางที่ []
  []
 
 
-Overfull \hbox (0.6365pt too wide) in paragraph at lines 332--334
+Overfull \hbox (0.6365pt too wide) in paragraph at lines 342--344
 \TU/THSarabunNew(0)/m/n/10 และในส่วนภาคการศึกษาที่ 2 นั้นมุ่งเน้นไปที่การพัฒนาต่อยอดซอฟต์แวร์ตัวต้นแบบให้สามารถทำงานได้อย่างถูกต้อง ครบทุกฟังก์-
  []
 
 
-Overfull \hbox (1.3376pt too wide) in paragraph at lines 332--334
+Overfull \hbox (1.3376pt too wide) in paragraph at lines 342--344
 \TU/THSarabunNew(0)/m/n/10 ชันและแก้ไขปัญหาเมื่อซอฟต์แวร์ได้ทำงานในสภาพแวดล้อมจริง ตลอดจนถึงขั้นตอนสุดท้ายสามารถเขียนเป็นแผนภูมิแกนต์ ดังตา-
  []
 
@@ -873,7 +867,7 @@ Overfull \hbox (1.3376pt too wide) in paragraph at lines 332--334
 File: ./image/plan_table1.jpg Graphic file (type bmp)
 <./image/plan_table1.jpg>
 
-Overfull \hbox (7.82813pt too wide) in paragraph at lines 340--345
+Overfull \hbox (7.82813pt too wide) in paragraph at lines 350--355
  [][] 
  []
 
@@ -881,81 +875,440 @@ Overfull \hbox (7.82813pt too wide) in paragraph at lines 340--345
 File: ./image/plan_table2.jpg Graphic file (type bmp)
 <./image/plan_table2.jpg>
 
-Overfull \hbox (7.82813pt too wide) in paragraph at lines 353--358
+Overfull \hbox (7.82813pt too wide) in paragraph at lines 363--368
  [][] 
  []
 
-LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
-(Font)              scaled to size 13.52995pt on input line 364.
+LaTeX Font Info:    Font shape `TU/THSarabunNew(1)/b/n' will be
+(Font)              scaled to size 13.52995pt on input line 374.
 [5] [6]
 บทที่ 2.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -9.84pt
-(hyperref)                removed on input line 392.
+(hyperref)                removed on input line 402.
 
 
-Overfull \hbox (3.33603pt too wide) in paragraph at lines 398--400
+LaTeX Warning: Citation `saha2018comprehensive' on page 7 undefined on input line 408.
+
+
+LaTeX Warning: Reference `fig:modelcnn' on page 7 undefined on input line 409.
+
+
+Overfull \hbox (2.43813pt too wide) in paragraph at lines 408--410
 []\TU/THSarabunNew(0)/m/n/10 Neural Style Transfer [[]] เป็นกระบวนการที่ใช้ CNNs ในการประมวลผลรูปภาพให้ได้รูปภาพที่เหมือนกับรูปภาพที่ใช้เป็น content
  []
 
 File: ./image/unit1.png Graphic file (type bmp)
 <./image/unit1.png>
 
-Overfull \hbox (2.10606pt too wide) in paragraph at lines 410--417
-[]\TU/THSarabunNew(0)/m/n/10 ดังรูปที่ [][]2.1[][] จะเห็นได้ว่า มีการป้อนข้อมูลเป็น content image และ style image จากนั้นจะการประมวลผลรูปที่ป้อนเข้ามา โดยจะมี
- []
+LaTeX Warning: Citation `gatys2015neural' on page 7 undefined on input line 415.
+
+
+LaTeX Warning: Reference `fig:modelcnn' on page 7 undefined on input line 420.
 
 [7
 
 ]
-Overfull \hbox (119.34833pt too wide) in paragraph at lines 425--426
+
+LaTeX Warning: Reference `fig:modelcnn' on page 8 undefined on input line 435.
+
+
+Overfull \hbox (119.34833pt too wide) in paragraph at lines 435--436
 []\TU/THSarabunNew(0)/m/n/10 Artificial neural networks(ANN) คือโมเดลทางคณิตศาสตร์หรือโมเดลทางคอมพิวเตอร์ที่จำลองการทำงานของเซลล์ประสาทในสมองมนุษย์ที่มีเซลล์ประสาท(neurons)
  []
 
 File: ./image/unit2.jpg Graphic file (type bmp)
 <./image/unit2.jpg>
+
+LaTeX Warning: Reference `fig:modelann' on page 8 undefined on input line 446.
+
+
+LaTeX Warning: Reference `fig:modelNU' on page 8 undefined on input line 452.
+
 File: ./image/neuron_unit.png Graphic file (type bmp)
 <./image/neuron_unit.png>
+
+LaTeX Warning: Citation `DeepLear55:online' on page 8 undefined on input line 458.
+
+
+LaTeX Warning: Reference `fig:feed-back' on page 8 undefined on input line 465.
+
 File: ./image/feed_back.png Graphic file (type bmp)
 <./image/feed_back.png>
 [8]
+
+LaTeX Warning: Citation `Gradient17:online' on page 9 undefined on input line 475.
+
+
+LaTeX Warning: Citation `WhatisWe89:online' on page 9 undefined on input line 483.
+
+
+LaTeX Warning: Citation `NeuralTr45:online' on page 9 undefined on input line 483.
+
+
+LaTeX Warning: Reference `fig:pic-cnn' on page 9 undefined on input line 485.
+
 File: ./image/cnn.jpg Graphic file (type bmp)
 <./image/cnn.jpg>
+
+LaTeX Warning: Reference `fig:rgb-layer' on page 9 undefined on input line 498.
+
 File: ./image/unit3.png Graphic file (type bmp)
 <./image/unit3.png>
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [9]
-Overfull \hbox (1.96985pt too wide) in paragraph at lines 511--513
+
+LaTeX Warning: Reference `fig:ml-tl' on page 10 undefined on input line 522.
+
+
+Overfull \hbox (1.96985pt too wide) in paragraph at lines 521--523
 []\TU/THSarabunNew(0)/m/n/10 Transfer Learning เป็นการเรียนรู้ที่เป็นที่นิยมในการทำ machine learning(ML) โดยเป็นการนำโมเดลที่มีคนสร้างมาก่อนที่เหมาะ-
  []
 
 [10]
 File: ./image/unit4.png Graphic file (type bmp)
 <./image/unit4.png>
+
+
+LaTeX Warning: Citation `brownlee2017gentle' on page 11 undefined on input line 529.
+
+
+LaTeX Warning: Citation `8636278' on page 11 undefined on input line 536.
+
+
+LaTeX Warning: Citation `sarkar2018comprehensive' on page 11 undefined on input line 536.
+
+
+LaTeX Warning: Reference `fig:vgg16-19' on page 11 undefined on input line 545.
+
 File: ./image/vgg16-19.png Graphic file (type bmp)
 <./image/vgg16-19.png>
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[11] [12]
+[11]
+
+LaTeX Warning: Reference `fig:webapp' on page 12 undefined on input line 561.
+
+[12]
 File: ./image/webapp.jpg Graphic file (type bmp)
 <./image/webapp.jpg>
  [13]
+
+LaTeX Warning: Citation `ปูพื้นฐา98:online' on page 14 undefined on input line 598.
+
 File: ./image/django.png Graphic file (type bmp)
 <./image/django.png>
+
+LaTeX Warning: Reference `fig:django2' on page 14 undefined on input line 617.
+
 File: ./image/django2.png Graphic file (type bmp)
 <./image/django2.png>
- [14] [15]
+[14]
+e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex:640: Missing $ inserted.
+<inserted text> 
+                $
+l.640 ...ำนวณในแต่ละชั้นของรูปภาพแบบ YIQ โดยให้ L_
+                                                  sค่าความเข้มของแสงของรูปภา...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+e:/Senior_Project/Senior_project_font-end/latex/undergrad-sample-thai.tex:641: Missing $ inserted.
+<inserted text> 
+                $
+l.641 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no ค in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ค in font cmmi10!
+Missing character: There is no ว in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ม in font cmmi10!
+Missing character: There is no เ in font cmmi10!
+Missing character: There is no ข in font cmmi10!
+Missing character: There is no ้ in font cmmi10!
+Missing character: There is no ม in font cmmi10!
+Missing character: There is no ข in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no แ in font cmmi10!
+Missing character: There is no ส in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no ข in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no ร in font cmmi10!
+Missing character: There is no ู in font cmmi10!
+Missing character: There is no ป in font cmmi10!
+Missing character: There is no ภ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no พ in font cmmi10!
+Missing character: There is no ท in font cmmi10!
+Missing character: There is no ี in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no ต in font cmmi10!
+Missing character: There is no ้ in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no ก in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ร in font cmmi10!
+Missing character: There is no แ in font cmmi10!
+Missing character: There is no ล in font cmmi10!
+Missing character: There is no ะ in font cmmi10!
+Missing character: There is no ห in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ค in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no µ in font cmmi10!
+Missing character: There is no แ in font cmmi10!
+Missing character: There is no ล in font cmmi10!
+Missing character: There is no ะ in font cmmi10!
+Missing character: There is no µ in font cmmi10!
+Missing character: There is no ค in font cmmi10!
+Missing character: There is no ื in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ค in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no เ in font cmmi10!
+Missing character: There is no ฉ in font cmmi10!
+Missing character: There is no ล in font cmmi10!
+Missing character: There is no ี in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no ย in font cmmi10!
+Missing character: There is no ข in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no ค in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ค in font cmmi10!
+Missing character: There is no ว in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ม in font cmmi10!
+Missing character: There is no เ in font cmmi10!
+Missing character: There is no ข in font cmmi10!
+Missing character: There is no ้ in font cmmi10!
+Missing character: There is no ม in font cmmi10!
+Missing character: There is no ข in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no แ in font cmmi10!
+Missing character: There is no ส in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no ข in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no ร in font cmmi10!
+Missing character: There is no ู in font cmmi10!
+Missing character: There is no ป in font cmmi10!
+Missing character: There is no ภ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no พ in font cmmi10!
+Missing character: There is no ท in font cmmi10!
+Missing character: There is no ี in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no ต in font cmmi10!
+Missing character: There is no ้ in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no ก in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ร in font cmmi10!
+Missing character: There is no แ in font cmmi10!
+Missing character: There is no ล in font cmmi10!
+Missing character: There is no ะ in font cmmi10!
+Missing character: There is no ร in font cmmi10!
+Missing character: There is no ู in font cmmi10!
+Missing character: There is no ป in font cmmi10!
+Missing character: There is no ภ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no พ in font cmmi10!
+Missing character: There is no ท in font cmmi10!
+Missing character: There is no ี in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no ใ in font cmmi10!
+Missing character: There is no ช in font cmmi10!
+Missing character: There is no ้ in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ้ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ิ in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no ต in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ม in font cmmi10!
+Missing character: There is no ล in font cmmi10!
+Missing character: There is no ำ in font cmmi10!
+Missing character: There is no ด in font cmmi10!
+Missing character: There is no ั in font cmmi10!
+Missing character: There is no บ in font cmmi10!
+Missing character: There is no แ in font cmmi10!
+Missing character: There is no ล in font cmmi10!
+Missing character: There is no ะ in font cmmi10!
+Missing character: There is no ห in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ค in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no 〖 in font cmr10!
+Missing character: There is no 〗 in font cmr10!
+Missing character: There is no แ in font cmmi10!
+Missing character: There is no ล in font cmmi10!
+Missing character: There is no ะ in font cmmi10!
+Missing character: There is no 〖 in font cmr10!
+Missing character: There is no 〗 in font cmr10!
+Missing character: There is no ค in font cmmi10!
+Missing character: There is no ื in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ค in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ส in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no ว in font cmmi10!
+Missing character: There is no น in font cmmi10!
+Missing character: There is no เ in font cmmi10!
+Missing character: There is no บ in font cmmi10!
+Missing character: There is no ี in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no ย in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no เ in font cmmi10!
+Missing character: There is no บ in font cmmi10!
+Missing character: There is no น in font cmmi10!
+Missing character: There is no ม in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ต in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ร in font cmmi10!
+Missing character: There is no ฐ in font cmmi10!
+Missing character: There is no ษ in font cmmi10!
+Missing character: There is no น in font cmmi10!
+Missing character: There is no ข in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no ค in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ค in font cmmi10!
+Missing character: There is no ว in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ม in font cmmi10!
+Missing character: There is no เ in font cmmi10!
+Missing character: There is no ข in font cmmi10!
+Missing character: There is no ้ in font cmmi10!
+Missing character: There is no ม in font cmmi10!
+Missing character: There is no ข in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no แ in font cmmi10!
+Missing character: There is no ส in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no ข in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no ร in font cmmi10!
+Missing character: There is no ู in font cmmi10!
+Missing character: There is no ป in font cmmi10!
+Missing character: There is no ภ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no พ in font cmmi10!
+Missing character: There is no ท in font cmmi10!
+Missing character: There is no ี in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no ต in font cmmi10!
+Missing character: There is no ้ in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no ก in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ร in font cmmi10!
+Missing character: There is no แ in font cmmi10!
+Missing character: There is no ล in font cmmi10!
+Missing character: There is no ะ in font cmmi10!
+Missing character: There is no ร in font cmmi10!
+Missing character: There is no ู in font cmmi10!
+Missing character: There is no ป in font cmmi10!
+Missing character: There is no ภ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no พ in font cmmi10!
+Missing character: There is no ท in font cmmi10!
+Missing character: There is no ี in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no ใ in font cmmi10!
+Missing character: There is no ช in font cmmi10!
+Missing character: There is no ้ in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ้ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no อ in font cmmi10!
+Missing character: There is no ิ in font cmmi10!
+Missing character: There is no ง in font cmmi10!
+Missing character: There is no ต in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ม in font cmmi10!
+Missing character: There is no ล in font cmmi10!
+Missing character: There is no ำ in font cmmi10!
+Missing character: There is no ด in font cmmi10!
+Missing character: There is no ั in font cmmi10!
+Missing character: There is no บ in font cmmi10!
+Missing character: There is no จ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ก in font cmmi10!
+Missing character: There is no น in font cmmi10!
+Missing character: There is no ั in font cmmi10!
+Missing character: There is no ้ in font cmmi10!
+Missing character: There is no น in font cmmi10!
+Missing character: There is no ค in font cmmi10!
+Missing character: There is no ำ in font cmmi10!
+Missing character: There is no น in font cmmi10!
+Missing character: There is no ว in font cmmi10!
+Missing character: There is no ณ in font cmmi10!
+Missing character: There is no แ in font cmmi10!
+Missing character: There is no ล in font cmmi10!
+Missing character: There is no ะ in font cmmi10!
+Missing character: There is no ป in font cmmi10!
+Missing character: There is no ร in font cmmi10!
+Missing character: There is no ั in font cmmi10!
+Missing character: There is no บ in font cmmi10!
+Missing character: There is no ค in font cmmi10!
+Missing character: There is no ่ in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ต in font cmmi10!
+Missing character: There is no า in font cmmi10!
+Missing character: There is no ม in font cmmi10!
+Missing character: There is no ส in font cmmi10!
+Missing character: There is no ู in font cmmi10!
+Missing character: There is no ต in font cmmi10!
+Missing character: There is no ร in font cmmi10!
+
+LaTeX Warning: Citation `gatys2015neural' on page 15 undefined on input line 644.
+
+
+LaTeX Warning: Citation `8636278' on page 15 undefined on input line 648.
+
+[15]
 บทที่ 3.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -9.84pt
-(hyperref)                removed on input line 640.
+(hyperref)                removed on input line 660.
+
+
+LaTeX Warning: Citation `NeuralTr45:online' on page 16 undefined on input line 669.
 
 File: ./image/result1.png Graphic file (type bmp)
 <./image/result1.png>
@@ -964,19 +1317,30 @@ File: ./image/result1.png Graphic file (type bmp)
 ]
 File: ./image/result2.png Graphic file (type bmp)
 <./image/result2.png>
- [17]
-Overfull \hbox (44.02428pt too wide) in paragraph at lines 684--685
+
+
+LaTeX Warning: Citation `gatys2015neural' on page 17 undefined on input line 694.
+
+
+LaTeX Warning: Citation `gatys2015neural' on page 17 undefined on input line 695.
+
+[17]
+Overfull \hbox (44.02428pt too wide) in paragraph at lines 704--705
 []\TU/THSarabunNew(0)/m/n/10 เว็บไซต์จะต้องสามารถสร้างรูปภาพใหม่ที่เกิดจากการผสมผสานระหว่างรูปภาพที่สร้างโดยศิลปินชื่อดังกับรูปภาพที่ผู้ใช้ทำการอัพโหลดเข้าเว็บไซต์
  []
 
 [18]
 File: ./image/use-case.png Graphic file (type bmp)
 <./image/use-case.png>
- [19]
+
+
+LaTeX Warning: Reference `fig:usecase' on page 19 undefined on input line 716.
+
+[19]
 File: ./image/ad-login.png Graphic file (type bmp)
 <./image/ad-login.png>
 
-Overfull \hbox (32.64413pt too wide) in paragraph at lines 722--733
+Overfull \hbox (32.64413pt too wide) in paragraph at lines 742--753
 [][] 
  []
 
@@ -1009,25 +1373,51 @@ File: ./image/ui1-4.png Graphic file (type bmp)
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [26]
+
+LaTeX Warning: Reference `fig:ui-1' on page 27 undefined on input line 908.
+
 File: ./image/ui-create.png Graphic file (type bmp)
 <./image/ui-create.png>
- [27]
+
+LaTeX Warning: Reference `fig:ui-create' on page 27 undefined on input line 917.
+
+[27]
 File: ./image/ui-create2.png Graphic file (type bmp)
 <./image/ui-create2.png>
+
+
+LaTeX Warning: Reference `fig:ui-create2' on page 28 undefined on input line 927.
+
 File: ./image/ui-profile.jpg Graphic file (type bmp)
 <./image/ui-profile.jpg>
- [28]
+
+LaTeX Warning: Reference `fig:ui-profile' on page 28 undefined on input line 937.
+
+[28]
 File: ./image/ui-commu1.png Graphic file (type bmp)
 <./image/ui-commu1.png>
 File: ./image/ui-commu2.png Graphic file (type bmp)
 <./image/ui-commu2.png>
 File: ./image/ui-commu3.png Graphic file (type bmp)
 <./image/ui-commu3.png>
- [29]
+
+
+LaTeX Warning: Reference `fig:ui-commu' on page 29 undefined on input line 951.
+
+
+Overfull \hbox (1.78621pt too wide) in paragraph at lines 951--952
+[]\TU/THSarabunNew(0)/m/n/10 รูปที่ []แสดงหน้าที่ผู้ใช้สามารถดูรูปที่มีการเผยแพร่ให้ผู้อื่นได้ดูภายใน web application ได้ รวมไปถึงสามารถกดถูกใจและสามารถ-
+ []
+
+[29]
 File: ./image/database.png Graphic file (type bmp)
 <./image/database.png>
- [30] [31]
-Overfull \hbox (12.56746pt too wide) in paragraph at lines 1036--1037
+
+
+LaTeX Warning: Reference `fig:database' on page 30 undefined on input line 963.
+
+[30] [31]
+Overfull \hbox (12.56746pt too wide) in paragraph at lines 1056--1057
 []\TU/THSarabunNew(0)/m/n/10 Style image เป็นรูปภาพที่สร้างจากศิลปินที่มีชื่อเสียงโดยทางคณะผู้จัดทำเลือกรวบรวมรูปภาพที่มีลักษณะที่เด่นชัดสามารถบอกได้ว่า
  []
 
@@ -1037,19 +1427,23 @@ File: ./image/ArchDesign.png Graphic file (type bmp)
 File: ./image/newplan.png Graphic file (type bmp)
 <./image/newplan.png>
 
-Overfull \hbox (7.82813pt too wide) in paragraph at lines 1079--1084
+Overfull \hbox (7.82813pt too wide) in paragraph at lines 1099--1104
  [][] 
  []
 
 [33]
-Overfull \hbox (3.06543pt too wide) in paragraph at lines 1092--1093
+
+LaTeX Warning: Reference `fig:styleTransfer' on page 34 undefined on input line 1112.
+
+
+Overfull \hbox (3.06543pt too wide) in paragraph at lines 1112--1113
 []\TU/THSarabunNew(0)/m/n/10 ในการสร้างรูปภาพใหม่ที่มีเนื้อหาของรูปภาพเหมือนกับรูปภาพ content image ที่เป็นภาพคนหรือสัตว์ทั่วไปและมีลักษณะการวาด-
  []
 
 File: ./image/styleTransfer.png Graphic file (type bmp)
 <./image/styleTransfer.png>
 
-Overfull \hbox (9.66469pt too wide) in paragraph at lines 1104--1105
+Overfull \hbox (9.66469pt too wide) in paragraph at lines 1124--1125
 \TU/THSarabunNew(0)/m/n/10 ฐานว่า ผลลัพธ์ที่ได้ออกมาอาจมีบางจุดที่มีลักษณะเด่นเกินไปจึงทำการปรับเปลี่ยนจาก max pooling เป็น average pooling โดยกำ-
  []
 
@@ -1058,10 +1452,16 @@ Overfull \hbox (9.66469pt too wide) in paragraph at lines 1104--1105
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -9.84pt
-(hyperref)                removed on input line 1124.
+(hyperref)                removed on input line 1144.
+
+
+LaTeX Warning: Reference `fig:model1' on page 35 undefined on input line 1151.
 
 File: ./image/model1.png Graphic file (type bmp)
 <./image/model1.png>
+
+LaTeX Warning: Reference `fig:model2' on page 35 undefined on input line 1162.
+
 File: ./image/model2.png Graphic file (type bmp)
 <./image/model2.png>
 
@@ -1070,14 +1470,25 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [35
 
 ]
+
+LaTeX Warning: Reference `fig:model3' on page 36 undefined on input line 1174.
+
 File: ./image/model3.png Graphic file (type bmp)
 <./image/model3.png>
- [36]
+[36]
+
+LaTeX Warning: Reference `fig:model4' on page 37 undefined on input line 1185.
+
 File: ./image/model4.png Graphic file (type bmp)
 <./image/model4.png>
+
+LaTeX Warning: Reference `fig:model5' on page 37 undefined on input line 1195.
+
+
+LaTeX Warning: Reference `fig:model6' on page 37 undefined on input line 1195.
+
 File: ./image/model5.png Graphic file (type bmp)
 <./image/model5.png>
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1107,120 +1518,81 @@ File: ./image/app_module.png Graphic file (type bmp)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern -9.84pt
-(hyperref)                removed on input line 1260.
+(hyperref)                removed on input line 1280.
 
 
-Overfull \hbox (2.38892pt too wide) in paragraph at lines 1268--1269
+Overfull \hbox (2.38892pt too wide) in paragraph at lines 1288--1289
 []\TU/THSarabunNew(0)/m/n/10 แต่เมื่อทางผู้พัฒนาทำการศึกษาโครงงานที่มีเนื้อหาคล้ายคลึงกับโครงการนี้ ก็มีความคิดที่จะเปลี่ยนการสร้างรูปภาพจากการ ใช้ CNN
  []
 
 
-Overfull \hbox (0.91293pt too wide) in paragraph at lines 1278--1279
+LaTeX Warning: Reference `tbl:newplan' on page 42 undefined on input line 1296.
+
+
+Overfull \hbox (0.91293pt too wide) in paragraph at lines 1298--1299
 \TU/THSarabunNew(0)/m/n/10 ที่ใช้ดึงคุณลักษณะของรูปภาพควรใช้ max pooling ใน pooling layer ขนาดของรูปภาพ style image และ content image คือ 224*224
  []
 
-(undergrad-sample-thai.bbl [42
-
-]
-Underfull \hbox (badness 1558) in paragraph at lines 9--13
-[]\TU/THSarabunNew(0)/m/n/10 ``Deep Learning แบบฉบับคนสามัญชน EP 1 : Neural Network History | by Mr.P L | mmp-li | Medium,''
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--13
-[][]$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][] [] [][][][][][][][][][][][][][][][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 9--13
-[][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--32
-[][]$[][][][][] [] [] [] [][][][][][] [] [][][] [] [][][][][][][] [] [][][][][][][][][][][][][][][][][][][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--32
-[][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--32
-[][] [] [][][][][][][][][][][][][][][][][][][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] []
- []
-
-
-Underfull \hbox (badness 1769) in paragraph at lines 40--43
-[]\TU/THSarabunNew(0)/m/n/10 ``Neural Transfer Using PyTorch — PyTorch Tutorials 1.8.0 documentation,'' [][]$[][][][][] [] [] [] [][][][][][][] [] [][][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--65
-[][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][][][][] [] [][][] [] [][][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--65
-[][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--65
-[][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][][][][][][][][][][][][][][][][][][][][][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] []
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--65
-[][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][][][][][][][][][][][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] [] [][] []
- []
-
-) [43
+No file undergrad-sample-thai.bbl.
+[42
 
 ]
 LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/m/n' will be
-(Font)              scaled to size 21.25432pt on input line 1305.
-LaTeX Font Info:    Font shape `TU/THSarabunNew(0)/b/n' will be
-(Font)              scaled to size 21.25432pt on input line 1305.
- [44]
+(Font)              scaled to size 21.25432pt on input line 1325.
+LaTeX Font Info:    Font shape `TU/THSarabunNew(1)/m/n' will be
+(Font)              scaled to size 21.25432pt on input line 1325.
+LaTeX Font Info:    Font shape `TU/THSarabunNew(1)/b/n' will be
+(Font)              scaled to size 21.25432pt on input line 1325.
+ [43]
 
 Package hyperref Warning: bookmark level for unknown apdx defaults to 0.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 12.29996pt
-(hyperref)                replaced by space on input line 1305.
+(hyperref)                replaced by space on input line 1325.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1306--1307
+Underfull \hbox (badness 10000) in paragraph at lines 1326--1327
 
  []
 
 
-LaTeX Warning: Citation `kim01' on page 45 undefined on input line 1324.
+LaTeX Warning: Reference `eq:norros' on page 44 undefined on input line 1342.
 
 
-LaTeX Warning: Citation `eun01' on page 45 undefined on input line 1363.
+LaTeX Warning: Citation `kim01' on page 44 undefined on input line 1344.
 
-[45] [46]
+
+LaTeX Warning: Reference `eq:loss_mva' on page 44 undefined on input line 1367.
+
+
+LaTeX Warning: Citation `eun01' on page 44 undefined on input line 1383.
+
+
+LaTeX Warning: Reference `eq:mx' on page 44 undefined on input line 1386.
+
+[44] [45]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \hskip 12.29996pt
-(hyperref)                replaced by space on input line 1375.
+(hyperref)                replaced by space on input line 1395.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1376--1377
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1388--1389
+Underfull \hbox (badness 10000) in paragraph at lines 1396--1397
 
  []
 
 
-LaTeX Warning: Citation `eun01' on page 47 undefined on input line 1394.
+Underfull \hbox (badness 10000) in paragraph at lines 1408--1409
+
+ []
+
+
+LaTeX Warning: Citation `eun01' on page 46 undefined on input line 1414.
+
+
+LaTeX Warning: Reference `eq:mx' on page 46 undefined on input line 1417.
 
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
@@ -1272,28 +1644,34 @@ braces):
 >  {english/babelname}  =>  {american}
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-[47] (undergrad-sample-thai.aux
+[46] (undergrad-sample-thai.aux
 LaTeX Info: Redefining \rmfamily on input line 19.
 LaTeX Info: Redefining \sffamily on input line 19.
 LaTeX Info: Redefining \ttfamily on input line 19.
-\thai@year=\count324
+\thai@year=\count320
 )
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `undergrad-sample-thai.out' has not changed.
-(rerunfilecheck)             Checksum: 268F5E90E978EB3A7D31932F0D7F732A;21095.
+
+Package rerunfilecheck Warning: File `undergrad-sample-thai.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `undergrad-sample-thai.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  50B886B58989963166606FC1BB2070CB;21247.
  ) 
 Here is how much of TeX's memory you used:
- 17027 strings out of 411732
- 304175 string characters out of 2836994
- 717041 words of memory out of 3000000
- 36713 multiletter control sequences out of 15000+200000
- 406095 words of font info for 75 fonts, out of 3000000 for 9000
+ 16987 strings out of 411732
+ 304065 string characters out of 2836994
+ 681539 words of memory out of 3000000
+ 36683 multiletter control sequences out of 15000+200000
+ 406119 words of font info for 78 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 110i,16n,117p,1158b,511s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 110i,16n,117p,1158b,412s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on undergrad-sample-thai.xdv (57 pages, 751116 bytes).
+Output written on undergrad-sample-thai.xdv (54 pages, 617276 bytes).

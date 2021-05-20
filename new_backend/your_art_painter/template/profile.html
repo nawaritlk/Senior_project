@@ -307,7 +307,8 @@
 
 <body>
 <!-- Header -->
-  <p class="userName">{{ user.get_username }} <i class='far fa-edit' style='font-size:23px'></i></p>
+  <!-- <i class='far fa-edit' style='font-size:23px'></i> -->
+  <p class="userName">{{ user.get_username }}</p>
   <div class="emailBlock">
     <p class="email">E-mail: </p>
     <p class="emailName"> {{ user.email }} </p>
@@ -357,10 +358,10 @@
     <div class="grid1">
       <div class="right-content">
         <div class="gridstatus">
-          <div class="rating">
+          <!-- <div class="rating">
             <i class='fas fa-exclamation-circle' id="warningIcon"></i>
             <P class="statusRate">not rating</P>
-          </div>
+          </div> -->
           <div class="like">
             <div class="likecontent">
               <h1 id="emolove"> &#10084;</h1>
@@ -383,63 +384,6 @@
     </div>
     </div>
   {% endfor%}
-
-    <!-----------------picture number 2------------------>
-    <!--<div class="grid-container1">
-      <div class="grid1"></div>
-      <div class="grid1">
-        <div class="block-imgInput1">
-          <div class="imgInput">
-            <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\inputImg.png" alt="vango1">
-          </div>
-        </div>
-      </div>
-
-      <div class="grid1"></div>
-      <div class="grid1">
-        <div class="block-style">
-          <div class="imgInput">
-            <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\v1.jpg" alt="vango1">
-          </div>
-        </div>
-      </div>
-      <div class="grid1"></div>
-      <div class="grid1">
-        <div class="linecross">
-        </div>
-      </div>
-      <div class="grid1"></div>
-      <div class="grid1">
-        <img src="E:\Senior_Project\Senior_project_font-end\Font_end\picture\Union 1.png" alt="vango1" id="imgOutput">
-      </div>
-      <div class="grid1"></div>-->
-      <!----------------right content-------------------->
-      <!--<div class="grid1">
-        <div class="right-content">
-          <div class="gridstatus">
-            <div class="rating">
-              <i class="fa fa-check-circle" id="alyRateIcon"></i>
-              <P class="statusRate">rating</P>
-            </div>
-            <div class="like">
-              <div class="likecontent">
-                <h1 id="emolove"> </i>&#10084;</h1>
-                <h1 id="numberloves"> </i>98</h1>
-              </div>
-              <p>like</p>
-            </div>
-          </div>
-          <div class="btn">
-            <button class="download-btn">download</button>
-            <button class="makePrv-btn">make it private</button>
-            <button class="delete-btn"><i class="fa fa-trash">&nbsp; &nbsp; </i>delete</button>
-          </div>
-        </div>
-      </div>-->
-
-
-
-
 
 
     </div>

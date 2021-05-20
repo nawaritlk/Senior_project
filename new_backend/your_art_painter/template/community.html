@@ -190,11 +190,11 @@
                     href="{% url 'unliked' pk=content.id %} "
                     class="unlike-btn"
                   >
-                    <p id="unlike-btn">&#x2661;UNLIKE</p>
+                    <p id="unlike-btn">&#10084;UNLIKE</p>
                   </a>
                   {% else %}
                   <a href="{% url 'liked' pk=content.id %}" class="like-btn">
-                    <p id="like-btn">&#10084;LIKE</p>
+                    <p id="like-btn">&#x2661;LIKE</p>
                   </a>
                   {% endif %}
                 </div>
